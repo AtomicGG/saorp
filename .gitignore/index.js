@@ -8,12 +8,86 @@ const prefix = "=";
 var fury = false;
 
 bot.on('ready', () => {
+    console.log("Je suis connecté !")
     bot.user.setGame('=Horde')
+
+    const serveur = bot.guilds.find(serveur => serveur.name === nomServeur)
+
+    const serveurChannelRues = [
+        serveur.channels.find(channelRue1 => channelRue1.name.startsWith("ʀᴜᴇ-1『")),
+        serveur.channels.find(channelRue2 => channelRue2.name.startsWith("ʀᴜᴇ-2『")),
+        serveur.channels.find(channelRue3 => channelRue3.name.startsWith("ʀᴜᴇ-3『")),
+        serveur.channels.find(channelRue4 => channelRue4.name.startsWith("ʀᴜᴇ-4『"))
+    ]
+
+    setInterval(temps = () => {
+        let date = new Date()
+        let heure = date.getHours()
+        let minutes = date.getMinutes()
+        console.log("Rue updated (" + heure + "h" + minutes + ")")
+        if(heure > 7 && heure < 19){
+            for (let i = 0 ; i < 4 ; i++){
+                serveurChannelRues[i].setName(serveurChannelRues[i].name.replace(serveurChannelRues[i].name.charAt(6),"🏙"))
+                    .then()
+                    .catch(console.error)
+            }
+        } else if(heure >= 6 && heure < 7){
+            for (let i = 0 ; i < 4 ; i++){
+                serveurChannelRues[i].setName(serveurChannelRues[i].name.replace(serveurChannelRues[i].name.charAt(6),"🌆"))
+                    .then()
+                    .catch(console.error)
+            }
+        } else if(heure >= 19 && heure < 20){
+            for (let i = 0 ; i < 4 ; i++){
+                serveurChannelRues[i].setName(serveurChannelRues[i].name.replace(serveurChannelRues[i].name.charAt(6),"🌇"))
+                    .then()
+                    .catch(console.error)
+            }
+        } else {
+            for (let i = 0 ; i < 4 ; i++){
+                serveurChannelRues[i].setName(serveurChannelRues[i].name.replace(serveurChannelRues[i].name.charAt(6),"🌃"))
+                    .then()
+                    .catch(console.error)
+            }
+        }
+        return
+    },0.5 * 3600000) // 3,600,000 = 1h en millisecondes
 })
 
-bot.on('ready', function () {
-    console.log("Je suis connecté !")
-});
+
+
+
+function rdm(nombreMax){ //donne un nombre random entre 1 et nombreMax
+	const random = 1 + Math.floor(Math.random()*nombreMax)
+	return random
+}
+
+function contient(partieTrouvee,partieCherchee){//donne true si la partie trouvée (message.content) contient la partie cherchée, sinon false
+	let recherche = true
+	while(!partieTrouvee.startsWith(partieCherchee) && recherche === true){
+		if(partieTrouvee.length === 0){
+			recherche = false
+		}
+		partieTrouvee = partieTrouvee.slice(1)
+	}
+	if(partieTrouvee.startsWith(partieCherchee)){
+		return true
+	} else {
+		return false
+	}
+}
+
+function regEscape(s) {
+    return s.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+}
+
+
+
+const prefix = "="
+let random;
+
+const nomServeur = "Horde [RP]"
+
 
 bot.off('guildMemberAdd', member => {
     member.createDM().then(channel => {
@@ -39,7 +113,8 @@ bot.on('message', message => {
 bot.login(process.env.TOKEN)
 
 bot.on("message", (message) => {
-    if (!message.content.startsWith(prefix)) return;
+    if(message.author.bot) return
+    if(message.channel.type === "dm") return
     if (message.content.startsWith(prefix + "ping")) {
         message.channel.send("pong!");
     } else
@@ -50,6 +125,957 @@ bot.on("message", (message) => {
 
 
 ////////////////////////////////////////////////////////////PARTIE POUR HORDES////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+bot.on("message", message => {
+    const serveur = bot.guilds.find(serveur => serveur.name === nomServeur)
+
+    const serveurChannelBanque = serveur.channels.find(channelBanque => channelBanque.name === "『💰』ᴏʙᴊᴇᴛs-ᴇɴ-ʙᴀɴϙᴜᴇ")
+
+    const serveurChannelConstruction = serveur.channels.find(channelConstruction => channelConstruction.name === "『🔨』ᴄᴏɴsᴛʀᴜᴄᴛɪᴏɴs")
+
+
+    // Pour ajouter des constructions, c'est juste en dessous (n'oubliez pas la virgule et choisissez un bon endroit par rapport
+    // aux délimitations avec les rues c: ).
+    const serveurVilleChannels = [
+        serveur.channels.find(channelBanque => channelBanque.name === "『🏦』ʙᴀɴϙᴜᴇ"), // [0]
+        serveur.channels.find(channelPlacePrincipale => channelPlacePrincipale.name === "『🕌』ᴘʟᴀᴄᴇ-ᴘʀɪɴᴄɪᴘᴀʟᴇ"), // [1]
+        serveur.channels.find(channelAuberge => channelAuberge.name === "『🏨』ᴀᴜʙᴇʀɢᴇ"), // [2]
+        serveur.channels.find(channelRue1 => channelRue1.name.startsWith("ʀᴜᴇ-1『")), // [3]
+        serveur.channels.find(channelCabinetMedical => channelCabinetMedical.name === "『🏥』ᴄᴀʙɪɴᴇᴛ-ᴍᴇ́ᴅɪᴄᴀʟ"), // [4]
+        serveur.channels.find(channelPrison => channelPrison.name === "『🏤』ᴘʀɪsᴏɴ"), // [5]
+        serveur.channels.find(channelRue2 => channelRue2.name.startsWith("ʀᴜᴇ-2『")), // [6]
+        serveur.channels.find(channelPuits => channelPuits.name === "『⛲』ᴘᴜɪᴛs"), // [7]
+        serveur.channels.find(channelPotager => channelPotager.name === "『🏡』ᴘᴏᴛᴀɢᴇʀ"), // [8]
+        serveur.channels.find(channelEnclos => channelEnclos.name === "『🐖』ᴇɴᴄʟᴏs"), // [9]
+        serveur.channels.find(channelCuisine => channelCuisine.name === "『🏪』ᴄᴜɪsɪɴᴇ"), // [10]
+        serveur.channels.find(channelBoucherie => channelBoucherie.name === "『🏪』ʙᴏᴜᴄʜᴇʀɪᴇ"), // [11]
+        serveur.channels.find(channelRue3 => channelRue3.name.startsWith("ʀᴜᴇ-3『")), // [12]
+        serveur.channels.find(channelTour => channelTour.name === "『🗼』ᴛᴏᴜʀ"), // [13]
+        serveur.channels.find(channelAtelier => channelAtelier.name === "『🏭』ᴀᴛᴇʟɪᴇʀ"), // [14]
+        serveur.channels.find(channelGenerateur => channelGenerateur.name === "『🏭』ɢᴇɴᴇʀᴀᴛᴇᴜʀ"), // [15]
+        serveur.channels.find(channelMine => channelMine.name === "『🏗』ᴍɪɴᴇ"), // [16]
+        serveur.channels.find(channelChantiers => channelChantiers.name === "『🏗』ᴄʜᴀɴᴛɪᴇʀs"), // [17]
+        serveur.channels.find(channelRue4 => channelRue4.name.startsWith("ʀᴜᴇ-4『")), // [18]
+        serveur.channels.find(channelGrandePorte => channelGrandePorte.name === "〚ɢʀᴀɴᴅᴇ-ᴘᴏʀᴛᴇ〛") // [19]
+    ]
+
+    const serveurRoleVille = serveur.roles.find(roleVille => roleVille.name === "Ville")
+
+    if(message.content === `${prefix}Déplacement zombies`) {
+        let zone; //25% immeubles, 90% autres zones
+        let zoneDispo = []
+        let j = 0
+        for(let i = 0 ; i < serveurVilleChannels.length ; i++){
+            if(serveurVilleChannels[i].rolePermissions(serveurRoleVille).has('VIEW_CHANNEL')){
+                zoneDispo[j] = serveurVilleChannels[i].name
+                j++
+            }
+        }
+        random = rdm(100)
+        if (random < 25) {
+            random = rdm(30);
+            if(random < 10) {
+                zone = "『🏢』ɪᴍᴍᴇᴜʙʟᴇ 1";
+            } else if (random >= 10 && random < 20) {
+                zone = "『🏢』ɪᴍᴍᴇᴜʙʟᴇ 2";
+            } else {
+                zone = "『🏢』ɪᴍᴍᴇᴜʙʟᴇ 3";
+            }
+        } else {
+            random = rdm(100)
+            let i = 0
+            while(i <= zoneDispo.length && zone === undefined){
+                if(random < (100/zoneDispo.length)*(i+1)){
+                    zone = zoneDispo[i]
+                }
+                i++
+            }
+        }
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(0xff0000)
+            .setTitle("Déplacement zombies :")
+            .setDescription(`Le groupe de zombies se déplace vers : ${zone}`)
+            .setTimestamp()
+        message.channel.send({ embed })
+        return
+    }
+    if((message.content.startsWith(`${prefix}Bloquer`) || message.content.startsWith(`${prefix}Débloquer`)) && message.channel === serveurChannelConstruction){
+        message.delete()
+            .then()
+            .catch(console.error)
+        serveur.fetchMember(message.author)
+            .then()
+            .catch(console.error)
+        const membre = serveur.member(message.author)
+        if(membre.hasPermission("ADMINISTRATOR")){
+            if(message.content.startsWith(`${prefix}Bloquer`)){
+                if(message.content.endsWith("tout")){
+                    for (let i = 0 ; i < serveurVilleChannels.length ; i++){
+                        serveurVilleChannels[i].overwritePermissions(serveurRoleVille,{"VIEW_CHANNEL": false})
+                        message.channel.send(`${serveurVilleChannels[i].name} bloqué(e)`)
+                    }
+                } else {
+                    for (let i = 0 ; i < serveurVilleChannels.length ; i++){
+                        if(new RegExp(`\\s${i}$`).test(message.content)){
+                            serveurVilleChannels[i].overwritePermissions(serveurRoleVille,{"VIEW_CHANNEL": false})
+                            message.channel.send(`${serveurVilleChannels[i].name} bloqué(e)`)
+                        }
+                    }
+                }
+            } else if (message.content.startsWith(`${prefix}Débloquer`)){
+                if(message.content.endsWith("tout")){
+                    for (let i = 0 ; i < serveurVilleChannels.length ; i++){
+                        serveurVilleChannels[i].overwritePermissions(serveurRoleVille,{"VIEW_CHANNEL": true})
+                        message.channel.send(`${serveurVilleChannels[i].name} débloqué(e)`)
+                    }
+                } else {
+                    for (let i = 0 ; i < serveurVilleChannels.length ; i++){
+                        if(new RegExp(`\\s${i}$`).test(message.content)){
+                            serveurVilleChannels[i].overwritePermissions(serveurRoleVille,{"VIEW_CHANNEL": true})
+                            message.channel.send(`${serveurVilleChannels[i].name} débloqué(e)`)
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    if((message.content.startsWith("+") || message.content.startsWith("-")) && message.channel === serveurChannelBanque){
+        let messageBanque;
+        let signe = message.content.slice(0,1)
+        let quantiteDeBase
+        let quantite
+        try{
+            message.delete()
+            .then()
+            .catch(console.error)
+            let contenu = message.content.slice(1).trim()
+            let ajout = Number(contenu.match(/^\d+/)[0])
+            let matiere = contenu.slice(contenu.search(/^\d+/)+String(ajout).length).trim()
+
+            let expressionQuantite = new RegExp(`\\d+(?=\\s(?=${regEscape(matiere)}))`)
+
+            if(message.channel.messages.some(messageBanque => messageBanque.content.startsWith("Objets en banque actuellement :"))){
+                messageBanque = message.channel.messages.find(messageBanque => messageBanque.content.startsWith("Objets en banque actuellement :")).content
+                if(signe === "+"){
+                    if(contient(messageBanque,matiere)){
+                        
+                        quantiteDeBase = Number(messageBanque.match(expressionQuantite)[0])
+                        quantite = quantiteDeBase + ajout
+
+                        let limitePartieGauche = messageBanque.search(expressionQuantite)
+                        let partieGauche = messageBanque.slice(0,limitePartieGauche).trim()+"\n"
+                        let partieDroite = messageBanque.slice(limitePartieGauche+String(quantiteDeBase).length).trim()
+
+                        message.channel.messages.find(messageBanque => messageBanque.content.startsWith("Objets en banque actuellement :"))
+                        .edit(`${partieGauche}${quantite} ${partieDroite}`)
+                        .then(console.log(`${message.author.username} a mis ${ajout} ${matiere} dans la banque (${quantiteDeBase} => ${quantite})`))
+                        .catch(console.error)
+                    } else {
+                        message.channel.messages.find(messageBanque => messageBanque.content.startsWith("Objets en banque actuellement :"))
+                            .edit(`${messageBanque}\n${ajout} ${matiere}`)
+                            .then(console.log(`${message.author.username} a mis pour la 1ère fois ${ajout} ${matiere} dans la banque`))
+                            .catch(console.error)
+                    }
+                } else if (signe === "-") {
+                    if(contient(messageBanque,matiere)){
+
+                        quantiteDeBase = Number(messageBanque.match(expressionQuantite)[0])
+                        quantite = quantiteDeBase - ajout
+
+                        if(quantite === 0){ 
+
+                            let expressionSplit = new RegExp(`${regEscape(contenu)}\.*`)
+
+                            let partie = messageBanque.split(expressionSplit)
+                            if(partie[1] === undefined){
+                                partie[1] = ""
+                            }
+
+                            message.channel.messages.find(messageBanque => messageBanque.content.startsWith("Objets en banque actuellement :"))
+                            .edit(partie[0].trim()+"\n"+partie[1].trim())
+                            .then(console.log(`${message.author.username} a pris pour la dernière fois ${ajout} ${matiere} dans la banque (${quantiteDeBase} => ${quantite})`))
+                            .catch(console.error)
+                        } else if(quantite < 0){
+                            console.log(`${message.author.username} a tenté de prendre ${-quantite} (${-ajout}) de ${matiere} en plus dans la banque (${quantiteDeBase} => ${quantite})`)
+                        } else {
+                            let limitePartieGauche = messageBanque.search(expressionQuantite)
+                            let partieGauche = messageBanque.slice(0,limitePartieGauche).trim()+"\n"
+                            let partieDroite = messageBanque.slice(limitePartieGauche+String(quantiteDeBase).length).trim()
+
+                            message.channel.messages.find(messageBanque => messageBanque.content.startsWith("Objets en banque actuellement :")) 
+                            .edit(`${partieGauche}${quantite} ${partieDroite}`)
+                            .then(console.log(`${message.author.username} a pris ${ajout} ${matiere} dans la banque (${quantiteDeBase} => ${quantite})`))
+                            .catch(console.error)
+                        }
+
+                    } else {
+                        return
+                    }
+                } else {
+                    return
+                }
+            } else {
+                message.channel.send(`Objets en banque actuellement :\n${ajout} ${matiere}`)
+                console.log(`${message.author.username} a mis pour la 1ère fois ${ajout} ${matiere} dans la banque`)
+            }
+        } catch(e) {
+            console.error(e)
+            message.delete()
+            .then()
+            .catch(console.error)
+            return
+        }
+    }
+    if(message.content === `${prefix}Enclos`) { //Le combo setTitle/setDescription est plus rentable que le addFiel car le nombre
+        const embed = new Discord.RichEmbed() //de caractères est doublé dans la description
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(0xff0000)
+            .setTitle("Enclos :")
+            .setDescription(`Permet d'élever divers animaux
+            
+C'est ici que reposent tous les animaux de la ville. Si vous réussissez à trouver un mâle et une femelle d'une certaine espèce, c'est le seul endroit où vous pouvez les reproduire entre-eux. Vous pouvez aussi récolter des oeufs ou du lait de certains animaux
+            
+Mais bon, déjà faut-il que vous trouviez des animaux encore en vie
+            
+:hammer_pick: Matériaux nécessaires :
+
+\`10 Planche tordue\`
+
+:pig2: Permet de pouvoir faire de l'élevage (Pour plus d'infos : =Elevage)
+
+:timer: Le temps de construction est de 20 minutes`)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+    if(message.content === `${prefix}Agriculture`) { // Modifier =Potager => +(Pour plus d'infos : =Agriculture) FAIT
+        const embed = new Discord.RichEmbed() // Existant/à modifier : Charognardes (besoin de cadavre, pas besoin d'eau, donne des charognardes), Pomme (donne pommier qui donne des pommes), Légume suspect (donne légume random) FAIT | NN-Existant/à créer : tomate, citrouille, carotte FAIT
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(0xff0000)
+            .setTitle("Agriculture :")
+            .setDescription(`L'agriculture peut être une routine essentielle dans la ville, en particulier si vous vous lancez dans l'élevage. Vous pouvez planter et récolter de nombreuses plantes, y compris des arbres.
+            
+L'avantage du potager est qu'il possède sa propre réserve d'eau (10 rations d'eau de base) : chaque jour, chaque plante consommera 1 ration d'eau dans la réserve d'eau du potager (sauf exceptions). Par contre, à cause de la température aride du désert, si il manque de l'eau dans la réserve, les plantes faneront directement le jour prochain (prioritairement au jour de récolte si même période), faites attention ! (pour les détails des temps de pousse et des conditions pour certaines plantes, regardez directement sur la commande de la plante)
+            
+Une fois la pousse terminée, vous avez 1 journée pour récolter votre plante en faisant la commande "=Récolte [plante en question]"`)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+    if(message.content === `${prefix}Récolte [Pomme]`) {
+        random = rdm(100)
+        if(random < 25) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(0xff0000)
+                .setTitle("Récolte pomme :")
+                .setDescription(`Malheureusement, la récolte n'a rien donné aujourd'hui`)
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(0xff0000)
+                .setTitle("Récolte pomme :")
+                .setDescription(`Voici le bilan de la récolte :
+:deciduous_tree: Pommier (planté) : +1`)
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+    if(message.content === `${prefix}Pommier`) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(0xff0000)
+            .setTitle("Pommier :")
+            .setDescription(`Si vous avez réussi à faire pousser ce pommier, c'est que vous êtes devenu un pro de l'agriculture, et vous allez être récompensé
+            
+Chaque jour, vous pouvez récolter les pommes de ce pommier avec la commande "=Récolte [Pommier]"`)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+    if(message.content === `${prefix}Récolte [Pommier]`) {
+        random = rdm(60)
+        if(random < 10){
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(0xff0000)
+                .setTitle("Récolte pommier :")
+                .setDescription(`Malheureusement, la récolte n'a rien donné aujourd'hui`)
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(0xff0000)
+                .setTitle("Récolte pommier :")
+                .setDescription(`Voici le bilan de la récolte :
+:apple: Pommes : +${rdm(5)}`)
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+    if(message.content === `${prefix}Récolte [Charognardes]`){
+        if(rdm(100) < 25){
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(0xff0000)
+                .setTitle("Récolte charognardes :")
+                .setDescription(`Malheureusement, la récolte n'a rien donné aujourd'hui`)
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(0xff0000)
+                .setTitle("Récolte charognardes :")
+                .setDescription(`Voici le bilan de la récolte :
+:grapes: Charognardes : +${rdm(3)}`)
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+    if(message.content === `${prefix}Tomate`) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(0xff0000)
+            .setTitle("Tomate :")
+            .setDescription(`Une tomate fraichement cueillie du potager, juteuse et goûtue... *Mmm!...*
+            
+En utilisant cet objet, vous obtenez l'état \`Rassasiement\`, \`+1 cran de soif\`, ainsi que 5 points d'actions !
+
+Cet objet est \`cuisinable\`
+
+Cette tomate peut être plantée dans le potager pour obtenir d'autres tomates :
+
+:warning: Conditions de pousse : 1 ration d'eau par jour
+:timer: Le temps de pousse est de 2 jours
+            
+Une fois les conditions remplies et le temps atteint faites "=Récolte [Tomate]"`)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+    if(message.content === `${prefix}Carotte`) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(0xff0000)
+            .setTitle("Carotte :")
+            .setDescription(`Une carotte fraichement cueillie du potager, croquante et roche en fibre... *Mmm!...*
+            
+En utilisant cet objet, vous obtenez \`+1 cran de faim\` ainsi que 2 points d'actions !
+
+Cet objet est \`cuisinable\`
+
+Cette carotte peut être plantée dans le potager pour obtenir d'autres carottes :
+
+:warning: Conditions de pousse : 1 ration d'eau par jour
+:timer: Le temps de pousse est de 2 jours
+            
+Une fois les conditions remplies et le temps atteint faites "=Récolte [Carotte]"`)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+    if(message.content === `${prefix}Citrouille`) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(0xff0000)
+            .setTitle("Citrouille :")
+            .setDescription(`Une citrouille fraichement cueillie du potager, géante et craquante... *Mmm!...*
+            
+En utilisant cet objet, vous obtenez l'état \`Rassasiement\` ainsi que 6 points d'actions !
+
+Cet objet est \`cuisinable\`
+
+Cette citrouille peut être plantée dans le potager pour obtenir d'autres citrouilles :
+
+:warning: Conditions de pousse : 1 ration d'eau par jour
+:timer: Le temps de pousse est de 3 jours
+            
+Une fois les conditions remplies et le temps atteint faites "=Récolte [Citrouille]"`)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+    if(message.content === `${prefix}Récolte [Légume suspect]`) {
+        if(rdm(100) < 30) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(0xff0000)
+                .setTitle("Récolte légume suspect :")
+                .setDescription(`Malheureusement, la récolte n'a rien donné aujourd'hui`)
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            random = rdm(3)
+            if(random === 1){
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(0xff0000)
+                    .setTitle("Récolte légume suspect :")
+                    .setDescription(`Voici le bilan de la récolte :
+:tomato: Tomates : +${rdm(3)}`)
+                    .setTimestamp()
+                message.channel.send({ embed })
+            } else if (random === 2){
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(0xff0000)
+                    .setTitle("Récolte légume suspect :")
+                    .setDescription(`Voici le bilan de la récolte :
+:jack_o_lantern: Citrouilles : +${rdm(2)}`)
+                    .setTimestamp()
+                message.channel.send({ embed })
+            } else {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(0xff0000)
+                    .setTitle("Récolte légume suspect :")
+                    .setDescription(`Voici le bilan de la récolte :
+:carrot: Carottes : +${rdm(3)}`)
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        }
+    }
+    if(message.content === `${prefix}Récolte [Tomate]`) {
+        if(rdm(100) < 15) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(0xff0000)
+                .setTitle("Récolte tomate :")
+                .setDescription(`Malheureusement, la récolte n'a rien donné aujourd'hui`)
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(0xff0000)
+                .setTitle("Récolte tomate :")
+                .setDescription(`Voici le bilan de la récolte :
+:tomato: Tomates : +${rdm(4)}`)
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+    if(message.content === `${prefix}Récolte [Carotte]`) {
+        if(rdm(100) < 15) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(0xff0000)
+                .setTitle("Récolte carotte :")
+                .setDescription(`Malheureusement, la récolte n'a rien donné aujourd'hui`)
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(0xff0000)
+                .setTitle("Récolte carotte :")
+                .setDescription(`Voici le bilan de la récolte :
+:carrot: Carottes : +${rdm(4)}`)
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+    if(message.content === `${prefix}Récolte [Citrouille]`) {
+        if(rdm(100) < 20) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(0xff0000)
+                .setTitle("Récolte citrouille :")
+                .setDescription(`Malheureusement, la récolte n'a rien donné aujourd'hui`)
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(0xff0000)
+                .setTitle("Récolte citrouille :")
+                .setDescription(`Voici le bilan de la récolte :
+:jack_o_lantern: Citrouilles : +${rdm(3)}`)
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+    if(message.content === `${prefix}Elevage`) { // Existant/à modifier : Cochon malodorant, Poule FAIT | NN-Existant/à créer : Truie, Vache zombifiée FAIT
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(0xff0000)
+            .setTitle("Elevage :")
+            .setDescription(`Il y a 2 façons d'élever des animaux dans horde :
+            
+- La première est de reproduire les animaux entre-eux pour pouvoir ensuite les tuer à la boucherie ou les exploiter sans qu'il n'y en ait plus. Pour se faire, il faut avoir 2 animaux d'une même espèce et leur donner un certain type de nourriture (aux 2 animaux) pendant la période indiquée (pour les détails du temps et des nourritures, regardez directement sur la commande de l'animal). Après, il suffit de faire la commande "=Reproduction [animalmâle-animalfemelle]" pour avoir une chance d'obtenir un ou plusieurs bébés. A savoir que pour qu'un bébé devienne adulte il faut attendre une journée
+            
+- La seconde est d'exploiter les animaux pour récolter les ressources qu'ils produisent par période (oeufs, lait,...). Pour se faire, il faut leur donner un certain type de nourriture (pour les détails, regardez directement sur la commande de l'animal) puis faire la commande "=Récolte [animal en question]" pour voir ce que la récolte vous donne
+            
+Vous aurez remarqué que dans les deux cas, il faut donner de la nourriture aux animaux, il est donc conseillé de posséder un potager (=Potager) avant de se lancer dans l'élevage`)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+    if(message.content === `${prefix}Truie`) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(0xff0000)
+            .setTitle("Truie :")
+            .setDescription(`Bon, il n'y a plus qu'à trouver un boucher. Accessoirement, on peut aussi la faire rouler vers un zombie...
+
+Cet objet est \`Encombrant\`
+            
+Vous pouvez tuer cet animal à la boucherie afin d'obtenir \`4 Steak appétissant\`
+            
+Cette truie peut se reproduire avec un cochon dans l'enclos pour enfanter des porcelets :
+            
+:warning: Conditions d'élevage : 1 ration d'eau et 1 carotte par jour (au cochon et à la truie)
+:timer: Le temps de grossesse est de 3 jours
+
+Une fois les conditions remplies et le temps atteint faites "=Reproduction [Cochon-Truie]"
+
+L'utilisation de cet objet vous permet de fuir un combat ou alors d'empêcher les zombies d'attaquer pendant 2 tours`)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+    if(message.content === `${prefix}Reproduction [Cochon-Truie]`) {
+        if(rdm(100) < 30) {
+            if(rdm(100) < 40){
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(0xff0000)
+                    .setTitle("Reproduction cochon-truie :")
+                    .setDescription(`Malheureusement, la truie n'a pas enfanté de porcelet. De plus, la truie est morte`)
+                    .setTimestamp()
+                message.channel.send({ embed })
+            } else {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(0xff0000)
+                    .setTitle("Reproduction cochon-truie :")
+                    .setDescription(`Malheureusement, la truie n'a pas enfanté de porcelet`)
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        } else {
+            if(rdm(100) < 30) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(0xff0000)
+                    .setTitle("Reproduction cochon-truie :")
+                    .setDescription(`Voici le bilan de la reproduction :
+:pig: Porcelets : +${rdm(4)} (pour savoir si ils sont mâles ou femelles : "=Genre")
+Malheureusement, la truie est morte`)
+                    .setTimestamp()
+                message.channel.send({ embed })
+            } else {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(0xff0000)
+                    .setTitle("Reproduction cochon-truie :")
+                    .setDescription(`Voici le bilan de la reproduction :
+:pig: Porcelets : +${rdm(4)} (pour savoir si ils sont mâles ou femelles : "=Genre")`)
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        }
+    }
+    if(message.content === `${prefix}Genre`) {
+        random = rdm(101)
+        if(random === 101) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(0xff0000)
+                .setTitle("Genre :")
+                .setDescription(`Etonnament, votre bébé animal est un transgenre, qui l'aurait cru. Malheureusement, il est stérile et bon pour la boucherie`)
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else if (random < 50) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(0xff0000)
+                .setTitle("Genre :")
+                .setDescription(`Votre bébé animal est un mâle ! :mens:`)
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(0xff0000)
+                .setTitle("Genre :")
+                .setDescription(`Votre bébé animal est une femelle ! :womens:`)
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+    if(message.content === `${prefix}Récolte [Poule]`) {
+        if(rdm(100) < 5) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(0xff0000)
+                .setTitle("Récolte poule :")
+                .setDescription(`Malheureusement, la récolte n'a rien donné aujourd'hui`)
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(0xff0000)
+                .setTitle("Récolte poule :")
+                .setDescription(`Voici le bilan de la récolte :
+:egg: Oeufs : +1`)
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+    if(message.content === `${prefix}Vache zombifiée`) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(0xff0000)
+            .setTitle("Vache zombifiée :")
+            .setDescription(`Bon, il n'y a plus qu'à trouver un boucher. Accessoirement, on peut aussi tenter de boire son lait...
+
+Cet objet est \`Encombrant\`
+            
+Vous pouvez tuer cet animal à la boucherie afin d'obtenir \`4 Viande indéfinissable\`
+            
+Cette vache peut produire du lait couleur kaki dans l'enclos à intervalle de temps régulier :
+            
+:warning: Conditions d'élevage : 1 ration d'eau par jour
+:timer: Le temps entre les traites est de 1 jour
+
+Une fois les conditions remplies et le temps atteint faites "=Récolte [Vache zombifiée]"`)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+    if(message.content === `${prefix}Récolte [Vache zombifiée]`){
+        if(rdm(100) < 10){
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(0xff0000)
+                .setTitle("Récolte vache zombifiée :")
+                .setDescription(`Malheureusement, la récolte n'a rien donné aujourd'hui`)
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(0xff0000)
+                .setTitle("Récolte vache zombifiée :")
+                .setDescription(`Voici le bilan de la récolte :
+:milk: Lait couleur kaki : +${rdm(2)}`)
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+    if(message.content === `${prefix}Lait couleur kaki`){
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(0xff0000)
+            .setTitle("Lait couleur kaki :")
+            .setDescription(`Ce drôle de lait légèrement pétillant de couleur kaki ne donne vraiment pas envie mais ça se marie bien avec la citrouille
+            
+En utilisant cet objet, vous obtenez \`+1 cran de soif\` ainsi que 6 points d'actions !
+            
+Cet objet est \`cuisinable\``)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+    if(message.content === `${prefix}Générateur`){
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(0xff0000)
+            .setTitle("Générateur :")
+            .setDescription(`Permet de produire de l'électricité à partir de charbon !
+            
+Pour l'utiliser, rien de plus simple ! Il suffit de mettre 1 Charbon dans la machine et elle fonctionnera pendant 2h (sans pouvoir l'arrêter), n'est-ce pas génial ?
+            
+Le générateur permet d'utiliser de nouvelles défenses et de recharger vos piles déchargées sans limites !
+            
+Et petit bonus, vous pourrez revoir la lumière des lampadaires dans les rues de la ville (c'est d'ailleurs comme ça que vous saurez si le générateur est actif ou non dans toute la ville)
+            
+:hammer_pick: Matériaux nécessaires :
+            
+\`20 ferraille\`
+\`5 Poutre rafistolée\`
+\`2 Fil de cuivre\`
+            
+:timer: Le temps de construction est de 54 minutes`)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+    if(message.content === `${prefix}Fil de cuivre`){
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(0xff0000)
+            .setTitle("Fil de cuivre :")
+            .setDescription(`Les fils de cuivre sont très utiles pour tout ce qui est électricité et tout le tralala
+            
+Pour transformer cet objet et obtenir \`Tube de cuivre\` vous devrez être à l'atelier et cela prendra 15 minutes à sa réalisation ainsi que 1 point d'action`)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+    if(message.content === `${prefix}Tube de cuivre`){
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(0xff0000)
+            .setTitle("Tube de cuivre :")
+            .setDescription(`C'est un vieux tube de cuivre plus tellement cylindrique mais qui fait l'affaire
+
+Pour transformer cet objet et obtenir \`Fil de cuivre\` vous devrez être à l'atelier et cela prendra 15 minutes à sa réalisation ainsi que 1 point d'action`)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+    if(message.content === `${prefix}Cuivre brut`){
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(0xff0000)
+            .setTitle("Cuivre brut :")
+            .setDescription(`C'est le cuivre que l'on trouve dans les mines. Il est innutilisable directement et il faut le faire fondre à l'atelier pour pouvoir l'utiliser. Il est plus maniable en tube
+            
+Pour transformer cet objet et obtenir \`Tube de cuivre\` vous devrez être à l'atelier et cela prendra 20 minutes à sa réalisation ainsi que 1 point d'action`)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+    if(message.content === `${prefix}Mine`){
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(0xff0000)
+            .setTitle("Mine :")
+            .setDescription(`Vous pensez qu'aller dans le désert pour chercher des ressources est trop dangereux ? Cette mine est faite pour vous !
+            
+En rénovant la vieille mine de la ville, vous pourrez continuer le travail des personnes qui travaillaient là avant. Ne faites pas attention à pourquoi la mine a été fermée...
+            
+Une fois la construction effectuée, vous pourrez aller miner toutes les 15 minutes dans la mine en faisant "=Miner", cela utilisera 1 point d'action
+            
+:hammer_pick: Matériaux nécessaires :
+            
+\`8 Poutre rafistolée\`
+\`1 Planche tordue \`
+\`2 Ferraille\`
+            
+:timer: Le temps de construction est de 22 minutes`)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+    if(message.content === `${prefix}Miner`){
+        random = rdm(100)
+        if(random < 4){
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(0xff0000)
+                .setTitle(":pick: Miner :")
+                .setDescription(`:pick: En minant les cailloux devant vous, vous tombez bizarrement et malheureusement sur :
+                
+:moneybag: \`${rdm(4)} zombie(s)\``)
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else if(random < 55){
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(0xff0000)
+                .setTitle(":pick: Miner :")
+                .setDescription(`:pick: En minant les cailloux devant vous, vous trouvez malheureusement que des cailloux justement`)
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else if (random < 65){
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(0xff0000)
+                .setTitle(":pick: Miner :")
+                .setDescription(`:pick: En minant les cailloux devant vous, vous trouvez :
+                
+:moneybag: \`1 Cuivre brut\``)
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else if (random < 85){
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(0xff0000)
+                .setTitle(":pick: Miner :")
+                .setDescription(`:pick: En minant les cailloux devant vous, vous trouvez :
+                
+:moneybag: \`1 Fer brut\``)
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(0xff0000)
+                .setTitle(":pick: Miner :")
+                .setDescription(`:pick: En minant les cailloux devant vous, vous trouvez :
+                
+:moneybag: \`1 Charbon\``)
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+    if(message.content === `${prefix}Fer brut`){
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(0xff0000)
+            .setTitle("Fer brut :")
+            .setDescription(`C'est le fer que l'on trouve dans les mines. Il est innutilisable directement et il faut le faire fondre à l'atelier pour pouvoir l'utiliser sous forme de ferraille
+            
+Pour transformer cet objet et obtenir \`Ferraille\` vous devrez être à l'atelier et cela prendra 30 minutes à sa réalisation ainsi que 1 point d'action`)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+    if(message.content === `${prefix}Charbon`){
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(0xff0000)
+            .setTitle("Charbon :")
+            .setDescription(`Du bon gros charbon noir minier pas du tout bon pour l'environnement. Mais est-ce qu'on a vraiment le temps de penser à l'écologie ? Allez hop, dans le générateur ! (=Générateur)`)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+    if(message.content === `${prefix}Barbelés électrifiés`){
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(0xff0000)
+            .setTitle("Barbelés électrifiés :")
+            .setDescription(`Une amélioration des barbelés classiques : ajouter un fil de cuivre qui lie le générateur aux barbelés. Simple, mais efficace
+            
+:hammer_pick: Matériaux nécessaires :
+            
+\`1 Fil de cuivre\`
+            
+:warning: Ne fonctionne que si le générateur est actif (=Générateur)
+
+:shield: Points de défense : 7
+
+:timer: Le temps de construction est de 2 minutes
+
+:hammer: Défense possible à construire plusieurs fois`)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+    if(message.content === `${prefix}Cabinet médical`){
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(0xff0000)
+            .setTitle("Cabinet médical :")
+            .setDescription(`L'endroit où vous pourrez normalement trouver un médecin capable de vous soigner, si vous avez besoin de médicaments à cause d'une maladie ou infection, si vous avez besoin de bandages et de le mettre à cause d'une hémorragie...
+            
+En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois de plus et de créer divers médicaments à partir de produits pharmaceutiques en tant que médecin (=Produits pharmaceutiques)
+            
+:hammer_pick: Matériaux nécessaires :
+
+\`8 Planche tordue\`
+\`5 Ferraille\`
+\`1 Pavés de béton informes\`
+            
+:timer: Le temps de construction est de 28 minutes`)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+    if(message.content === `${prefix}Prison`){
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(0xff0000)
+            .setTitle("Prison :")
+            .setDescription(`Comme le nom l'indique, c'est une prison où pourrons être mis des survivants qui sont devenus trop violents, ou même infectés, ou pour tout autre usage, celle-ci possède 10 cellules
+
+:hammer_pick: Matériaux nécessaires :
+
+\`7 Planche tordue\`
+\`4 Ferraille\`
+            
+:timer: Le temps de construction est de 22 minutes`)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+    if(message.content === `${prefix}Cuisine`){
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(0xff0000)
+            .setTitle("Cuisine :")
+            .setDescription(`Les survivants auront parfois besoin de se nourrire d'un bon repas pour satisfaire leur faim, c'est ici que se feront tous les repas et les rations pour survivre
+
+:hammer_pick: Matériaux nécessaires :
+
+\`8 Planche tordue\`
+\`5 Ferraille\`
+\`1 Pavés de béton informes\`
+            
+:timer: Le temps de construction est de 28 minutes`)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+    if(message.content === `${prefix}Piscine électrique`){
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(0xff0000)
+            .setTitle("Piscine électrique :")
+            .setDescription(`Une amélioration des Douves : y électrifier l'eau
+
+:hammer_pick: Matériaux nécessaires :
+
+\`4 Fil de cuivre\`
+\`1 Produits pharmaceutiques\`
+
+:warning: Ne fonctionne que si le générateur est actif (=Générateur)
+
+:shield: Points de défense : 30
+            
+:timer: Le temps de construction est de 10 minutes
+
+:hammer: Défense possible à construire qu'une seule fois`)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+})
 
 
 bot.on('message', message => {
@@ -151,7 +1177,8 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Liste des objets, partie 1 :", "`=Affaires de citoyen`\n`=Ailerons de poulet entamés`\n`=Appareil électronique en panne`\n`=Aqua-Splash`\n`=Aqua-splah (démonté)`\n`=Badge de shérif`\n`=Balle`\n`=Balise radius`\n`=Bandage rudimentaire`\n`=Barricades à clouer`\n`=Batteur électrique (démonté)`\n`=Batteur électrique`\n`=Betapropine 5MG périmée`\n`=Bidon d'huile vide`\n`=Biscuit fade`\n`=Bobine de fil de fer`\n`=Bombe pulvérine`\n`=Bombe macabre`\n`=Bombe à eau`\n`=Bombe à eau explosive`\n`=Bon plat fait-maison`\n`=Bonbonne d'eau`\n`=Boule de pâte visqueuse`\n`=Boules quiès`\n`=Boîte d'allumettes`\n`=Boîte de conserve`\n`=Boîte de conserve ouverte`\n`=Boîte de schrödinger`\n\nLa suite : `Horde liste d'objets 2`").setTimestamp()
+            .setTitle("Liste des objets, partie 1 :")
+            .setDescription("`=Affaires de citoyen`\n`=Ailerons de poulet entamés`\n`=Appareil électronique en panne`\n`=Aqua-Splash`\n`=Aqua-splah (démonté)`\n`=Badge de shérif`\n`=Balle`\n`=Balise radius`\n`=Bandage rudimentaire`\n`=Barricades à clouer`\n`=Batteur électrique (démonté)`\n`=Batteur électrique`\n`=Betapropine 5MG périmée`\n`=Bidon d'huile vide`\n`=Biscuit fade`\n`=Bobine de fil de fer`\n`=Bombe pulvérine`\n`=Bombe macabre`\n`=Bombe à eau`\n`=Bombe à eau explosive`\n`=Bon plat fait-maison`\n`=Bonbonne d'eau`\n`=Boule de pâte visqueuse`\n`=Boules quiès`\n`=Boîte d'allumettes`\n`=Boîte de conserve`\n`=Boîte de conserve ouverte`\n`=Boîte de schrödinger`\n\nLa suite : `Horde liste d'objets 2`").setTimestamp()
         message.channel.send({ embed })
     }
 });
@@ -163,7 +1190,8 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Liste des objets, partie 2 :", "`=Boîte de jeu`\n`=Boîte-déjeuner`\n`=Boîte en métal`\n`=Brico'facile`\n`=Buche en bon état`\n`=Bureau monté à la rache`\n`=Bâton cassé`\n`=Cadavre de voyageur`\n`=Caddie`\n`=Caddie bancal`\n`=Cafetière`\n`=Cafetière incomplète`\n`=Café brûlant`\n`=Caisse de feux d'artifice`\n`=Caisse matériel`\n`=Caisse de nourriture`\n`=Calibrateur PDTT MARK II`\n`=Cantine de fer`\n`=Caisse de matériaux`\n`=Cartons`\n`=Ceinture à poches`\n`=Chaîne hifi`\n`=Chaise EKTÖRP-GLUTEN`\n`=Chamallows calcinés`\n`=Chamallows séchés`\n`=Charognardes`\n`=Chaîne de porte & cadenas`\n`=Chewing-gums séchés`\n`=Chien hargneux`\n`=Cidre claviceps artisanal`\n`=Claviceps purpurea`\n`=Clé magnétique`\n\nLa suite : `=Horde liste d'objets 3`").setTimestamp()
+            .setTitle("Liste des objets, partie 2 :")
+            .setDescription("`=Boîte de jeu`\n`=Boîte-déjeuner`\n`=Boîte en métal`\n`=Brico'facile`\n`=Buche en bon état`\n`=Bureau monté à la rache`\n`=Bâton cassé`\n`=Cadavre de voyageur`\n`=Caddie`\n`=Caddie bancal`\n`=Cafetière`\n`=Cafetière incomplète`\n`=Café brûlant`\n`=Caisse de feux d'artifice`\n`=Caisse matériel`\n`=Caisse de nourriture`\n`=Calibrateur PDTT MARK II`\n`=Cantine de fer`\n`=Caisse de matériaux`\n`=Carotte`\n`=Cartons`\n`=Ceinture à poches`\n`=Chaîne hifi`\n`=Chaise EKTÖRP-GLUTEN`\n`=Chamallows calcinés`\n`=Chamallows séchés`\n`=Charbon`\n`=Charognardes`\n`=Chaîne de porte & cadenas`\n`=Chewing-gums séchés`\n`=Chien hargneux`\n`=Cidre claviceps artisanal`\n`=Citrouille`\n`=Claviceps purpurea`\n`=Clé magnétique`\n\nLa suite : `=Horde liste d'objets 3`").setTimestamp()
         message.channel.send({ embed })
     }
 });
@@ -175,7 +1203,8 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Liste des objets, partie 3 :", "`=Clé à molette`\n`=Clé à percussion`\n`=Cochon malodorant`\n`=Coffre d'architecte`\n`=Coffre d'architecte scellé`\n`=Coffre-fort`\n`=Colis postal`\n`=Coupe-coupe`\n`=Courroie`\n`=Couteau suisse`\n`=Couteau à dents`\n`=Cutter`\n`=Cyanure`\n`=Devastator`\n`=Devastator (démonté)`\n`=Diode lazer`\n`=Distributeur vide`\n`=Doggy-bag`\n`=Débris métalliques`\n`=Décapsuleur`\n`=Dés`\n`=Détonateur compact`\n`=Eau croupie`\n`=Eau croupie purifiée`\n`=Epices fortes`\n`=Explosifs bruts`\n`=Ferraille`\n`=Fiole de poison`\n`=Four cancérigène`\n`=Fragment de tôle`\n`=Fumigène 'Senteur sapin'`\n`=Fusil d'assaut`\n`=Fusée éclairante`\n`=Grand bâton sec`\n`=Gros chat mignon`\n\nLa suite : `=Horde liste d'objets 4`").setTimestamp()
+            .setTitle("Liste des objets, partie 3 :")
+            .setDescription("`=Clé à molette`\n`=Clé à percussion`\n`=Cochon malodorant`\n`=Coffre d'architecte`\n`=Coffre d'architecte scellé`\n`=Coffre-fort`\n`=Colis postal`\n`=Coupe-coupe`\n`=Courroie`\n`=Couteau suisse`\n`=Couteau à dents`\n=Cuivre brut\n`=Cutter`\n`=Cyanure`\n`=Devastator`\n`=Devastator (démonté)`\n`=Diode lazer`\n`=Distributeur vide`\n`=Doggy-bag`\n`=Débris métalliques`\n`=Décapsuleur`\n`=Dés`\n`=Détonateur compact`\n`=Eau croupie`\n`=Eau croupie purifiée`\n`=Epices fortes`\n`=Explosifs bruts`\n`=Ferraille`\n`=Fer brut`\n=Fil de cuivre\n`=Fiole de poison`\n`=Four cancérigène`\n`=Fragment de tôle`\n`=Fumigène 'Senteur sapin'`\n`=Fusil d'assaut`\n`=Fusée éclairante`\n`=Grand bâton sec`\n`=Gros chat mignon`\n\nLa suite : `=Horde liste d'objets 4`").setTimestamp()
         message.channel.send({ embed })
     }
 });
@@ -187,7 +1216,8 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Liste des objets, partie 4 :", "`=Gros coffre en métal`\n`=Gros colis postal`\n`=Grosse chaîne rouillée`\n`=Guitare artisanale`\n`=Hydratone 100MG`\n`Jambon-beurre moisi`\n`=Jerrycan plein`\n`=Jus de mirabelle suspect`\n`=Kalachnik'eau`\n`=Kit de bricolage`\n`=Kit de bricolage abîmé`\n`=LSD`\n`=Lambeau de chair`\n`=Lampe de chevet éteinte`\n`=Lampe de chevet allumée`\n`=Lance-pile 1-PDTG`\n`=Lance-pile 1-PDTG (démonté)`\n`=Lance-pieu`\n`=Lance-pile MARK II`\n`=Lentille convexe`\n`=Liasse de billets`\n`=Légume suspect`\n`=Maglite Pif'gadget`\n`=Matelas`\n`=Melon d'intestin`\n`=Meuble en kit`\n`=Micropur effervescent`\n\nLa suite : `=Horde liste d'objets 5`").setTimestamp()
+            .setTitle("Liste des objets, partie 4 :")
+            .setDescription("`=Gros coffre en métal`\n`=Gros colis postal`\n`=Grosse chaîne rouillée`\n`=Guitare artisanale`\n`=Hydratone 100MG`\n`Jambon-beurre moisi`\n`=Jerrycan plein`\n`=Jus de mirabelle suspect`\n`=Kalachnik'eau`\n`=Kit de bricolage`\n`=Kit de bricolage abîmé`\n`=LSD`\n`=Lait couleur kaki`\n`=Lambeau de chair`\n`=Lampe de chevet éteinte`\n`=Lampe de chevet allumée`\n`=Lance-pile 1-PDTG`\n`=Lance-pile 1-PDTG (démonté)`\n`=Lance-pieu`\n`=Lance-pile MARK II`\n`=Lentille convexe`\n`=Liasse de billets`\n`=Légume suspect`\n`=Maglite Pif'gadget`\n`=Matelas`\n`=Melon d'intestin`\n`=Meuble en kit`\n`=Micropur effervescent`\n\nLa suite : `=Horde liste d'objets 5`").setTimestamp()
         message.channel.send({ embed })
     }
 });
@@ -199,7 +1229,8 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Liste des objets, partie 5 :", "`=Mine antipersonnel`\n`=Morceau de caisse`\n`=Morceau de contreplaqué`\n`=Moteur`\n`=Moteur incomplet`\n`=Mécanisme`\n`=Médicament sans étiquette`\n`=Napolitains moisis`\n`=Nouilles chinoises`\n`=Nouilles chinoises épicées`\n`=Oeuf`\n`=Os charnu`\n`=Os humain fêlé`\n`=Outils en vrac`\n`=Ouvre-boîte`\n`=Paillasson`\n`Paillasson piégé`\n`=Pamplemousse explosif`\n`=Paquet de chips molles`\n`=Paquet de cigarettes entamé`\n`=Paracétoïde 7G`\n`=Pavés de béton informes`\n`=Pelures de peau`\n`=Petit manche vibrant`\n`=Petits beurres rances`\n`=Pile`\n`=Pim's périmé`\n`Piqûre de calmant`\n`=Pistolet à eau`\n`=Pistolet à eau`\n\nLa suite : `=Horde liste d'objets 6`").setTimestamp()
+            .setTitle("Liste des objets, partie 5 :")
+            .setDescription("`=Mine antipersonnel`\n`=Morceau de caisse`\n`=Morceau de contreplaqué`\n`=Moteur`\n`=Moteur incomplet`\n`=Mécanisme`\n`=Médicament sans étiquette`\n`=Napolitains moisis`\n`=Nouilles chinoises`\n`=Nouilles chinoises épicées`\n`=Oeuf`\n`=Os charnu`\n`=Os humain fêlé`\n`=Outils en vrac`\n`=Ouvre-boîte`\n`=Paillasson`\n`Paillasson piégé`\n`=Pamplemousse explosif`\n`=Paquet de chips molles`\n`=Paquet de cigarettes entamé`\n`=Paracétoïde 7G`\n`=Pavés de béton informes`\n`=Pelures de peau`\n`=Petit manche vibrant`\n`=Petits beurres rances`\n`=Pile`\n`=Pim's périmé`\n`Piqûre de calmant`\n`=Pistolet à eau`\n`=Pistolet à eau`\n\nLa suite : `=Horde liste d'objets 6`").setTimestamp()
         message.channel.send({ embed })
     }
 });
@@ -211,7 +1242,8 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Liste des objets, partie 6 :", "`=Plan de chantier commun`\n`=Plan de chantier inhabituel`\n`=Plan de chantier rare`\n`=Plan de chantier très rare`\n`=Plan de chantier épique`\n`=Plan de chantier mythique`\n`=Plan de chantier légendaire`\n`=Planche tordue`\n`=Plaque de bois solide`\n`=Plaque de tôle`\n`=Plat fait-maison douteux`\n`=Poignée de bonbons`\n`=Poignée de vis et écrous`\n`=Pointeur laser brûlant`\n`=Pomme`\n`=Pompe à jerrycan`\n`=Portière de voiture`\n`=Portière de voiture incomplète`\n`=Poudre super-fuzz`\n`=Poudre-comète brte`\n`=Poule`\n`=Poutre rafistolée`\n`=Produit corrosif`\n`=Produits pharmaceutiques`\n`=Purée de charognardes`\n\nLa suite : `=Horde liste d'objets 7`").setTimestamp()
+            .setTitle("Liste des objets, partie 6 :")
+            .setDescription("`=Plan de chantier commun`\n`=Plan de chantier inhabituel`\n`=Plan de chantier rare`\n`=Plan de chantier très rare`\n`=Plan de chantier épique`\n`=Plan de chantier mythique`\n`=Plan de chantier légendaire`\n`=Planche tordue`\n`=Plaque de bois solide`\n`=Plaque de tôle`\n`=Plat fait-maison douteux`\n`=Poignée de bonbons`\n`=Poignée de vis et écrous`\n`=Pointeur laser brûlant`\n`=Pomme`\n`=Pompe à jerrycan`\n`=Portière de voiture`\n`=Portière de voiture incomplète`\n`=Poudre super-fuzz`\n`=Poudre-comète brte`\n`=Poule`\n`=Poutre rafistolée`\n`=Produit corrosif`\n`=Produits pharmaceutiques`\n`=Purée de charognardes`\n\nLa suite : `=Horde liste d'objets 7`").setTimestamp()
         message.channel.send({ embed })
     }
 });
@@ -223,7 +1255,8 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Liste des objets, partie 7 :", "`=Radio K7`\n`=Rat`\n`=Ration d'eau`\n`=Revolver`\n`=Rocking chair`\n`=Réfrigérateur d'étudiant`\n`=Réserves d'un citoyen avisé`\n`=Rustine`\n`=Sac d'herbe fraîche`\n`=Sac de ciment`\n`=Sac plastique`\n`=Sac plastique + explosif`\n`=Sac super-pratique`\n`=Sac supplémentaire`\n`=Sacoche usée`\n`=Scie à métaux`\n`=Scie à métaux abîmée`\n`=Serpent de 2 mètres`\n`=Souche de bois pourrie`\n`=Sport-elec`\n`=Steak appétissant`\n`=Steak de sciure`\n`=Structures métalliques`\n`=Stéroïdes anabolisants`\n`=Substance épaisse`\n`=Sérum pour goule`\n`=Table järpen`\n`=Tapis persan`\n\nLa suite : `=Horde liste d'objets 8`").setTimestamp()
+            .setTitle("Liste des objets, partie 7 :")
+            .setDescription("`=Radio K7`\n`=Rat`\n`=Ration d'eau`\n`=Revolver`\n`=Rocking chair`\n`=Réfrigérateur d'étudiant`\n`=Réserves d'un citoyen avisé`\n`=Rustine`\n`=Sac d'herbe fraîche`\n`=Sac de ciment`\n`=Sac plastique`\n`=Sac plastique + explosif`\n`=Sac super-pratique`\n`=Sac supplémentaire`\n`=Sacoche usée`\n`=Scie à métaux`\n`=Scie à métaux abîmée`\n`=Serpent de 2 mètres`\n`=Souche de bois pourrie`\n`=Sport-elec`\n`=Steak appétissant`\n`=Steak de sciure`\n`=Structures métalliques`\n`=Stéroïdes anabolisants`\n`=Substance épaisse`\n`=Sérum pour goule`\n`=Table järpen`\n`=Tapis persan`\n\nLa suite : `=Horde liste d'objets 8`").setTimestamp()
         message.channel.send({ embed })
     }
 });
@@ -235,7 +1268,8 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Liste des objets, partie 8 :", "`=Taser d'auto-défense`\n`=Teddy n'ours`\n`=Toile de tente`\n`=Tondeuse à gazon`\n`=Tondeuse à gazon (démonté)`\n`=Torche`\n`=Torche consumée`\n`=Tournevis`\n`=Tronçonneuse`\n`=Tronçonneuse (démonté)`\n`=Tréteau`\n`=Tube de cuivre`\n`=Tube de lancement floush`\n`=Twinoïde 500MG`\n`=Téléphone portable`\n`=Unité centrale`\n`=Viande humaine`\n`=Viande indéfinissable`\n`=Vieille machine à laver`\n`=Vieille porte`\n`=Vodka marinostov`\n`='Debout-les-morts'`").setTimestamp()
+            .setTitle("Liste des objets, partie 8 :")
+            .setDescription("`=Taser d'auto-défense`\n`=Teddy n'ours`\n`=Toile de tente`\n`=Tomate`\n`=Tondeuse à gazon`\n`=Tondeuse à gazon (démonté)`\n`=Torche`\n`=Torche consumée`\n`=Tournevis`\n`=Tronçonneuse`\n`=Tronçonneuse (démonté)`\n`=Tréteau`\n`=Tube de cuivre`\n`=Tube de lancement floush`\n`=Twinoïde 500MG`\n`=Téléphone portable`\n`=Unité centrale`\n`=Vache zombifiée`\n`=Viande humaine`\n`=Viande indéfinissable`\n`=Vieille machine à laver`\n`=Vieille porte`\n`=Vodka marinostov`\n`='Debout-les-morts'`").setTimestamp()
         message.channel.send({ embed })
     }
 });
@@ -247,7 +1281,8 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Liste des constructions, partie 1 :", "`=Appâts`\n`=Arroseurs automatiques`\n`=Atelier`\n`=Barbelés`\n`=Barrières`\n`=Blindage d'entrée`\n`=Boucherie`\n`=Canon à briques`\n`=Champ de mines à eau`\n`=Crémato-cue`\n`=Derrick artisanal`\n`=Douves`\n`=Dynamitage`\n`=Fausse ville`\n`=Fixations de défenses`\n`=Fondations`\n`=Foreuse pour le puits`\n`=Grogro mur`\n`=Lance-tôle`\n`=Le grand déménagement`\n`=Manufacture`\n`=Monticules pour canons`\n`=Muraille à pointes`\n`=Muraille rasoir`\n`=Oubliettes`\n`=Perforeuse`\n`=Piège à loups`\n`=Pompe`\n`=Porte améliorée`\n`=Porte à piston`\n`=Potager`\n`=Poutres de renfort`\n`=Projet Eden`\n`=Purificateur d'eau`\n\nLa suite : `Horde liste des constructions 2`").setTimestamp()
+            .setTitle("Liste des constructions, partie 1 :")
+            .setDescription("`=Appâts`\n`=Arroseurs automatiques`\n`=Atelier`\n`=Barbelés`\n`=Barbelés électrifiés`\n`=Barrières`\n`=Blindage d'entrée`\n`=Boucherie`\n`=Cabinet médical`\n`=Canon à briques`\n`=Champ de mines à eau`\n`=Crémato-cue`\n`=Cuisine`\n`=Derrick artisanal`\n`=Douves`\n`=Dynamitage`\n`=Enclos`\n`=Fausse ville`\n`=Fixations de défenses`\n`=Fondations`\n`=Foreuse pour le puits`\n`=Générateur`\n`=Grogro mur`\n`=Lance-tôle`\n`=Le grand déménagement`\n`=Manufacture`\n`=Mine`\n`=Monticules pour canons`\n`=Muraille à pointes`\n`=Muraille rasoir`\n`=Oubliettes`\n`=Perforeuse`\n`=Piscine électrique`\n`=Piège à loups`\n`=Pompe`\n`=Porte améliorée`\n`=Porte à piston`\n`=Potager`\n`=Poutres de renfort`\n`=Prison`\n`=Projet Eden`\n`=Purificateur d'eau`\n\nLa suite : `Horde liste des constructions 2`").setTimestamp()
         message.channel.send({ embed })
     }
 });
@@ -259,7 +1294,8 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Liste des constructions, partie 2 :", "`=Rape à zombies`\n`=Remparts avancés`\n`=Renforts de muraille`\n`=Sani-broyeur`\n`=Scies hurlantes`\n`=Tour`\n`=Tourniquet à poutres`\n`=Tuyauteries`").setTimestamp()
+            .setTitle("Liste des constructions, partie 2 :")
+            .setDescription("`=Rape à zombies`\n`=Remparts avancés`\n`=Renforts de muraille`\n`=Sani-broyeur`\n`=Scies hurlantes`\n`=Tour`\n`=Tourniquet à poutres`\n`=Tuyauteries`").setTimestamp()
         message.channel.send({ embed })
     }
 });
@@ -743,154 +1779,6 @@ bot.on('message', message => {
         }
     });
 
-
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Déplacement zombie")) {
-        const X = (Math.floor((14) * Math.random() + 1))
-        const N = (Math.floor((50) * Math.random() + 1))
-        if (X === 1) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(0xff0000)
-                .addField("Déplacement zombie :", "Le groupe de zombie se déplace vers la banque...")
-
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (X === 2) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(0xff0000)
-                .addField("Déplacement zombie :", "Le groupe de zombie se déplace vers la place principale...")
-
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (X === 3) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(0xff0000)
-                .addField("Déplacement zombie :", "Le groupe de zombie se déplace vers l'auberge...")
-
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (X === 4) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(0xff0000)
-                .addField("Déplacement zombie :", "Le groupe de zombie se déplace vers la rue [1]...")
-
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (X === 5) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(0xff0000)
-                .addField("Déplacement zombie :", "Le groupe de zombie se déplace vers le puit...")
-
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (X === 6) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(0xff0000)
-                .addField("Déplacement zombie :", "Le groupe de zombie se déplace vers le cabinet médical...")
-
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (X === 7) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(0xff0000)
-                .addField("Déplacement zombie :", "Le groupe de zombie se déplace vers la tour...")
-
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (X === 8) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(0xff0000)
-                .addField("Déplacement zombie :", "Le groupe de zombie se déplace vers la rue [2]...")
-
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (X === 9) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(0xff0000)
-                .addField("Déplacement zombie :", "Le groupe de zombie se déplace vers la prison...")
-
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (X === 10) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(0xff0000)
-                .addField("Déplacement zombie :", "Le groupe de zombie se déplace vers l'atelier...'")
-
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (X === 11) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(0xff0000)
-                .addField("Déplacement zombie :", "Le groupe de zombie se déplace vers la rue [3]...")
-
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (X === 12) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(0xff0000)
-                .addField("Déplacement zombie :", "Le groupe de zombie se déplace vers la cuisine...")
-
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (X === 13) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(0xff0000)
-                .addField("Déplacement zombie :", "Le groupe de zombie se déplace vers le chantier...")
-
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (X === 14) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(0xff0000)
-                .addField("Déplacement zombie :", "Le groupe de zombie se déplace vers les maisons [" + N + "]...")
-
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-    }
-});
 
 + ////////////////////////////////////////////////////////////////////////////////Zombie joueur, actions//////////////////////////////////////////////////////////////////////
 
@@ -2916,7 +3804,7 @@ bot.on('message', message => {
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
-            const X = (Math.floor((124) * Math.random() + 1))
+            const X = (Math.floor((125) * Math.random() + 1))
             const Zombie = (Math.floor((3) * Math.random() + 1))
             if (X <= 4) {
                 const embed = new Discord.RichEmbed()
@@ -3278,7 +4166,16 @@ bot.on('message', message => {
                     .setTimestamp()
                 message.channel.send({ embed })
             }
-            if (X >= 114) {
+            if (X === 114) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(0xff0000)
+                    .addField(":flashlight: Fouille zone 2 KM :", ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Poule`")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (X >= 115) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -4350,7 +5247,7 @@ bot.on('message', message => {
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
-            const X = (Math.floor((166) * Math.random() + 1))
+            const X = (Math.floor((167) * Math.random() + 1))
             const Zombie = (Math.floor((5) * Math.random() + 2))
             if (X === 1) {
                 const embed = new Discord.RichEmbed()
@@ -4919,7 +5816,16 @@ bot.on('message', message => {
                     .setTimestamp()
                 message.channel.send({ embed })
             }
-            if (X >= 150) {
+            if(X === 150) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(0xff0000)
+                    .addField(":flashlight: Fouille zone 5 KM :", ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Vache zombifiée`")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (X >= 151) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -6054,7 +6960,7 @@ bot.on('message', message => {
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
-            const X = (Math.floor((176) * Math.random() + 1))
+            const X = (Math.floor((177) * Math.random() + 1))
             const Zombie = (Math.floor((7) * Math.random() + 3))
             if (X <= 2) {
                 const embed = new Discord.RichEmbed()
@@ -6488,7 +7394,16 @@ bot.on('message', message => {
                     .setTimestamp()
                 message.channel.send({ embed })
             }
-            if (X >= 155) {
+            if (X === 155) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(0xff0000)
+                    .addField(":flashlight: Fouille zone 5 KM :", ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Vache zombifiée`")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (X >= 156) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -15419,13 +16334,23 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
         if (X >= 16 & X <= 17) {
-            const embed = new Discord.RichEmbed()
+            if(rdm(2) === 1){
+                const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(0xff0000)
                 .addField(":flashlight: Fouille laboratoire cosmétique :", ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Cochon malodorant`")
                 .setTimestamp()
             message.channel.send({ embed })
+            } else {
+                const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(0xff0000)
+                .addField(":flashlight: Fouille laboratoire cosmétique :", ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Truie`")
+                .setTimestamp()
+            message.channel.send({ embed })
+            }
         }
         if (X >= 18 & X <= 19) {
             const embed = new Discord.RichEmbed()
@@ -19788,7 +20713,28 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(0xff0000)
-            .addField("Charognardes :", "Les Charognardes sont des baies qui poussent généralement sur les corps en décomposition : il n'est pas rare d'en apercevoir sur des zombies ou sur les cadavres d'animaux divers... Vous êtes sûr(e) que ça se mange ?\n\nPour cuisiner cet objet et obtenir `Boule de pâte visqueuse` vous devrez être à la cuisine et utiliser :\n\n`1 Charognardes`\n`1 Charognardes`\n\nLa préparation prendra 15 minutes à sa réalisation ainsi que 1 point d'action\n\nPour cuisiner cet objet et obtenir `Purée de charognardes` vous devrez être à la cuisine et utiliser :\n\n`1 Boule de pâte visqueuse`\n`1 Charognardes`\n\nLa préparation prendra 15 minutes à sa réalisation ainsi que 1 point d'action")
+            .addField("Charognardes :", `Les Charognardes sont des baies qui poussent généralement sur les corps en décomposition : il n'est pas rare d'en apercevoir sur des zombies ou sur les cadavres d'animaux divers... Vous êtes sûr(e) que ça se mange ?
+            
+Pour cuisiner cet objet et obtenir \`Boule de pâte visqueuse\` vous devrez être à la cuisine et utiliser :
+
+\`1 Charognardes\`
+\`1 Charognardes\`
+
+La préparation prendra 15 minutes à sa réalisation ainsi que 1 point d'action
+
+Pour cuisiner cet objet et obtenir \`Purée de charognardes\` vous devrez être à la cuisine et utiliser :
+
+\`1 Boule de pâte visqueuse\`
+\`1 Charognardes\`
+
+La préparation prendra 15 minutes à sa réalisation ainsi que 1 point d'action
+
+Ces charognardes peuvent être plantées dans le potager pour obtenir d'autres charognardes :
+
+:warning: Conditions de pousse : 1 cadavre d'être-humain (utilisable autant de fois que souhaité, pas besoin d'eau)
+:timer: Le temps de pousse est de 2 jours
+            
+Une fois les conditions remplies et le temps atteint faites "=Récolte [Charognardes]"`)
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -19948,7 +20894,20 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(0xff0000)
-            .addField("Cochon malodorant :", "Bon, il n'y a plus qu'à trouver un boucher. Accessoirement, on peut aussi le faire rouler vers un zombie...\n\nCet objet est `Encombrant`\n\nVous pouvez tuer cet animal afin d'obtenir `4 Steak appétissant'\n\nL'utilisation de cet objet vous permet de fuir un combat ou alors d'empêcher les zombies d'attaquer pendant 2 tour")
+            .addField("Cochon malodorant :", `Bon, il n'y a plus qu'à trouver un boucher. Accessoirement, on peut aussi le faire rouler vers un zombie...
+            
+Cet objet est \`Encombrant\`
+            
+Vous pouvez tuer cet animal afin d'obtenir \`4 Steak appétissant\`
+            
+Ce cochon peut se reproduire avec une truie dans l'enclos pour enfanter des porcelets :
+            
+:warning: Conditions d'élevage : 1 ration d'eau et 1 carotte par jour (au cochon et à la truie)
+:timer: Le temps de grossesse est de 3 jours
+
+Une fois les conditions remplies et le temps atteint faites "=Reproduction [Cochon-Truie]"
+
+L'utilisation de cet objet vous permet de fuir un combat ou alors d'empêcher les zombies d'attaquer pendant 2 tour`)
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -21374,7 +22333,18 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(0xff0000)
-            .addField("Légume suspect :", "Un genre de... légume, difficile à dire ce qui a essayé de pousser comme ça, mais le principal c'est que ça semble comestiblen, ou pas\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !\n\nCet objet est empoisonnable à l'aide de `Fiole de poison` provoquant la mort d'un humain au bout de quelques minutes...")
+            .addField("Légume suspect :", `Un genre de... légume, difficile à dire ce qui a essayé de pousser comme ça, mais le principal c'est que ça semble comestiblen, ou pas
+            
+En utilisant cet objet, vous obtenez l'état \`Rassasiement\` ainsi que 6 points d'actions !
+
+Cet objet est empoisonnable à l'aide de \`Fiole de poison\` provoquant la mort d'un humain au bout de quelques minutes...
+
+Ce légume suspect peut être planté dans le potager pour obtenir un légume random (citrouille, carotte ou tomate) :
+
+:warning: Conditions de pousse : 1 ration d'eau par jour
+:timer: Le temps de pousse est de 2 jours
+            
+Une fois les conditions remplies et le temps atteint faites "=Récolte [Légume suspect]"`)
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -22297,7 +23267,18 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(0xff0000)
-            .addField("Pomme :", "Si Newton avait reçu une pomme comme celle-ci sur la tête, il aurait surement pensé à autre chose qu'à la loi de la Gravitation Universelle...\n\nCela étant dit, il doit bien y avoir quelques vitamines là dedans\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !")
+            .addField("Pomme :", `Si Newton avait reçu une pomme comme celle-ci sur la tête, il aurait surement pensé à autre chose qu'à la loi de la Gravitation Universelle...
+            
+Cela étant dit, il doit bien y avoir quelques vitamines là dedans
+
+En utilisant cet objet, vous obtenez l'état \`Rassasiement\` ainsi que 6 points d'actions !
+
+Cette pomme peut être plantée dans le potager pour obtenir un pommier :
+
+:warning: Conditions de pousse : 1 ration d'eau par jour
+:timer: Le temps de pousse est de 5 jours
+            
+Une fois les conditions remplies et le temps atteint faites "=Récolte [Pomme]"`)
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -22432,7 +23413,18 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(0xff0000)
-            .addField("Poule :", "Bon, il n'y a plus qu'à trouver un boucher\n\nAccessoirement, ça peut aussi se lancer sur un zombie...\n\nVous pouvez tuer cet animal à la boucherie afin d'obtenir `2 Viande indéfinissable`")
+            .addField("Poule :", `Bon, il n'y a plus qu'à trouver un boucher
+            
+Accessoirement, ça peut aussi se lancer sur un zombie...
+
+Vous pouvez tuer cet animal à la boucherie afin d'obtenir \`2 Viande indéfinissable\`
+
+Cette poule peut produire des oeufs dans l'enclos à intervalle de temps régulier :
+            
+:warning: Conditions d'élevage : 1 ration d'eau par jour
+:timer: Le temps entre les pontes est de 1 jour
+
+Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`)
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -23812,7 +24804,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(0xff0000)
-            .addField("Potager :", "Le jardin permet de créer des légumes pas trop moisis, des fruits qui commencent à pourrir avant de mûrir\n\nBref, des rations alimentaires, si on ne fait pas trop le difficile...\n\n:hammer_pick: Matériaux nécessaires :\n\n`10 Poutre rafistolée`\n`10 Ration d'eau`\n`1 Produits pharmaceutiques`\n\n:corn: Permet de pouvoir faire de l'agriculture\n\n:timer: Le temps de construction est de 42 minutes")
+            .addField("Potager :", "Le jardin permet de créer des légumes pas trop moisis, des fruits qui commencent à pourrir avant de mûrir\n\nBref, des rations alimentaires, si on ne fait pas trop le difficile...\n\n:hammer_pick: Matériaux nécessaires :\n\n`10 Poutre rafistolée`\n`10 Ration d'eau`\n`1 Produits pharmaceutiques`\n\n:corn: Permet de pouvoir faire de l'agriculture (Pour plus d'infos : =Agriculture)\n\n:timer: Le temps de construction est de 42 minutes")
             .setTimestamp()
         message.channel.send({ embed })
     }
