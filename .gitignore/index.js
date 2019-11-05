@@ -144,6 +144,8 @@ bot.on('message', message => {
 
     const serveurChannelConstruction = serveur.channels.find(channelConstruction => channelConstruction.name === "『🔨』ᴄᴏɴsᴛʀᴜᴄᴛɪᴏɴs")
 
+    const serveurChannelPuits = serveur.channels.find(channelPuits => channelPuits.name === "『💧』ʀᴀᴛɪᴏɴs-ᴅᴜ-ᴘᴜɪᴛs")
+
 
     // Pour ajouter des constructions, c'est juste en dessous (n'oubliez pas la virgule et choisissez un bon endroit par rapport
     // aux délimitations avec les rues c: ).
@@ -250,6 +252,91 @@ bot.on('message', message => {
                     }
                 }
             }
+        }
+    }
+
+    if((message.content.startsWith("+") || message.content.startsWith("-")) && message.channel === serveurChannelPuits){
+        let messagePuits
+        let signe = message.content.slice(0,1)
+        let quantiteDeBase
+        let quantite
+        try {
+            message.delete()
+            .then()
+            .catch(console.error)
+            let contenu = message.content.slice(1).trim()
+            let ajout = Number(contenu.match(/^\d+/)[0])
+
+            let expressionQuantite = new RegExp(`\\d+(?=\\s(?=eau))`)
+
+            if(message.channel.messages.some(messagePuits => messagePuits.content.startsWith("Rations d'eau dans le puits actuellement :"))){
+                messagePuits = message.channel.messages.find(messagePuits => messagePuits.content.startsWith("Rations d'eau dans le puits actuellement :")).content
+                if(signe === "+"){
+                    if(contient(messagePuits,"eau")){
+                        
+                        quantiteDeBase = Number(messagePuits.match(expressionQuantite)[0])
+                        quantite = quantiteDeBase + ajout
+
+                        let limitePartieGauche = messagePuits.search(expressionQuantite)
+                        let partieGauche = messagePuits.slice(0,limitePartieGauche).trim()+"\n"
+                        let partieDroite = messagePuits.slice(limitePartieGauche+String(quantiteDeBase).length).trim()
+
+                        message.channel.messages.find(messagePuits => messagePuits.content.startsWith("Rations d'eau dans le puits actuellement :"))
+                        .edit(`${partieGauche}${quantite} ${partieDroite}`)
+                        .then(console.log(`${message.author.username} a mis ${ajout} eau dans le puits (${quantiteDeBase} => ${quantite})`))
+                        .catch(console.error)
+                    } else {
+                        return
+                    }
+
+                } else if (signe === "-") {
+                    if(contient(messagePuits,"eau")){
+
+                        quantiteDeBase = Number(messagePuits.match(expressionQuantite)[0])
+                        quantite = quantiteDeBase - ajout
+
+                        if(quantite === 0){ 
+
+                            let expressionSplit = new RegExp(`${regEscape(contenu)}\.*`)
+
+                            let partie = messagePuits.split(expressionSplit)
+                            if(partie[1] === undefined){
+                                partie[1] = ""
+                            }
+
+                            message.channel.messages.find(messagePuits => messagePuits.content.startsWith("Rations d'eau dans le puits actuellement :"))
+                            .edit(partie[0].trim()+"\n"+partie[1].trim())
+                            .then(console.log(`${message.author.username} a pris pour la dernière fois ${ajout} eau dans le puits (${quantiteDeBase} => ${quantite})`))
+                            .catch(console.error)
+                        } else if(quantite < 0){
+                            console.log(`${message.author.username} a tenté de prendre ${-quantite} (${-ajout}) d'eau en plus dans le puits (${quantiteDeBase} => ${quantite})`)
+                        } else {
+                            let limitePartieGauche = messagePuits.search(expressionQuantite)
+                            let partieGauche = messagePuits.slice(0,limitePartieGauche).trim()+"\n"
+                            let partieDroite = messagePuits.slice(limitePartieGauche+String(quantiteDeBase).length).trim()
+
+                            message.channel.messages.find(messagePuits => messagePuits.content.startsWith("Rations d'eau dans le puits actuellement :")) 
+                            .edit(`${partieGauche}${quantite} ${partieDroite}`)
+                            .then(console.log(`${message.author.username} a pris ${ajout} eau dans le puits (${quantiteDeBase} => ${quantite})`))
+                            .catch(console.error)
+                        }
+
+                    } else {
+                        return
+                    }
+                } else {
+                    return
+                }
+            } else {
+                message.channel.send(`Rations d'eau dans le puits actuellement :\n${ajout} eau`)
+                console.log(`${message.author.username} a mis pour la 1ère fois ${ajout} eau dans le puits`)
+            }
+        } catch(e) {
+            console.error(e)
+            message.delete()
+            .then()
+            .catch(console.error)
+            return
         }
     }
 
