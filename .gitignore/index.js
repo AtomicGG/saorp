@@ -99,6 +99,8 @@ let random;
 const nomServeur = "Horde [RP]"
 let cont;
 let args;
+let A;
+let X;
 
 bot.off('guildMemberAdd', member => {
     member.createDM().then(channel => {
@@ -1088,7 +1090,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content.startsWith(prefix + "Horde roll")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -1382,7 +1384,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content.startsWith(prefix + "Infection totale")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((4) * Math.random() + 1))
         if (X <= 90) {
             const embed = new Discord.RichEmbed()
@@ -1436,12 +1438,12 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
 
-    const A = (Math.floor((100) * Math.random()))
+    A = (Math.floor((100) * Math.random()))
     cont = message.content.slice(prefix.length).split(" ");
     args = cont.slice(1);
     if (message.content.startsWith(prefix + "Maison cachette")) {
         let Z = args.slice(2).join(" : ");
-        const X = Z * 3
+        X = Z * 3
         if (A < 60 - X) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
@@ -1775,7 +1777,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
     
         if (message.content.startsWith(prefix + "Déplacement nombre")) {
-            const X = (Math.floor((8) * Math.random() + 3))
+            X = (Math.floor((8) * Math.random() + 3))
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -1792,7 +1794,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
     
         if (message.content.startsWith(prefix + "Griffure")) {
-            const X = (Math.floor((100) * Math.random() + 1))
+            X = (Math.floor((100) * Math.random() + 1))
             if (X < 50) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
@@ -1834,7 +1836,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content.startsWith(prefix + "Morsure")) {
-        const X = (Math.floor((100) * Math.random() + 1))
+        X = (Math.floor((100) * Math.random() + 1))
         if (X < 75) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
@@ -1909,7 +1911,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 ///////////////////////////////////////////////////////////////////////////Coups et fuites//////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-    const A = (Math.floor((100) * Math.random()))
+    A = (Math.floor((100) * Math.random()))
     if (message.content === prefix + "Coup de poing") {
         if (A < 60) {
             const embed = new Discord.RichEmbed()
@@ -1951,7 +1953,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
 
-    const A = (Math.floor((100) * Math.random()))
+    A = (Math.floor((100) * Math.random()))
     if (message.content === prefix + "Coup de poing [Boxeur]") {
         if (A < 40) {
             const embed = new Discord.RichEmbed()
@@ -1993,7 +1995,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
 
-    const A = (Math.floor((100) * Math.random()))
+    A = (Math.floor((100) * Math.random()))
     if (message.content === prefix + "Coup de pied") {
         if (A < 60) {
             const embed = new Discord.RichEmbed()
@@ -2035,7 +2037,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
 
-    const A = (Math.floor((100) * Math.random()))
+    A = (Math.floor((100) * Math.random()))
     if (message.content === prefix + "Coup de pied [Boxeur]") {
         if (A < 40) {
             const embed = new Discord.RichEmbed()
@@ -2077,7 +2079,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
 
-    const A = (Math.floor((100) * Math.random()))
+    A = (Math.floor((100) * Math.random()))
     if (message.content === prefix + "Coup de pied circulaire") {
         if (A < 80) {
             const embed = new Discord.RichEmbed()
@@ -2119,7 +2121,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
 
-    const A = (Math.floor((100) * Math.random()))
+    A = (Math.floor((100) * Math.random()))
     if (message.content === prefix + "Coup de pied circulaire [Boxeur]") {
         if (A < 70) {
             const embed = new Discord.RichEmbed()
@@ -2161,7 +2163,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
 
-    const A = (Math.floor((100) * Math.random()))
+    A = (Math.floor((100) * Math.random()))
     if (message.content === prefix + "Fuite [Aucune blessure]") {
         if (A < 40) {
             const embed = new Discord.RichEmbed()
@@ -2185,7 +2187,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
 
-    const A = (Math.floor((100) * Math.random()))
+    A = (Math.floor((100) * Math.random()))
     if (message.content === prefix + "Fuite [Blessure légère]") {
         if (A < 50) {
             const embed = new Discord.RichEmbed()
@@ -2209,7 +2211,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
 
-    const A = (Math.floor((100) * Math.random()))
+    A = (Math.floor((100) * Math.random()))
     if (message.content === prefix + "Fuite [Blessure]") {
         if (A < 60) {
             const embed = new Discord.RichEmbed()
@@ -2233,7 +2235,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
 
-    const A = (Math.floor((100) * Math.random()))
+    A = (Math.floor((100) * Math.random()))
     if (message.content === prefix + "Fuite [Blessure avancée]") {
         if (A < 70) {
             const embed = new Discord.RichEmbed()
@@ -2257,7 +2259,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
 
-    const A = (Math.floor((100) * Math.random()))
+    A = (Math.floor((100) * Math.random()))
     if (message.content === prefix + "Fuite [Blessure mortelle]") {
         if (A < 80) {
             const embed = new Discord.RichEmbed()
@@ -2344,12 +2346,12 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
 
-    const A = (Math.floor((100) * Math.random()))
+    A = (Math.floor((100) * Math.random()))
     cont = message.content.slice(prefix.length).split(" ");
     args = cont.slice(1);
     if (message.content.startsWith(prefix + "Maison cachette")) {
         let Z = args.slice(2).join(" : ");
-        const X = Z * 3
+        X = Z * 3
         if (A < 60 - X) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
@@ -2635,8 +2637,8 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
 
-    const A = (Math.floor((100) * Math.random()))
-    const X = (Math.floor((2) * Math.random() + 1))
+    A = (Math.floor((100) * Math.random()))
+    X = (Math.floor((2) * Math.random() + 1))
     if (message.content.startsWith(prefix + "Observation")) {
         if (A < 60) {
             const embed = new Discord.RichEmbed()
@@ -2679,8 +2681,8 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
 
-    const A = (Math.floor((100) * Math.random()))
-    const X = (Math.floor((2) * Math.random() + 1))
+    A = (Math.floor((100) * Math.random()))
+    X = (Math.floor((2) * Math.random() + 1))
     if (message.content === prefix + "Voler le survivant") {
         if (A < 40) {
             const embed = new Discord.RichEmbed()
@@ -2716,8 +2718,8 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
 
-    const A = (Math.floor((100) * Math.random()))
-    const X = (Math.floor((3) * Math.random() + 1))
+    A = (Math.floor((100) * Math.random()))
+    X = (Math.floor((3) * Math.random() + 1))
     if (message.content === prefix + "Voler le survivant [Voleur]") {
         if (A < 20) {
             const embed = new Discord.RichEmbed()
@@ -2757,8 +2759,8 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
 
-    const A = (Math.floor((100) * Math.random() + 1))
-    const X = (Math.floor((2) * Math.random() + 1))
+    A = (Math.floor((100) * Math.random() + 1))
+    X = (Math.floor((2) * Math.random() + 1))
     if (message.content.startsWith(prefix + "Dernier espoir")) {
         if (A < 80) {
             const embed = new Discord.RichEmbed()
@@ -2796,7 +2798,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
 
-    const A = (Math.floor((100) * Math.random() + 1))
+    A = (Math.floor((100) * Math.random() + 1))
     if (message.content.startsWith(prefix + "Tempête")) {
         if (A < 25) {
             const embed = new Discord.RichEmbed()
@@ -2860,8 +2862,8 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
     if (message.content.startsWith(prefix + "Zombies attaque")) {
         let ZZ = args.slice(2).join(" : ");
         const Z = ZZ * 2
-        const A = (Math.floor((100) * Math.random() + Z))
-        const X = (Math.floor((Z / 10) * Math.random() + 1))
+        A = (Math.floor((100) * Math.random() + Z))
+        X = (Math.floor((Z / 10) * Math.random() + 1))
         const Survivants = (Math.floor((ZZ / 6) * Math.random() + 1))
         if (A < 20 - Z) {
             const embed = new Discord.RichEmbed()
@@ -2963,8 +2965,8 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
     args = cont.slice(1);
     if (message.content.startsWith(prefix + "Aide")) {
         let XX = args.slice(1).join(" : ");
-        const A = XX * 5
-        const X = (Math.floor((100) * Math.random()))
+        A = XX * 5
+        X = (Math.floor((100) * Math.random()))
         if (X < 25 - A) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
@@ -3016,7 +3018,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 ////////////////////////////////////////////////////////////////Morsure et infection et hémmoragie////////////////////////////////////////////////////////////////////////////
 
 
-    const A = (Math.floor((100) * Math.random()))
+    A = (Math.floor((100) * Math.random()))
     if (message.content.startsWith(prefix + "Infection légère")) {
         if (A < 20) {
             const embed = new Discord.RichEmbed()
@@ -3040,7 +3042,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
 
-    const A = (Math.floor((100) * Math.random()))
+    A = (Math.floor((100) * Math.random()))
     if (message.content.startsWith(prefix + "Infection avancée")) {
         if (A < 40) {
             const embed = new Discord.RichEmbed()
@@ -3064,7 +3066,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
 
-    const A = (Math.floor((100) * Math.random()))
+    A = (Math.floor((100) * Math.random()))
     if (message.content.startsWith(prefix + "Infection mortelle")) {
         if (A < 60) {
             const embed = new Discord.RichEmbed()
@@ -3091,7 +3093,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
 
-    const A = (Math.floor((100) * Math.random()))
+    A = (Math.floor((100) * Math.random()))
     if (message.content.startsWith(prefix + "Hémorragie légère")) {
         if (A < 30) {
             const embed = new Discord.RichEmbed()
@@ -3115,7 +3117,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
 
-    const A = (Math.floor((100) * Math.random()))
+    A = (Math.floor((100) * Math.random()))
     if (message.content.startsWith(prefix + "Hémorragie avancée")) {
         if (A < 50) {
             const embed = new Discord.RichEmbed()
@@ -3139,7 +3141,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
 
-    const A = (Math.floor((100) * Math.random()))
+    A = (Math.floor((100) * Math.random()))
     if (message.content.startsWith(prefix + "Hémorragie mortelle")) {
         if (A < 70) {
             const embed = new Discord.RichEmbed()
@@ -3480,7 +3482,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
-            const X = (Math.floor((115) * Math.random() + 1))
+            X = (Math.floor((115) * Math.random() + 1))
             const Zombie = (Math.floor((2) * Math.random() + 1))
             if (X <= 30) {
                 const embed = new Discord.RichEmbed()
@@ -3812,7 +3814,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
-            const X = (Math.floor((125) * Math.random() + 1))
+            X = (Math.floor((125) * Math.random() + 1))
             const Zombie = (Math.floor((3) * Math.random() + 1))
             if (X <= 4) {
                 const embed = new Discord.RichEmbed()
@@ -4214,7 +4216,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
-            const X = (Math.floor((143) * Math.random() + 1))
+            X = (Math.floor((143) * Math.random() + 1))
             const Zombie = (Math.floor((3) * Math.random() + 2))
             if (X <= 2) {
                 const embed = new Discord.RichEmbed()
@@ -4697,7 +4699,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
-            const X = (Math.floor((170) * Math.random() + 1))
+            X = (Math.floor((170) * Math.random() + 1))
             const Zombie = (Math.floor((4) * Math.random() + 2))
             if (X <= 1.5) {
                 const embed = new Discord.RichEmbed()
@@ -5255,7 +5257,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
-            const X = (Math.floor((167) * Math.random() + 1))
+            X = (Math.floor((167) * Math.random() + 1))
             const Zombie = (Math.floor((5) * Math.random() + 2))
             if (X === 1) {
                 const embed = new Discord.RichEmbed()
@@ -5864,7 +5866,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
-            const X = (Math.floor((100) * Math.random() + 1))
+            X = (Math.floor((100) * Math.random() + 1))
             const Zombie = (Math.floor((6) * Math.random() + 2))
             if (X === 1) {
                 const embed = new Discord.RichEmbed()
@@ -6465,7 +6467,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
-            const X = (Math.floor((172) * Math.random() + 1))
+            X = (Math.floor((172) * Math.random() + 1))
             const Zombie = (Math.floor((6) * Math.random() + 3))
             if (X <= 1.5) {
                 const embed = new Discord.RichEmbed()
@@ -6967,7 +6969,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
-            const X = (Math.floor((177) * Math.random() + 1))
+            X = (Math.floor((177) * Math.random() + 1))
             const Zombie = (Math.floor((7) * Math.random() + 3))
             if (X <= 2) {
                 const embed = new Discord.RichEmbed()
@@ -7442,7 +7444,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
-            const X = (Math.floor((178) * Math.random() + 1))
+            X = (Math.floor((178) * Math.random() + 1))
             const Zombie = (Math.floor((6) * Math.random() + 4))
             if (X <= 3) {
                 const embed = new Discord.RichEmbed()
@@ -7853,7 +7855,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
-            const X = (Math.floor((179) * Math.random() + 1))
+            X = (Math.floor((179) * Math.random() + 1))
             const Zombie = (Math.floor((7) * Math.random() + 4))
 
 
@@ -8232,7 +8234,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
-            const X = (Math.floor((178) * Math.random() + 1))
+            X = (Math.floor((178) * Math.random() + 1))
             const Zombie = (Math.floor((7) * Math.random() + 4))
 
 
@@ -8601,7 +8603,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
-            const X = (Math.floor((179) * Math.random() + 1))
+            X = (Math.floor((179) * Math.random() + 1))
             const Zombie = (Math.floor((8) * Math.random() + 4))
             if (X <= 4) {
                 const embed = new Discord.RichEmbed()
@@ -8977,7 +8979,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
-            const X = (Math.floor((180) * Math.random() + 1))
+            X = (Math.floor((180) * Math.random() + 1))
             const Zombie = (Math.floor((7) * Math.random() + 4))
             if (X <= 4) {
                 const embed = new Discord.RichEmbed()
@@ -9353,7 +9355,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
-            const X = (Math.floor((180) * Math.random() + 1))
+            X = (Math.floor((180) * Math.random() + 1))
             const Zombie = (Math.floor((8) * Math.random() + 4))
             if (X <= 6) {
                 const embed = new Discord.RichEmbed()
@@ -9702,7 +9704,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
-            const X = (Math.floor((178) * Math.random() + 1))
+            X = (Math.floor((178) * Math.random() + 1))
             const Zombie = (Math.floor((8) * Math.random() + 5))
             if (X <= 5) {
                 const embed = new Discord.RichEmbed()
@@ -10061,7 +10063,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
-            const X = (Math.floor((179) * Math.random() + 1))
+            X = (Math.floor((179) * Math.random() + 1))
             const Zombie = (Math.floor((8) * Math.random() + 5))
             if (X <= 6) {
                 const embed = new Discord.RichEmbed()
@@ -10364,7 +10366,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
-            const X = (Math.floor((180) * Math.random() + 1))
+            X = (Math.floor((180) * Math.random() + 1))
             const Zombie = (Math.floor((8) * Math.random() + 6))
             if (X <= 6) {
                 const embed = new Discord.RichEmbed()
@@ -10668,7 +10670,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
-            const X = (Math.floor((180) * Math.random() + 1))
+            X = (Math.floor((180) * Math.random() + 1))
             const Zombie = (Math.floor((9) * Math.random() + 5))
             if (X <= 8) {
                 const embed = new Discord.RichEmbed()
@@ -10962,7 +10964,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
-            const X = (Math.floor((180) * Math.random() + 1))
+            X = (Math.floor((180) * Math.random() + 1))
             const Zombie = (Math.floor((9) * Math.random() + 6))
             if (X <= 8) {
                 const embed = new Discord.RichEmbed()
@@ -11256,7 +11258,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
-            const X = (Math.floor((195) * Math.random() + 1))
+            X = (Math.floor((195) * Math.random() + 1))
             const Zombie = (Math.floor((10) * Math.random() + 6))
             if (X <= 25) {
                 const embed = new Discord.RichEmbed()
@@ -11496,7 +11498,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
-            const X = (Math.floor((195) * Math.random() + 1))
+            X = (Math.floor((195) * Math.random() + 1))
             const Zombie = (Math.floor((11) * Math.random() + 6))
             if (X <= 7) {
                 const embed = new Discord.RichEmbed()
@@ -11754,7 +11756,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
-            const X = (Math.floor((195) * Math.random() + 1))
+            X = (Math.floor((195) * Math.random() + 1))
             const Zombie = (Math.floor((11) * Math.random() + 7))
             if (X <= 8) {
                 const embed = new Discord.RichEmbed()
@@ -12012,7 +12014,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
-            const X = (Math.floor((195) * Math.random() + 1))
+            X = (Math.floor((195) * Math.random() + 1))
             const Zombie = (Math.floor((12) * Math.random() + 7))
             if (X <= 9) {
                 const embed = new Discord.RichEmbed()
@@ -12270,7 +12272,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
-            const X = (Math.floor((195) * Math.random() + 1))
+            X = (Math.floor((195) * Math.random() + 1))
             const Zombie = (Math.floor((13) * Math.random() + 7))
             if (X <= 10) {
                 const embed = new Discord.RichEmbed()
@@ -12528,7 +12530,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
-            const X = (Math.floor((100) * Math.random() + 1))
+            X = (Math.floor((100) * Math.random() + 1))
             const Zombie = (Math.floor((13) * Math.random() + 8))
             if (X <= 11) {
                 const embed = new Discord.RichEmbed()
@@ -12776,7 +12778,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content === prefix + "Fouille abris anti-atomique") {
-        const X = (Math.floor((165) * Math.random() + 1))
+        X = (Math.floor((165) * Math.random() + 1))
         const Zombie = (Math.floor((7) * Math.random() + 4))
         const Balle = (Math.floor((5) * Math.random() + 1))
         if (X <= 21) {
@@ -12984,7 +12986,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
     if (message.content === prefix + "Fouille abris de chantier") {
         const Balle = (Math.floor((3) * Math.random() + 1))
-        const X = (Math.floor((124) * Math.random() + 1))
+        X = (Math.floor((124) * Math.random() + 1))
         const Zombie = (Math.floor((6) * Math.random() + 3))
         if (X <= 12) {
             const embed = new Discord.RichEmbed()
@@ -13171,7 +13173,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content === prefix + "Fouille ambulance") {
-        const X = (Math.floor((26) * Math.random() + 1))
+        X = (Math.floor((26) * Math.random() + 1))
         const Zombie = (Math.floor((2) * Math.random() + 1))
         if (X <= 12) {
             const embed = new Discord.RichEmbed()
@@ -13232,7 +13234,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content === prefix + "Fouille ancien aérodrome") {
-        const X = (Math.floor((22) * Math.random() + 1))
+        X = (Math.floor((22) * Math.random() + 1))
         const Zombie = (Math.floor((2) * Math.random() + 1))
         const Balle = (Math.floor((2) * Math.random() + 1))
         if (X <= 7) {
@@ -13332,7 +13334,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
     if (message.content === prefix + "Fouille ancien commissariat") {
         const Balle = (Math.floor((3) * Math.random() + 1))
-        const X = (Math.floor((224) * Math.random() + 1))
+        X = (Math.floor((224) * Math.random() + 1))
         const Zombie = (Math.floor((3) * Math.random() + 2))
         if (X <= 18) {
             const embed = new Discord.RichEmbed()
@@ -13573,7 +13575,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content === prefix + "Fouille ancien velib") {
-        const X = (Math.floor((38) * Math.random() + 1))
+        X = (Math.floor((38) * Math.random() + 1))
         const Zombie = (Math.floor((2) * Math.random() + 2))
         if (X <= 9) {
             const embed = new Discord.RichEmbed()
@@ -13653,7 +13655,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
     if (message.content === prefix + "Fouille armurerie") {
         const Balle = (Math.floor((4) * Math.random() + 1))
-        const X = (Math.floor((59) * Math.random() + 1))
+        X = (Math.floor((59) * Math.random() + 1))
         const Zombie = (Math.floor((3) * Math.random() + 2))
         if (X <= 8) {
             const embed = new Discord.RichEmbed()
@@ -13823,7 +13825,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content === prefix + "Fouille café") {
-        const X = (Math.floor((57) * Math.random() + 1))
+        X = (Math.floor((57) * Math.random() + 1))
         const Zombie = (Math.floor((3) * Math.random() + 2))
         if (X <= 21) {
             const embed = new Discord.RichEmbed()
@@ -13894,7 +13896,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
     if (message.content === prefix + "Fouille avant-poste militaire") {
         const Balle = (Math.floor((8) * Math.random() + 3))
-        const X = (Math.floor((125) * Math.random() + 1))
+        X = (Math.floor((125) * Math.random() + 1))
         const Zombie = (Math.floor((6) * Math.random() + 5))
         if (X <= 26) {
             const embed = new Discord.RichEmbed()
@@ -13991,7 +13993,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content === prefix + "Fouille bar miteux") {
-        const X = (Math.floor((57) * Math.random() + 1))
+        X = (Math.floor((57) * Math.random() + 1))
         const Zombie = (Math.floor((3) * Math.random() + 2))
         if (X <= 13) {
             const embed = new Discord.RichEmbed()
@@ -14097,7 +14099,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content === prefix + "Fouille bibliothèque de quartier") {
-        const X = (Math.floor((44) * Math.random() + 1))
+        X = (Math.floor((44) * Math.random() + 1))
         const Zombie = (Math.floor((4) * Math.random() + 2))
         if (X <= 26) {
             const embed = new Discord.RichEmbed()
@@ -14160,7 +14162,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content === prefix + "Fouille magasin de bricolage") {
-        const X = (Math.floor((65) * Math.random() + 1))
+        X = (Math.floor((65) * Math.random() + 1))
         const Zombie = (Math.floor((2) * Math.random() + 2))
         if (X <= 11) {
             const embed = new Discord.RichEmbed()
@@ -14338,7 +14340,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content === prefix + "Fouille bureau de poste") {
-        const X = (Math.floor((18) * Math.random() + 1))
+        X = (Math.floor((18) * Math.random() + 1))
         const Zombie = (Math.floor((3) * Math.random() + 3))
         if (X <= 9) {
             const embed = new Discord.RichEmbed()
@@ -14382,7 +14384,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
     if (message.content === prefix + "Fouille cabane de jardin") {
         const Balle = (Math.floor((3) * Math.random() + 1))
-        const X = (Math.floor((72) * Math.random() + 1))
+        X = (Math.floor((72) * Math.random() + 1))
         const Zombie = (Math.floor((3) * Math.random() + 2))
         if (X <= 16) {
             const embed = new Discord.RichEmbed()
@@ -14508,7 +14510,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
     if (message.content === prefix + "Fouille cache de contrebandiers") {
         const Balle = (Math.floor((4) * Math.random() + 2))
-        const X = (Math.floor((38) * Math.random() + 1))
+        X = (Math.floor((38) * Math.random() + 1))
         const Zombie = (Math.floor((3) * Math.random() + 1))
         if (X <= 10) {
             const embed = new Discord.RichEmbed()
@@ -14589,7 +14591,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
     if (message.content === prefix + "Fouille camion en panne") {
         const Balle = (Math.floor((2) * Math.random() + 1))
-        const X = (Math.floor((37) * Math.random() + 1))
+        X = (Math.floor((37) * Math.random() + 1))
         const Zombie = (Math.floor((3) * Math.random() + 1))
         if (X <= 16) {
             const embed = new Discord.RichEmbed()
@@ -14688,7 +14690,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
     if (message.content === prefix + "Fouille carcasses de voitures") {
         const Balle = (Math.floor((2) * Math.random() + 1))
-        const X = (Math.floor((30) * Math.random() + 1))
+        X = (Math.floor((30) * Math.random() + 1))
         const Zombie = (Math.floor((3) * Math.random() + 1))
         if (X <= 12) {
             const embed = new Discord.RichEmbed()
@@ -14778,7 +14780,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
     if (message.content === prefix + "Fouille carlingue d'avion") {
         const Balle = (Math.floor((3) * Math.random() + 1))
-        const X = (Math.floor((23) * Math.random() + 1))
+        X = (Math.floor((23) * Math.random() + 1))
         const Zombie = (Math.floor((3) * Math.random() + 2))
         if (X <= 5) {
             const embed = new Discord.RichEmbed()
@@ -14884,7 +14886,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content === prefix + "Fouille carrière effondrée") {
-        const X = (Math.floor((19) * Math.random() + 1))
+        X = (Math.floor((19) * Math.random() + 1))
         const Zombie = (Math.floor((3) * Math.random() + 1))
         if (X <= 10) {
             const embed = new Discord.RichEmbed()
@@ -14939,7 +14941,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
     if (message.content === prefix + "Fouille caveau familial") {
         const Balle = (Math.floor((2) * Math.random() + 1))
-        const X = (Math.floor((35) * Math.random() + 1))
+        X = (Math.floor((35) * Math.random() + 1))
         const Zombie = (Math.floor((3) * Math.random() + 2))
         if (X <= 20) {
             const embed = new Discord.RichEmbed()
@@ -15000,7 +15002,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content === prefix + "Fouille caverne") {
-        const X = (Math.floor((15) * Math.random() + 1))
+        X = (Math.floor((15) * Math.random() + 1))
         const Zombie = (Math.floor((3) * Math.random() + 1))
         if (X <= 4) {
             const embed = new Discord.RichEmbed()
@@ -15074,7 +15076,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
     if (message.content === prefix + "Fouille caverne anciennement habitée") {
         const Balle = (Math.floor((4) * Math.random() + 1))
-        const X = (Math.floor((69) * Math.random() + 1))
+        X = (Math.floor((69) * Math.random() + 1))
         const Zombie = (Math.floor((7) * Math.random() + 4))
         if (X <= 22) {
             const embed = new Discord.RichEmbed()
@@ -15185,7 +15187,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content === prefix + "Fouille centrale hydraulique") {
-        const X = (Math.floor((96) * Math.random() + 1))
+        X = (Math.floor((96) * Math.random() + 1))
         const Zombie = (Math.floor((3) * Math.random() + 3))
         if (X <= 57) {
             const embed = new Discord.RichEmbed()
@@ -15247,7 +15249,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content === prefix + "Fouille chantier à l'abandon") {
-        const X = (Math.floor((97) * Math.random() + 1))
+        X = (Math.floor((97) * Math.random() + 1))
         const Zombie = (Math.floor((3) * Math.random() + 3))
         if (X <= 26) {
             const embed = new Discord.RichEmbed()
@@ -15390,7 +15392,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
     if (message.content === prefix + "Fouille char d'assaut en panne") {
         const Balle = (Math.floor((6) * Math.random() + 5))
-        const X = (Math.floor((57) * Math.random() + 1))
+        X = (Math.floor((57) * Math.random() + 1))
         const Zombie = (Math.floor((6) * Math.random() + 5))
         if (X <= 10) {
             const embed = new Discord.RichEmbed()
@@ -15507,7 +15509,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content === prefix + "Fouille cimetière indien") {
-        const X = (Math.floor((43) * Math.random() + 1))
+        X = (Math.floor((43) * Math.random() + 1))
         const Zombie = (Math.floor((4) * Math.random() + 2))
         if (X <= 24) {
             const embed = new Discord.RichEmbed()
@@ -15570,7 +15572,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content === prefix + "Fouille école maternelle brûlée") {
-        const X = (Math.floor((33) * Math.random() + 1))
+        X = (Math.floor((33) * Math.random() + 1))
         const Zombie = (Math.floor((4) * Math.random() + 2))
         if (X <= 15) {
             const embed = new Discord.RichEmbed()
@@ -15642,7 +15644,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
     if (message.content === prefix + "Fouille entrepôt désaffecté") {
         const Balle = (Math.floor((3) * Math.random() + 1))
-        const X = (Math.floor((21) * Math.random() + 1))
+        X = (Math.floor((21) * Math.random() + 1))
         const Zombie = (Math.floor((3) * Math.random() + 1))
         if (X <= 6) {
             const embed = new Discord.RichEmbed()
@@ -15695,7 +15697,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content === prefix + "Fouille épicerie") {
-        const X = (Math.floor((105) * Math.random() + 1))
+        X = (Math.floor((105) * Math.random() + 1))
         const Zombie = (Math.floor((4) * Math.random() + 3))
         if (X <= 22) {
             const embed = new Discord.RichEmbed()
@@ -15829,7 +15831,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content === prefix + "Fouille fast-food") {
-        const X = (Math.floor((130) * Math.random() + 1))
+        X = (Math.floor((130) * Math.random() + 1))
         const Zombie = (Math.floor((4) * Math.random() + 3))
         if (X <= 49) {
             const embed = new Discord.RichEmbed()
@@ -15918,7 +15920,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content === prefix + "Fouille gare de triage désertée") {
-        const X = (Math.floor((57) * Math.random() + 1))
+        X = (Math.floor((57) * Math.random() + 1))
         const Zombie = (Math.floor((5) * Math.random() + 3))
         if (X <= 12) {
             const embed = new Discord.RichEmbed()
@@ -15998,7 +16000,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
     if (message.content === prefix + "Fouille hangars de stockage") {
         const Balle = (Math.floor((3) * Math.random() + 3))
-        const X = (Math.floor((69) * Math.random() + 1))
+        X = (Math.floor((69) * Math.random() + 1))
         const Zombie = (Math.floor((5) * Math.random() + 4))
         if (X <= 17) {
             const embed = new Discord.RichEmbed()
@@ -16087,7 +16089,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
     if (message.content === prefix + "Fouille immeuble délabré") {
         const Balle = (Math.floor((4) * Math.random() + 1))
-        const X = (Math.floor((69) * Math.random() + 1))
+        X = (Math.floor((69) * Math.random() + 1))
         const Zombie = (Math.floor((5) * Math.random() + 3))
         if (X <= 16) {
             const embed = new Discord.RichEmbed()
@@ -16250,7 +16252,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content === prefix + "Fouille kebab") {
-        const X = (Math.floor((18) * Math.random() + 1))
+        X = (Math.floor((18) * Math.random() + 1))
         const Zombie = (Math.floor((2) * Math.random() + 2))
         if (X <= 7) {
             const embed = new Discord.RichEmbed()
@@ -16320,7 +16322,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content === prefix + "Fouille laboratoire cosmétique") {
-        const X = (Math.floor((31) * Math.random() + 1))
+        X = (Math.floor((31) * Math.random() + 1))
         const Zombie = (Math.floor((2) * Math.random() + 2))
         if (X <= 9) {
             const embed = new Discord.RichEmbed()
@@ -16438,7 +16440,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content === prefix + "Fouille bar des illusions perdues") {
-        const X = (Math.floor((40) * Math.random() + 1))
+        X = (Math.floor((40) * Math.random() + 1))
         const Zombie = (Math.floor((6) * Math.random() + 5))
         if (X <= 15) {
             const embed = new Discord.RichEmbed()
@@ -16482,7 +16484,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
     if (message.content === prefix + "Fouille maison d'un citoyen") {
         const Balle = (Math.floor((2) * Math.random() + 1))
-        const X = (Math.floor((64) * Math.random() + 1))
+        X = (Math.floor((64) * Math.random() + 1))
         const Zombie = (Math.floor((2) * Math.random() + 1))
         if (X <= 34) {
             const embed = new Discord.RichEmbed()
@@ -16581,7 +16583,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content === prefix + "Fouille magasin de meubles") {
-        const X = (Math.floor((39) * Math.random() + 1))
+        X = (Math.floor((39) * Math.random() + 1))
         const Zombie = (Math.floor((2) * Math.random() + 2))
         if (X <= 11) {
             const embed = new Discord.RichEmbed()
@@ -16688,7 +16690,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content === prefix + "Fouille mine effondrée") {
-        const X = (Math.floor((61) * Math.random() + 1))
+        X = (Math.floor((61) * Math.random() + 1))
         const Zombie = (Math.floor((3) * Math.random() + 3))
         if (X <= 29) {
             const embed = new Discord.RichEmbed()
@@ -16751,7 +16753,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content === prefix + "Fouille mini-market") {
-        const X = (Math.floor((195) * Math.random() + 1))
+        X = (Math.floor((195) * Math.random() + 1))
         const Zombie = (Math.floor((3) * Math.random() + 2))
         if (X <= 21) {
             const embed = new Discord.RichEmbed()
@@ -16902,7 +16904,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content === prefix + "Fouille motel") {
-        const X = (Math.floor((100) * Math.random() + 1))
+        X = (Math.floor((100) * Math.random() + 1))
         const Zombie = (Math.floor((4) * Math.random() + 3))
         if (X <= 15) {
             const embed = new Discord.RichEmbed()
@@ -17019,7 +17021,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content === prefix + "Fouille parc à l'abandon") {
-        const X = (Math.floor((24) * Math.random() + 1))
+        X = (Math.floor((24) * Math.random() + 1))
         const Zombie = (Math.floor((3) * Math.random() + 2))
         if (X <= 6) {
             const embed = new Discord.RichEmbed()
@@ -17145,7 +17147,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content === prefix + "Fouille petit bois obscur") {
-        const X = (Math.floor((100) * Math.random() + 1))
+        X = (Math.floor((100) * Math.random() + 1))
         const Zombie = (Math.floor((2) * Math.random() + 1))
         if (X <= 70) {
             const embed = new Discord.RichEmbed()
@@ -17181,7 +17183,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
     if (message.content === prefix + "Fouille parking désaffecté") {
         const Balle = (Math.floor((3) * Math.random() + 1))
-        const X = (Math.floor((56) * Math.random() + 1))
+        X = (Math.floor((56) * Math.random() + 1))
         const Zombie = (Math.floor((2) * Math.random() + 2))
         if (X <= 19) {
             const embed = new Discord.RichEmbed()
@@ -17308,7 +17310,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
     if (message.content === prefix + "Fouille petite maison") {
         const Balle = (Math.floor((2) * Math.random() + 1))
-        const X = (Math.floor((40) * Math.random() + 1))
+        X = (Math.floor((40) * Math.random() + 1))
         const Zombie = (Math.floor((2) * Math.random() + 1))
         if (X <= 8) {
             const embed = new Discord.RichEmbed()
@@ -17444,7 +17446,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content === prefix + "Fouille pharmacie détruite") {
-        const X = (Math.floor((115) * Math.random() + 1))
+        X = (Math.floor((115) * Math.random() + 1))
         const Zombie = (Math.floor((2) * Math.random() + 2))
         if (X <= 62) {
             const embed = new Discord.RichEmbed()
@@ -17534,7 +17536,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content === prefix + "Fouille puits abandonné") {
-        const X = (Math.floor((100) * Math.random() + 1))
+        X = (Math.floor((100) * Math.random() + 1))
         const Zombie = (Math.floor((4) * Math.random() + 4))
         if (X <= 48) {
             const embed = new Discord.RichEmbed()
@@ -17582,7 +17584,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
     if (message.content === prefix + "Fouille relais autoroutier") {
         const Balle = (Math.floor((4) * Math.random() + 1))
-        const X = (Math.floor((60) * Math.random() + 1))
+        X = (Math.floor((60) * Math.random() + 1))
         const Zombie = (Math.floor((3) * Math.random() + 2))
         if (X <= 9) {
             const embed = new Discord.RichEmbed()
@@ -17709,7 +17711,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content === prefix + "Fouille route barrée") {
-        const X = (Math.floor((12) * Math.random() + 1))
+        X = (Math.floor((12) * Math.random() + 1))
         const Zombie = (Math.floor((2) * Math.random() + 2))
         if (X <= 5) {
             const embed = new Discord.RichEmbed()
@@ -17764,7 +17766,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content === prefix + "Fouille silos à l'abandon") {
-        const X = (Math.floor((72) * Math.random() + 1))
+        X = (Math.floor((72) * Math.random() + 1))
         const Zombie = (Math.floor((3) * Math.random() + 2))
         if (X <= 57) {
             const embed = new Discord.RichEmbed()
@@ -17810,7 +17812,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
     if (message.content === prefix + "Fouille stand de fête foraine") {
         const Balle = (Math.floor((3) * Math.random() + 1))
-        const X = (Math.floor((50) * Math.random() + 1))
+        X = (Math.floor((50) * Math.random() + 1))
         const Zombie = (Math.floor((2) * Math.random() + 2))
         if (X <= 12) {
             const embed = new Discord.RichEmbed()
@@ -17964,7 +17966,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content === prefix + "Fouille supermarché pillé") {
-        const X = (Math.floor((100) * Math.random() + 1))
+        X = (Math.floor((100) * Math.random() + 1))
         const Zombie = (Math.floor((2) * Math.random() + 2))
         if (X <= 15) {
             const embed = new Discord.RichEmbed()
@@ -18209,7 +18211,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content === prefix + "Fouille tente d'un citoyen") {
-        const X = (Math.floor((50) * Math.random() + 1))
+        X = (Math.floor((50) * Math.random() + 1))
         const Zombie = (Math.floor((3) * Math.random() + 3))
         if (X <= 9) {
             const embed = new Discord.RichEmbed()
@@ -18365,7 +18367,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
     if (message.content === prefix + "Fouille tranchée aménagée") {
         const Balle = (Math.floor((4) * Math.random() + 2))
-        const X = (Math.floor((48) * Math.random() + 1))
+        X = (Math.floor((48) * Math.random() + 1))
         const Zombie = (Math.floor((3) * Math.random() + 2))
         if (X <= 24) {
             const embed = new Discord.RichEmbed()
@@ -18446,7 +18448,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content === prefix + "Fouille étrange appareil circulaire") {
-        const X = (Math.floor((31) * Math.random() + 1))
+        X = (Math.floor((31) * Math.random() + 1))
         const Zombie = (Math.floor((6) * Math.random() + 5))
         if (X <= 19) {
             const embed = new Discord.RichEmbed()
@@ -18493,7 +18495,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content === prefix + "Fouille vieil hôpital de campagne") {
-        const X = (Math.floor((98) * Math.random() + 1))
+        X = (Math.floor((98) * Math.random() + 1))
         const Zombie = (Math.floor((4) * Math.random() + 3))
         if (X <= 16) {
             const embed = new Discord.RichEmbed()
@@ -18610,7 +18612,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content === prefix + "Fouille vieille pompe hydraulique") {
-        const X = (Math.floor((113) * Math.random() + 1))
+        X = (Math.floor((113) * Math.random() + 1))
         const Zombie = (Math.floor((2) * Math.random() + 2))
         if (X <= 67) {
             const embed = new Discord.RichEmbed()
@@ -18701,7 +18703,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
     if (message.content === prefix + "Fouille villa de duke") {
         const Balle = (Math.floor((4) * Math.random() + 3))
-        const X = (Math.floor((50) * Math.random() + 1))
+        X = (Math.floor((50) * Math.random() + 1))
         const Zombie = (Math.floor((3) * Math.random() + 4))
         if (X <= 10) {
             const embed = new Discord.RichEmbed()
@@ -18846,7 +18848,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
     if (message.content === prefix + "Fouille villa délabrée") {
         const Balle = (Math.floor((4) * Math.random() + 2))
-        const X = (Math.floor((37) * Math.random() + 1))
+        X = (Math.floor((37) * Math.random() + 1))
         const Zombie = (Math.floor((2) * Math.random() + 2))
         if (X <= 6) {
             const embed = new Discord.RichEmbed()
@@ -19048,7 +19050,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
-            const X = (Math.floor((100) * Math.random() + 1))
+            X = (Math.floor((100) * Math.random() + 1))
             const Zombie = (Math.floor((3) * Math.random() + 1))
             if (X < 10) {
                 const embed = new Discord.RichEmbed()
@@ -19468,7 +19470,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content.startsWith(prefix + "Ouverture [Affaires d'un citoyen]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         if (X <= 30) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
@@ -19543,7 +19545,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content.startsWith(prefix + "Appareil électronique en panne [Transformation]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         if (X <= 25) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
@@ -19617,7 +19619,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content.startsWith(prefix + "Tir [Aqua-Splash]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((2) * Math.random() + 1))
         if (X <= 40) {
             const embed = new Discord.RichEmbed()
@@ -19741,7 +19743,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content.startsWith(prefix + "Coup [Batteur électrique]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((2) * Math.random() + 1))
         if (X <= 25) {
             const embed = new Discord.RichEmbed()
@@ -19779,7 +19781,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content.startsWith(prefix + "Betapropine 5MG périmée [Effets]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         if (X <= 65) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
@@ -19887,7 +19889,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content.startsWith(prefix + "Lancer [Bombe à eau]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((4) * Math.random() + 2))
         if (X <= 20) {
             const embed = new Discord.RichEmbed()
@@ -19925,7 +19927,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content.startsWith(prefix + "Lancer [Bombe à eau explosive]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((7) * Math.random() + 4))
         if (X <= 20) {
             const embed = new Discord.RichEmbed()
@@ -20056,7 +20058,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content.startsWith(prefix + "Ouverture [Boîte de schrödinger]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         if (X <= 70) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
@@ -20120,7 +20122,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content.startsWith(prefix + "Ouverture [Boîte-déjeuner]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         if (X <= 40) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
@@ -20174,7 +20176,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content.startsWith(prefix + "Ouverture [Boîte en métal]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         if (X <= 30) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
@@ -20303,7 +20305,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content.startsWith(prefix + "Cadavre d'un voyageur [Effets]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         if (X <= 40) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
@@ -20420,7 +20422,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content.startsWith(prefix + "Ouverture [Caisse de matériel]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         if (X <= 40) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
@@ -20494,7 +20496,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content.startsWith(prefix + "Ouverture [Caisse de nourriture]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         if (X <= 20) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
@@ -20590,7 +20592,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content.startsWith(prefix + "Ouverture [Carton de matériaux]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         if (X <= 60) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
@@ -20664,7 +20666,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     if (message.content.startsWith(prefix + "Coup [Chaise]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((2) * Math.random() + 1))
         if (X <= 40) {
             const embed = new Discord.RichEmbed()
@@ -20787,7 +20789,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Charogna
 
 
     if (message.content.startsWith(prefix + "Chien hargneux attaque")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((4) * Math.random() + 1))
         if (X <= 75) {
             const embed = new Discord.RichEmbed()
@@ -20860,7 +20862,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Charogna
 
 
     if (message.content.startsWith(prefix + "Coup [Clé à molette]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         if (X <= 50) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
@@ -20961,7 +20963,7 @@ L'utilisation de cet objet vous permet de fuir un combat ou alors d'empêcher le
 
 
     if (message.content.startsWith(prefix + "Ouverture [Coffre-fort]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         if (X <= 10) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
@@ -21062,7 +21064,7 @@ L'utilisation de cet objet vous permet de fuir un combat ou alors d'empêcher le
 
 
     if (message.content.startsWith(prefix + "Ouverture [Colis postal]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         if (X <= 60) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
@@ -21128,7 +21130,7 @@ L'utilisation de cet objet vous permet de fuir un combat ou alors d'empêcher le
 
 
     if (message.content.startsWith(prefix + "Coup [Coupe-coupe]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((2) * Math.random() + 1))
         if (X <= 30) {
             const embed = new Discord.RichEmbed()
@@ -21178,7 +21180,7 @@ L'utilisation de cet objet vous permet de fuir un combat ou alors d'empêcher le
 
 
     if (message.content.startsWith(prefix + "Coup [Couteau suisse]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((2) * Math.random() + 1))
         if (X <= 40) {
             const embed = new Discord.RichEmbed()
@@ -21215,7 +21217,7 @@ L'utilisation de cet objet vous permet de fuir un combat ou alors d'empêcher le
 
 
     if (message.content.startsWith(prefix + "Coup [Couteau à dents]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((2) * Math.random() + 1))
         if (X <= 35) {
             const embed = new Discord.RichEmbed()
@@ -21253,7 +21255,7 @@ L'utilisation de cet objet vous permet de fuir un combat ou alors d'empêcher le
 
 
     if (message.content.startsWith(prefix + "Coup [Cutter]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((2) * Math.random() + 1))
         if (X <= 30) {
             const embed = new Discord.RichEmbed()
@@ -21302,7 +21304,7 @@ L'utilisation de cet objet vous permet de fuir un combat ou alors d'empêcher le
 
 
     if (message.content.startsWith(prefix + "Tir [Devastator]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((3) * Math.random() + 1))
         if (X <= 25) {
             const embed = new Discord.RichEmbed()
@@ -21380,7 +21382,7 @@ L'utilisation de cet objet vous permet de fuir un combat ou alors d'empêcher le
 
 
     if (message.content.startsWith(prefix + "Ouverture [Doggy-bag]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         if (X <= 10) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
@@ -21652,7 +21654,7 @@ L'utilisation de cet objet vous permet de fuir un combat ou alors d'empêcher le
 
 
     if (message.content.startsWith(prefix + "Tir [Fusil d'assaut]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((4) * Math.random() + 1))
         if (X <= 20) {
             const embed = new Discord.RichEmbed()
@@ -21704,7 +21706,7 @@ L'utilisation de cet objet vous permet de fuir un combat ou alors d'empêcher le
 
 
     if (message.content.startsWith(prefix + "Coup [Grand bâton sec]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((2) * Math.random() + 1))
         if (X <= 45) {
             const embed = new Discord.RichEmbed()
@@ -21755,7 +21757,7 @@ L'utilisation de cet objet vous permet de fuir un combat ou alors d'empêcher le
 
 
     if (message.content.startsWith(prefix + "Ouverture [Gros coffre en métal]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         if (X <= 25) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
@@ -21846,7 +21848,7 @@ L'utilisation de cet objet vous permet de fuir un combat ou alors d'empêcher le
 
 
     if (message.content.startsWith(prefix + "Ouverture [Gros colis postal]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         if (X <= 30) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
@@ -21936,7 +21938,7 @@ L'utilisation de cet objet vous permet de fuir un combat ou alors d'empêcher le
 
 
     if (message.content.startsWith(prefix + "Coup [Grosse chaîne rouillée]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((2) * Math.random() + 1))
         if (X <= 40) {
             const embed = new Discord.RichEmbed()
@@ -22038,7 +22040,7 @@ L'utilisation de cet objet vous permet de fuir un combat ou alors d'empêcher le
 
 
     if (message.content.startsWith(prefix + "Tir [Kalachnik'eau]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((4) * Math.random() + 1))
         if (X <= 30) {
             const embed = new Discord.RichEmbed()
@@ -22101,7 +22103,7 @@ L'utilisation de cet objet vous permet de fuir un combat ou alors d'empêcher le
 
 
     if (message.content.startsWith(prefix + "LSD [Effets]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         if (X <= 50) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
@@ -22183,7 +22185,7 @@ L'utilisation de cet objet vous permet de fuir un combat ou alors d'empêcher le
 
 
     if (message.content.startsWith(prefix + "Tir [Lance-pile 1-PDTG]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((2) * Math.random() + 1))
         if (X <= 40) {
             const embed = new Discord.RichEmbed()
@@ -22235,7 +22237,7 @@ L'utilisation de cet objet vous permet de fuir un combat ou alors d'empêcher le
 
 
     if (message.content.startsWith(prefix + "Coup [Lance-pieu]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((3) * Math.random() + 1))
         if (X <= 40) {
             const embed = new Discord.RichEmbed()
@@ -22274,7 +22276,7 @@ L'utilisation de cet objet vous permet de fuir un combat ou alors d'empêcher le
 
 
     if (message.content.startsWith(prefix + "Tir [Lance-pile MARK II]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((3) * Math.random() + 1))
         if (X <= 30) {
             const embed = new Discord.RichEmbed()
@@ -22433,7 +22435,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Légume 
 
 
     if (message.content.startsWith(prefix + "Explosion [Mine antipersonnel]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((26) * Math.random() + 10))
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22521,7 +22523,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Légume 
 
 
     if (message.content.startsWith(prefix + "Démontage [Mécanisme]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         if (X <= 50) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
@@ -22576,7 +22578,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Légume 
 
 
     if (message.content.startsWith(prefix + "Médicament sans étiquette [Effets]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         if (X <= 25) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
@@ -22735,7 +22737,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Légume 
 
 
     if (message.content.startsWith(prefix + "Os charnu [Effets]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         if (X <= 60) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
@@ -22782,7 +22784,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Légume 
 
 
     if (message.content.startsWith(prefix + "Coup [Os humain fêlé]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((3) * Math.random() + 1))
         if (X <= 45) {
             const embed = new Discord.RichEmbed()
@@ -22904,7 +22906,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Légume 
 
 
     if (message.content.startsWith(prefix + "Paracétoïde 7G [Effets]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         if (X <= 25) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
@@ -23001,7 +23003,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Légume 
 
 
     if (message.content.startsWith(prefix + "Piqûre de calmant [Effets]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         if (X <= 90) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
@@ -23049,7 +23051,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Légume 
 
 
     if (message.content.startsWith(prefix + "Tir [Pistolet à eau]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((2) * Math.random() + 1))
         if (X <= 50) {
             const embed = new Discord.RichEmbed()
@@ -23244,7 +23246,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Légume 
 
 
     if (message.content.startsWith(prefix + "Tir [Pointeur laser brûlant]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((3) * Math.random() + 1))
         if (X <= 15) {
             const embed = new Discord.RichEmbed()
@@ -23305,7 +23307,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Pomme]"`
 
 
     if (message.content.startsWith(prefix + "Tir [Pompe à jerrycan]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((3) * Math.random() + 1))
         if (X <= 40) {
             const embed = new Discord.RichEmbed()
@@ -23355,7 +23357,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Pomme]"`
 
 
     if (message.content.startsWith(prefix + "Protection [Portière de voiture]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((5) * Math.random() + 2))
         if (X <= 40) {
             const embed = new Discord.RichEmbed()
@@ -23487,7 +23489,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
 
 
     if (message.content.startsWith(prefix + "Purée de charognardes [Effets]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         if (X <= 75) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
@@ -23563,7 +23565,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
 
 
     if (message.content.startsWith(prefix + "Tir [Revolver]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((3) * Math.random() + 1))
         if (X <= 25) {
             const embed = new Discord.RichEmbed()
@@ -23601,7 +23603,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
 
 
     if (message.content.startsWith(prefix + "Coup [Rocking chair]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((3) * Math.random() + 1))
         if (X <= 40) {
             const embed = new Discord.RichEmbed()
@@ -23653,7 +23655,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
 
 
     if (message.content.startsWith(prefix + "Coup [Rocking chair]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((5) * Math.random() + 1))
         if (X <= 70) {
             const embed = new Discord.RichEmbed()
@@ -23690,7 +23692,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
 
 
     if (message.content.startsWith(prefix + "Ouverture [Réserves d'un citoyen avisé]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         if (X <= 30) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
@@ -23805,7 +23807,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
 
 
     if (message.content.startsWith(prefix + "Lancer [Sac plastique + explosif]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((11) * Math.random() + 5))
         if (X <= 20) {
             const embed = new Discord.RichEmbed()
@@ -23928,7 +23930,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
 
 
     if (message.content.startsWith(prefix + "Sport-elec [Effets]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         if (X <= 75) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
@@ -24001,7 +24003,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
 
 
     if (message.content.startsWith(prefix + "Stéroïdes anabolisants [Effets]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         if (X <= 25) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
@@ -24086,7 +24088,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
 
 
     if (message.content.startsWith(prefix + "Coup [Taser d'auto-défense]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((2) * Math.random() + 1))
         if (X <= 40) {
             const embed = new Discord.RichEmbed()
@@ -24149,7 +24151,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
 
 
     if (message.content.startsWith(prefix + "Coup [Tondeuse à gazon]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((3) * Math.random() + 1))
         if (X <= 35) {
             const embed = new Discord.RichEmbed()
@@ -24234,7 +24236,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
 
 
     if (message.content.startsWith(prefix + "Coup [Tronçonneuse]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((6) * Math.random() + 1))
         if (X <= 20) {
             const embed = new Discord.RichEmbed()
@@ -24283,7 +24285,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
 
 
     if (message.content.startsWith(prefix + "Coup [Tréteau]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((2) * Math.random() + 1))
         if (X <= 35) {
             const embed = new Discord.RichEmbed()
@@ -24345,7 +24347,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
 
 
     if (message.content.startsWith(prefix + "Twinoïde 500MG [Effets]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         if (X <= 80) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
@@ -24393,7 +24395,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
 
 
     if (message.content.startsWith(prefix + "Coup [Unité centrale]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((3) * Math.random() + 1))
         if (X <= 55) {
             const embed = new Discord.RichEmbed()
@@ -24442,7 +24444,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
 
 
     if (message.content.startsWith(prefix + "Viande humaine [Effets]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         if (X <= 70) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
@@ -24490,7 +24492,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
 
 
     if (message.content.startsWith(prefix + "Coup [Vieille porte]")) {
-        const X = (Math.floor((100) * Math.random()))
+        X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((4) * Math.random() + 1))
         if (X <= 65) {
             const embed = new Discord.RichEmbed()
