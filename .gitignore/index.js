@@ -324,9 +324,6 @@ bot.on('message', message => {
             }
         } catch(e) {
             console.error(e)
-            message.delete()
-            .then()
-            .catch(console.error)
             return
         }
     }
@@ -412,9 +409,6 @@ bot.on('message', message => {
             }
         } catch(e) {
             console.error(e)
-            message.delete()
-            .then()
-            .catch(console.error)
             return
         }
     }
