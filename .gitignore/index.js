@@ -9,7 +9,9 @@ var fury = false;
 
 bot.on('ready', () => {
     console.log("Je suis connecté !")
-    bot.user.setGame('=Horde')
+    bot.user.setActivity('=Horde', { type: 'LISTENING' })
+        .then()
+        .catch(console.error)
 
     const serveur = bot.guilds.find(serveur => serveur.name === nomServeur)
 
