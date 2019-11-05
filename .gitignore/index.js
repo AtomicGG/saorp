@@ -32,8 +32,10 @@ bot.on('ready', () => {
         let minutes = date.getMinutes()
         if(heure === 22 || (heure === 21 && minutes > 30) || (heure === 23 && minutes < 30)) {
             serveurChannelOrg.overwritePermissions(serveurRoleSurvivant,{"VIEW_CHANNEL": false})
+            console.log("Channel organisation attaque masqué")
         } else {
             serveurChannelOrg.overwritePermissions(serveurRoleSurvivant,{"VIEW_CHANNEL": true})
+            console.log("Channel organisation attaque visible")
         }
 
         if(heure >= 7 && heure < 19){
