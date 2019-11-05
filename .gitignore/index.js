@@ -299,20 +299,7 @@ bot.on('message', message => {
                         quantiteDeBase = Number(messagePuits.match(expressionQuantite)[0])
                         quantite = quantiteDeBase - ajout
 
-                        if(quantite === 0){ 
-
-                            let expressionSplit = new RegExp(`${regEscape(contenu)}\.*`)
-
-                            let partie = messagePuits.split(expressionSplit)
-                            if(partie[1] === undefined){
-                                partie[1] = ""
-                            }
-
-                            message.channel.messages.find(messagePuits => messagePuits.content.startsWith("Rations d'eau dans le puits actuellement :"))
-                            .edit(partie[0].trim()+"\n"+partie[1].trim())
-                            .then(console.log(`${message.author.username} a pris pour la dernière fois ${ajout} eau dans le puits (${quantiteDeBase} => ${quantite})`))
-                            .catch(console.error)
-                        } else if(quantite < 0){
+                        if(quantite < 0){
                             console.log(`${message.author.username} a tenté de prendre ${-quantite} (${-ajout}) d'eau en plus dans le puits (${quantiteDeBase} => ${quantite})`)
                         } else {
                             let limitePartieGauche = messagePuits.search(expressionQuantite)
