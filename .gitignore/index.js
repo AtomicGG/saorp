@@ -9,7 +9,7 @@ var fury = false;
 
 bot.on('ready', () => {
     console.log("Je suis connecté !")
-    bot.user.setActivity('=Horde', { type: 'LISTENING' })
+    bot.user.setActivity('=Horde', { type: 'PLAYING' })
         .then()
         .catch(console.error)
 
