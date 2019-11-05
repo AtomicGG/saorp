@@ -112,31 +112,29 @@ bot.off('guildMemberAdd', member => {
             "partenaire`\n\n\nhttps://66.media.tumblr.com/169c730d52faf3f7e5680ed44ec4bf7a/tumblr_nbd255coqa1r4vymlo1_500.gif\n\n\n**__۝▬▬๑₪۩۞『:ribbon:』۞۩₪๑▬▬۝__**")
     }).catch(console.error)
     // On pourrait catch l'erreur autrement ici (l'utilisateur a peut être désactivé les MP)
-});
+})
+
+
+bot.login(process.env.TOKEN)
+
 
 bot.on('message', message => {
     if (message.content === 'ping') {
         message.reply('Le **BOT** a mis: ' + `[ **${msg.createdTimestamp - message.createdTimestamp}**` + ' **Ms** ] pour repondre.\nEt l\'**API** a mis: ' + `[ **${Math.round(client.ping)}**` + ' **Ms** ] pour repondre')
     }
-});
-
-bot.login(process.env.TOKEN)
-
-bot.on("message", (message) => {
     if(message.author.bot) return
     if(message.channel.type === "dm") return
     if (message.content.startsWith(prefix + "ping")) {
         message.channel.send("pong!");
-    } else
+    } else {
         if (message.content.startsWith(prefix + "foo")) {
             message.channel.send("bar!");
         }
-});
+    }
 
 
 ////////////////////////////////////////////////////////////PARTIE POUR HORDES////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-bot.on("message", message => {
     const serveur = bot.guilds.find(serveur => serveur.name === nomServeur)
 
     const serveurChannelBanque = serveur.channels.find(channelBanque => channelBanque.name === "『💰』ᴏʙᴊᴇᴛs-ᴇɴ-ʙᴀɴϙᴜᴇ")
@@ -1085,10 +1083,9 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
             .setTimestamp()
         message.channel.send({ embed })
     }
-})
 
 
-bot.on('message', message => {
+
     if (message.content.startsWith(prefix + "Horde roll")) {
         const X = (Math.floor((100) * Math.random()))
         const embed = new Discord.RichEmbed()
@@ -1100,9 +1097,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Horde") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -1112,9 +1109,9 @@ bot.on('message', message => {
             .addField("Horde :", "Vous voulez rejoindre la ville et essayer de survivre le plus longtemps possible, alors les commandes pour avoir les informations et commencer la survie sont juste en dessous !\n\n`=Horde contexte`\n`=Horde survivant`\n`=Nuit`\n`=Fouille`\n`=Horde états`\n`=Médicaments`\n`=Nourriture`\n`=Soif`\n`=Blessure`\n`=Atouts 1`\n`=Horde armes`\n`=Plans`\n`=Lieux`\n`=Défense de la ville`\n`=Fabrication`\n`=Vol`\n`=Exile`\n`=Sommeil`\n`=Horde combat`\n`=Zombie`\n`=Horde liste d'objets 1`\n`=Horde liste des constructions 1`\n`=Transformation`\n`=Habitations`\n`=Points d'actions`\n`=Cargaison`\n`=Déplacements`\n`=Revenant`\n`=Informations importantes 1`").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Revenant") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -1125,9 +1122,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Revenant 2") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -1138,9 +1135,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Revenant 3") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -1151,10 +1148,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Informations importantes 1") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -1165,9 +1162,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Informations importantes 2") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -1178,9 +1175,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Horde liste d'objets 1") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -1191,9 +1188,9 @@ bot.on('message', message => {
             .setDescription("`=Affaires de citoyen`\n`=Ailerons de poulet entamés`\n`=Appareil électronique en panne`\n`=Aqua-Splash`\n`=Aqua-splah (démonté)`\n`=Badge de shérif`\n`=Balle`\n`=Balise radius`\n`=Bandage rudimentaire`\n`=Barricades à clouer`\n`=Batteur électrique (démonté)`\n`=Batteur électrique`\n`=Betapropine 5MG périmée`\n`=Bidon d'huile vide`\n`=Biscuit fade`\n`=Bobine de fil de fer`\n`=Bombe pulvérine`\n`=Bombe macabre`\n`=Bombe à eau`\n`=Bombe à eau explosive`\n`=Bon plat fait-maison`\n`=Bonbonne d'eau`\n`=Boule de pâte visqueuse`\n`=Boules quiès`\n`=Boîte d'allumettes`\n`=Boîte de conserve`\n`=Boîte de conserve ouverte`\n`=Boîte de schrödinger`\n\nLa suite : `Horde liste d'objets 2`").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Horde liste d'objets 2") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -1204,9 +1201,9 @@ bot.on('message', message => {
             .setDescription("`=Boîte de jeu`\n`=Boîte-déjeuner`\n`=Boîte en métal`\n`=Brico'facile`\n`=Buche en bon état`\n`=Bureau monté à la rache`\n`=Bâton cassé`\n`=Cadavre de voyageur`\n`=Caddie`\n`=Caddie bancal`\n`=Cafetière`\n`=Cafetière incomplète`\n`=Café brûlant`\n`=Caisse de feux d'artifice`\n`=Caisse matériel`\n`=Caisse de nourriture`\n`=Calibrateur PDTT MARK II`\n`=Cantine de fer`\n`=Caisse de matériaux`\n`=Carotte`\n`=Cartons`\n`=Ceinture à poches`\n`=Chaîne hifi`\n`=Chaise EKTÖRP-GLUTEN`\n`=Chamallows calcinés`\n`=Chamallows séchés`\n`=Charbon`\n`=Charognardes`\n`=Chaîne de porte & cadenas`\n`=Chewing-gums séchés`\n`=Chien hargneux`\n`=Cidre claviceps artisanal`\n`=Citrouille`\n`=Claviceps purpurea`\n`=Clé magnétique`\n\nLa suite : `=Horde liste d'objets 3`").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Horde liste d'objets 3") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -1217,9 +1214,9 @@ bot.on('message', message => {
             .setDescription("`=Clé à molette`\n`=Clé à percussion`\n`=Cochon malodorant`\n`=Coffre d'architecte`\n`=Coffre d'architecte scellé`\n`=Coffre-fort`\n`=Colis postal`\n`=Coupe-coupe`\n`=Courroie`\n`=Couteau suisse`\n`=Couteau à dents`\n=Cuivre brut\n`=Cutter`\n`=Cyanure`\n`=Devastator`\n`=Devastator (démonté)`\n`=Diode lazer`\n`=Distributeur vide`\n`=Doggy-bag`\n`=Débris métalliques`\n`=Décapsuleur`\n`=Dés`\n`=Détonateur compact`\n`=Eau croupie`\n`=Eau croupie purifiée`\n`=Epices fortes`\n`=Explosifs bruts`\n`=Ferraille`\n`=Fer brut`\n=Fil de cuivre\n`=Fiole de poison`\n`=Four cancérigène`\n`=Fragment de tôle`\n`=Fumigène 'Senteur sapin'`\n`=Fusil d'assaut`\n`=Fusée éclairante`\n`=Grand bâton sec`\n`=Gros chat mignon`\n\nLa suite : `=Horde liste d'objets 4`").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Horde liste d'objets 4") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -1230,9 +1227,9 @@ bot.on('message', message => {
             .setDescription("`=Gros coffre en métal`\n`=Gros colis postal`\n`=Grosse chaîne rouillée`\n`=Guitare artisanale`\n`=Hydratone 100MG`\n`Jambon-beurre moisi`\n`=Jerrycan plein`\n`=Jus de mirabelle suspect`\n`=Kalachnik'eau`\n`=Kit de bricolage`\n`=Kit de bricolage abîmé`\n`=LSD`\n`=Lait couleur kaki`\n`=Lambeau de chair`\n`=Lampe de chevet éteinte`\n`=Lampe de chevet allumée`\n`=Lance-pile 1-PDTG`\n`=Lance-pile 1-PDTG (démonté)`\n`=Lance-pieu`\n`=Lance-pile MARK II`\n`=Lentille convexe`\n`=Liasse de billets`\n`=Légume suspect`\n`=Maglite Pif'gadget`\n`=Matelas`\n`=Melon d'intestin`\n`=Meuble en kit`\n`=Micropur effervescent`\n\nLa suite : `=Horde liste d'objets 5`").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Horde liste d'objets 5") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -1243,9 +1240,9 @@ bot.on('message', message => {
             .setDescription("`=Mine antipersonnel`\n`=Morceau de caisse`\n`=Morceau de contreplaqué`\n`=Moteur`\n`=Moteur incomplet`\n`=Mécanisme`\n`=Médicament sans étiquette`\n`=Napolitains moisis`\n`=Nouilles chinoises`\n`=Nouilles chinoises épicées`\n`=Oeuf`\n`=Os charnu`\n`=Os humain fêlé`\n`=Outils en vrac`\n`=Ouvre-boîte`\n`=Paillasson`\n`Paillasson piégé`\n`=Pamplemousse explosif`\n`=Paquet de chips molles`\n`=Paquet de cigarettes entamé`\n`=Paracétoïde 7G`\n`=Pavés de béton informes`\n`=Pelures de peau`\n`=Petit manche vibrant`\n`=Petits beurres rances`\n`=Pile`\n`=Pim's périmé`\n`Piqûre de calmant`\n`=Pistolet à eau`\n`=Pistolet à eau`\n\nLa suite : `=Horde liste d'objets 6`").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Horde liste d'objets 6") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -1256,9 +1253,9 @@ bot.on('message', message => {
             .setDescription("`=Plan de chantier commun`\n`=Plan de chantier inhabituel`\n`=Plan de chantier rare`\n`=Plan de chantier très rare`\n`=Plan de chantier épique`\n`=Plan de chantier mythique`\n`=Plan de chantier légendaire`\n`=Planche tordue`\n`=Plaque de bois solide`\n`=Plaque de tôle`\n`=Plat fait-maison douteux`\n`=Poignée de bonbons`\n`=Poignée de vis et écrous`\n`=Pointeur laser brûlant`\n`=Pomme`\n`=Pompe à jerrycan`\n`=Portière de voiture`\n`=Portière de voiture incomplète`\n`=Poudre super-fuzz`\n`=Poudre-comète brte`\n`=Poule`\n`=Poutre rafistolée`\n`=Produit corrosif`\n`=Produits pharmaceutiques`\n`=Purée de charognardes`\n\nLa suite : `=Horde liste d'objets 7`").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Horde liste d'objets 7") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -1269,9 +1266,9 @@ bot.on('message', message => {
             .setDescription("`=Radio K7`\n`=Rat`\n`=Ration d'eau`\n`=Revolver`\n`=Rocking chair`\n`=Réfrigérateur d'étudiant`\n`=Réserves d'un citoyen avisé`\n`=Rustine`\n`=Sac d'herbe fraîche`\n`=Sac de ciment`\n`=Sac plastique`\n`=Sac plastique + explosif`\n`=Sac super-pratique`\n`=Sac supplémentaire`\n`=Sacoche usée`\n`=Scie à métaux`\n`=Scie à métaux abîmée`\n`=Serpent de 2 mètres`\n`=Souche de bois pourrie`\n`=Sport-elec`\n`=Steak appétissant`\n`=Steak de sciure`\n`=Structures métalliques`\n`=Stéroïdes anabolisants`\n`=Substance épaisse`\n`=Sérum pour goule`\n`=Table järpen`\n`=Tapis persan`\n\nLa suite : `=Horde liste d'objets 8`").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Horde liste d'objets 8") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -1282,9 +1279,9 @@ bot.on('message', message => {
             .setDescription("`=Taser d'auto-défense`\n`=Teddy n'ours`\n`=Toile de tente`\n`=Tomate`\n`=Tondeuse à gazon`\n`=Tondeuse à gazon (démonté)`\n`=Torche`\n`=Torche consumée`\n`=Tournevis`\n`=Tronçonneuse`\n`=Tronçonneuse (démonté)`\n`=Tréteau`\n`=Tube de cuivre`\n`=Tube de lancement floush`\n`=Twinoïde 500MG`\n`=Téléphone portable`\n`=Unité centrale`\n`=Vache zombifiée`\n`=Viande humaine`\n`=Viande indéfinissable`\n`=Vieille machine à laver`\n`=Vieille porte`\n`=Vodka marinostov`\n`='Debout-les-morts'`").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Horde liste des constructions 1") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -1295,9 +1292,9 @@ bot.on('message', message => {
             .setDescription("`=Appâts`\n`=Arroseurs automatiques`\n`=Atelier`\n`=Barbelés`\n`=Barbelés électrifiés`\n`=Barrières`\n`=Blindage d'entrée`\n`=Boucherie`\n`=Cabinet médical`\n`=Canon à briques`\n`=Champ de mines à eau`\n`=Crémato-cue`\n`=Cuisine`\n`=Derrick artisanal`\n`=Douves`\n`=Dynamitage`\n`=Enclos`\n`=Fausse ville`\n`=Fixations de défenses`\n`=Fondations`\n`=Foreuse pour le puits`\n`=Générateur`\n`=Grogro mur`\n`=Lance-tôle`\n`=Le grand déménagement`\n`=Manufacture`\n`=Mine`\n`=Monticules pour canons`\n`=Muraille à pointes`\n`=Muraille rasoir`\n`=Oubliettes`\n`=Perforeuse`\n`=Piscine électrique`\n`=Piège à loups`\n`=Pompe`\n`=Porte améliorée`\n`=Porte à piston`\n`=Potager`\n`=Poutres de renfort`\n`=Prison`\n`=Projet Eden`\n`=Purificateur d'eau`\n\nLa suite : `Horde liste des constructions 2`").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Horde liste des constructions 2") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -1308,9 +1305,9 @@ bot.on('message', message => {
             .setDescription("`=Rape à zombies`\n`=Remparts avancés`\n`=Renforts de muraille`\n`=Sani-broyeur`\n`=Scies hurlantes`\n`=Tour`\n`=Tourniquet à poutres`\n`=Tuyauteries`").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Points d'actions")) {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -1320,9 +1317,9 @@ bot.on('message', message => {
             .addField("Les points d'actions :", "Lorsque vous effectuez une action qui demande un effort, vous dépensez ce qu'on appelle un 'Point d'action' !\n\nVous disposez de 6 points d'actions par jour, que vous récupérez le lendemain à partir de 00 H 00 [Heure de France]\n\nLes points d'actions peuvent aussi se reprendre en buvant une ration d'eau ainsi qu'en mangeant ou bien même en buvant certains alcools ou en prenant certaines drogues...\n\nUne fois à cours de points d'actions, vous ne pouvez plus effectuer d'action qui nécessite un effort...").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Horde survivant")) {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -1332,9 +1329,9 @@ bot.on('message', message => {
             .addField("Les survivants :", "Avant d'entrer dans cette ville, vous possédez forcément une identité, une histoire, une profession, des connaissances, c'est pour cela que vous devrez nous transmettre toutes ces informations en créant votre survivant à partir du modèle présent en écrivant la commande : `=Fiche de survivant`\n\nA savoir que votre survivant possède un inventaire maximal de base de 5 objets sur lui !\n\nUne fois votre personne créer et valider par un membre du staff, vous devrez vous renommer de la manière suivante : [Nom] [Prénom] [Points d'action]\n\nPar exemple : [Oshiro][Yato][6/6]\n\nPour comprendre ce qu'est le système de stat : `=Horde stats 1`").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Horde stats 1")) {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -1345,9 +1342,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Horde stats 2")) {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -1358,17 +1355,17 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Fiche de survivant")) {
         message.channel.send("\n```۝▬▬▬▬▬▬▬▬『`INFORMATIONS DE VOTRE SURVIVANT`』▬▬▬▬▬▬▬▬۝\n\n`Nom :`【A remplir】\n\n`Prénom :`【A remplir】\n\n`Âge :`【A remplir】\n\n`Sexe :`【A remplir】\n\n`Physique :`【A remplir avec image si vous voulez, c'est conseillé】\n\n`Personnalité :`【A remplir】\n\n`Histoire avant l'apocalypse :`【A remplir】\n\n`Métier :`【A remplir】\n\n`Atout :`【A remplir en écrivant =Atouts】\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝\n\n`Stat physique :`【A remplir】\n\n`Stat mental :`【A remplir】\n\n`Stat social :`【A remplir】\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝\n\n`Inventaire :`\n`Affaires d'un citoyen`\n`Ration d'eau`\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝\n\n`Zombies tués` : 0\n\n`Jours survécus` : 0```");
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Nuit")) {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -1378,11 +1375,11 @@ bot.on('message', message => {
             .addField("La nuit :", "Lorsque vient 00 H 00, les zombies attaquent la ville et les survivants qu'ils rencontreront !\n\nPour déterminer combien de zombies attaqueront la ville par nuit, voici les différentes commandes à écrire :\n\n`=Jour 1`\n`=Jour 2`\n`=Jour 3`\n`=Jour 4`\n`=Jour 5`\n`=Jour 6`\n`=Jour 7`\n`=Jour 8`\n`=Jour 9`\n`=Jour 10`\n`=Jour 11`\n`=Jour 12`\n`=Jour 13`\n`=Jour 14`\n`=Jour 15`\n`=Jour 16`\n`=Jour 17`\n`=Jour 18`\n`=Jour 19`\n`=Jour 20`\n\nLe lendemain lorsque l'attaque des zombies sur la ville est terminé, à cause des tempêtes de sable assez violentes vous ne retrouverez plus les lieux que vous avez sûrement pus visiter la veille, il faudra de nouveau les retrouver...\n\nDurant l'attaque des zombies sur la ville, il faudra tuer tous les zombies ou alors survivre jusqu'à que les zombies sortent à l'extérieur, mais ils seront de nouveau présent la nuit prochaine en plus des nouveaux zombies...").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Infection totale")) {
         const X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((4) * Math.random() + 1))
@@ -1405,11 +1402,11 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Habitations") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -1419,9 +1416,9 @@ bot.on('message', message => {
             .addField("Les habitations, partie 1 :", "Dans la ville, vous aurez une maison qui vous sera confié avec plusieurs fonctionnalités :\n\nVous pourrez stocké 10 objets maximal dans votre coffre\n\nVous pourrez dormir afin d'éviter l'état 'Fatigue'\n\nL'habitation sert aussi principalement à vous cacher lorsque des zombies sont infiltrés en ville !\n\nSi des zombies passent devant chez vous et que vous voulez essayer de rester cacher : `=Maison cachette : [Nombre de zombies]`\n\nVotre maison peux s'améliorer, notamment elle possède ses propres points de défense lorsque des zombies attaqueront votre maison !\n\nSi vous possédez par exemple une 'Petite fosse' de 2 points de défense et que 5 zombies tentent d'entrer dans votre maison, seulement 3 resteront en vie et les 2 autres mourront ou seront bloqués !\n\nA savoir que les points de défense des habitations ne sont valables qu'une fois par nuit...\n\nLa suite : `=Habitations 2`").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Habitations 2") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -1431,13 +1428,13 @@ bot.on('message', message => {
             .addField("Les habitations, partie 2 :", " Si vous fuiyez par exemple votre maison, que vous revenez poursuivis encore par des zombies, cette fois-ci votre maison malgrè ses points de défense ne stoppera pas les quelques zombies...\n\nPour consulter la liste des améliorations : `=Habitations améliorations`\n\n[Il n'y a pas encore d'améliorations pour votre habitation]").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
 
 
 
-bot.on('message', message => {
+
+
     const A = (Math.floor((100) * Math.random()))
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
@@ -1465,13 +1462,13 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
 
 
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Alcool")) {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -1481,9 +1478,9 @@ bot.on('message', message => {
             .addField("Les alcools :", "Lorsque vous fouillez l'extérieur de la ville, vous trouverez parfois de l'alcool !\n\nL'alcool permet de vous hydrater et de vous donner des points d'actions, mais attention à l'ivresse...\n\nPour mieux comprendre : `=Horde états 6`").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Drogue")) {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -1493,9 +1490,9 @@ bot.on('message', message => {
             .addField("Les drogues :", "Lorsque vous fuillez l'extérieur de la ville, vous trouverez parfois de la drogue !\n\nLa drogue permet principalement d'oublier une douleur, soigner un état mais aussi donner des points d'actions, mais les effets négatives comme la dépendance arrivent par la suite...\n\nPour mieux comprendre : `=Horde états 3`").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Cargaison")) {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -1505,9 +1502,9 @@ bot.on('message', message => {
             .addField("Les cargaisons :", "Parfois pendant votre survie, il y aura un avion qui passe au dessus en larguant une cargaison aux alentours de celle-ci !\n\nDedans se trouvera des ressources, des armes, de la nourriture, de l'eau et bien d'autres choses possible selon votre chance !\n\nCependant, il faudra prendre le risque de sortir le récupérer, cela alerte beaucoup de zombies...\n\nIl est possible d'entendre d'avance si un avion va largué une caisse si vous avez une `Radio K7` allumé !").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Déplacements")) {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -1517,9 +1514,9 @@ bot.on('message', message => {
             .addField("Les déplacements :", "Vous déplacez en ville ne mettra qu'une minute pour vous déplacer d'une zone à une autre\n\nCependant, en extérieur vous mettrez deux minutes pour vous déplacer d'une zone à une autre\n\nA savoir que pour passer de la zone '1 KM' à '10 KM' par exemple, il faudra passer par la zone '2 KM' puis '3 KM' puis '4 KM' etc, en oubliant pas qu'il faudra deux minutes pour passer d'une zone à une autre\n\nPour les personnes atteintes de l'état 'Fatigue', la durée des déplacements en ville comme en extérieur seront doublé, 2 minutes en ville et 4 minutes en extérieur").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Horde armes")) {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -1529,9 +1526,9 @@ bot.on('message', message => {
             .addField("Les armes :", "Il sera assez fréquent de trouver des armes pour vous défendre en tuant les zombies, que ce soit des armes de corps à corps comme des armes à feu !\n\nLes armes de corps à corps auront un nombre d'utilisations limitées disponible sur les informations de l'arme en écrivant : `=[Nom de l'arme]`\n\nLes armes à feu ont besoin de munitions pour pouvoir être utiliser, les munitions nécessaires sont écrites sur les informations de l'arme en écrivant : `=[Nom de l'arme]'\n\nA savoir, toutes les armes qui ont besoin de munitions, vous pouvez les recharger de manière rapide sans avoir besoin d'y passer votre tour d'action pendant un combat, précisez le juste de manière RP\n\nLes balles ne prennent pas de place dans votre inventaire, mais vous pourrez en porter au maximum 30 sur vous").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Plans")) {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -1541,10 +1538,10 @@ bot.on('message', message => {
             .addField("Les plans :", "Lorsque vous fouillez à l'extérieur de la ville, il est possible de trouver un plan plus ou moins rare, permettant de pouvoir fabriquer un objet, une arme, une défense, ou d'autres objets possibles !\n\nLes informations des plans sont écrites en écrivant : `=[Nom du plan]'\n\n[Pour le moment, ce contenus est pas encore fait]").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Lieux") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -1554,9 +1551,9 @@ bot.on('message', message => {
             .addField("Les lieux, partie 1 :", "Banque : Elle permet de pouvoir stock justement tous les objets nécessaires en ville, coopérez pour survivre!\n\nPlace principale : C'est une place assez grande qui permet de pouvoir se rassembler si besoin\n\nAuberge : Permet de pouvoir y écrire des annonces ou les objectifs du jour pour s'organiser entre survivants, vous pourrez aussi y dormir avec quelques chambres et lits à l'intérieur !\n\nPuits : Un des endroits les plus importants, c'est ici que les survivants pourront récupérer de l'eau à mettre dans leur bouteille pour ne pas mourir de soif, cependant l'eau n'est pas illimité mais le puit possède 50 `Ration d'eau` de départ !\n\nCabinet médicale : L'endroit où vous pourrez normalement trouver un médecin capable de vous soigner, si vous avez besoin de médicaments à cause d'une maladie ou infection, si vous avez besoin de bandages et de le mettre à cause d'une hémorragie...\n\nLa suite : `=Lieux 2`").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Lieux 2") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -1566,9 +1563,9 @@ bot.on('message', message => {
             .addField("Les lieux, partie 2 :", "Tour : Celle-ci permet de pouvoir observer les environs et la ville, pour tenter de voir s'il y a des zombies à l'intérieur de la ville à découvert, ou si des survivants se font attaqués à l'extérieur : `=Observation`\n\nBoucherie : Si la ville a besoin de devoir découper un certain type de viande, de la travailler pour la rendre mangeable ou de meilleur qualité, le matériel se trouve dedans\n\nCuisine : Les survivants auront parfois besoin de se nourrire d'un bon repas pour satisfaire leur faim, c'est ici que se feront tous les repas et les rations pour survivre\n\nPrison : Comme le nom l'indique, c'est une prison où pourrons être mis des survivants qui sont devenus trop violents, ou même infectés, ou pour tout autre usage, celle-ci possède 10 cellules\n\nAtelier : Un autre batîment très important pour la survie de la ville qui est l'atelier, vous pourrez à l'intérieur travailler les matériaux, les transformer, les raffiner, les découper, les assembler avec le matériel de base pour le faire\n\nLa suite : `Lieux 3`").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Lieux 3") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -1578,10 +1575,10 @@ bot.on('message', message => {
             .addField("Les lieux, partie 3 :", "Chantiers : Une fois la ville ayant les bonnes ressources ainsi que les bons plans et les connaissances, vous pourrez aux chantiers construire justement les différentes bâtiments et défenses que la ville aura besoin pour continuer de résister aux attaques des zombies\n\nLa plupart de ces lieux au départ de la ville, ne sont pas encore présent et c'est pour cela qu'il faudra les créer !").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Défense de la ville") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -1591,9 +1588,9 @@ bot.on('message', message => {
             .addField("Défense de la ville, partie 1 :", "Le but principal de la survie en ville sera de fabriquer des défenses afin de tuer un maximum de zombies lors des attaques tous les jours à 00 H 00 [Heure en France] !\n\nIl est possible pour un survivant de défendre aussi la ville des zombies restants qui arrivent à pénétrer l'intérieur de la ville...\n\nUn zombie vaut pour un 'point d'attaque' et une défense ou un survivant aura ses 'points de défense'\n\nSi par exemple, la ville possède 45 points de défense et qu'il y a 37 zombies attaquant au jour 3, il n'y a aucun zombies qui pénétreront dans la ville, ni aucun mort par la même occasion !\n\nCependant, si la ville possède 45 points de défense et qu'il y a 50 zombies qui attaquent, 5 zombies réussiront à pénétrer en ville...\n\nCes 5 zombies pourront être combattus et tuer par les survivants qui défendent l'entrée de la ville évidemment !\n\nLa suite : `=Défense de la ville 2`").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Défense de la ville 2") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -1603,11 +1600,11 @@ bot.on('message', message => {
             .addField("Défense de la ville, partie 2 :", "Si les survivants fuient ou qu'il n'y a personne défendant l'entrée de la ville, les zombies iront attaquer les joueurs aléatoirement qui sont dans leur maison, batîments, rues etc... !\n\nChaque survivant en début de partie a un numéro, selon le numéro afficher de la commande, les zombies iront vers lui en ville\n\nA savoir que se défendre en groupe est possible (et mieux), et si le survivant n'est pas connecté, son personnage pourra être jouer par un autre survivant avec son accord [ou un modérateur, d'où l'activité importante dans ce RP surtout le soir]\n\nSi le ou les survivants fuient les zombies, ils iront attaquer d'autres joueurs, jusqu'à que tous les zombies soient tués ou que vous survivez 1 H à l'attaque (mais les zombies encore vivants reviendront la nuit prochaine) !\n\nLa suite : `=Défense de la ville 3`").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Défense de la ville 3") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -1617,12 +1614,12 @@ bot.on('message', message => {
             .addField("Défense de la ville, partie 3 :", "Si à 00 H 00 pile la porte de la ville n'est pas fermé par un survivant, tous les zombies pourront rentrer...\n\nAvant chaque attaque, si vous allez à la porte, vous pouvez défendre la ville en étant un `Veilleur`\n\nUn veilleur est un survivant qui ne va pas se cacher pendant l'attaque, mais qui va justement protéger la ville en sortant et en risquant sa vie\n\nA savoir que, les veilleurs seront les premiers à mourir avant les survivants qui ne défendent pas la ville alors faite attention...\n\nLa fuite est la meilleur solution si vous êtes mal, bonne chance !").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fabrication") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -1632,11 +1629,11 @@ bot.on('message', message => {
             .addField("La fabrication :", "Il sera très fréquent que dans la ville, vous devrez fabriquer des objets, des défenses, assembler des éléments avec d'autres pour en créer un nouvel élément\n\nLes informations des différentes fabrications et assemblages possibles sont affichés sur les matériaux en écrivant `=[Nom du matériau]`\n\nIl existe aussi le raffinage de ressource afin d'en obtenir une de meilleur qualité pour des usages encore plus performants !").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Exile")) {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -1646,9 +1643,9 @@ bot.on('message', message => {
             .addField("L'exile :", "Il est possible qu'une fois trop de crime commis et si les survivants décident d'effectuer un vote, de vous faire exiler, c'est à dire que vous n'aurez plus le droit de retirer d'objets à la banque, vous devrez survivre de votre côté seul en quelque sorte...\n\nCependant, il est possible de ne pas respecter ces règles, mais si les survivants s'en aperçoivent, ils pourront alors vous mettre dehors et vous finirez en burger pour les zombies...\n\nL'exile peux-être temporaire comme définitif, et les règles définies peuvent être différentes d'une ville à une autre !").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Sommeil")) {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -1658,9 +1655,9 @@ bot.on('message', message => {
             .addField("Le sommeil :", "Vous serez obligé de dormir au minimum 4 H dans le RP par jour ou sinon vous aurez l'état 'Fatigue' qui vous empêche de pouvoir réussir à fouiller une zone ou de fabriquer ou raffiner quelque chose...\n\nDe plus, avec cet état vous aurez plus de difficulté à fuir les zombies\n\nL'état disparaît une fois que vous avez justement dormis assez, c'est à dire 4 H !\n\nPensez à dormir en tant que survivant si vous allez partir et ne pas revenir avant longtemps sur le RP !").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Horde combat") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -1670,9 +1667,9 @@ bot.on('message', message => {
             .addField("Les combats, partie 1 :", "Lorsque vous êtes en groupe contre un ou plusieurs zombies, il faudra déterminer qui sera le premier à agir, le second, et ainsi de suite comme des numéros et en tour par tour !\n\nLes zombies attaqueront toujours après les joueurs sauf s'il y a une embuscade ou une attaque dans le dos...\n\nA savoir que les zombies attaqueront toujours un ou plusieurs survivants en même temps...\n\nPour déterminer quel survivant le ou les zombies attaqueront : `=Cible : [Nombre de survivant dans le combat]`\n\nLa suite en écrivant : `=Horde combat 2`").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Horde combat 2") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -1682,9 +1679,9 @@ bot.on('message', message => {
             .addField("Les combats, partie 2 :", "Les différentes attaques spéciales grâce aux armes sont écrites sur les informations de l'arme en question !\n\nPour avoir la liste des actions possibles sans armes : `=Horde actions`\n\nLorsque vous fuiyez les zombies en allant ailleurs, vous aurez toujours l'initiative pour les attaquer si vous revenez !\n\nEn général, les combats s'apprennent sur le terrain alors n'hésite pas à observer comment les autres survivants font !").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Nombre de zombie")) {
@@ -1699,9 +1696,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Groupe de zombies")) {
         const Groupe = (Math.floor((5) * Math.random() + 1))
         if (Groupe === 1) {
@@ -1755,10 +1752,10 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
-bot.on('message', message => {
+
+
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Cible")) {
@@ -1772,10 +1769,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-+
-    bot.on('message', message => {
+
+
+    
         if (message.content.startsWith(prefix + "Déplacement nombre")) {
             const X = (Math.floor((8) * Math.random() + 3))
             const embed = new Discord.RichEmbed()
@@ -1787,12 +1784,12 @@ bot.on('message', message => {
                 .setTimestamp()
             message.channel.send({ embed })
         }
-    });
+    
 
 
-+ ////////////////////////////////////////////////////////////////////////////////Zombie joueur, actions//////////////////////////////////////////////////////////////////////
+ ////////////////////////////////////////////////////////////////////////////////Zombie joueur, actions//////////////////////////////////////////////////////////////////////
 
-    bot.on('message', message => {
+    
         if (message.content.startsWith(prefix + "Griffure")) {
             const X = (Math.floor((100) * Math.random() + 1))
             if (X < 50) {
@@ -1832,9 +1829,9 @@ bot.on('message', message => {
                 message.channel.send({ embed })
             }
         }
-    });
+    
 
-bot.on('message', message => {
+
     if (message.content.startsWith(prefix + "Morsure")) {
         const X = (Math.floor((100) * Math.random() + 1))
         if (X < 75) {
@@ -1883,13 +1880,13 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
+
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-bot.on('message', message => {
+
     if (message.content.startsWith(prefix + "Horde actions")) {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -1907,10 +1904,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-})
+
 ///////////////////////////////////////////////////////////////////////////Coups et fuites//////////////////////////////////////////////////////////////////////////////////////////////////////
 
-bot.on('message', message => {
+
     const A = (Math.floor((100) * Math.random()))
     if (message.content === prefix + "Coup de poing") {
         if (A < 60) {
@@ -1950,9 +1947,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     const A = (Math.floor((100) * Math.random()))
     if (message.content === prefix + "Coup de poing [Boxeur]") {
         if (A < 40) {
@@ -1992,9 +1989,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     const A = (Math.floor((100) * Math.random()))
     if (message.content === prefix + "Coup de pied") {
         if (A < 60) {
@@ -2034,9 +2031,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     const A = (Math.floor((100) * Math.random()))
     if (message.content === prefix + "Coup de pied [Boxeur]") {
         if (A < 40) {
@@ -2076,9 +2073,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     const A = (Math.floor((100) * Math.random()))
     if (message.content === prefix + "Coup de pied circulaire") {
         if (A < 80) {
@@ -2118,9 +2115,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     const A = (Math.floor((100) * Math.random()))
     if (message.content === prefix + "Coup de pied circulaire [Boxeur]") {
         if (A < 70) {
@@ -2160,9 +2157,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     const A = (Math.floor((100) * Math.random()))
     if (message.content === prefix + "Fuite [Aucune blessure]") {
         if (A < 40) {
@@ -2184,9 +2181,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     const A = (Math.floor((100) * Math.random()))
     if (message.content === prefix + "Fuite [Blessure légère]") {
         if (A < 50) {
@@ -2208,9 +2205,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     const A = (Math.floor((100) * Math.random()))
     if (message.content === prefix + "Fuite [Blessure]") {
         if (A < 60) {
@@ -2232,9 +2229,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     const A = (Math.floor((100) * Math.random()))
     if (message.content === prefix + "Fuite [Blessure avancée]") {
         if (A < 70) {
@@ -2256,9 +2253,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     const A = (Math.floor((100) * Math.random()))
     if (message.content === prefix + "Fuite [Blessure mortelle]") {
         if (A < 80) {
@@ -2280,7 +2277,7 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
+
 
 ////////////////////////////////////////////////////////Correction///////////////////////////////////////////////////////////////////////////////////
 
@@ -2289,7 +2286,7 @@ bot.on('message', message => {
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-bot.on('message', message => {
+
     if (message.content === prefix + "Zombie") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -2299,11 +2296,11 @@ bot.on('message', message => {
             .addField("Les zombies :", "Les zombies attaquent à vue les survivants, et se mettent à plusieurs sur le même quand ils en ont l'occasion la nuit comme le jour...\n\nLorsqu'un ou des zombies vous attaque : `=Zombies attaque : [Nombre de zombie]`").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Transformation")) {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -2313,10 +2310,10 @@ bot.on('message', message => {
             .addField("Les transformations :", "Une fois que votre état d'infection est devenus une `Infection mortelle` si vous gardez cette état encore le lendemain, vous aurez une chance de mourir ou alors de devenir une 'Goule'\n\nUne goule dans ce monde est un humain d'apparence mais qui aura besoin de tuer d'autres humains et de les dévorer, vivant comme mort pour se nourrire...\n\nPour survivre, la goule devra dévorer au moins un humain par jour ou alors elle mourra de faim...\n\nIl est possible de ne pas tuer un survivant et de le dévorer entièrement, seulement une partie mais celui-ci deviendra à son tour aussi infecté et une goule...\n\nSi la ville ne contient plus que des goules, c'est perdus [Cas impossible / extrêmement rare]\n\nPour savoir si vous allez mourir ou devenir une goule : `=Infection totale`").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Habitations") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -2326,9 +2323,9 @@ bot.on('message', message => {
             .addField("Les habitations, partie 1 :", "Dans la ville, vous aurez une maison qui vous sera confié avec plusieurs fonctionnalités :\n\nVous pourrez stocké 10 objets maximal dans votre coffre\n\nVous pourrez dormir afin d'éviter l'état 'Fatigue'\n\nL'habitation sert aussi principalement à vous cacher lorsque des zombies sont infiltrés en ville !\n\nSi des zombies passent devant chez vous et que vous voulez essayer de rester cacher : `=Maison cachette : [Nombre de zombies]`\n\nVotre maison peux s'améliorer, notamment elle possède ses propres points de défense lorsque des zombies attaqueront votre maison !\n\nSi vous possédez par exemple une 'Petite fosse' de 2 points de défense et que 5 zombies tentent d'entrer dans votre maison, seulement 3 resteront en vie et les 2 autres mourront ou seront bloqués !\n\nA savoir que les points de défense des habitations ne sont valables qu'une fois par nuit...\n\nLa suite : `=Habitations 2`").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Habitations 2") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -2338,14 +2335,14 @@ bot.on('message', message => {
             .addField("Les habitations, partie 2 :", " Si vous fuiyez par exemple votre maison, que vous revenez poursuivis encore par des zombies, cette fois-ci votre maison malgrè ses points de défense ne stoppera pas les quelques zombies...\n\nPour consulter la liste des améliorations : `=Habitations améliorations`\n\n[Il n'y a pas encore d'améliorations pour votre habitation]").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
 
 
 
 
-bot.on('message', message => {
+
+
     const A = (Math.floor((100) * Math.random()))
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
@@ -2373,14 +2370,14 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
 
 
 
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Alcool")) {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -2390,9 +2387,9 @@ bot.on('message', message => {
             .addField("Les alcools :", "Lorsque vous fouillez l'extérieur de la ville, vous trouverez parfois de l'alcool !\n\nL'alcool permet de vous hydrater et de vous donner des points d'actions, mais attention à l'ivresse...\n\nPour mieux comprendre : `=Horde états 6`").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Drogue")) {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -2402,9 +2399,9 @@ bot.on('message', message => {
             .addField("Les drogues :", "Lorsque vous fuillez l'extérieur de la ville, vous trouverez parfois de la drogue !\n\nLa drogue permet principalement d'oublier une douleur, soigner un état mais aussi donner des points d'actions, mais les effets négatives comme la dépendance arrivent par la suite...\n\nPour mieux comprendre : `=Horde états 3`").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Cargaison")) {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -2414,9 +2411,9 @@ bot.on('message', message => {
             .addField("Les cargaisons :", "Parfois pendant votre survie, il y aura un avion qui passe au dessus en larguant une cargaison aux alentours de celle-ci !\n\nDedans se trouvera des ressources, des armes, de la nourriture, de l'eau et bien d'autres choses possible selon votre chance !\n\nCependant, il faudra prendre le risque de sortir le récupérer, cela alerte beaucoup de zombies...\n\nIl est possible d'entendre d'avance si un avion va largué une caisse si vous avez une `Radio K7` allumé !").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Déplacements")) {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -2426,9 +2423,9 @@ bot.on('message', message => {
             .addField("Les déplacements :", "Vous déplacez en ville ne mettra qu'une minute pour vous déplacer d'une zone à une autre\n\nCependant, en extérieur vous mettrez deux minutes pour vous déplacer d'une zone à une autre\n\nA savoir que pour passer de la zone '1 KM' à '10 KM' par exemple, il faudra passer par la zone '2 KM' puis '3 KM' puis '4 KM' etc, en oubliant pas qu'il faudra deux minutes pour passer d'une zone à une autre\n\nPour les personnes atteintes de l'état 'Fatigue', la durée des déplacements en ville comme en extérieur seront doublé, 2 minutes en ville et 4 minutes en extérieur").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Horde contexte") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -2438,9 +2435,9 @@ bot.on('message', message => {
             .addField("Contexte du RP :", "L'apocalypse du monde est enfin venus, un virus qui se répand et transforme les gens en zombie ainsi que le chaos sur terre la transformant en un désert géant...\n\nVous êtes un des survivants ayant réussis à trouver refuge dans cette ville proche mais c'est loin d'être facile, la partie ne fait que commencer...\n\nCombien de temps allez vous réussir à survivre avant de finir dévoré jusqu'aux os ?").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -2450,12 +2447,12 @@ bot.on('message', message => {
             .addField("La fouille :", "Dans ce monde, pour survivre l'objectif est de collecter un maximum de ressources et de s'en servir !\n\nCependant, pour trouver des objets, il faudra sortir de la ville et se rendre à l'extérieur pour trouver ces fameuses ressources !\n\nPlus vous irez loin de la ville, plus les ressources seront rares mais plus la présence de zombie sera importante alors... bonne chance...\n\nPour effectuer une fouille selon la distance :\n\n`=Fouille zone [chiffre] KM`\n\nFouiller coûte 1 PA alors gérer bien vos 6 PA quotidien\n\nA savoir que, lorsque votre survivant découvre un bâtiment il pourra revenir autant de fois qu'il veux étant donné qu'il connaîtra le chemin !\n\n:warning: Votre survivant doit obligatoirement avoir une raison de trouver un bâtiment, que ce soit une annonce à l'auberge, un survivant vous montrant le chemin, ou lorsque vous fouillez etc...").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Horde états") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -2465,9 +2462,9 @@ bot.on('message', message => {
             .addField("Les états, partie 1 :", "Parfois, ou suite à un évènement, vous aurez un état négatif ou positif\n\nCertains états ne sont que temporaires et ne nécessite aucunes interventions ou objets, mais certains en demanderont obligatoirement avant que sa n'empire jusqu'à une mort certaine...\n\nLes survivants possédant le métier de 'médecin' auront un bonus pour soigner et enlever un état en particulier, cependant il faudra obligatoirement qu'il se trouve au cabinet médical\n\nCertains états devront être jouer RP...\n\nVoici la liste des états :\n\n`Nausée` : Vous avez envie de vomir, aucun appétit, et vous êtes assez pâle [Double de points d'actions pour les actions en ville]\n\n`Fièvre` : Les efforts vous demande encore plus d'énergie que d'habitude, vous sentez votre front très chaud au bord de l'explosion [Double points d'actions pour les actions à l'extérieur de la ville]\n\nSuite : `=Horde états 2`").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Horde états 2") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -2477,9 +2474,9 @@ bot.on('message', message => {
             .addField("Les états, partie 2 :", "`Tremblements` : La peur n'est pas présente, vous avez juste des tremblements inhabituelles rendant vos phrases plus difficiles à comprendre\n\n`Perte d'équilibre` : Même sans vertiges, vous sentez en permanence une sensation de tomber sur le sol à tel point que marcher est un effort énorme [Double de temps à mettre pour les déplacements]\n\n`Douleurs gastriques` : L'envie de vomir constamment, rien que de penser à un bout de steak est assez pour vous faire vomir [Impossible de manger quoi que ce soit]\n\n`Migraine` : Réfléchir vous fait mal à la tête, vous n'arrivez même plus à vous concentrer à quoi que ce soit [Impossible de faire une action demandant un point d'action]\n\n`Insomnie` : Vous n'arrivez pas à dormir assez, et vous aurez toujours l'état 'Fatigue' jusqu'à que vous n'ayez plus ces insomnies\n\nSuite : `=Horde états 3`").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Horde états 3") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -2489,9 +2486,9 @@ bot.on('message', message => {
             .addField("Les états, partie 3 :", "`Fatigue` : Si vous dormez moins de 4 H par jour, votre énergie sera faible et la moindre action sera un effort immense [Double points d'actions pour toutes actions en ville comme en extérieur]\n\n`Drogué` : Vous êtes sous drogue, vous ne pourrez pas reprendre de drogue avant le lendemain\n\n`Dépendance` : L'abus de drogue vous mène à la dépendance, si vous ne prenez pas de drogue (la même drogue) pendant un jour vous aurez l'état 'Hallucinations', si vous ne prenez pas de drogue pendant deux jours vous aurez l'état 'Folie' et si vous ne prenez pas de drogue pendant trois jours vous... mourrez...\n\n`Hallucinations` : Des ombres ou même des zombies imaginaires, vous voyez des choses iréelles\n\n`Folie` : Vous dites et faites n'importe quoi en permanence à tel point que vous avez des hallucinations en permanence et que vous êtes presque un danger pour les autres survivants [Impossible de faire une action demandant un point d'action]\n\nLa suite : `=Horde états 4`").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Horde états 4") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -2501,9 +2498,9 @@ bot.on('message', message => {
             .addField("Les états, partie 4 :", "`Terreur` : La vision d'un zombie vous effraie tellement que vous ne vous défendrez pas, vous essayerez toujours de fuir [Fuite seulement autorisé durant les combats]\n\n`Rassasiement` : Vous avez mangé, vous ne pourrez pas manger de nouveau avant le lendemain\n\n`Faim` > `Très faim` > `Affamé` : Après l'état 'Rassasiement', le lendemain vous aurez l'état 'Faim', si vous ne mangez pas le lendemain vous aurez l'état 'Très faim', si vous ne mangez pas le lendemain vous aurez l'état 'Affamé' et si vous ne mangez toujours pas le lendemain vous... mourrez...\n\n`Hydratation` : Vous avez déjà bus, vous ne pourrez pas boire de nouveau avant le lendemain\n\n`Soif` > `Très soif` > `Assoifé` : Après l'état 'Hydratation', le lendemain vous aurez l'état 'Soif', si vous ne buvez pas le lendemain vous aurez l'état 'Très soif', si vous ne buvez pas le lendemain vous aurez l'état 'Assoifé' et si vous ne buvez toujours pas le lendemain vous... mourrez...\n\nLa suite : `=Horde états 5`").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Horde états 5") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -2513,9 +2510,9 @@ bot.on('message', message => {
             .addField("Les états, partie 5 :", "`Infection` > `Infection avancée` > `Infection mortelle` : Après l'état 'Infection', le lendemain vous aurez l'état 'Infection avancée', si vous n'êtes pas soigné le lendemain vous aurez l'état 'Infection mortelle` et si vous n'êtes toujours pas soigné le lendemain, vous devrez faire : `=Infection totale`\n\nLa suite : `=Horde états 6`").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Horde états 6") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -2525,9 +2522,9 @@ bot.on('message', message => {
             .addField("Les états, partie 6 :", "`Blessure légère` > `Blessure` > `Blessure avancée` > `Blessure mortelle` : Les différentes états de blessures sont croissants, si vous étiez atteint de l'état 'Blessure' et que vous subissez un état de nouveau 'Blessure légère' alors votre nouvelle état sera 'Blessure avancée', si vous ne comprenez pas alors imaginez que vous avez 5/5 HP, qu'une blessure légère retire 1 HP, une blessure 2 HP, une blessure avancée 3 HP et une blessure mortelle 4 HP avant la mort quand vous êtes à 0/5 HP\n\n`Goule` : Vous avez manger de la viande humaine ou alors pris une substance, la seul nourriture maintenant possible est la viande humaine... vous devrez dévorer un humain une fois chaque jour avant le lendemain, sinon vous ...mourrez...\n\n`Ivresse` : Après avoir pris de l'alcool, vous ne pourrez plus en boire avant le lendemain, vous êtes ivre\n\nLa suite : `=Horde états 7`").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Horde états 7") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -2537,9 +2534,9 @@ bot.on('message', message => {
             .addField("Les états, partie 7 :", "Les états de blessures, d'hémorragies et d'infections se cumulent, voici des exemples pour mieux comprendre :\n\n`Blessure légère` + `Blessure légère` = `Blessure`\n\n`Blessure` + `Blessure légère` = `Blessure avancée`\n\n`Blessure avancée` + `Blessure légère` = `Blessure mortelle`\n\n`Blessure mortelle` + `Blessure légère` = `Mort`\n\n\n`Blessure` + `Blessure` = `Blessure mortelle`\n\n`Blessure` + `Blessure avancée` = `Mort`\n\n`Infection légère` + `Infection légère` = `Infection`\n\n`Infection` + `Infection légère` = `Infection avancée`\n\n`Infection avancée` + `Infection légère` = `Infection mortelle`\n\n`Infection mortelle` + `Infection légère` = `Mort`\n\n`Infection` + `Infection` = `Infection mortelle`\n\n`Hémorragie légère` + `Hémorragie légère` = `Hémorragie`\n\n`Hémorragie` + `Hémorragie légère` = `Hémorragie avancée`\n\n`Hémorragie avancée` + `Hémorragie légère` = `Hémorragie mortelle`\n\n`Hémorragie mortelle` + `Hémorragie légère` = `Mort`\n\nLa suite : `=Horde états 8`").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Horde états 8") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -2549,10 +2546,10 @@ bot.on('message', message => {
             .addField("Les états, partie 8 :", "Comme dis au début, vous devrez jouer les états de manière RP\n\nLorsque vous avez une blessure, vous devrez jouer la douleur tous de même en fonction de la gravité de votre blessure\n\nLorsque vous avez une infection, jouez le fait que vous devenez pâle, que vous toussez voir cracher du sang\n\nConcernant les hémorragies, comparé à l'infection qui s'aggrave de jour en jour, l'hémorragie ne s'aggrave au fil du temps mais si elles sont cumulés, mais vous aurez un certain avant de soigner votre hémorragie avant de mourir...\n\nVoici les différents temps selon l'hémorragie :\n\n`Hémorragie` : Vous avez 24 H pour soigner cette hémorragie avant la mort...\n\n`Hémorragie avancée` : Vous avez 12 H pour soigner cette hémorragie avant la mort...\n\n`Hémorragie mortelle` : Vous avez 6 H pour soigner cette hémorragie avant la mort...").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Médicaments")) {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -2562,10 +2559,10 @@ bot.on('message', message => {
             .addField("Les médicaments :", "Une fois atteint d'un état, vous devrez certainement prendre des médicaments adaptés voir une drogue qui pourrait sûrement aider\n\nAttention, si vous prenez un mauvais médicament, vous pourrez avoir des effets négatifs encore pire...").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Soif")) {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -2575,9 +2572,9 @@ bot.on('message', message => {
             .addField("L'eau :", "Comme toute apocalypse, l'eau devient une ressource assez rare à trouver et à consommer, c'est pour cela qu'il faudra en prendre en temps voulus pour ne pas en gâcher !\n\nSi vous ne buvez pas, vous serez de plus en plus assoifé et vous finirez par mourir de soif\n\nPour mieux comprendre : `=Horde états 4`").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Nourriture")) {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -2587,10 +2584,10 @@ bot.on('message', message => {
             .addField("La nourriture :", "Comme l'eau, la nourriture deviendra une ressource assez rare qui demande d'être économiser le plus possible !\n\nSi vous ne mangez pas, vous serez de plus en plus affamé et vous finirez par mourir de faim...\n\nPour mieux comprendre : `=Horde états 4`").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Blessure")) {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -2600,10 +2597,10 @@ bot.on('message', message => {
             .addField("Les blessures :", "Durant votre survie, il sera très fréquent de finir blessé et il existe différents types de blessures :\n\n`Blessure légère`\n`Blessure`\n`Blessure avancée`\n`Blessure mortelle`\n\nLes blessures provoquent des malus pour fuir, et plus vous vous rapprochez d'une blessure mortelle, plus vous aurez de chance d'y rester...\n\nLes blessures se cumulent, pour comprendre cela : `=Horde états 7`\n\nLes blessures se soignent à l'aide de bandage, de médicaments, d'injections et d'un tas d'autres moyens probables et possibles...").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Atouts 1")) {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -2615,9 +2612,9 @@ bot.on('message', message => {
 
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Atouts 2")) {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -2629,14 +2626,14 @@ bot.on('message', message => {
 
         message.channel.send({ embed })
     }
-});
+
 
 
 
 ///////////////////////////////////////////////////////////Observation/////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-bot.on('message', message => {
+
     const A = (Math.floor((100) * Math.random()))
     const X = (Math.floor((2) * Math.random() + 1))
     if (message.content.startsWith(prefix + "Observation")) {
@@ -2659,13 +2656,13 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
+
 
 
 
 //////////////////////////////////////////////////////////////Vol Horde//////////////////////////////////////////////////////////////////////////////////////////////
 
-bot.on('message', message => {
+
     if (message.content === prefix + "Vol") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -2675,12 +2672,12 @@ bot.on('message', message => {
             .addField("Le vol :", "Il est possible de voler discrètement un survivant ou sa maison si elle n'est pas fermé à clef ou même la banque, cependant cela est considéré comme un crime et pourra mener à un exile si cela est fréquent et que les joueurs votent !\n\nPour tenter de voler un survivant : `=Voler le survivant`\nPour tenter de voler un survivant avec l'atout 'Voleur' : `=Voler le survivant [Voleur]`").setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
 
 
-bot.on('message', message => {
+
+
     const A = (Math.floor((100) * Math.random()))
     const X = (Math.floor((2) * Math.random() + 1))
     if (message.content === prefix + "Voler le survivant") {
@@ -2715,9 +2712,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     const A = (Math.floor((100) * Math.random()))
     const X = (Math.floor((3) * Math.random() + 1))
     if (message.content === prefix + "Voler le survivant [Voleur]") {
@@ -2752,13 +2749,13 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
+
 
 
 /////////////////////////////////////////////////////////////Dernier espoir///////////////////////////////////////////////////////////////////////////////////////
 
 
-bot.on('message', message => {
+
     const A = (Math.floor((100) * Math.random() + 1))
     const X = (Math.floor((2) * Math.random() + 1))
     if (message.content.startsWith(prefix + "Dernier espoir")) {
@@ -2793,11 +2790,11 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
+
 /////////////////////////////////////////////////////////////////////////////////////Tempête//////////////////////////////////////////////////////////////
 
 
-bot.on('message', message => {
+
     const A = (Math.floor((100) * Math.random() + 1))
     if (message.content.startsWith(prefix + "Tempête")) {
         if (A < 25) {
@@ -2851,12 +2848,12 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
+
 
 
 ///////////////////////////////////////////////////////////////Attaque d'un zombie////////////////////////////////////////////////////////////////////////////
 
-bot.on('message', message => {
+
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Zombies attaque")) {
@@ -2956,11 +2953,11 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
+
 
 ///////////////////////////////////////////////////////////////////Aider un survivant/////////////////////////////////////////////////////////////////////////
 
-bot.on('message', message => {
+
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Aide")) {
@@ -3013,11 +3010,11 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
+
 
 ////////////////////////////////////////////////////////////////Morsure et infection et hémmoragie////////////////////////////////////////////////////////////////////////////
 
-bot.on('message', message => {
+
     const A = (Math.floor((100) * Math.random()))
     if (message.content.startsWith(prefix + "Infection légère")) {
         if (A < 20) {
@@ -3039,9 +3036,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     const A = (Math.floor((100) * Math.random()))
     if (message.content.startsWith(prefix + "Infection avancée")) {
         if (A < 40) {
@@ -3063,9 +3060,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     const A = (Math.floor((100) * Math.random()))
     if (message.content.startsWith(prefix + "Infection mortelle")) {
         if (A < 60) {
@@ -3087,12 +3084,12 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
 
 
-bot.on('message', message => {
+
+
     const A = (Math.floor((100) * Math.random()))
     if (message.content.startsWith(prefix + "Hémorragie légère")) {
         if (A < 30) {
@@ -3114,9 +3111,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     const A = (Math.floor((100) * Math.random()))
     if (message.content.startsWith(prefix + "Hémorragie avancée")) {
         if (A < 50) {
@@ -3138,9 +3135,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     const A = (Math.floor((100) * Math.random()))
     if (message.content.startsWith(prefix + "Hémorragie mortelle")) {
         if (A < 70) {
@@ -3162,7 +3159,7 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
+
 
 
 ///////////////////////////////////////////////////////Roll horde////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -3171,7 +3168,7 @@ bot.on('message', message => {
 
 /////////////////////////////////////////////////////////////Les jours, Horde//////////////////////////////////////////////////////////////////////////////////////
 
-bot.on('message', message => {
+
     if (message.content === prefix + "Jour 1") {
         const Zombie = (Math.floor((11) * Math.random() + 10))
         const embed = new Discord.RichEmbed()
@@ -3183,9 +3180,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Jour 2") {
         const Zombie = (Math.floor((16) * Math.random() + 15))
         const embed = new Discord.RichEmbed()
@@ -3197,9 +3194,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Jour 3") {
         const Zombie = (Math.floor((26) * Math.random() + 25))
         const embed = new Discord.RichEmbed()
@@ -3211,10 +3208,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Jour 4") {
         const Zombie = (Math.floor((41) * Math.random() + 40))
         const embed = new Discord.RichEmbed()
@@ -3226,10 +3223,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Jour 5") {
         const Zombie = (Math.floor((61) * Math.random() + 60))
         const embed = new Discord.RichEmbed()
@@ -3241,10 +3238,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Jour 6") {
         const Zombie = (Math.floor((91) * Math.random() + 90))
         const embed = new Discord.RichEmbed()
@@ -3256,10 +3253,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Jour 7") {
         const Zombie = (Math.floor((131) * Math.random() + 130))
         const embed = new Discord.RichEmbed()
@@ -3271,10 +3268,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Jour 8") {
         const Zombie = (Math.floor((181) * Math.random() + 180))
         const embed = new Discord.RichEmbed()
@@ -3286,10 +3283,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Jour 9") {
         const Zombie = (Math.floor((251) * Math.random() + 250))
         const embed = new Discord.RichEmbed()
@@ -3301,10 +3298,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Jour 10") {
         const Zombie = (Math.floor((331) * Math.random() + 330))
         const embed = new Discord.RichEmbed()
@@ -3316,10 +3313,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Jour 11") {
         const Zombie = (Math.floor((431) * Math.random() + 430))
         const embed = new Discord.RichEmbed()
@@ -3331,10 +3328,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Jour 12") {
         const Zombie = (Math.floor((901) * Math.random() + 900))
         const embed = new Discord.RichEmbed()
@@ -3346,10 +3343,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Jour 13") {
         const Zombie = (Math.floor((1400) * Math.random() + 1400))
         const embed = new Discord.RichEmbed()
@@ -3361,10 +3358,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Jour 14") {
         const Zombie = (Math.floor((3401) * Math.random() + 3400))
         const embed = new Discord.RichEmbed()
@@ -3376,10 +3373,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Jour 15") {
         const Zombie = (Math.floor((4201) * Math.random() + 4200))
         const embed = new Discord.RichEmbed()
@@ -3391,10 +3388,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Jour 16") {
         const Zombie = (Math.floor((5201) * Math.random() + 5200))
         const embed = new Discord.RichEmbed()
@@ -3406,10 +3403,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Jour 17") {
         const Zombie = (Math.floor((6501) * Math.random() + 6500))
         const embed = new Discord.RichEmbed()
@@ -3421,10 +3418,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Jour 18") {
         const Zombie = (Math.floor((8001) * Math.random() + 8000))
         const embed = new Discord.RichEmbed()
@@ -3436,10 +3433,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Jour 19") {
         const Zombie = (Math.floor((10001) * Math.random() + 10001))
         const embed = new Discord.RichEmbed()
@@ -3451,10 +3448,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Jour 20") {
         const Zombie = (Math.floor((13001) * Math.random() + 13001))
         const embed = new Discord.RichEmbed()
@@ -3466,11 +3463,11 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
+
 
 ////////////////////////////////////////////////////////////////////Fouille 1 KM//////////////////////////////////////////////////////////////////////////////////////////////////
 
-bot.on('message', message => {
+
     if (message.content === prefix + "Fouille zone 1 KM") {
         if (talkedRecently.has(message.author.id + 9999)) {
             const embed = new Discord.RichEmbed()
@@ -3796,13 +3793,13 @@ bot.on('message', message => {
             talkedRecently.delete(message.author.id + 9999);
         }, 900000);
     }
-})
+
 
 
 ////////////////////////////////////////////////////////////////////Fouille 2 KM//////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-bot.on('message', message => {
+
     if (message.content === prefix + "Fouille zone 2 KM") {
         if (talkedRecently.has(message.author.id + 9999)) {
             const embed = new Discord.RichEmbed()
@@ -4200,11 +4197,11 @@ bot.on('message', message => {
             talkedRecently.delete(message.author.id + 9999);
         }, 900000);
     }
-})
+
 
 ////////////////////////////////////////////////////////////////////Fouille 3 KM//////////////////////////////////////////////////////////////////////////////////////////////////
 
-bot.on('message', message => {
+
     if (message.content === prefix + "Fouille zone 3 KM") {
         if (talkedRecently.has(message.author.id + 9999)) {
             const embed = new Discord.RichEmbed()
@@ -4683,11 +4680,11 @@ bot.on('message', message => {
             talkedRecently.delete(message.author.id + 9999);
         }, 900000);
     }
-})
+
 ////////////////////////////////////////////////////////////////////Fouille 4 KM//////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-bot.on('message', message => {
+
     if (message.content === prefix + "Fouille zone 4 KM") {
         if (talkedRecently.has(message.author.id + 9999)) {
             const embed = new Discord.RichEmbed()
@@ -5238,14 +5235,14 @@ bot.on('message', message => {
             talkedRecently.delete(message.author.id + 9999);
         }, 900000);
     }
-})
+
 
 
 
 ////////////////////////////////////////////////////////////////////Fouille 5 KM//////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-bot.on('message', message => {
+
     if (message.content === prefix + "Fouille zone 5 KM") {
         if (talkedRecently.has(message.author.id + 9999)) {
             const embed = new Discord.RichEmbed()
@@ -5850,12 +5847,11 @@ bot.on('message', message => {
             talkedRecently.delete(message.author.id + 9999);
         }, 900000);
     }
-})
 
 ////////////////////////////////////////////////////////////////////Fouille 6 KM//////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-bot.on('message', message => {
+
     if (message.content === prefix + "Fouille zone 6 KM") {
         if (talkedRecently.has(message.author.id + 9999)) {
             const embed = new Discord.RichEmbed()
@@ -6451,12 +6447,12 @@ bot.on('message', message => {
             talkedRecently.delete(message.author.id + 9999);
         }, 900000);
     }
-})
+
 
 ////////////////////////////////////////////////////////////////////Fouille 7 KM//////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-bot.on('message', message => {
+
     if (message.content === prefix + "Fouille zone 7 KM") {
         if (talkedRecently.has(message.author.id + 9999)) {
             const embed = new Discord.RichEmbed()
@@ -6953,12 +6949,12 @@ bot.on('message', message => {
             talkedRecently.delete(message.author.id + 9999);
         }, 900000);
     }
-})
+
 
 ////////////////////////////////////////////////////////////////////Fouille 8 KM//////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-bot.on('message', message => {
+
     if (message.content === prefix + "Fouille zone 8 KM") {
         if (talkedRecently.has(message.author.id + 9999)) {
             const embed = new Discord.RichEmbed()
@@ -7428,12 +7424,12 @@ bot.on('message', message => {
             talkedRecently.delete(message.author.id + 9999);
         }, 900000);
     }
-})
+
 
 ////////////////////////////////////////////////////////////////////Fouille 9 KM//////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-bot.on('message', message => {
+
     if (message.content === prefix + "Fouille zone 9 KM") {
         if (talkedRecently.has(message.author.id + 9999)) {
             const embed = new Discord.RichEmbed()
@@ -7840,11 +7836,11 @@ bot.on('message', message => {
             talkedRecently.delete(message.author.id + 9999);
         }, 900000);
     }
-})
+
 ////////////////////////////////////////////////////////////////////Fouille 10 KM//////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-bot.on('message', message => {
+
     if (message.content === prefix + "Fouille zone 10 KM") {
         if (talkedRecently.has(message.author.id + 9999)) {
             const embed = new Discord.RichEmbed()
@@ -8218,12 +8214,12 @@ bot.on('message', message => {
             talkedRecently.delete(message.author.id + 9999);
         }, 900000);
     }
-})
+
 
 ////////////////////////////////////////////////////////////////////Fouille 11 KM//////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-bot.on('message', message => {
+
     if (message.content === prefix + "Fouille zone 11 KM") {
         if (talkedRecently.has(message.author.id + 9999)) {
             const embed = new Discord.RichEmbed()
@@ -8587,12 +8583,12 @@ bot.on('message', message => {
             talkedRecently.delete(message.author.id + 9999);
         }, 900000);
     }
-})
+
 
 ////////////////////////////////////////////////////////////////////Fouille 12 KM//////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-bot.on('message', message => {
+
     if (message.content === prefix + "Fouille zone 12 KM") {
         if (talkedRecently.has(message.author.id + 9999)) {
             const embed = new Discord.RichEmbed()
@@ -8963,12 +8959,12 @@ bot.on('message', message => {
             talkedRecently.delete(message.author.id + 9999);
         }, 900000);
     }
-})
+
 
 ////////////////////////////////////////////////////////////////////Fouille 13 KM//////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-bot.on('message', message => {
+
     if (message.content === prefix + "Fouille zone 13 KM") {
         if (talkedRecently.has(message.author.id + 9999)) {
             const embed = new Discord.RichEmbed()
@@ -9339,12 +9335,12 @@ bot.on('message', message => {
             talkedRecently.delete(message.author.id + 9999);
         }, 900000);
     }
-})
+
 
 ////////////////////////////////////////////////////////////////////Fouille 14 KM//////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-bot.on('message', message => {
+
     if (message.content === prefix + "Fouille zone 14 KM") {
         if (talkedRecently.has(message.author.id + 9999)) {
             const embed = new Discord.RichEmbed()
@@ -9688,12 +9684,12 @@ bot.on('message', message => {
             talkedRecently.delete(message.author.id + 9999);
         }, 900000);
     }
-})
+
 
 ///////////////////////////////////////////////////////////////////Fouille 15 KM//////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-bot.on('message', message => {
+
     if (message.content === prefix + "Fouille zone 15 KM") {
         if (talkedRecently.has(message.author.id + 9999)) {
             const embed = new Discord.RichEmbed()
@@ -10046,13 +10042,13 @@ bot.on('message', message => {
             talkedRecently.delete(message.author.id + 9999);
         }, 900000);
     }
-})
+
 
 
 ///////////////////////////////////////////////////////////////////Fouille 16 KM//////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-bot.on('message', message => {
+
     if (message.content === prefix + "Fouille zone 16 KM") {
         if (talkedRecently.has(message.author.id + 9999)) {
             const embed = new Discord.RichEmbed()
@@ -10351,11 +10347,11 @@ bot.on('message', message => {
             talkedRecently.delete(message.author.id + 9999);
         }, 900000);
     }
-})
+
 ///////////////////////////////////////////////////////////////////Fouille 17 KM//////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-bot.on('message', message => {
+
     if (message.content === prefix + "Fouille zone 17 KM") {
         if (talkedRecently.has(message.author.id + 9999)) {
             const embed = new Discord.RichEmbed()
@@ -10654,12 +10650,12 @@ bot.on('message', message => {
             talkedRecently.delete(message.author.id + 9999);
         }, 900000);
     }
-})
+
 
 ///////////////////////////////////////////////////////////////////Fouille 18 KM//////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-bot.on('message', message => {
+
     if (message.content === prefix + "Fouille zone 18 KM") {
         if (talkedRecently.has(message.author.id + 9999)) {
             const embed = new Discord.RichEmbed()
@@ -10949,11 +10945,11 @@ bot.on('message', message => {
             talkedRecently.delete(message.author.id + 9999);
         }, 900000);
     }
-})
+
 ///////////////////////////////////////////////////////////////////Fouille 19 KM//////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-bot.on('message', message => {
+
     if (message.content === prefix + "Fouille zone 19 KM") {
         if (talkedRecently.has(message.author.id + 9999)) {
             const embed = new Discord.RichEmbed()
@@ -11243,11 +11239,11 @@ bot.on('message', message => {
             talkedRecently.delete(message.author.id + 9999);
         }, 900000);
     }
-})
+
 ///////////////////////////////////////////////////////////////////Fouille 20 KM//////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-bot.on('message', message => {
+
     if (message.content === prefix + "Fouille zone 20 KM") {
         if (talkedRecently.has(message.author.id + 9999)) {
             const embed = new Discord.RichEmbed()
@@ -11483,11 +11479,11 @@ bot.on('message', message => {
             talkedRecently.delete(message.author.id + 9999);
         }, 900000);
     }
-})
+
 ///////////////////////////////////////////////////////////////////Fouille 21 KM//////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-bot.on('message', message => {
+
     if (message.content === prefix + "Fouille zone 21 KM") {
         if (talkedRecently.has(message.author.id + 9999)) {
             const embed = new Discord.RichEmbed()
@@ -11741,11 +11737,11 @@ bot.on('message', message => {
             talkedRecently.delete(message.author.id + 9999);
         }, 900000);
     }
-})
+
 ///////////////////////////////////////////////////////////////////Fouille 22 KM//////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-bot.on('message', message => {
+
     if (message.content === prefix + "Fouille zone 22 KM") {
         if (talkedRecently.has(message.author.id + 9999)) {
             const embed = new Discord.RichEmbed()
@@ -11999,11 +11995,11 @@ bot.on('message', message => {
             talkedRecently.delete(message.author.id + 9999);
         }, 900000);
     }
-})
+
 ///////////////////////////////////////////////////////////////////Fouille 23 KM//////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-bot.on('message', message => {
+
     if (message.content === prefix + "Fouille zone 23 KM") {
         if (talkedRecently.has(message.author.id + 9999)) {
             const embed = new Discord.RichEmbed()
@@ -12257,11 +12253,11 @@ bot.on('message', message => {
             talkedRecently.delete(message.author.id + 9999);
         }, 900000);
     }
-})
+
 ///////////////////////////////////////////////////////////////////Fouille 24 KM//////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-bot.on('message', message => {
+
     if (message.content === prefix + "Fouille zone 24 KM") {
         if (talkedRecently.has(message.author.id + 9999)) {
             const embed = new Discord.RichEmbed()
@@ -12515,11 +12511,11 @@ bot.on('message', message => {
             talkedRecently.delete(message.author.id + 9999);
         }, 900000);
     }
-})
+
 ///////////////////////////////////////////////////////////////////Fouille 25 KM//////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-bot.on('message', message => {
+
     if (message.content === prefix + "Fouille zone 25 KM") {
         if (talkedRecently.has(message.author.id + 9999)) {
             const embed = new Discord.RichEmbed()
@@ -12773,11 +12769,11 @@ bot.on('message', message => {
             talkedRecently.delete(message.author.id + 9999);
         }, 900000);
     }
-})
+
 
 ////////////////////////////////////////////////////////////////////Les lieux de fouille spéciaux//////////////////////////////////////////////////////////////////////////////////////////////////
 
-bot.on('message', message => {
+
     if (message.content === prefix + "Fouille abris anti-atomique") {
         const X = (Math.floor((165) * Math.random() + 1))
         const Zombie = (Math.floor((7) * Math.random() + 4))
@@ -12982,9 +12978,9 @@ bot.on('message', message => {
         }
 
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille abris de chantier") {
         const Balle = (Math.floor((3) * Math.random() + 1))
         const X = (Math.floor((124) * Math.random() + 1))
@@ -13170,9 +13166,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille ambulance") {
         const X = (Math.floor((26) * Math.random() + 1))
         const Zombie = (Math.floor((2) * Math.random() + 1))
@@ -13231,9 +13227,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille ancien aérodrome") {
         const X = (Math.floor((22) * Math.random() + 1))
         const Zombie = (Math.floor((2) * Math.random() + 1))
@@ -13329,10 +13325,10 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille ancien commissariat") {
         const Balle = (Math.floor((3) * Math.random() + 1))
         const X = (Math.floor((224) * Math.random() + 1))
@@ -13572,9 +13568,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille ancien velib") {
         const X = (Math.floor((38) * Math.random() + 1))
         const Zombie = (Math.floor((2) * Math.random() + 2))
@@ -13651,9 +13647,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille armurerie") {
         const Balle = (Math.floor((4) * Math.random() + 1))
         const X = (Math.floor((59) * Math.random() + 1))
@@ -13821,10 +13817,10 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille café") {
         const X = (Math.floor((57) * Math.random() + 1))
         const Zombie = (Math.floor((3) * Math.random() + 2))
@@ -13892,9 +13888,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille avant-poste militaire") {
         const Balle = (Math.floor((8) * Math.random() + 3))
         const X = (Math.floor((125) * Math.random() + 1))
@@ -13990,9 +13986,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille bar miteux") {
         const X = (Math.floor((57) * Math.random() + 1))
         const Zombie = (Math.floor((3) * Math.random() + 2))
@@ -14096,9 +14092,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille bibliothèque de quartier") {
         const X = (Math.floor((44) * Math.random() + 1))
         const Zombie = (Math.floor((4) * Math.random() + 2))
@@ -14157,11 +14153,11 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille magasin de bricolage") {
         const X = (Math.floor((65) * Math.random() + 1))
         const Zombie = (Math.floor((2) * Math.random() + 2))
@@ -14337,9 +14333,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille bureau de poste") {
         const X = (Math.floor((18) * Math.random() + 1))
         const Zombie = (Math.floor((3) * Math.random() + 3))
@@ -14380,9 +14376,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille cabane de jardin") {
         const Balle = (Math.floor((3) * Math.random() + 1))
         const X = (Math.floor((72) * Math.random() + 1))
@@ -14505,10 +14501,10 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille cache de contrebandiers") {
         const Balle = (Math.floor((4) * Math.random() + 2))
         const X = (Math.floor((38) * Math.random() + 1))
@@ -14586,10 +14582,10 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille camion en panne") {
         const Balle = (Math.floor((2) * Math.random() + 1))
         const X = (Math.floor((37) * Math.random() + 1))
@@ -14685,10 +14681,10 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille carcasses de voitures") {
         const Balle = (Math.floor((2) * Math.random() + 1))
         const X = (Math.floor((30) * Math.random() + 1))
@@ -14775,10 +14771,10 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille carlingue d'avion") {
         const Balle = (Math.floor((3) * Math.random() + 1))
         const X = (Math.floor((23) * Math.random() + 1))
@@ -14883,9 +14879,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille carrière effondrée") {
         const X = (Math.floor((19) * Math.random() + 1))
         const Zombie = (Math.floor((3) * Math.random() + 1))
@@ -14935,11 +14931,11 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille caveau familial") {
         const Balle = (Math.floor((2) * Math.random() + 1))
         const X = (Math.floor((35) * Math.random() + 1))
@@ -14999,9 +14995,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille caverne") {
         const X = (Math.floor((15) * Math.random() + 1))
         const Zombie = (Math.floor((3) * Math.random() + 1))
@@ -15069,12 +15065,12 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille caverne anciennement habitée") {
         const Balle = (Math.floor((4) * Math.random() + 1))
         const X = (Math.floor((69) * Math.random() + 1))
@@ -15179,14 +15175,14 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
 
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille centrale hydraulique") {
         const X = (Math.floor((96) * Math.random() + 1))
         const Zombie = (Math.floor((3) * Math.random() + 3))
@@ -15245,10 +15241,10 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille chantier à l'abandon") {
         const X = (Math.floor((97) * Math.random() + 1))
         const Zombie = (Math.floor((3) * Math.random() + 3))
@@ -15388,9 +15384,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille char d'assaut en panne") {
         const Balle = (Math.floor((6) * Math.random() + 5))
         const X = (Math.floor((57) * Math.random() + 1))
@@ -15504,11 +15500,11 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille cimetière indien") {
         const X = (Math.floor((43) * Math.random() + 1))
         const Zombie = (Math.floor((4) * Math.random() + 2))
@@ -15567,11 +15563,11 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille école maternelle brûlée") {
         const X = (Math.floor((33) * Math.random() + 1))
         const Zombie = (Math.floor((4) * Math.random() + 2))
@@ -15639,10 +15635,10 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille entrepôt désaffecté") {
         const Balle = (Math.floor((3) * Math.random() + 1))
         const X = (Math.floor((21) * Math.random() + 1))
@@ -15693,10 +15689,10 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille épicerie") {
         const X = (Math.floor((105) * Math.random() + 1))
         const Zombie = (Math.floor((4) * Math.random() + 3))
@@ -15827,10 +15823,10 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille fast-food") {
         const X = (Math.floor((130) * Math.random() + 1))
         const Zombie = (Math.floor((4) * Math.random() + 3))
@@ -15916,10 +15912,10 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille gare de triage désertée") {
         const X = (Math.floor((57) * Math.random() + 1))
         const Zombie = (Math.floor((5) * Math.random() + 3))
@@ -15996,9 +15992,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille hangars de stockage") {
         const Balle = (Math.floor((3) * Math.random() + 3))
         const X = (Math.floor((69) * Math.random() + 1))
@@ -16085,9 +16081,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille immeuble délabré") {
         const Balle = (Math.floor((4) * Math.random() + 1))
         const X = (Math.floor((69) * Math.random() + 1))
@@ -16246,12 +16242,12 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille kebab") {
         const X = (Math.floor((18) * Math.random() + 1))
         const Zombie = (Math.floor((2) * Math.random() + 2))
@@ -16319,9 +16315,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille laboratoire cosmétique") {
         const X = (Math.floor((31) * Math.random() + 1))
         const Zombie = (Math.floor((2) * Math.random() + 2))
@@ -16435,11 +16431,11 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille bar des illusions perdues") {
         const X = (Math.floor((40) * Math.random() + 1))
         const Zombie = (Math.floor((6) * Math.random() + 5))
@@ -16480,9 +16476,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille maison d'un citoyen") {
         const Balle = (Math.floor((2) * Math.random() + 1))
         const X = (Math.floor((64) * Math.random() + 1))
@@ -16578,11 +16574,11 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille magasin de meubles") {
         const X = (Math.floor((39) * Math.random() + 1))
         const Zombie = (Math.floor((2) * Math.random() + 2))
@@ -16686,10 +16682,10 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille mine effondrée") {
         const X = (Math.floor((61) * Math.random() + 1))
         const Zombie = (Math.floor((3) * Math.random() + 3))
@@ -16748,11 +16744,11 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille mini-market") {
         const X = (Math.floor((195) * Math.random() + 1))
         const Zombie = (Math.floor((3) * Math.random() + 2))
@@ -16901,9 +16897,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille motel") {
         const X = (Math.floor((100) * Math.random() + 1))
         const Zombie = (Math.floor((4) * Math.random() + 3))
@@ -17016,11 +17012,11 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille parc à l'abandon") {
         const X = (Math.floor((24) * Math.random() + 1))
         const Zombie = (Math.floor((3) * Math.random() + 2))
@@ -17142,11 +17138,11 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille petit bois obscur") {
         const X = (Math.floor((100) * Math.random() + 1))
         const Zombie = (Math.floor((2) * Math.random() + 1))
@@ -17178,10 +17174,10 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille parking désaffecté") {
         const Balle = (Math.floor((3) * Math.random() + 1))
         const X = (Math.floor((56) * Math.random() + 1))
@@ -17304,11 +17300,11 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille petite maison") {
         const Balle = (Math.floor((2) * Math.random() + 1))
         const X = (Math.floor((40) * Math.random() + 1))
@@ -17440,12 +17436,12 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille pharmacie détruite") {
         const X = (Math.floor((115) * Math.random() + 1))
         const Zombie = (Math.floor((2) * Math.random() + 2))
@@ -17531,11 +17527,11 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille puits abandonné") {
         const X = (Math.floor((100) * Math.random() + 1))
         const Zombie = (Math.floor((4) * Math.random() + 4))
@@ -17576,13 +17572,13 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille relais autoroutier") {
         const Balle = (Math.floor((4) * Math.random() + 1))
         const X = (Math.floor((60) * Math.random() + 1))
@@ -17705,12 +17701,12 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille route barrée") {
         const X = (Math.floor((12) * Math.random() + 1))
         const Zombie = (Math.floor((2) * Math.random() + 2))
@@ -17760,12 +17756,12 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille silos à l'abandon") {
         const X = (Math.floor((72) * Math.random() + 1))
         const Zombie = (Math.floor((3) * Math.random() + 2))
@@ -17806,11 +17802,11 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille stand de fête foraine") {
         const Balle = (Math.floor((3) * Math.random() + 1))
         const X = (Math.floor((50) * Math.random() + 1))
@@ -17960,12 +17956,12 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille supermarché pillé") {
         const X = (Math.floor((100) * Math.random() + 1))
         const Zombie = (Math.floor((2) * Math.random() + 2))
@@ -18204,13 +18200,13 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille tente d'un citoyen") {
         const X = (Math.floor((50) * Math.random() + 1))
         const Zombie = (Math.floor((3) * Math.random() + 3))
@@ -18359,13 +18355,13 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille tranchée aménagée") {
         const Balle = (Math.floor((4) * Math.random() + 2))
         const X = (Math.floor((48) * Math.random() + 1))
@@ -18443,11 +18439,11 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille étrange appareil circulaire") {
         const X = (Math.floor((31) * Math.random() + 1))
         const Zombie = (Math.floor((6) * Math.random() + 5))
@@ -18488,13 +18484,13 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille vieil hôpital de campagne") {
         const X = (Math.floor((98) * Math.random() + 1))
         const Zombie = (Math.floor((4) * Math.random() + 3))
@@ -18607,11 +18603,11 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille vieille pompe hydraulique") {
         const X = (Math.floor((113) * Math.random() + 1))
         const Zombie = (Math.floor((2) * Math.random() + 2))
@@ -18697,11 +18693,11 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille villa de duke") {
         const Balle = (Math.floor((4) * Math.random() + 3))
         const X = (Math.floor((50) * Math.random() + 1))
@@ -18842,11 +18838,11 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fouille villa délabrée") {
         const Balle = (Math.floor((4) * Math.random() + 2))
         const X = (Math.floor((37) * Math.random() + 1))
@@ -19032,14 +19028,14 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
+
 
 
 
 
 ////////////////////////////////////////////////////////////////////Fouille [ancienne version]//////////////////////////////////////////////////////////////////////////////////////////////////
 
-bot.on('message', message => {
+
     if (message.content === prefix + "Fouille zone proche") {
         if (talkedRecently.has(message.author.id + 12345)) {
             const embed = new Discord.RichEmbed()
@@ -19259,11 +19255,11 @@ bot.on('message', message => {
             }, 7200000);
         }
     }
-});
+
 
 //////////////////////////////////////////////////////////////Bâtiments zones proches/////////////////////////////////////////////////////////////////////////
 
-bot.on('message', message => {
+
     if (message.content === prefix + "Zone proche église") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -19273,9 +19269,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Zone proche musée") {
         const Zombie = (Math.floor((13001) * Math.random() + 13001))
         const embed = new Discord.RichEmbed()
@@ -19286,9 +19282,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Zone proche supermarché") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -19298,9 +19294,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Zone proche bâtiment") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -19310,9 +19306,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Zone proche caserne de pompier") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -19322,9 +19318,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Zone proche pharmacie") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -19334,9 +19330,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Zone proche hangar") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -19346,9 +19342,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Zone proche magasin d'arme à feu") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -19358,9 +19354,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Zone proche hôpital") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -19370,9 +19366,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Zone proche école") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -19382,9 +19378,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Zone proche mairie") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -19394,9 +19390,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Zone proche commissariat") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -19406,9 +19402,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Zone proche restaurant") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -19418,9 +19414,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Zone proche demeure") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -19430,9 +19426,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Zone proche hôtel") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -19442,9 +19438,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Zone proche banque") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -19454,10 +19450,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
+
 ///////////////////////////////////////////////////////////////////Objets Horde///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-bot.on('message', message => {
+
     if (message.content === prefix + "Affaires d'un citoyen") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -19467,9 +19463,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Ouverture [Affaires d'un citoyen]")) {
         const X = (Math.floor((100) * Math.random()))
         if (X <= 30) {
@@ -19509,9 +19505,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Ailerons de poulet entamés") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -19521,9 +19517,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Appareil électronique en panne") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -19533,7 +19529,6 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
 
@@ -19544,7 +19539,8 @@ bot.on('message', message => {
 
 
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Appareil électronique en panne [Transformation]")) {
         const X = (Math.floor((100) * Math.random()))
         if (X <= 25) {
@@ -19602,10 +19598,10 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Aqua-Splash") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -19615,10 +19611,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Tir [Aqua-Splash]")) {
         const X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((2) * Math.random() + 1))
@@ -19641,9 +19637,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Aqua-Splash (démonté)") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -19653,9 +19649,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Badge de shérif") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -19665,9 +19661,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Balle") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -19677,9 +19673,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Balise radius") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -19689,10 +19685,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Bandage rudimentaire") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -19702,9 +19698,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Barricades à clouer") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -19714,9 +19710,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Batteur électrique (démonté)") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -19726,9 +19722,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Batteur électrique") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -19738,11 +19734,11 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Coup [Batteur électrique]")) {
         const X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((2) * Math.random() + 1))
@@ -19765,9 +19761,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Betapropine 5MG périmée") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -19777,10 +19773,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Betapropine 5MG périmée [Effets]")) {
         const X = (Math.floor((100) * Math.random()))
         if (X <= 65) {
@@ -19811,9 +19807,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Bidon d'huile vide") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -19823,11 +19819,11 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Biscuit fade") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -19837,9 +19833,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Bobine de fil de fer") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -19849,9 +19845,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Bombe pulvérine") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -19861,9 +19857,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Bombe macabre") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -19873,9 +19869,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Bombe à eau") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -19885,10 +19881,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Lancer [Bombe à eau]")) {
         const X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((4) * Math.random() + 2))
@@ -19911,10 +19907,10 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Bombe à eau explosive") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -19924,9 +19920,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Lancer [Bombe à eau explosive]")) {
         const X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((7) * Math.random() + 4))
@@ -19949,10 +19945,10 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Bon plat fait-maison") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -19962,9 +19958,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Bonbonne d'eau") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -19974,9 +19970,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Boule de pâte visqueuse") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -19986,9 +19982,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Boules quiès") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -19998,10 +19994,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Boîte d'allumettes") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -20011,9 +20007,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Boîte de conserve") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -20023,9 +20019,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Boîte de conserve ouverte") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -20035,9 +20031,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Boîte de schrödinger") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -20047,7 +20043,6 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
 
@@ -20057,7 +20052,8 @@ bot.on('message', message => {
 
 
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Ouverture [Boîte de schrödinger]")) {
         const X = (Math.floor((100) * Math.random()))
         if (X <= 70) {
@@ -20079,11 +20075,11 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Boîte de jeu") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -20093,9 +20089,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Ouverture [Boîte de jeu]")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -20105,10 +20101,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Boîte-déjeuner") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -20118,10 +20114,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Ouverture [Boîte-déjeuner]")) {
         const X = (Math.floor((100) * Math.random()))
         if (X <= 40) {
@@ -20161,9 +20157,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Boîte en métal") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -20173,9 +20169,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Ouverture [Boîte en métal]")) {
         const X = (Math.floor((100) * Math.random()))
         if (X <= 30) {
@@ -20242,9 +20238,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Brico'facile") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -20254,9 +20250,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Buche en bon état") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -20266,9 +20262,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Bureau monté à la rache") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -20278,9 +20274,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Bâton cassé") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -20290,9 +20286,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Cadavre d'un voyageur") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -20302,9 +20298,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Cadavre d'un voyageur [Effets]")) {
         const X = (Math.floor((100) * Math.random()))
         if (X <= 40) {
@@ -20335,9 +20331,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Caddie") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -20347,9 +20343,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Caddie bancal") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -20359,9 +20355,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Cafetière") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -20371,9 +20367,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Cafetière incomplète") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -20383,9 +20379,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Café brûlant") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -20395,9 +20391,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Caisse de feux d'artifice") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -20407,9 +20403,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Caisse de matériel") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -20419,9 +20415,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Ouverture [Caisse de matériel]")) {
         const X = (Math.floor((100) * Math.random()))
         if (X <= 40) {
@@ -20479,11 +20475,11 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Caisse de nourriture") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -20493,9 +20489,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Ouverture [Caisse de nourriture]")) {
         const X = (Math.floor((100) * Math.random()))
         if (X <= 20) {
@@ -20553,9 +20549,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Calibrateur PDTT MARK II") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -20565,9 +20561,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Cantine en fer") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -20577,9 +20573,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Caisse de matériaux") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -20589,9 +20585,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Ouverture [Carton de matériaux]")) {
         const X = (Math.floor((100) * Math.random()))
         if (X <= 60) {
@@ -20613,9 +20609,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Cartons") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -20625,9 +20621,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Ceinture à poches") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -20637,9 +20633,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Chaine hifi") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -20649,9 +20645,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Chaise EKTÖRP-GLUTEN") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -20661,11 +20657,11 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Coup [Chaise]")) {
         const X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((2) * Math.random() + 1))
@@ -20688,12 +20684,12 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Chamallows calcinés") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -20703,9 +20699,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Chamallows séchés") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -20715,9 +20711,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Charognardes") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -20748,9 +20744,9 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Charogna
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Chaîne de porte & cadenas") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -20760,9 +20756,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Chewing-gums séchés") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -20772,9 +20768,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Chien hargneux") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -20784,11 +20780,11 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Chien hargneux attaque")) {
         const X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((4) * Math.random() + 1))
@@ -20811,9 +20807,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Cidre claviceps artisanal") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -20823,9 +20819,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Claviceps purpurea") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -20835,9 +20831,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Clé magnétique") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -20847,9 +20843,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Clé à molette") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -20859,9 +20855,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Coup [Clé à molette]")) {
         const X = (Math.floor((100) * Math.random()))
         if (X <= 50) {
@@ -20883,10 +20879,10 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Clé à percussion") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -20896,9 +20892,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Cochon malodorant") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -20921,9 +20917,9 @@ L'utilisation de cet objet vous permet de fuir un combat ou alors d'empêcher le
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Coffre d'architecte") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -20933,9 +20929,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Coffre d'architecte scellé") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -20945,9 +20941,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Coffre-fort") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -20957,12 +20953,12 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
 
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Ouverture [Coffre-fort]")) {
         const X = (Math.floor((100) * Math.random()))
         if (X <= 10) {
@@ -21047,10 +21043,10 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Colis postal") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -21060,10 +21056,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Ouverture [Colis postal]")) {
         const X = (Math.floor((100) * Math.random()))
         if (X <= 60) {
@@ -21103,9 +21099,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Composant électronique") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -21115,9 +21111,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Coupe-coupe") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -21127,9 +21123,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Coup [Coupe-coupe]")) {
         const X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((2) * Math.random() + 1))
@@ -21152,9 +21148,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Courroie") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -21164,9 +21160,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Couteau suisse") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -21176,10 +21172,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Coup [Couteau suisse]")) {
         const X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((2) * Math.random() + 1))
@@ -21202,9 +21198,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Couteau à dents") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -21214,9 +21210,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Coup [Couteau à dents]")) {
         const X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((2) * Math.random() + 1))
@@ -21239,10 +21235,10 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Cutter") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -21252,9 +21248,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Coup [Cutter]")) {
         const X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((2) * Math.random() + 1))
@@ -21277,9 +21273,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Cyanure") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -21289,9 +21285,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Devastator") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -21301,9 +21297,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Tir [Devastator]")) {
         const X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((3) * Math.random() + 1))
@@ -21326,10 +21322,10 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Devastator (démonté)") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -21339,9 +21335,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Diode lazer") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -21351,11 +21347,11 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Distributeur vide") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -21365,9 +21361,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Doggy-bag") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -21377,11 +21373,11 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Ouverture [Doggy-bag]")) {
         const X = (Math.floor((100) * Math.random()))
         if (X <= 10) {
@@ -21466,10 +21462,10 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Débris métalliques") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -21479,9 +21475,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Décapsuleur") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -21491,10 +21487,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Dés") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -21504,9 +21500,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Détonateur compact") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -21516,9 +21512,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Eau croupie") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -21528,9 +21524,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Eau croupie purifiée") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -21540,10 +21536,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Epices fortes") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -21553,9 +21549,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Explosifs bruts") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -21565,9 +21561,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Ferraille") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -21577,9 +21573,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Ferraille suite") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -21589,10 +21585,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fiole de poison") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -21602,9 +21598,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Four cancérigène") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -21614,9 +21610,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fragment de tôle") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -21626,9 +21622,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fumigène 'Senteur sapin'") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -21638,9 +21634,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fusil d'assaut") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -21650,10 +21646,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Tir [Fusil d'assaut]")) {
         const X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((4) * Math.random() + 1))
@@ -21676,11 +21672,11 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fusée éclairante") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -21690,9 +21686,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Grand bâton sec") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -21702,10 +21698,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Coup [Grand bâton sec]")) {
         const X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((2) * Math.random() + 1))
@@ -21728,9 +21724,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Gros chat mignon") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -21740,9 +21736,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Gros coffre en métal") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -21752,11 +21748,11 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Ouverture [Gros coffre en métal]")) {
         const X = (Math.floor((100) * Math.random()))
         if (X <= 25) {
@@ -21832,10 +21828,10 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Gros colis postal") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -21845,9 +21841,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Ouverture [Gros colis postal]")) {
         const X = (Math.floor((100) * Math.random()))
         if (X <= 30) {
@@ -21923,9 +21919,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Grosse chaîne rouillée") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -21935,9 +21931,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Coup [Grosse chaîne rouillée]")) {
         const X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((2) * Math.random() + 1))
@@ -21960,10 +21956,10 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Guitare artisanale") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -21973,9 +21969,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Hydratone 100MG") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -21985,9 +21981,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Jambon-beurre moisi") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -21997,9 +21993,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Jerrycan plein") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22009,11 +22005,11 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Jus de mirabelle suspect") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22023,9 +22019,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Kalachnik'eau") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22035,11 +22031,11 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Tir [Kalachnik'eau]")) {
         const X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((4) * Math.random() + 1))
@@ -22062,11 +22058,11 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Kit de bricolage") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22076,9 +22072,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Kit de bricolage abimé") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22088,9 +22084,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "LSD") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22100,9 +22096,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "LSD [Effets]")) {
         const X = (Math.floor((100) * Math.random()))
         if (X <= 50) {
@@ -22133,9 +22129,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Lambeau de chair") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22145,9 +22141,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Lampe de chevet allumée") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22157,9 +22153,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Lampe de chevet éteinte") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22169,9 +22165,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Lance-pile 1-PDTG") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22181,10 +22177,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Tir [Lance-pile 1-PDTG]")) {
         const X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((2) * Math.random() + 1))
@@ -22207,11 +22203,11 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Lance-pile 1-PDTG (démonté)") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22221,9 +22217,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Lance-pieu") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22233,10 +22229,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Coup [Lance-pieu]")) {
         const X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((3) * Math.random() + 1))
@@ -22259,11 +22255,11 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Lance-pile MARK II") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22273,9 +22269,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Tir [Lance-pile MARK II]")) {
         const X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((3) * Math.random() + 1))
@@ -22307,11 +22303,11 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Lentille convexe") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22321,11 +22317,11 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Liasse de billets") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22335,9 +22331,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Légume suspect") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22358,9 +22354,9 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Légume 
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Maglite Pif'gadget") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22370,11 +22366,11 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Matelas") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22384,9 +22380,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Melon d'intestin") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22396,9 +22392,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Meuble en kit") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22408,9 +22404,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Micropur effervescent") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22420,9 +22416,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Mine antipersonnel") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22432,9 +22428,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Explosion [Mine antipersonnel]")) {
         const X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((26) * Math.random() + 10))
@@ -22446,10 +22442,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Morceau de caisse") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22459,9 +22455,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Morceau de contreplaqué") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22471,9 +22467,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Morceau de grillage") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22483,9 +22479,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Moteur") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22495,9 +22491,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Moteur incomplet") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22507,10 +22503,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Mécanisme") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22520,9 +22516,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Démontage [Mécanisme]")) {
         const X = (Math.floor((100) * Math.random()))
         if (X <= 50) {
@@ -22562,10 +22558,10 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Médicament sans étiquette") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22575,9 +22571,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Médicament sans étiquette [Effets]")) {
         const X = (Math.floor((100) * Math.random()))
         if (X <= 25) {
@@ -22671,9 +22667,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Napolitains moisis") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22683,11 +22679,11 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Nouilles chinoises") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22697,9 +22693,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Nouilles chinoises épicées") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22709,9 +22705,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Oeuf") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22721,9 +22717,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Os charnu") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22733,10 +22729,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Os charnu [Effets]")) {
         const X = (Math.floor((100) * Math.random()))
         if (X <= 60) {
@@ -22767,11 +22763,11 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Os humain félé") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22781,9 +22777,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Coup [Os humain fêlé]")) {
         const X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((3) * Math.random() + 1))
@@ -22806,10 +22802,10 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Outils en vrac") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22819,9 +22815,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Ouvre-boîte") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22831,9 +22827,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Paillasson") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22843,9 +22839,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Paillasson piégé") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22855,9 +22851,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Pamplemousse explosif") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22867,9 +22863,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Paquet de chips molles") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22879,9 +22875,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Paquet de cigarettes entamé") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22891,9 +22887,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Paracétoïde 7G") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22903,9 +22899,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Paracétoïde 7G [Effets]")) {
         const X = (Math.floor((100) * Math.random()))
         if (X <= 25) {
@@ -22927,9 +22923,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Pavés de béton informes") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22939,9 +22935,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Pelures de peau") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22951,9 +22947,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Petit manche vibrant") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22963,10 +22959,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Petits beurres rances") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22976,9 +22972,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Pile") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -22988,9 +22984,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Pim's périmé") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23000,9 +22996,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Piqûre de calmant [Effets]")) {
         const X = (Math.floor((100) * Math.random()))
         if (X <= 90) {
@@ -23024,9 +23020,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Piqûre de calmant") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23036,9 +23032,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Pistolet à eau") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23048,9 +23044,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Tir [Pistolet à eau]")) {
         const X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((2) * Math.random() + 1))
@@ -23073,10 +23069,10 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Plan de chantier commun") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23086,9 +23082,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Plan de chantier inhabituel") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23098,9 +23094,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Plan de chantier rare") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23110,9 +23106,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Plan de chantier très rare") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23122,9 +23118,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Plan de chantier épique") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23134,9 +23130,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Plan de chantier mythique") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23146,9 +23142,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Plan de chantier légendaire") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23158,9 +23154,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Planche tordue") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23170,9 +23166,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Plaque de bois solide") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23182,9 +23178,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Plaque de tôle") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23194,9 +23190,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Plat fait-maison douteux") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23206,9 +23202,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Poignée de bonbons") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23218,9 +23214,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
 
     if (message.content === prefix + "Poignée de vis et écrous") {
         const embed = new Discord.RichEmbed()
@@ -23231,9 +23227,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Pointeur laser brûlant") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23243,9 +23239,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Tir [Pointeur laser brûlant]")) {
         const X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((3) * Math.random() + 1))
@@ -23268,10 +23264,10 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Pomme") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23292,9 +23288,9 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Pomme]"`
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Pompe à jerrycan") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23304,9 +23300,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Tir [Pompe à jerrycan]")) {
         const X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((3) * Math.random() + 1))
@@ -23329,10 +23325,10 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Pompe à jerrycan (démonté)") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23342,9 +23338,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Portière de voiture") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23354,9 +23350,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Protection [Portière de voiture]")) {
         const X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((5) * Math.random() + 2))
@@ -23379,9 +23375,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Portière de voiture incomplète") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23391,9 +23387,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Poudre super-fuzz") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23403,9 +23399,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Poudre-comète brute") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23415,9 +23411,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Poule") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23438,9 +23434,9 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Poutre rafistolée") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23450,9 +23446,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Produit corrosif") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23462,9 +23458,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Produits pharmaceutiques") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23474,9 +23470,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Purée de charognardes") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23486,9 +23482,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Purée de charognardes [Effets]")) {
         const X = (Math.floor((100) * Math.random()))
         if (X <= 75) {
@@ -23511,9 +23507,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Radio K7") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23523,11 +23519,11 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Rat") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23537,9 +23533,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Ration d'eau") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23549,9 +23545,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Revolver") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23561,10 +23557,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Tir [Revolver]")) {
         const X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((3) * Math.random() + 1))
@@ -23587,10 +23583,10 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Rocking chair") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23600,9 +23596,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Coup [Rocking chair]")) {
         const X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((3) * Math.random() + 1))
@@ -23625,10 +23621,10 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Rustine") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23638,10 +23634,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Réfrigérateur d'étudiant") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23651,10 +23647,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Coup [Rocking chair]")) {
         const X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((5) * Math.random() + 1))
@@ -23677,9 +23673,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Réserves d'un citoyen avisé") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23689,9 +23685,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Ouverture [Réserves d'un citoyen avisé]")) {
         const X = (Math.floor((100) * Math.random()))
         if (X <= 30) {
@@ -23740,11 +23736,11 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Sac d'herbe fraîche") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23754,9 +23750,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Sac de ciment") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23766,9 +23762,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Sac plastique") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23778,10 +23774,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Sac plastique 2") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23791,10 +23787,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Sac plastique + explosif") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23804,9 +23800,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Lancer [Sac plastique + explosif]")) {
         const X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((11) * Math.random() + 5))
@@ -23829,10 +23825,10 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Sac super-pratique") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23842,9 +23838,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Sac supplémentaire") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23854,9 +23850,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Sacoche usée") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23866,9 +23862,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Scie à métaux") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23878,9 +23874,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Scie à métaux abîmée") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23890,9 +23886,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Serpent de 2 mètres") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23902,9 +23898,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Souche de bois pourrie") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23914,10 +23910,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Sport-elec") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23927,9 +23923,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Sport-elec [Effets]")) {
         const X = (Math.floor((100) * Math.random()))
         if (X <= 75) {
@@ -23952,9 +23948,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Steak appétissant") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23964,9 +23960,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Steak de sciure") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23976,9 +23972,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Structures métalliques") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -23988,9 +23984,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Stéroïdes anabolisants") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24000,9 +23996,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Stéroïdes anabolisants [Effets]")) {
         const X = (Math.floor((100) * Math.random()))
         if (X <= 25) {
@@ -24024,10 +24020,10 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Substance épaisse") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24037,9 +24033,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Sérum pour goule") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24049,9 +24045,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Table järpen") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24061,9 +24057,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Tapis persan") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24073,9 +24069,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Taser d'auto-défense") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24085,9 +24081,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Coup [Taser d'auto-défense]")) {
         const X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((2) * Math.random() + 1))
@@ -24110,11 +24106,11 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Teddy n'ours") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24124,9 +24120,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Toile de tente") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24136,9 +24132,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Tondeuse à gazon") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24148,9 +24144,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Coup [Tondeuse à gazon]")) {
         const X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((3) * Math.random() + 1))
@@ -24173,9 +24169,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Tondeuse à gazon (démonté)") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24185,9 +24181,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Torche") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24197,9 +24193,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Torche consumée") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24209,9 +24205,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Tournevis") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24221,9 +24217,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Tronçonneuse") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24233,9 +24229,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Coup [Tronçonneuse]")) {
         const X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((6) * Math.random() + 1))
@@ -24258,9 +24254,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Tronçonneuse (démonté)") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24270,9 +24266,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Tréteau") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24282,9 +24278,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Coup [Tréteau]")) {
         const X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((2) * Math.random() + 1))
@@ -24307,9 +24303,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Tube en cuivre") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24319,9 +24315,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Tube de lancement floush") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24331,9 +24327,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Twinoïde 500MG") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24343,10 +24339,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Twinoïde 500MG [Effets]")) {
         const X = (Math.floor((100) * Math.random()))
         if (X <= 80) {
@@ -24368,9 +24364,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Téléphone portable") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24380,9 +24376,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Unité centrale") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24392,9 +24388,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Coup [Unité centrale]")) {
         const X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((3) * Math.random() + 1))
@@ -24417,9 +24413,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Viande humaine") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24429,9 +24425,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Viande indéfinissable") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24441,9 +24437,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Viande humaine [Effets]")) {
         const X = (Math.floor((100) * Math.random()))
         if (X <= 70) {
@@ -24465,9 +24461,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Vieille machine à laver") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24477,9 +24473,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Vieille porte") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24489,9 +24485,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content.startsWith(prefix + "Coup [Vieille porte]")) {
         const X = (Math.floor((100) * Math.random()))
         const Cible = (Math.floor((4) * Math.random() + 1))
@@ -24514,9 +24510,9 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Vodka marinostov") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24526,9 +24522,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "'Debout-les-morts'") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24538,11 +24534,11 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
+
 
 /////////////////////////////////////////////////////////////////////Défenses et batiments/////////////////////////////////////////////////////////////////////////////////////
 
-bot.on('message', message => {
+
     if (message.content === prefix + "Atelier") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24552,9 +24548,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Boucherie") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24564,9 +24560,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Crémato-cue") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24576,10 +24572,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Manufacture") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24589,9 +24585,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Scies hurlantes") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24601,9 +24597,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Tour") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24613,9 +24609,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Dynamitage") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24625,9 +24621,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Piège à loups") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24637,10 +24633,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Monticules pour canons") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24650,9 +24646,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Lance-tôle") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24662,9 +24658,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Perforeuse") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24674,9 +24670,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Canon à briques") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24686,9 +24682,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Tourniquet à poutres") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24698,9 +24694,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Porte améliorée") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24710,9 +24706,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Porte à piston") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24722,9 +24718,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Blindage d'entrée") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24734,9 +24730,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fondations") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24746,9 +24742,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fausse ville") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24758,9 +24754,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Derrick artisanal") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24770,9 +24766,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Le grand déménagement") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24782,9 +24778,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Pompe") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24794,9 +24790,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Purificateur d'eau") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24806,9 +24802,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Potager") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24818,9 +24814,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Champ de mines à eau") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24830,9 +24826,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Tuyauteries") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24842,9 +24838,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Arroseurs automatiques") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24854,9 +24850,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Sani-broyeur") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24866,9 +24862,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Vaporisateur de rue") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24878,9 +24874,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Foreuse pour le puits") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24890,9 +24886,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Projet Eden") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24903,9 +24899,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Renforts de muraille") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24916,10 +24912,10 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Barbelés") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24930,9 +24926,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Appâts") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24943,9 +24939,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Barrières") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24956,9 +24952,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Grand fossé") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24969,9 +24965,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Champ de pieux") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24982,9 +24978,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Douves") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24995,9 +24991,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Rape à zombies") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -25008,9 +25004,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Oubliettes") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -25021,9 +25017,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Muraille rasoir") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -25034,9 +25030,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Remparts avancés") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -25047,9 +25043,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Fixations de défenses") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -25060,9 +25056,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Grogro mur") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -25073,9 +25069,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Poutres de renfort") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -25086,9 +25082,9 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
 
-bot.on('message', message => {
+
+
     if (message.content === prefix + "Muraille à pointes") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -25099,11 +25095,11 @@ bot.on('message', message => {
             .setTimestamp()
         message.channel.send({ embed })
     }
-});
+
 
 /////////////////////////////////////////////////////////////////////Référence d'animes////////////////////////////////////////////////////////////////////////////////////////
 
-bot.on('message', message => {
+
     if (message.content === prefix + "Mangas") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -25115,3 +25111,5 @@ bot.on('message', message => {
         message.channel.send({ embed })
     }
 });
+
+
