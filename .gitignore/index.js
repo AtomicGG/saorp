@@ -323,7 +323,7 @@ bot.on('message', message => {
                 console.log(`${message.author.username} a mis pour la 1ère fois ${ajout} eau dans le puits`)
             }
         } catch(e) {
-            console.error(`${message.author.name} a mal formulé la commande : "${message.content}"`)
+            console.error(`${message.author.username} a mal formulé la commande : "${message.content}"`)
             return
         }
     }
@@ -408,7 +408,7 @@ bot.on('message', message => {
                 console.log(`${message.author.username} a mis pour la 1ère fois ${ajout} ${matiere} dans la banque`)
             }
         } catch(e) {
-            console.error(`${message.author.name} a mal formulé la commande : "${message.content}"`)
+            console.error(`${message.author.username} a mal formulé la commande : "${message.content}"`)
             return
         }
     }
