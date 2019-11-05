@@ -39,27 +39,31 @@ bot.on('ready', () => {
         if(heure >= 7 && heure < 19){
             for (let i = 0 ; i < 4 ; i++){
                 serveurChannelRues[i].setName(serveurChannelRues[i].name.replace(serveurChannelRues[i].name.charAt(6),"🏙"))
-                    .then(console.log("Rue updated (" + heure + "h" + minutes + ", 🏙)"))
+                    .then()
                     .catch(console.error)
             }
+            console.log("Rue updated (" + heure + "h" + minutes + ", 🏙)")
         } else if(heure >= 6 && heure < 7){
             for (let i = 0 ; i < 4 ; i++){
                 serveurChannelRues[i].setName(serveurChannelRues[i].name.replace(serveurChannelRues[i].name.charAt(6),"🌆"))
-                    .then(console.log("Rue updated (" + heure + "h" + minutes + ", 🌆)"))
+                    .then()
                     .catch(console.error)
             }
+            console.log("Rue updated (" + heure + "h" + minutes + ", 🌆)")
         } else if(heure >= 19 && heure < 20){
             for (let i = 0 ; i < 4 ; i++){
                 serveurChannelRues[i].setName(serveurChannelRues[i].name.replace(serveurChannelRues[i].name.charAt(6),"🌇"))
-                    .then(console.log("Rue updated (" + heure + "h" + minutes + ", 🌇)"))
+                    .then()
                     .catch(console.error)
             }
+            console.log("Rue updated (" + heure + "h" + minutes + ", 🌇)")
         } else {
             for (let i = 0 ; i < 4 ; i++){
                 serveurChannelRues[i].setName(serveurChannelRues[i].name.replace(serveurChannelRues[i].name.charAt(6),"🌃"))
-                    .then(console.log("Rue updated (" + heure + "h" + minutes + ", 🌃)"))
+                    .then()
                     .catch(console.error)
             }
+            console.log("Rue updated (" + heure + "h" + minutes + ", 🌃)")
         }
 
 
