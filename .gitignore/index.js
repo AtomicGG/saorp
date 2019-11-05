@@ -98,6 +98,7 @@ let random;
 
 const nomServeur = "Horde [RP]"
 let cont;
+let args;
 
 bot.off('guildMemberAdd', member => {
     member.createDM().then(channel => {
@@ -1437,7 +1438,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
     const A = (Math.floor((100) * Math.random()))
     cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
+    args = cont.slice(1);
     if (message.content.startsWith(prefix + "Maison cachette")) {
         let Z = args.slice(2).join(" : ");
         const X = Z * 3
@@ -1683,7 +1684,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
+    args = cont.slice(1);
     if (message.content.startsWith(prefix + "Nombre de zombie")) {
         let X = args.slice(3).join(" : ");
         const Zombies = (Math.floor((X) * Math.random() + 1))
@@ -1757,7 +1758,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
+    args = cont.slice(1);
     if (message.content.startsWith(prefix + "Cible")) {
         let X = args.slice(1).join(" : ");
         const Joueurs = (Math.floor((X) * Math.random() + 1))
@@ -2345,7 +2346,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
     const A = (Math.floor((100) * Math.random()))
     cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
+    args = cont.slice(1);
     if (message.content.startsWith(prefix + "Maison cachette")) {
         let Z = args.slice(2).join(" : ");
         const X = Z * 3
@@ -2855,7 +2856,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
+    args = cont.slice(1);
     if (message.content.startsWith(prefix + "Zombies attaque")) {
         let ZZ = args.slice(2).join(" : ");
         const Z = ZZ * 2
@@ -2959,7 +2960,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
     cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
+    args = cont.slice(1);
     if (message.content.startsWith(prefix + "Aide")) {
         let XX = args.slice(1).join(" : ");
         const A = XX * 5
