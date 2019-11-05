@@ -2860,6 +2860,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
     cont = message.content.slice(prefix.length).split(" ");
     args = cont.slice(1);
     if (message.content.startsWith(prefix + "Zombies attaque")) {
+        console.log("acces")
         let ZZ = args.slice(2).join(" : ");
         const Z = ZZ * 2
         A = (Math.floor((100) * Math.random() + Z))
