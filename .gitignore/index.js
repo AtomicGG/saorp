@@ -23634,7 +23634,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?Hordes [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(0xff0000)
-                .addField("Tir [Fusil d'assaut] :", "Vous ratez malheureusement votre tir...")
+                .addField("Tir [Revolver] :", "Vous ratez malheureusement votre tir...")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -23643,7 +23643,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?Hordes [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(0xff0000)
-                .addField("Tir [Fusil d'assaut] :", "Vous touchez `" + Cible + "` cible(s) !\n\nSi la cible est un zombie, il meurt\n\nSi la cible est un survivant, il subit l'état `Blessure mortelle`")
+                .addField("Tir [Revolver] :", "Vous touchez `" + Cible + "` cible(s) !\n\nSi la cible est un zombie, il meurt\n\nSi la cible est un survivant, il subit l'état `Blessure mortelle`")
                 .setTimestamp()
             message.channel.send({ embed })
         }
