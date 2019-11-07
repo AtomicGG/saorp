@@ -20717,7 +20717,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Charogna
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(0xff0000)
-            .addField("Chewing-gums séchés :", "Une pleine poignée de chewing-gums tout séchés. En théorie, ça se mâche, mais ça ne s'avale pas\n\nSeulement, dans cet enfer, vous n'êtes pas en position de faire le ou la difficile...\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !\n\nCet objet est `Cuisinable`\n\nPour cuisiner cet objet et obtenir `Chamallows calcinés` vous devrez être à la cuisine et utiliser :\n\n`1 Chamallows séchés`\n`1 Torche`\n\nLa préparation prendra 5 minutes à sa réalisation ainsi que 1 point d'action")
+            .addField("Chewing-gums séchés :", "Une pleine poignée de chewing-gums tout séchés. En théorie, ça se mâche, mais ça ne s'avale pas\n\nSeulement, dans cet enfer, vous n'êtes pas en position de faire le ou la difficile...\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !\n\nCet objet est `Cuisinable`\n\nPour cuisiner cet objet et obtenir `Chamallows calcinés` vous devrez être à la cuisine et utiliser :\n\n`1 Chewing-gums séchés`\n`1 Torche`\n\nLa préparation prendra 5 minutes à sa réalisation ainsi que 1 point d'action")
             .setTimestamp()
         message.channel.send({ embed })
     }
