@@ -1276,7 +1276,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
             .setTitle("Liste des objets, partie 3 :")
-            .setDescription("`=Clé à molette`\n`=Clé à percussion`\n`=Cochon malodorant`\n`=Coffre d'architecte`\n`=Coffre d'architecte scellé`\n`=Coffre-fort`\n`=Colis postal`\n`=Coupe-coupe`\n`=Courroie`\n`=Couteau suisse`\n`=Couteau à dents`\n=Cuivre brut\n`=Cutter`\n`=Cyanure`\n`=Devastator`\n`=Devastator (démonté)`\n`=Diode lazer`\n`=Distributeur vide`\n`=Doggy-bag`\n`=Débris métalliques`\n`=Décapsuleur`\n`=Dés`\n`=Détonateur compact`\n`=Eau croupie`\n`=Eau croupie purifiée`\n`=Epices fortes`\n`=Explosifs bruts`\n`=Ferraille`\n`=Fer brut`\n=Fil de cuivre\n`=Fiole de poison`\n`=Four cancérigène`\n`=Fragment de tôle`\n`=Fumigène 'Senteur sapin'`\n`=Fusil d'assaut`\n`=Fusée éclairante`\n`=Grand bâton sec`\n`=Gros chat mignon`\n\nLa suite : `=Horde liste d'objets 4`").setTimestamp()
+            .setDescription("`=Clé à molette`\n`=Clé à percussion`\n`=Cochon malodorant`\n`=Coffre d'architecte`\n`=Coffre d'architecte scellé`\n`=Coffre-fort`\n`=Colis postal`\n`=Coupe-coupe`\n`=Courroie`\n`=Couteau suisse`\n`=Couteau à dents`\n`=Cuivre brut`\n`=Cutter`\n`=Cyanure`\n`=Devastator`\n`=Devastator (démonté)`\n`=Diode lazer`\n`=Distributeur vide`\n`=Doggy-bag`\n`=Débris métalliques`\n`=Décapsuleur`\n`=Dés`\n`=Détonateur compact`\n`=Eau croupie`\n`=Eau croupie purifiée`\n`=Epices fortes`\n`=Explosifs bruts`\n`=Ferraille`\n`=Fer brut`\n`=Fil de cuivre`\n`=Fiole de poison`\n`=Four cancérigène`\n`=Fragments de tôle`\n`=Fumigène 'Senteur sapin'`\n`=Fusil d'assaut`\n`=Fusée éclairante`\n`=Grand bâton sec`\n`=Gros chat mignon`\n\nLa suite : `=Horde liste d'objets 4`").setTimestamp()
         message.channel.send({ embed })
     }
 
@@ -1302,7 +1302,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
             .setTitle("Liste des objets, partie 5 :")
-            .setDescription("`=Mine antipersonnel`\n`=Morceau de caisse`\n`=Morceau de contreplaqué`\n`=Moteur`\n`=Moteur incomplet`\n`=Mécanisme`\n`=Médicament sans étiquette`\n`=Napolitains moisis`\n`=Nouilles chinoises`\n`=Nouilles chinoises épicées`\n`=Oeuf`\n`=Os charnu`\n`=Os humain fêlé`\n`=Outils en vrac`\n`=Ouvre-boîte`\n`=Paillasson`\n`Paillasson piégé`\n`=Pamplemousse explosif`\n`=Paquet de chips molles`\n`=Paquet de cigarettes entamé`\n`=Paracétoïde 7G`\n`=Pavés de béton informes`\n`=Pelures de peau`\n`=Petit manche vibrant`\n`=Petits beurres rances`\n`=Pile`\n`=Pim's périmé`\n`Piqûre de calmant`\n`=Pistolet à eau`\n`=Pistolet à eau`\n\nLa suite : `=Horde liste d'objets 6`").setTimestamp()
+            .setDescription("`=Mine antipersonnel`\n`=Morceau de caisse`\n`=Morceau de contreplaqué`\n`=Moteur`\n`=Moteur incomplet`\n`=Mécanisme`\n`=Médicament sans étiquette`\n`=Napolitains moisis`\n`=Nouilles chinoises`\n`=Nouilles chinoises épicées`\n`=Oeuf`\n`=Os charnu`\n`=Os humain fêlé`\n`=Outils en vrac`\n`=Ouvre-boîte`\n`=Paillasson`\n`=Paillasson piégé`\n`=Pamplemousse explosif`\n`=Paquet de chips molles`\n`=Paquet de cigarettes entamé`\n`=Paracétoïde 7G`\n`=Pavés de béton informes`\n`=Pelures de peau`\n`=Petit manche vibrant`\n`=Petits beurres rances`\n`=Pile`\n`=Pim's périmé`\n`=Piqûre de calmant`\n`=Pistolet à eau`\n`=Pistolet à eau`\n\nLa suite : `=Horde liste d'objets 6`").setTimestamp()
         message.channel.send({ embed })
     }
 
@@ -1511,8 +1511,8 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(0xff0000)
-                .addField("Cachette :", "Vous faites malheureusement un peu de bruit et les zombies arrivent à l'entendre et même à vous sentir, ils essayent de rentrer, vous avez 5 bonnes minutes pour décider de quoi faire...")
-                .setImage("https://media1.giphy.com/media/ZwA7zR7PWMiUE/giphy.gif")
+                .addField("Cachette :", "Vous réussissez à garder votre calme et ne faire aucun bruit, les zombies passent devant votre maison et s'en vont !")
+                .setImage("https://media1.giphy.com/media/nEuTuI4yvFXA1qSUaD/giphy.gif")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -1521,8 +1521,8 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(0xff0000)
-                .addField("Cachette :", "Vous réussissez à garder votre calme et ne faire aucun bruit, les zombies passent devant votre maison et s'en vont !")
-                .setImage("https://media1.giphy.com/media/nEuTuI4yvFXA1qSUaD/giphy.gif")
+                .addField("Cachette :", "Vous faites malheureusement un peu de bruit et les zombies arrivent à l'entendre et même à vous sentir, ils essayent de rentrer, vous avez 5 bonnes minutes pour décider de quoi faire...")
+                .setImage("https://media1.giphy.com/media/ZwA7zR7PWMiUE/giphy.gif")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -2379,118 +2379,6 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
 
-    if (message.content === prefix + "Habitations") {
-        const embed = new Discord.RichEmbed()
-            .setColor(0xff0000)
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Les habitations, partie 1 :", "Dans la ville, vous aurez une maison qui vous sera confié avec plusieurs fonctionnalités :\n\nVous pourrez stocké 10 objets maximal dans votre coffre\n\nVous pourrez dormir afin d'éviter l'état 'Fatigue'\n\nL'habitation sert aussi principalement à vous cacher lorsque des zombies sont infiltrés en ville !\n\nSi des zombies passent devant chez vous et que vous voulez essayer de rester cacher : `=Maison cachette : [Nombre de zombies]`\n\nVotre maison peux s'améliorer, notamment elle possède ses propres points de défense lorsque des zombies attaqueront votre maison !\n\nSi vous possédez par exemple une 'Petite fosse' de 2 points de défense et que 5 zombies tentent d'entrer dans votre maison, seulement 3 resteront en vie et les 2 autres mourront ou seront bloqués !\n\nA savoir que les points de défense des habitations ne sont valables qu'une fois par nuit...\n\nLa suite : `=Habitations 2`").setTimestamp()
-        message.channel.send({ embed })
-    }
-
-
-
-    if (message.content === prefix + "Habitations 2") {
-        const embed = new Discord.RichEmbed()
-            .setColor(0xff0000)
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Les habitations, partie 2 :", " Si vous fuiyez par exemple votre maison, que vous revenez poursuivis encore par des zombies, cette fois-ci votre maison malgrè ses points de défense ne stoppera pas les quelques zombies...\n\nPour consulter la liste des améliorations : `=Habitations améliorations`\n\n[Il n'y a pas encore d'améliorations pour votre habitation]").setTimestamp()
-        message.channel.send({ embed })
-    }
-
-
-
-
-
-
-
-
-    A = (Math.floor((100) * Math.random()))
-    cont = message.content.slice(prefix.length).split(" ");
-    args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Maison cachette")) {
-        let Z = args.slice(2).join(" : ");
-        X = Z * 3
-        if (A < 60 - X) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(0xff0000)
-                .addField("Cachette :", "Vous faites malheureusement un peu de bruit et les zombies arrivent à l'entendre et même à vous sentir, ils essayent de rentrer, vous avez 5 bonnes minutes pour décider de quoi faire...")
-                .setImage("https://media1.giphy.com/media/ZwA7zR7PWMiUE/giphy.gif")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (A > 61 - X) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(0xff0000)
-                .addField("Cachette :", "Vous réussissez à garder votre calme et ne faire aucun bruit, les zombies passent devant votre maison et s'en vont !")
-                .setImage("https://media1.giphy.com/media/nEuTuI4yvFXA1qSUaD/giphy.gif")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-    }
-
-
-
-
-
-
-
-
-    if (message.content.startsWith(prefix + "Alcool")) {
-        const embed = new Discord.RichEmbed()
-            .setColor(0xff0000)
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Les alcools :", "Lorsque vous fouillez l'extérieur de la ville, vous trouverez parfois de l'alcool !\n\nL'alcool permet de vous hydrater et de vous donner des points d'actions, mais attention à l'ivresse...\n\nPour mieux comprendre : `=Horde états 6`").setTimestamp()
-        message.channel.send({ embed })
-    }
-
-
-
-    if (message.content.startsWith(prefix + "Drogue")) {
-        const embed = new Discord.RichEmbed()
-            .setColor(0xff0000)
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Les drogues :", "Lorsque vous fuillez l'extérieur de la ville, vous trouverez parfois de la drogue !\n\nLa drogue permet principalement d'oublier une douleur, soigner un état mais aussi donner des points d'actions, mais les effets négatives comme la dépendance arrivent par la suite...\n\nPour mieux comprendre : `=Horde états 3`").setTimestamp()
-        message.channel.send({ embed })
-    }
-
-
-
-    if (message.content.startsWith(prefix + "Cargaison")) {
-        const embed = new Discord.RichEmbed()
-            .setColor(0xff0000)
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Les cargaisons :", "Parfois pendant votre survie, il y aura un avion qui passe au dessus en larguant une cargaison aux alentours de celle-ci !\n\nDedans se trouvera des ressources, des armes, de la nourriture, de l'eau et bien d'autres choses possible selon votre chance !\n\nCependant, il faudra prendre le risque de sortir le récupérer, cela alerte beaucoup de zombies...\n\nIl est possible d'entendre d'avance si un avion va largué une caisse si vous avez une `Radio K7` allumé !").setTimestamp()
-        message.channel.send({ embed })
-    }
-
-
-
-    if (message.content.startsWith(prefix + "Déplacements")) {
-        const embed = new Discord.RichEmbed()
-            .setColor(0xff0000)
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Les déplacements :", "Vous déplacez en ville ne mettra qu'une minute pour vous déplacer d'une zone à une autre\n\nCependant, en extérieur vous mettrez deux minutes pour vous déplacer d'une zone à une autre\n\nA savoir que pour passer de la zone '1 KM' à '10 KM' par exemple, il faudra passer par la zone '2 KM' puis '3 KM' puis '4 KM' etc, en oubliant pas qu'il faudra deux minutes pour passer d'une zone à une autre\n\nPour les personnes atteintes de l'état 'Fatigue', la durée des déplacements en ville comme en extérieur seront doublé, 2 minutes en ville et 4 minutes en extérieur").setTimestamp()
-        message.channel.send({ embed })
-    }
-
-
-
     if (message.content === prefix + "Horde contexte") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
@@ -2756,7 +2644,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
                 .setTimestamp()
             message.channel.send({ embed })
         }
-        if (A > 41 & A < 60) {
+        else if (A > 41 & A < 60) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -2766,7 +2654,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
                 .setTimestamp()
             message.channel.send({ embed })
         }
-        if (A > 21) {
+        else if (A > 61) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -2793,7 +2681,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
                 .setTimestamp()
             message.channel.send({ embed })
         }
-        if (A > 21 & A < 40) {
+        else if (A > 21 & A < 40) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -2803,7 +2691,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
                 .setTimestamp()
             message.channel.send({ embed })
         }
-        if (A > 41) {
+        else if (A > 41) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -21678,12 +21566,12 @@ L'utilisation de cet objet vous permet de fuir un combat ou alors d'empêcher le
 
 
 
-    if (message.content === prefix + "Fragment de tôle") {
+    if (message.content === prefix + "Fragments de tôle") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(0xff0000)
-            .addField("Fragment de tôle :", "Des morceaux de tôle qui ne demandent qu'à servir de protection dans votre maison... Pour peu que vous les assembliez correctement\n\nCet objet est `Encombrant`\n\nPour raffiner cet objet et obtenir `Plaque de tôle` vous devrez être à l'atelier et cela prendra 1 H à sa réalisation ainsi que 2 point d'action")
+            .addField("Fragments de tôle :", "Des morceaux de tôle qui ne demandent qu'à servir de protection dans votre maison... Pour peu que vous les assembliez correctement\n\nCet objet est `Encombrant`\n\nPour raffiner cet objet et obtenir `Plaque de tôle` vous devrez être à l'atelier et cela prendra 1 H à sa réalisation ainsi que 2 point d'action")
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -22404,7 +22292,7 @@ L'utilisation de cet objet vous permet de fuir un combat ou alors d'empêcher le
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(0xff0000)
-            .addField("Légume suspect :", `Un genre de... légume, difficile à dire ce qui a essayé de pousser comme ça, mais le principal c'est que ça semble comestiblen, ou pas
+            .addField("Légume suspect :", `Un genre de... légume, difficile à dire ce qui a essayé de pousser comme ça, mais le principal c'est que ça semble comestible, ou pas
             
 En utilisant cet objet, vous obtenez l'état \`Rassasiement\` ainsi que 6 points d'actions !
 
@@ -23713,31 +23601,6 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
         message.channel.send({ embed })
     }
 
-
-
-
-    if (message.content.startsWith(prefix + "Coup [Rocking chair]")) {
-        X = (Math.floor((100) * Math.random()))
-        const Cible = (Math.floor((5) * Math.random() + 1))
-        if (X <= 70) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(0xff0000)
-                .addField("Coup [Rocking chair] :", "Vous ratez malheureusement votre coup...")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (X >= 71) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(0xff0000)
-                .addField("Coup [Rocking chair] :", "Vous touchez `" + Cible + "` cible(s) !\n\nSi la cible est un zombie, il meurt\n\nSi la cible est un survivant, il subit l'état `Blessure sévère`")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-    }
 
 
 
