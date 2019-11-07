@@ -1289,7 +1289,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
             .setTitle("Liste des objets, partie 4 :")
-            .setDescription("`=Gros coffre en métal`\n`=Gros colis postal`\n`=Grosse chaîne rouillée`\n`=Guitare artisanale`\n`=Hydratone 100MG`\n`Jambon-beurre moisi`\n`=Jerrycan plein`\n`=Jus de mirabelle suspect`\n`=Kalachnik'eau`\n`=Kit de bricolage`\n`=Kit de bricolage abîmé`\n`=LSD`\n`=Lait couleur kaki`\n`=Lambeau de chair`\n`=Lampe de chevet éteinte`\n`=Lampe de chevet allumée`\n`=Lance-pile 1-PDTG`\n`=Lance-pile 1-PDTG (démonté)`\n`=Lance-pieu`\n`=Lance-pile MARK II`\n`=Lentille convexe`\n`=Liasse de billets`\n`=Légume suspect`\n`=Maglite Pif'gadget`\n`=Matelas`\n`=Melon d'intestin`\n`=Meuble en kit`\n`=Micropur effervescent`\n\nLa suite : `=Horde liste d'objets 5`").setTimestamp()
+            .setDescription("`=Gros coffre en métal`\n`=Gros colis postal`\n`=Grosse chaîne rouillée`\n`=Guitare artisanale`\n`=Hydratone 100MG`\n`=Jambon-beurre moisi`\n`=Jerrycan plein`\n`=Jus de mirabelle suspect`\n`=Kalachnik'eau`\n`=Kit de bricolage`\n`=Kit de bricolage abîmé`\n`=LSD`\n`=Lait couleur kaki`\n`=Lambeau de chair`\n`=Lampe de chevet éteinte`\n`=Lampe de chevet allumée`\n`=Lance-pile 1-PDTG`\n`=Lance-pile 1-PDTG (démonté)`\n`=Lance-pieu`\n`=Lance-pile MARK II`\n`=Lentille convexe`\n`=Liasse de billets`\n`=Légume suspect`\n`=Maglite Pif'gadget`\n`=Matelas`\n`=Melon d'intestin`\n`=Meuble en kit`\n`=Micropur effervescent`\n\nLa suite : `=Horde liste d'objets 5`").setTimestamp()
         message.channel.send({ embed })
     }
 
@@ -2460,7 +2460,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Les états, partie 5 :", "`Infection` > `Infection avancée` > `Infection mortelle` : Après l'état 'Infection', le lendemain vous aurez l'état 'Infection avancée', si vous n'êtes pas soigné le lendemain vous aurez l'état 'Infection mortelle` et si vous n'êtes toujours pas soigné le lendemain, vous devrez faire : `=Infection totale`\n\nLa suite : `=Horde états 6`").setTimestamp()
+            .addField("Les états, partie 5 :", "`Infection` > `Infection avancée` > `Infection mortelle` : Après l'état `Infection`, le lendemain vous aurez l'état `Infection avancée`, si vous n'êtes pas soigné le lendemain vous aurez l'état `Infection mortelle` et si vous n'êtes toujours pas soigné le lendemain, vous devrez faire : `=Infection totale`\n\nLa suite : `=Horde états 6`").setTimestamp()
         message.channel.send({ embed })
     }
 
@@ -23163,7 +23163,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Légume 
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(0xff0000)
-            .addField("Poignée de bonbons :", "Vous avez une petite larme à l'oeil en contemplant cette poignée de délicieux bonbons...\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !")
+            .addField("Poignée de bonbons :", "Vous avez une petite larme à l'oeil en contemplant cette poignée de délicieux bonbons...\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !")
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -23706,7 +23706,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
 
 
 
-    if (message.content === prefix + "Sac plastique 2") {
+    if (message.content === prefix + "Sac plastique suite") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -24642,7 +24642,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(0xff0000)
-            .addField("Porte à piston :", "Permet de fermer automatiquement la porte à 23h30\n\nGrâce à un puissant système de pistons, ce système ferme automatiquement la porte à 22:30 tous les soirs et bloque son ouverture jusqu'à l'attaque\n\n:hammer_pick: Matériaux nécessaires :\n\n`10 Planche tordue`\n`3 Structures métalliques`\n`4 Poignée de vis et écrous`\n`1 Tube de cuivre`\n\n:shield: Points de défense : 10\n\n:timer: Le temps de construction est de 36 minutes\n\n:hammer: Défense possible à construire qu'une seul fois")
+            .addField("Porte à piston :", "Permet de fermer automatiquement la porte à 21h30\n\nGrâce à un puissant système de pistons, ce système ferme automatiquement la porte à 21:30 tous les soirs et bloque son ouverture jusqu'à l'attaque\n\n:hammer_pick: Matériaux nécessaires :\n\n`10 Planche tordue`\n`3 Structures métalliques`\n`4 Poignée de vis et écrous`\n`1 Tube de cuivre`\n\n:shield: Points de défense : 10\n\n:timer: Le temps de construction est de 36 minutes\n\n:hammer: Défense possible à construire qu'une seul fois")
             .setTimestamp()
         message.channel.send({ embed })
     }
