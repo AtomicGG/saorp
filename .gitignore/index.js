@@ -22,22 +22,10 @@ bot.on('ready', () => {
         serveur.channels.find(channelRue4 => channelRue4.name.startsWith("ʀᴜᴇ-4『"))
     ]
 
-    const serveurRoleSurvivant = serveur.roles.find(roleSurvivant => roleSurvivant.name === "Survivant")
-
-    const serveurChannelOrg = serveur.channels.find(channelOrg => channelOrg.name === "『💀』ᴏʀɢᴀɴɪsᴀᴛɪᴏɴ-ᴀᴛᴛᴀϙᴜᴇ")
-
     setInterval(temps = () => {
         let date = new Date()
         let heure = date.getHours()
         let minutes = date.getMinutes()
-        if(heure === 22 || (heure === 21 && minutes > 30) || (heure === 23 && minutes < 30)) {
-            serveurChannelOrg.overwritePermissions(serveurRoleSurvivant,{"VIEW_CHANNEL": false})
-            console.log("Channel organisation attaque masqué")
-        } else {
-            serveurChannelOrg.overwritePermissions(serveurRoleSurvivant,{"VIEW_CHANNEL": true})
-            console.log("Channel organisation attaque visible")
-        }
-
         if(heure >= 7 && heure < 19){
             for (let i = 0 ; i < 4 ; i++){
                 serveurChannelRues[i].setName(serveurChannelRues[i].name.replace(serveurChannelRues[i].name.charAt(6),"🏙"))
