@@ -1441,7 +1441,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("La nuit :", "Lorsque vient 22 H 00, les zombies attaquent la ville et les survivants qu'ils rencontreront !\n\nPour déterminer combien de zombies attaqueront la ville par nuit, voici les différentes commandes à écrire :\n\n`=Jour 1`\n`=Jour 2`\n`=Jour 3`\n`=Jour 4`\n`=Jour 5`\n`=Jour 6`\n`=Jour 7`\n`=Jour 8`\n`=Jour 9`\n`=Jour 10`\n`=Jour 11`\n`=Jour 12`\n`=Jour 13`\n`=Jour 14`\n`=Jour 15`\n`=Jour 16`\n`=Jour 17`\n`=Jour 18`\n`=Jour 19`\n`=Jour 20`\n\nLe lendemain lorsque l'attaque des zombies sur la ville est terminé (après 00 H 00), à cause des tempêtes de sable assez violentes vous ne retrouverez plus les lieux que vous avez sûrement pus visiter la veille, il faudra de nouveau les retrouver... Et si vous êtes dehors au moment du passage de la tempête, vous pourrez être gravement blessé...\n\nDurant l'attaque des zombies sur la ville, il faudra tuer tous les zombies ou alors survivre jusqu'à que les zombies sortent à l'extérieur, mais ils seront de nouveau présent la nuit prochaine en plus des nouveaux zombies...").setTimestamp()
+            .addField("La nuit :", "Lorsque vient 22 H 00, les zombies attaquent la ville et les survivants qu'ils rencontreront !\n\nPour déterminer combien de zombies attaqueront la ville par nuit, voici les différentes commandes à écrire :\n\n`=Jour 1`\n`=Jour 2`\n`=Jour 3`\n`=Jour 4`\n`=Jour 5`\n`=Jour 6`\n`=Jour 7`\n`=Jour 8`\n`=Jour 9`\n`=Jour 10`\n`=Jour 11`\n`=Jour 12`\n`=Jour 13`\n`=Jour 14`\n`=Jour 15`\n`=Jour 16`\n`=Jour 17`\n`=Jour 18`\n`=Jour 19`\n`=Jour 20`\n\nLe lendemain lorsque l'attaque des zombies sur la ville est terminé (après 00 H 00), à cause des tempêtes de sable assez violentes vous ne retrouverez plus les lieux que vous avez sûrement pu visiter la veille, il faudra de nouveau les retrouver... Et si vous êtes dehors au moment du passage de la tempête, vous pourrez être gravement blessé...\n\nDurant l'attaque des zombies sur la ville, il faudra tuer tous les zombies ou alors survivre jusqu'à que les zombies sortent à l'extérieur, mais ils seront de nouveau présent la nuit prochaine en plus des nouveaux zombies...").setTimestamp()
         message.channel.send({ embed })
     }
 
@@ -1544,7 +1544,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Les alcools :", "Lorsque vous fouillez l'extérieur de la ville, vous trouverez parfois de l'alcool !\n\nL'alcool permet de vous hydrater et de vous donner des points d'actions, mais attention à l'ivresse...\n\nPour mieux comprendre : `=Horde états 6`").setTimestamp()
+            .addField("Les alcools :", "Lorsque vous fouillez l'extérieur de la ville, vous trouverez parfois de l'alcool !\n\nL'alcool permet de vous hydrater et de vous donner des points d'actions, mais attention à l'ivresse...\n\nPour mieux comprendre : `=Etats`").setTimestamp()
         message.channel.send({ embed })
     }
 
@@ -1556,7 +1556,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Les drogues :", "Lorsque vous fuillez l'extérieur de la ville, vous trouverez parfois de la drogue !\n\nLa drogue permet principalement d'oublier une douleur, soigner un état mais aussi donner des points d'actions, mais les effets négatives comme la dépendance arrivent par la suite...\n\nPour mieux comprendre : `=Horde états 3`").setTimestamp()
+            .addField("Les drogues :", "Lorsque vous fuillez l'extérieur de la ville, vous trouverez parfois de la drogue !\n\nLa drogue permet principalement d'oublier une douleur, soigner un état mais aussi donner des points d'actions, mais les effets négatives comme la dépendance arrivent par la suite...\n\nPour mieux comprendre : `=Etats`").setTimestamp()
         message.channel.send({ embed })
     }
 
@@ -1618,7 +1618,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
             .setTitle("Les lieux :")
-            .setDescription("Voici la liste des différents lieux :\n\n`=Banque`\n`=Place principale`\n`=Auberge`\n`=Puits`\n`=Cabinet médical`\n`=Tour`\n`=Boucherie`\n`=Cuisine`\n`=Prison`\n`=Atelier`\n`=Chantiers`\n`=Grande porte`\n`=Potager`\n`=Enclos`\n`=Générateur`\n`=Mine`\n`=Rues`\n\nLa plupart de ces lieux au départ de la ville, ne sont pas encore présent et c'est pour cela qu'il faudra les créer !").setTimestamp()
+            .setDescription("Voici la liste des différents lieux :\n\n`=Banque`\n`=Place principale`\n`=Auberge`\n`=Puits`\n`=Cabinet médical`\n`=Tour`\n`=Boucherie`\n`=Cuisine`\n`=Prison`\n`=Atelier`\n`=Chantiers`\n`=Grande porte`\n`=Potager`\n`=Enclos`\n`=Générateur`\n`=Mine`\n`=Rues`\n\nLa plupart de ces lieux ne sont pas encore présent au départ de la ville et c'est pour cela qu'il faudra les créer !").setTimestamp()
         message.channel.send({ embed })
     }
 
@@ -1627,8 +1627,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("La banque :","Elle permet de pouvoir stock justement tous les objets nécessaires en ville, coopérez pour survivre !\n\nQuand vous mettez des objets dans la banque, écrivez dans la salon 『💰』ᴏʙᴊᴇᴛs-ᴇɴ-ʙᴀɴϙᴜᴇ \"+X [Objet déposé]\" et quand vous prenez des objets \"-X [Objet pris]\"\n\nQuand vous voulez déposer plusieurs objets, écrivez 1 message pour 1 type d'objet").setTimestamp()
+            .addField("La banque :","Elle permet de pouvoir stock justement tous les objets nécessaires en ville, coopérez pour survivre !\n\nQuand vous mettez des objets dans la banque, écrivez dans la salon 『💰』ᴏʙᴊᴇᴛs-ᴇɴ-ʙᴀɴϙᴜᴇ  \"+X [Objet déposé]\" et quand vous prenez des objets \"-X [Objet pris]\"\n\nQuand vous voulez déposer plusieurs objets, écrivez 1 message pour 1 type d'objet").setTimestamp()
         message.channel.send({ embed })
     }
 
@@ -1637,7 +1636,6 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
             .addField("La place principale :","C'est une place assez grande qui permet de pouvoir se rassembler si besoin").setTimestamp()
         message.channel.send({ embed })
     }
@@ -1647,7 +1645,6 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
             .addField("L'auberge' :","Permet de pouvoir y écrire des annonces ou les objectifs du jour (visibles dans 『📜』ᴛᴀʙʟᴇᴀᴜ-ᴀɴɴᴏɴᴄᴇs ) pour s'organiser entre survivants, vous pourrez aussi y dormir avec quelques chambres et lits à l'intérieur !").setTimestamp()
         message.channel.send({ embed })
     }
@@ -1657,8 +1654,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Le puits :","Un des endroits les plus importants, c'est ici que les survivants pourront récupérer de l'eau à mettre dans leur bouteille pour ne pas mourir de soif, cependant l'eau n'est pas illimitée mais le puits possède 50 Ration d'eau de départ !\n\nComme pour la banque, quand vous prenez de l'eau du puits écrivez dans le salon 『💧』ʀᴀᴛɪᴏɴs-ᴅᴜ-ᴘᴜɪᴛs \"-X eau\"\n\nSi vous avez retiré trop d'eau par mégarde, prévenez un modo qui remettra de l'eau dans le puits").setTimestamp()
+            .addField("Le puits :","Un des endroits les plus importants, c'est ici que les survivants pourront récupérer de l'eau à mettre dans leur bouteille pour ne pas mourir de soif, cependant l'eau n'est pas illimitée mais le puits possède 50 Ration d'eau de départ !\n\nComme pour la banque, quand vous prenez de l'eau du puits écrivez dans le salon 『💧』ʀᴀᴛɪᴏɴs-ᴅᴜ-ᴘᴜɪᴛs  \"-X eau\"\n\nSi vous avez retiré trop d'eau par mégarde, prévenez un modo qui remettra de l'eau dans le puits").setTimestamp()
         message.channel.send({ embed })
     }
 
@@ -1667,7 +1663,6 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
             .addField("Les chantiers :","Une fois la ville ayant les bonnes ressources ainsi que les bons plans et les connaissances, vous pourrez aux chantiers construire justement les différentes bâtiments et défenses que la ville aura besoin pour continuer de résister aux attaques des zombies").setTimestamp()
         message.channel.send({ embed })
     }
@@ -1677,8 +1672,16 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
             .addField("La grande porte :","C'est la grande porte qui doit être impérativement fermée avant 22h, l'heure d'attaque de la horde\n\nLes survivants peuvent entrer/sortir de la ville uniquement part cette porte").setTimestamp()
+        message.channel.send({ embed })
+    }
+
+    if(message.content === prefix + "Rues") {
+        const embed = new Discord.RichEmbed()
+            .setColor(0xff0000)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .addField("Les rues :","Ce sont des rues que les zombies peuvent également attaquer chaque nuit. Elles ont un petit effet stylé en fonction du temps IRL si vous l'avez pas encore remarqué :wink:").setTimestamp()
         message.channel.send({ embed })
     }
 
@@ -1709,7 +1712,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
             .setTitle("Défense de la ville, partie 2 :")
-            .setDescription("Si les survivants fuient ou qu'il n'y a personne défendant l'entrée de la ville, les zombies attaqueront les joueurs aléatoirement qui sont dans leur maison, batîments, rues etc... !\n\n~~Chaque survivant en début de partie a un numéro, selon le numéro afficher de la commande, les zombies iront vers lui en ville~~ Maintenant, les zombies attaquent des lieux aléatoirement en ville. Si un survivant est dans un lieu où les zombies pénètrent, ils l'attaqueront automatiquement __en premier__\n\nA savoir que se défendre en groupe est possible (et mieux), et si le survivant n'est pas connecté, son personnage pourra être jouer par un autre survivant avec son accord [ou un modérateur, d'où l'activité importante dans ce RP surtout le soir]\n\nSi le ou les survivants fuient les zombies, ils iront attaquer d'autres joueurs, jusqu'à que tous les zombies soient tués, que les déplacements totaux des zombies ont été atteitns, ou que vous survivez 1 H à l'attaque (mais les zombies encore vivants reviendront la nuit prochaine) !\n\nLa suite : `=Défense de la ville 3`").setTimestamp()
+            .setDescription("Si les survivants fuient ou qu'il n'y a personne défendant l'entrée de la ville, les zombies attaqueront les joueurs aléatoirement qui sont dans leur maison, batîments, rues etc... !\n\n~~Chaque survivant en début de partie a un numéro, selon le numéro affiché de la commande de ciblage, les zombies iront vers lui en ville~~ Maintenant, les zombies attaquent des lieux aléatoirement en ville. Si un survivant est dans un lieu où les zombies pénètrent, ils l'attaqueront automatiquement __en premier__\n\nA savoir que se défendre en groupe est possible (et mieux), et si le survivant n'est pas connecté, son personnage pourra être jouer par un autre survivant avec son accord [ou un modérateur, d'où l'activité importante dans ce RP surtout le soir]\n\nSi le ou les survivants fuient les zombies, ils iront attaquer d'autres joueurs, jusqu'à que tous les zombies soient tués, que les déplacements totaux des zombies ont été atteitns, ou que vous survivez 1 H à l'attaque (mais les zombies encore vivants reviendront la nuit prochaine) !\n\nLa suite : `=Défense de la ville 3`").setTimestamp()
         message.channel.send({ embed })
     }
 
@@ -1723,7 +1726,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Défense de la ville, partie 3 :", "Si à 22 H 00 pile la porte de la ville n'est pas fermé par un survivant, tous les zombies pourront rentrer...\n\nAvant chaque attaque, si vous allez à la porte, vous pouvez défendre la ville en étant un `Veilleur`\n\nUn veilleur est un survivant qui ne va pas se cacher pendant l'attaque, mais qui va justement protéger la ville en sortant et en risquant sa vie\n\nA savoir que, les veilleurs seront les premiers à mourir avant les survivants qui ne défendent pas la ville alors faite attention...\n\nLa fuite est la meilleur solution si vous êtes mal, bonne chance !").setTimestamp()
+            .addField("Défense de la ville, partie 3 :", "Si à 22 H 00 pile la porte de la ville n'est pas fermée par un survivant, tous les zombies pourront rentrer...\n\nAvant chaque attaque, si vous allez à la porte, vous pouvez défendre la ville en étant un `Veilleur`\n\nUn veilleur est un survivant qui ne va pas se cacher pendant l'attaque, mais qui va justement protéger la ville en sortant et en risquant sa vie\n\nA savoir que, les veilleurs seront les premiers à mourir avant les survivants qui ne défendent pas la ville alors faite attention...\n\nLa fuite est la meilleur solution si vous êtes mal, bonne chance !").setTimestamp()
         message.channel.send({ embed })
     }
 
@@ -1776,7 +1779,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Les combats, partie 1 :", "Lorsque vous êtes en groupe contre un ou plusieurs zombies, il faudra déterminer qui sera le premier à agir, le second, et ainsi de suite comme des numéros et en tour par tour !\n\nLes zombies attaqueront toujours après les joueurs sauf s'il y a une embuscade ou une attaque dans le dos...\n\nA savoir que les zombies attaqueront toujours un ou plusieurs survivants en même temps...\n\nPour déterminer quel survivant le ou les zombies attaqueront : `=Cible : [Nombre de survivant dans le combat]`\n\nLa suite en écrivant : `=Combat 2`").setTimestamp()
+            .addField("Les combats, partie 1 :", "Lorsque vous êtes en groupe contre un ou plusieurs zombies, il faudra déterminer qui sera le premier à agir, le second, et ainsi de suite comme des numéros et en tour par tour !\n\nLes zombies attaqueront toujours après les joueurs sauf s'il y a une embuscade ou __si ils attaquent pendant l'attaque de la ville__\n\nA savoir que les zombies attaqueront toujours un ou plusieurs survivants en même temps...\n\nPour déterminer quel survivant le ou les zombies attaqueront : `=Cible : [Nombre de survivant dans le combat]`\n\nLa suite en écrivant : `=Combat 2`").setTimestamp()
         message.channel.send({ embed })
     }
 
@@ -2489,7 +2492,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .addField("Tremblements :", "La peur n'est pas présente, vous avez juste des tremblements inhabituelles rendant vos phrases plus difficiles à comprendre")
+            .addField("Tremblements :", "La peur n'est pas présente, vous avez juste des tremblements inhabituels rendant vos phrases plus difficiles à comprendre")
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -2651,7 +2654,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
             .setTitle("Blessure légère > Blessure > Blessure avancée > Blessure mortelle :")
-            .setDescription("Durant votre survie, il sera très fréquent de finir blessé et il existe différents types de blessures :\n\n`Blessure légère`\n`Blessure`\n`Blessure avancée`\n`Blessure mortelle`\n\nLes blessures provoquent des malus pour fuir, et plus vous vous rapprochez d'une blessure mortelle, plus vous aurez de chance d'y rester...\n\nLes blessure sont également cumulables et croissantes, si vous étiez atteint de l'état `Blessure` et que vous subissez un état de nouveau `Blessure légère` alors votre nouvelle état sera `Blessure avancée`. Si vous ne comprennez pas : `=Accumulation exemple`\n\nLes blessures se soignent à l'aide de bandage, de médicaments, d'injections et d'un tas d'autres moyens probables et possibles...")
+            .setDescription("Durant votre survie, il sera très fréquent de finir blessé et il existe différents types de blessures :\n\n`Blessure légère`\n`Blessure`\n`Blessure avancée`\n`Blessure mortelle`\n\nLes blessures provoquent des malus pour fuir, et plus vous vous rapprochez d'une blessure mortelle, plus vous aurez de chance d'y rester...\n\nLes blessure sont également cumulables et croissantes, si vous étiez atteint de l'état `Blessure` et que vous subissez un état de nouveau `Blessure légère` alors votre nouvel état sera `Blessure avancée`. Si vous ne comprennez pas : `=Accumulation exemple`\n\nLes blessures se soignent à l'aide de bandage, de médicaments, d'injections et d'un tas d'autres moyens probables et possibles...")
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -2681,7 +2684,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .addField("Hémorragie :", `Concernant les hémorragies, comparé à l'infection qui s'aggrave de jour en jour, l'hémorragie ne s'aggrave qu'au fil du temps et si elles sont cumulées, mais vous aurez un certain temps avant de soigner votre hémorragie avant de mourir... (cette fonctionnalité n'est pas utilisée actuellement)
+            .addField("Hémorragie :", `Concernant les hémorragies, comparé à l'infection qui s'aggrave de jour en jour, l'hémorragie ne s'aggrave qu'au fil du temps ou si elles sont cumulées, mais vous aurez un certain temps avant de soigner votre hémorragie avant de mourir... (cette fonctionnalité n'est pas utilisée actuellement)
 
 Voici les différents temps selon l'hémorragie :
             
@@ -2756,7 +2759,7 @@ Hémorragie mortelle + Hémorragie légère = Mort`)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("L'eau :", "Comme toute apocalypse, l'eau devient une ressource assez rare à trouver et à consommer, c'est pour cela qu'il faudra en prendre en temps voulus pour ne pas en gâcher !\n\nSi vous ne buvez pas, vous serez de plus en plus assoifé et vous finirez par mourir de soif\n\nPour mieux comprendre : `=Horde états 4`").setTimestamp()
+            .addField("L'eau :", "Comme toute apocalypse, l'eau devient une ressource assez rare à trouver et à consommer, c'est pour cela qu'il faudra en prendre en temps voulus pour ne pas en gâcher !\n\nSi vous ne buvez pas, vous serez de plus en plus assoifé et vous finirez par mourir de soif\n\nPour mieux comprendre : `=Etats`").setTimestamp()
         message.channel.send({ embed })
     }
 
@@ -2768,7 +2771,7 @@ Hémorragie mortelle + Hémorragie légère = Mort`)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("La nourriture :", "Comme l'eau, la nourriture deviendra une ressource assez rare qui demande d'être économiser le plus possible !\n\nSi vous ne mangez pas, vous serez de plus en plus affamé et vous finirez par mourir de faim...\n\nPour mieux comprendre : `=Horde états 4`").setTimestamp()
+            .addField("La nourriture :", "Comme l'eau, la nourriture deviendra une ressource assez rare qui demande d'être économiser le plus possible !\n\nSi vous ne mangez pas, vous serez de plus en plus affamé et vous finirez par mourir de faim...\n\nPour mieux comprendre : `=Etats`").setTimestamp()
         message.channel.send({ embed })
     }
 
