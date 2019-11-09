@@ -250,6 +250,10 @@ bot.on('message', message => {
     }
 
     if((message.content.startsWith("+") || message.content.startsWith("-")) && message.channel === serveurChannelPuits){
+        serveur.fetchMember(message.author)
+            .then()
+            .catch(console.error)
+        const membre = serveur.member(message.author)
         let messagePuits
         let signe = message.content.slice(0,1)
         let quantiteDeBase
@@ -265,7 +269,7 @@ bot.on('message', message => {
 
             if(message.channel.messages.some(messagePuits => messagePuits.content.startsWith("Rations d'eau dans le puits actuellement :"))){
                 messagePuits = message.channel.messages.find(messagePuits => messagePuits.content.startsWith("Rations d'eau dans le puits actuellement :")).content
-                if(signe === "+"){
+                if(signe === "+" && membre.hasPermission("ADMINISTRATOR")){
                     if(contient(messagePuits,"eau")){
                         
                         quantiteDeBase = Number(messagePuits.match(expressionQuantite)[0])
@@ -308,7 +312,7 @@ bot.on('message', message => {
                 } else {
                     return
                 }
-            } else {
+            } else if(membre.hasPermission("ADMINISTRATOR")) {
                 message.channel.send(`Rations d'eau dans le puits actuellement :\n${ajout} eau`)
                 console.log(`${message.author.username} a mis pour la 1ère fois ${ajout} eau dans le puits`)
             }
@@ -1149,7 +1153,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
         message.channel.send({ embed })
     }
 
-
+/////////////////////////////////////////////////////////////     =Horde     ///////////////////////////////////////////////////////////////
 
     if (message.content.startsWith(prefix + "Horde roll")) {
         X = (Math.floor((100) * Math.random()))
@@ -1171,7 +1175,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Horde :", "Vous voulez rejoindre la ville et essayer de survivre le plus longtemps possible, alors les commandes pour avoir les informations et commencer la survie sont juste en dessous !\n\n`=Horde contexte`\n`=Horde survivant`\n`=Nuit`\n`=Fouille`\n`=Horde états`\n`=Médicaments`\n`=Nourriture`\n`=Soif`\n`=Blessure`\n`=Atouts 1`\n`=Horde armes`\n`=Plans`\n`=Lieux`\n`=Défense de la ville`\n`=Fabrication`\n`=Vol`\n`=Exile`\n`=Sommeil`\n`=Horde combat`\n`=Zombie`\n`=Horde liste d'objets 1`\n`=Horde liste des constructions 1`\n`=Transformation`\n`=Habitations`\n`=Points d'actions`\n`=Cargaison`\n`=Déplacements`\n`=Revenant`\n`=Informations importantes 1`").setTimestamp()
+            .addField("Horde :", "Vous voulez rejoindre la ville et essayer de survivre le plus longtemps possible, alors les commandes pour avoir les informations et commencer la survie sont juste en dessous !\n\n`=Contexte`\n`=Survivant`\n`=Nuit`\n`=Fouille`\n`=Etats`\n`=Médicaments`\n`=Nourriture`\n`=Eau`\n`=Alcool`\n`=Drogue`\n`=Atouts`\n`=Armes`\n`=Plans`\n`=Lieux`\n`=Défense de la ville`\n`=Fabrication`\n`=Vol`\n`=Exil`\n`=Sommeil`\n`=Combat`\n`=Zombie`\n`=Liste des objets`\n`=Liste des constructions`\n`=Transformation`\n`=Habitations`\n`=Points d'actions`\n`=Cargaison`\n`=Déplacements`\n`=Revenant`\n`=Informations importantes`").setTimestamp()
         message.channel.send({ embed })
     }
 
@@ -1217,7 +1221,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
 
-    if (message.content === prefix + "Informations importantes 1") {
+    if (message.content === prefix + "Informations importantes") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -1243,98 +1247,98 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
 
-    if (message.content === prefix + "Horde liste d'objets 1") {
+    if (message.content === prefix + "Liste des objets") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
             .setTitle("Liste des objets, partie 1 :")
-            .setDescription("`=Affaires de citoyen`\n`=Ailerons de poulet entamés`\n`=Appareil électronique en panne`\n`=Aqua-Splash`\n`=Aqua-splah (démonté)`\n`=Badge de shérif`\n`=Balle`\n`=Balise radius`\n`=Bandage rudimentaire`\n`=Barricades à clouer`\n`=Batteur électrique (démonté)`\n`=Batteur électrique`\n`=Betapropine 5MG périmée`\n`=Bidon d'huile vide`\n`=Biscuit fade`\n`=Bobine de fil de fer`\n`=Bombe pulvérine`\n`=Bombe macabre`\n`=Bombe à eau`\n`=Bombe à eau explosive`\n`=Bon plat fait-maison`\n`=Bonbonne d'eau`\n`=Boule de pâte visqueuse`\n`=Boules quiès`\n`=Boîte d'allumettes`\n`=Boîte de conserve`\n`=Boîte de conserve ouverte`\n`=Boîte de schrödinger`\n\nLa suite : `Horde liste d'objets 2`").setTimestamp()
+            .setDescription("`=Affaires de citoyen`\n`=Ailerons de poulet entamés`\n`=Appareil électronique en panne`\n`=Aqua-Splash`\n`=Aqua-splah (démonté)`\n`=Badge de shérif`\n`=Balle`\n`=Balise radius`\n`=Bandage rudimentaire`\n`=Barricades à clouer`\n`=Batteur électrique (démonté)`\n`=Batteur électrique`\n`=Betapropine 5MG périmée`\n`=Bidon d'huile vide`\n`=Biscuit fade`\n`=Bobine de fil de fer`\n`=Bombe pulvérine`\n`=Bombe macabre`\n`=Bombe à eau`\n`=Bombe à eau explosive`\n`=Bon plat fait-maison`\n`=Bonbonne d'eau`\n`=Boule de pâte visqueuse`\n`=Boules quiès`\n`=Boîte d'allumettes`\n`=Boîte de conserve`\n`=Boîte de conserve ouverte`\n`=Boîte de schrödinger`\n\nLa suite : `=Liste des objets 2`").setTimestamp()
         message.channel.send({ embed })
     }
 
 
 
-    if (message.content === prefix + "Horde liste d'objets 2") {
+    if (message.content === prefix + "Liste des objets 2") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
             .setTitle("Liste des objets, partie 2 :")
-            .setDescription("`=Boîte de jeu`\n`=Boîte-déjeuner`\n`=Boîte en métal`\n`=Brico'facile`\n`=Buche en bon état`\n`=Bureau monté à la rache`\n`=Bâton cassé`\n`=Cadavre de voyageur`\n`=Caddie`\n`=Caddie bancal`\n`=Cafetière`\n`=Cafetière incomplète`\n`=Café brûlant`\n`=Caisse de feux d'artifice`\n`=Caisse matériel`\n`=Caisse de nourriture`\n`=Calibrateur PDTT MARK II`\n`=Cantine de fer`\n`=Caisse de matériaux`\n`=Carotte`\n`=Cartons`\n`=Ceinture à poches`\n`=Chaîne hifi`\n`=Chaise EKTÖRP-GLUTEN`\n`=Chamallows calcinés`\n`=Chamallows séchés`\n`=Charbon`\n`=Charognardes`\n`=Chaîne de porte & cadenas`\n`=Chewing-gums séchés`\n`=Chien hargneux`\n`=Cidre claviceps artisanal`\n`=Citrouille`\n`=Claviceps purpurea`\n`=Clé magnétique`\n\nLa suite : `=Horde liste d'objets 3`").setTimestamp()
+            .setDescription("`=Boîte de jeu`\n`=Boîte-déjeuner`\n`=Boîte en métal`\n`=Brico'facile`\n`=Buche en bon état`\n`=Bureau monté à la rache`\n`=Bâton cassé`\n`=Cadavre de voyageur`\n`=Caddie`\n`=Caddie bancal`\n`=Cafetière`\n`=Cafetière incomplète`\n`=Café brûlant`\n`=Caisse de feux d'artifice`\n`=Caisse matériel`\n`=Caisse de nourriture`\n`=Calibrateur PDTT MARK II`\n`=Cantine de fer`\n`=Caisse de matériaux`\n`=Carotte`\n`=Cartons`\n`=Ceinture à poches`\n`=Chaîne hifi`\n`=Chaise EKTÖRP-GLUTEN`\n`=Chamallows calcinés`\n`=Chamallows séchés`\n`=Charbon`\n`=Charognardes`\n`=Chaîne de porte & cadenas`\n`=Chewing-gums séchés`\n`=Chien hargneux`\n`=Cidre claviceps artisanal`\n`=Citrouille`\n`=Claviceps purpurea`\n`=Clé magnétique`\n\nLa suite : `=Liste des objets 3`").setTimestamp()
         message.channel.send({ embed })
     }
 
 
 
-    if (message.content === prefix + "Horde liste d'objets 3") {
+    if (message.content === prefix + "Liste des objets 3") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
             .setTitle("Liste des objets, partie 3 :")
-            .setDescription("`=Clé à molette`\n`=Clé à percussion`\n`=Cochon malodorant`\n`=Coffre d'architecte`\n`=Coffre d'architecte scellé`\n`=Coffre-fort`\n`=Colis postal`\n`=Coupe-coupe`\n`=Courroie`\n`=Couteau suisse`\n`=Couteau à dents`\n`=Cuivre brut`\n`=Cutter`\n`=Cyanure`\n`=Devastator`\n`=Devastator (démonté)`\n`=Diode lazer`\n`=Distributeur vide`\n`=Doggy-bag`\n`=Débris métalliques`\n`=Décapsuleur`\n`=Dés`\n`=Détonateur compact`\n`=Eau croupie`\n`=Eau croupie purifiée`\n`=Epices fortes`\n`=Explosifs bruts`\n`=Ferraille`\n`=Fer brut`\n`=Fil de cuivre`\n`=Fiole de poison`\n`=Four cancérigène`\n`=Fragments de tôle`\n`=Fumigène 'Senteur sapin'`\n`=Fusil d'assaut`\n`=Fusée éclairante`\n`=Grand bâton sec`\n`=Gros chat mignon`\n\nLa suite : `=Horde liste d'objets 4`").setTimestamp()
+            .setDescription("`=Clé à molette`\n`=Clé à percussion`\n`=Cochon malodorant`\n`=Coffre d'architecte`\n`=Coffre d'architecte scellé`\n`=Coffre-fort`\n`=Colis postal`\n`=Coupe-coupe`\n`=Courroie`\n`=Couteau suisse`\n`=Couteau à dents`\n`=Cuivre brut`\n`=Cutter`\n`=Cyanure`\n`=Devastator`\n`=Devastator (démonté)`\n`=Diode lazer`\n`=Distributeur vide`\n`=Doggy-bag`\n`=Débris métalliques`\n`=Décapsuleur`\n`=Dés`\n`=Détonateur compact`\n`=Eau croupie`\n`=Eau croupie purifiée`\n`=Epices fortes`\n`=Explosifs bruts`\n`=Ferraille`\n`=Fer brut`\n`=Fil de cuivre`\n`=Fiole de poison`\n`=Four cancérigène`\n`=Fragments de tôle`\n`=Fumigène 'Senteur sapin'`\n`=Fusil d'assaut`\n`=Fusée éclairante`\n`=Grand bâton sec`\n`=Gros chat mignon`\n\nLa suite : `=Liste des objets 4`").setTimestamp()
         message.channel.send({ embed })
     }
 
 
 
-    if (message.content === prefix + "Horde liste d'objets 4") {
+    if (message.content === prefix + "Liste des objets 4") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
             .setTitle("Liste des objets, partie 4 :")
-            .setDescription("`=Gros coffre en métal`\n`=Gros colis postal`\n`=Grosse chaîne rouillée`\n`=Guitare artisanale`\n`=Hydratone 100MG`\n`=Jambon-beurre moisi`\n`=Jerrycan plein`\n`=Jus de mirabelle suspect`\n`=Kalachnik'eau`\n`=Kit de bricolage`\n`=Kit de bricolage abîmé`\n`=LSD`\n`=Lait couleur kaki`\n`=Lambeau de chair`\n`=Lampe de chevet éteinte`\n`=Lampe de chevet allumée`\n`=Lance-pile 1-PDTG`\n`=Lance-pile 1-PDTG (démonté)`\n`=Lance-pieu`\n`=Lance-pile MARK II`\n`=Lentille convexe`\n`=Liasse de billets`\n`=Légume suspect`\n`=Maglite Pif'gadget`\n`=Matelas`\n`=Melon d'intestin`\n`=Meuble en kit`\n`=Micropur effervescent`\n\nLa suite : `=Horde liste d'objets 5`").setTimestamp()
+            .setDescription("`=Gros coffre en métal`\n`=Gros colis postal`\n`=Grosse chaîne rouillée`\n`=Guitare artisanale`\n`=Hydratone 100MG`\n`=Jambon-beurre moisi`\n`=Jerrycan plein`\n`=Jus de mirabelle suspect`\n`=Kalachnik'eau`\n`=Kit de bricolage`\n`=Kit de bricolage abîmé`\n`=LSD`\n`=Lait couleur kaki`\n`=Lambeau de chair`\n`=Lampe de chevet éteinte`\n`=Lampe de chevet allumée`\n`=Lance-pile 1-PDTG`\n`=Lance-pile 1-PDTG (démonté)`\n`=Lance-pieu`\n`=Lance-pile MARK II`\n`=Lentille convexe`\n`=Liasse de billets`\n`=Légume suspect`\n`=Maglite Pif'gadget`\n`=Matelas`\n`=Melon d'intestin`\n`=Meuble en kit`\n`=Micropur effervescent`\n\nLa suite : `=Liste des objets 5`").setTimestamp()
         message.channel.send({ embed })
     }
 
 
 
-    if (message.content === prefix + "Horde liste d'objets 5") {
+    if (message.content === prefix + "Liste des objets 5") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
             .setTitle("Liste des objets, partie 5 :")
-            .setDescription("`=Mine antipersonnel`\n`=Morceau de caisse`\n`=Morceau de contreplaqué`\n`=Moteur`\n`=Moteur incomplet`\n`=Mécanisme`\n`=Médicament sans étiquette`\n`=Napolitains moisis`\n`=Nouilles chinoises`\n`=Nouilles chinoises épicées`\n`=Oeuf`\n`=Os charnu`\n`=Os humain fêlé`\n`=Outils en vrac`\n`=Ouvre-boîte`\n`=Paillasson`\n`=Paillasson piégé`\n`=Pamplemousse explosif`\n`=Paquet de chips molles`\n`=Paquet de cigarettes entamé`\n`=Paracétoïde 7G`\n`=Pavés de béton informes`\n`=Pelures de peau`\n`=Petit manche vibrant`\n`=Petits beurres rances`\n`=Pile`\n`=Pim's périmé`\n`=Piqûre de calmant`\n`=Pistolet à eau`\n`=Pistolet à eau`\n\nLa suite : `=Horde liste d'objets 6`").setTimestamp()
+            .setDescription("`=Mine antipersonnel`\n`=Morceau de caisse`\n`=Morceau de contreplaqué`\n`=Moteur`\n`=Moteur incomplet`\n`=Mécanisme`\n`=Médicament sans étiquette`\n`=Napolitains moisis`\n`=Nouilles chinoises`\n`=Nouilles chinoises épicées`\n`=Oeuf`\n`=Os charnu`\n`=Os humain fêlé`\n`=Outils en vrac`\n`=Ouvre-boîte`\n`=Paillasson`\n`=Paillasson piégé`\n`=Pamplemousse explosif`\n`=Paquet de chips molles`\n`=Paquet de cigarettes entamé`\n`=Paracétoïde 7G`\n`=Pavés de béton informes`\n`=Pelures de peau`\n`=Petit manche vibrant`\n`=Petits beurres rances`\n`=Pile`\n`=Pim's périmé`\n`=Piqûre de calmant`\n`=Pistolet à eau`\n`=Pistolet à eau`\n\nLa suite : `=Liste des objets 6`").setTimestamp()
         message.channel.send({ embed })
     }
 
 
 
-    if (message.content === prefix + "Horde liste d'objets 6") {
+    if (message.content === prefix + "Liste des objets 6") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
             .setTitle("Liste des objets, partie 6 :")
-            .setDescription("`=Plan de chantier commun`\n`=Plan de chantier inhabituel`\n`=Plan de chantier rare`\n`=Plan de chantier très rare`\n`=Plan de chantier épique`\n`=Plan de chantier mythique`\n`=Plan de chantier légendaire`\n`=Planche tordue`\n`=Plaque de bois solide`\n`=Plaque de tôle`\n`=Plat fait-maison douteux`\n`=Poignée de bonbons`\n`=Poignée de vis et écrous`\n`=Pointeur laser brûlant`\n`=Pomme`\n`=Pompe à jerrycan`\n`=Portière de voiture`\n`=Portière de voiture incomplète`\n`=Poudre super-fuzz`\n`=Poudre-comète brte`\n`=Poule`\n`=Poutre rafistolée`\n`=Produit corrosif`\n`=Produits pharmaceutiques`\n`=Purée de charognardes`\n\nLa suite : `=Horde liste d'objets 7`").setTimestamp()
+            .setDescription("`=Plan de chantier commun`\n`=Plan de chantier inhabituel`\n`=Plan de chantier rare`\n`=Plan de chantier très rare`\n`=Plan de chantier épique`\n`=Plan de chantier mythique`\n`=Plan de chantier légendaire`\n`=Planche tordue`\n`=Plaque de bois solide`\n`=Plaque de tôle`\n`=Plat fait-maison douteux`\n`=Poignée de bonbons`\n`=Poignée de vis et écrous`\n`=Pointeur laser brûlant`\n`=Pomme`\n`=Pompe à jerrycan`\n`=Portière de voiture`\n`=Portière de voiture incomplète`\n`=Poudre super-fuzz`\n`=Poudre-comète brte`\n`=Poule`\n`=Poutre rafistolée`\n`=Produit corrosif`\n`=Produits pharmaceutiques`\n`=Purée de charognardes`\n\nLa suite : `=Liste des objets 7`").setTimestamp()
         message.channel.send({ embed })
     }
 
 
 
-    if (message.content === prefix + "Horde liste d'objets 7") {
+    if (message.content === prefix + "Liste des objets 7") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
             .setTitle("Liste des objets, partie 7 :")
-            .setDescription("`=Radio K7`\n`=Rat`\n`=Ration d'eau`\n`=Revolver`\n`=Rocking chair`\n`=Réfrigérateur d'étudiant`\n`=Réserves d'un citoyen avisé`\n`=Rustine`\n`=Sac d'herbe fraîche`\n`=Sac de ciment`\n`=Sac plastique`\n`=Sac plastique + explosif`\n`=Sac super-pratique`\n`=Sac supplémentaire`\n`=Sacoche usée`\n`=Scie à métaux`\n`=Scie à métaux abîmée`\n`=Serpent de 2 mètres`\n`=Souche de bois pourrie`\n`=Sport-elec`\n`=Steak appétissant`\n`=Steak de sciure`\n`=Structures métalliques`\n`=Stéroïdes anabolisants`\n`=Substance épaisse`\n`=Sérum pour goule`\n`=Table järpen`\n`=Tapis persan`\n\nLa suite : `=Horde liste d'objets 8`").setTimestamp()
+            .setDescription("`=Radio K7`\n`=Rat`\n`=Ration d'eau`\n`=Revolver`\n`=Rocking chair`\n`=Réfrigérateur d'étudiant`\n`=Réserves d'un citoyen avisé`\n`=Rustine`\n`=Sac d'herbe fraîche`\n`=Sac de ciment`\n`=Sac plastique`\n`=Sac plastique + explosif`\n`=Sac super-pratique`\n`=Sac supplémentaire`\n`=Sacoche usée`\n`=Scie à métaux`\n`=Scie à métaux abîmée`\n`=Serpent de 2 mètres`\n`=Souche de bois pourrie`\n`=Sport-elec`\n`=Steak appétissant`\n`=Steak de sciure`\n`=Structures métalliques`\n`=Stéroïdes anabolisants`\n`=Substance épaisse`\n`=Sérum pour goule`\n`=Table järpen`\n`=Tapis persan`\n\nLa suite : `=Liste des objets 8`").setTimestamp()
         message.channel.send({ embed })
     }
 
 
 
-    if (message.content === prefix + "Horde liste d'objets 8") {
+    if (message.content === prefix + "Liste des objets 8") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -1347,20 +1351,20 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
 
-    if (message.content === prefix + "Horde liste des constructions 1") {
+    if (message.content === prefix + "Liste des constructions") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
             .setTitle("Liste des constructions, partie 1 :")
-            .setDescription("`=Appâts`\n`=Arroseurs automatiques`\n`=Atelier`\n`=Barbelés`\n`=Barbelés électrifiés`\n`=Barrières`\n`=Blindage d'entrée`\n`=Boucherie`\n`=Cabinet médical`\n`=Canon à briques`\n`=Champ de mines à eau`\n`=Crémato-cue`\n`=Cuisine`\n`=Derrick artisanal`\n`=Douves`\n`=Dynamitage`\n`=Enclos`\n`=Fausse ville`\n`=Fixations de défenses`\n`=Fondations`\n`=Foreuse pour le puits`\n`=Générateur`\n`=Grogro mur`\n`=Lance-tôle`\n`=Le grand déménagement`\n`=Manufacture`\n`=Mine`\n`=Monticules pour canons`\n`=Muraille à pointes`\n`=Muraille rasoir`\n`=Oubliettes`\n`=Perforeuse`\n`=Piscine électrique`\n`=Piège à loups`\n`=Pompe`\n`=Porte améliorée`\n`=Porte à piston`\n`=Potager`\n`=Poutres de renfort`\n`=Prison`\n`=Projet Eden`\n`=Purificateur d'eau`\n\nLa suite : `Horde liste des constructions 2`").setTimestamp()
+            .setDescription("`=Appâts`\n`=Arroseurs automatiques`\n`=Atelier`\n`=Barbelés`\n`=Barbelés électrifiés`\n`=Barrières`\n`=Blindage d'entrée`\n`=Boucherie`\n`=Cabinet médical`\n`=Canon à briques`\n`=Champ de mines à eau`\n`=Crémato-cue`\n`=Cuisine`\n`=Derrick artisanal`\n`=Douves`\n`=Dynamitage`\n`=Enclos`\n`=Fausse ville`\n`=Fixations de défenses`\n`=Fondations`\n`=Foreuse pour le puits`\n`=Générateur`\n`=Grogro mur`\n`=Lance-tôle`\n`=Le grand déménagement`\n`=Manufacture`\n`=Mine`\n`=Monticules pour canons`\n`=Muraille à pointes`\n`=Muraille rasoir`\n`=Oubliettes`\n`=Perforeuse`\n`=Piscine électrique`\n`=Piège à loups`\n`=Pompe`\n`=Porte améliorée`\n`=Porte à piston`\n`=Potager`\n`=Poutres de renfort`\n`=Prison`\n`=Projet Eden`\n`=Purificateur d'eau`\n\nLa suite : `=Liste des constructions 2`").setTimestamp()
         message.channel.send({ embed })
     }
 
 
 
-    if (message.content === prefix + "Horde liste des constructions 2") {
+    if (message.content === prefix + "Liste des constructions 2") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -1385,32 +1389,32 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
 
-    if (message.content.startsWith(prefix + "Horde survivant")) {
+    if (message.content.startsWith(prefix + "Survivant")) {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Les survivants :", "Avant d'entrer dans cette ville, vous possédez forcément une identité, une histoire, une profession, des connaissances, c'est pour cela que vous devrez nous transmettre toutes ces informations en créant votre survivant à partir du modèle présent en écrivant la commande : `=Fiche de survivant`\n\nA savoir que votre survivant possède un inventaire maximal de base de 5 objets sur lui !\n\nUne fois votre personne créer et valider par un membre du staff, vous devrez vous renommer de la manière suivante : [Nom] [Prénom] [Points d'action]\n\nPar exemple : [Oshiro][Yato][6/6]\n\nPour comprendre ce qu'est le système de stat : `=Horde stats 1`").setTimestamp()
+            .addField("Les survivants :", "Avant d'entrer dans cette ville, vous possédez forcément une identité, une histoire, une profession, des connaissances, c'est pour cela que vous devrez nous transmettre toutes ces informations en créant votre survivant à partir du modèle présent en écrivant la commande : `=Fiche de survivant`\n\nA savoir que votre survivant possède un inventaire maximal de base de 5 objets sur lui !\n\nUne fois votre personne créer et valider par un membre du staff, vous devrez vous renommer de la manière suivante : [Nom] [Prénom] [Points d'action]\n\nPar exemple : [Oshiro][Yato][6/6]\n\nPour comprendre ce qu'est le système de stat : `=Stats`").setTimestamp()
         message.channel.send({ embed })
     }
 
 
 
-    if (message.content.startsWith(prefix + "Horde stats 1")) {
+    if (message.content.startsWith(prefix + "Stats")) {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Les stats, partie 1 :", "Votre survivant est différent des autres selon son histoire, ainsi que sa profession et d'autres facteurs comme le physique, sa personnalité ou même son langage, c'est pourquoi dans ce monde il existe 3 stats :\n\n`Stat physique`\n`Stat mental`\n`Stat social`\n\nPour réussir certaines actions qui demandent des efforts parfois, il faudra faire ce qu'on appelle un `Roll` pour savoir si vous réussissez ou non : `=Horde roll`\n\nCeci vous donne un nombre de 1 à 100, le but pour réussir votre action est de réussir à faire autant que votre stat ou moins, si vous faites plus alors vous échouez votre action...\n\nLa suite : `=Horde stats 2`")
+            .addField("Les stats, partie 1 :", "Votre survivant est différent des autres selon son histoire, ainsi que sa profession et d'autres facteurs comme le physique, sa personnalité ou même son langage, c'est pourquoi dans ce monde il existe 3 stats :\n\n`Stat physique`\n`Stat mental`\n`Stat social`\n\nPour réussir certaines actions qui demandent des efforts parfois, il faudra faire ce qu'on appelle un `Roll` pour savoir si vous réussissez ou non : `=Horde roll`\n\nCeci vous donne un nombre de 1 à 100, le but pour réussir votre action est de réussir à faire autant que votre stat ou moins, si vous faites plus alors vous échouez votre action...\n\nLa suite : `=Stats 2`")
             .setTimestamp()
         message.channel.send({ embed })
     }
 
 
 
-    if (message.content.startsWith(prefix + "Horde stats 2")) {
+    if (message.content.startsWith(prefix + "Stats 2")) {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -1437,7 +1441,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("La nuit :", "Lorsque vient 00 H 00, les zombies attaquent la ville et les survivants qu'ils rencontreront !\n\nPour déterminer combien de zombies attaqueront la ville par nuit, voici les différentes commandes à écrire :\n\n`=Jour 1`\n`=Jour 2`\n`=Jour 3`\n`=Jour 4`\n`=Jour 5`\n`=Jour 6`\n`=Jour 7`\n`=Jour 8`\n`=Jour 9`\n`=Jour 10`\n`=Jour 11`\n`=Jour 12`\n`=Jour 13`\n`=Jour 14`\n`=Jour 15`\n`=Jour 16`\n`=Jour 17`\n`=Jour 18`\n`=Jour 19`\n`=Jour 20`\n\nLe lendemain lorsque l'attaque des zombies sur la ville est terminé, à cause des tempêtes de sable assez violentes vous ne retrouverez plus les lieux que vous avez sûrement pus visiter la veille, il faudra de nouveau les retrouver...\n\nDurant l'attaque des zombies sur la ville, il faudra tuer tous les zombies ou alors survivre jusqu'à que les zombies sortent à l'extérieur, mais ils seront de nouveau présent la nuit prochaine en plus des nouveaux zombies...").setTimestamp()
+            .addField("La nuit :", "Lorsque vient 22 H 00, les zombies attaquent la ville et les survivants qu'ils rencontreront !\n\nPour déterminer combien de zombies attaqueront la ville par nuit, voici les différentes commandes à écrire :\n\n`=Jour 1`\n`=Jour 2`\n`=Jour 3`\n`=Jour 4`\n`=Jour 5`\n`=Jour 6`\n`=Jour 7`\n`=Jour 8`\n`=Jour 9`\n`=Jour 10`\n`=Jour 11`\n`=Jour 12`\n`=Jour 13`\n`=Jour 14`\n`=Jour 15`\n`=Jour 16`\n`=Jour 17`\n`=Jour 18`\n`=Jour 19`\n`=Jour 20`\n\nLe lendemain lorsque l'attaque des zombies sur la ville est terminé (après 00 H 00), à cause des tempêtes de sable assez violentes vous ne retrouverez plus les lieux que vous avez sûrement pus visiter la veille, il faudra de nouveau les retrouver... Et si vous êtes dehors au moment du passage de la tempête, vous pourrez être gravement blessé...\n\nDurant l'attaque des zombies sur la ville, il faudra tuer tous les zombies ou alors survivre jusqu'à que les zombies sortent à l'extérieur, mais ils seront de nouveau présent la nuit prochaine en plus des nouveaux zombies...").setTimestamp()
         message.channel.send({ embed })
     }
 
@@ -1582,7 +1586,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
 
-    if (message.content.startsWith(prefix + "Horde armes")) {
+    if (message.content.startsWith(prefix + "Armes")) {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -1613,33 +1617,75 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Les lieux, partie 1 :", "Banque : Elle permet de pouvoir stock justement tous les objets nécessaires en ville, coopérez pour survivre!\n\nPlace principale : C'est une place assez grande qui permet de pouvoir se rassembler si besoin\n\nAuberge : Permet de pouvoir y écrire des annonces ou les objectifs du jour pour s'organiser entre survivants, vous pourrez aussi y dormir avec quelques chambres et lits à l'intérieur !\n\nPuits : Un des endroits les plus importants, c'est ici que les survivants pourront récupérer de l'eau à mettre dans leur bouteille pour ne pas mourir de soif, cependant l'eau n'est pas illimité mais le puit possède 50 `Ration d'eau` de départ !\n\nCabinet médicale : L'endroit où vous pourrez normalement trouver un médecin capable de vous soigner, si vous avez besoin de médicaments à cause d'une maladie ou infection, si vous avez besoin de bandages et de le mettre à cause d'une hémorragie...\n\nLa suite : `=Lieux 2`").setTimestamp()
+            .setTitle("Les lieux :")
+            .setDescription("Voici la liste des différents lieux :\n\n`=Banque`\n`=Place principale`\n`=Auberge`\n`=Puits`\n`=Cabinet médical`\n`=Tour`\n`=Boucherie`\n`=Cuisine`\n`=Prison`\n`=Atelier`\n`=Chantiers`\n`=Grande porte`\n`=Potager`\n`=Enclos`\n`=Générateur`\n`=Mine`\n`=Rues`\n\nLa plupart de ces lieux au départ de la ville, ne sont pas encore présent et c'est pour cela qu'il faudra les créer !").setTimestamp()
         message.channel.send({ embed })
     }
 
-
-
-    if (message.content === prefix + "Lieux 2") {
+    if(message.content === prefix + "Banque") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Les lieux, partie 2 :", "Tour : Celle-ci permet de pouvoir observer les environs et la ville, pour tenter de voir s'il y a des zombies à l'intérieur de la ville à découvert, ou si des survivants se font attaqués à l'extérieur : `=Observation`\n\nBoucherie : Si la ville a besoin de devoir découper un certain type de viande, de la travailler pour la rendre mangeable ou de meilleur qualité, le matériel se trouve dedans\n\nCuisine : Les survivants auront parfois besoin de se nourrire d'un bon repas pour satisfaire leur faim, c'est ici que se feront tous les repas et les rations pour survivre\n\nPrison : Comme le nom l'indique, c'est une prison où pourrons être mis des survivants qui sont devenus trop violents, ou même infectés, ou pour tout autre usage, celle-ci possède 10 cellules\n\nAtelier : Un autre batîment très important pour la survie de la ville qui est l'atelier, vous pourrez à l'intérieur travailler les matériaux, les transformer, les raffiner, les découper, les assembler avec le matériel de base pour le faire\n\nLa suite : `Lieux 3`").setTimestamp()
+            .addField("La banque :","Elle permet de pouvoir stock justement tous les objets nécessaires en ville, coopérez pour survivre !\n\nQuand vous mettez des objets dans la banque, écrivez dans la salon 『💰』ᴏʙᴊᴇᴛs-ᴇɴ-ʙᴀɴϙᴜᴇ \"+X [Objet déposé]\" et quand vous prenez des objets \"-X [Objet pris]\"\n\nQuand vous voulez déposer plusieurs objets, écrivez 1 message pour 1 type d'objet").setTimestamp()
         message.channel.send({ embed })
     }
 
-
-
-    if (message.content === prefix + "Lieux 3") {
+    if(message.content === prefix + "Place principale") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Les lieux, partie 3 :", "Chantiers : Une fois la ville ayant les bonnes ressources ainsi que les bons plans et les connaissances, vous pourrez aux chantiers construire justement les différentes bâtiments et défenses que la ville aura besoin pour continuer de résister aux attaques des zombies\n\nLa plupart de ces lieux au départ de la ville, ne sont pas encore présent et c'est pour cela qu'il faudra les créer !").setTimestamp()
+            .addField("La place principale :","C'est une place assez grande qui permet de pouvoir se rassembler si besoin").setTimestamp()
         message.channel.send({ embed })
     }
+
+    if(message.content === prefix + "Auberge") {
+        const embed = new Discord.RichEmbed()
+            .setColor(0xff0000)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+            .addField("L'auberge' :","Permet de pouvoir y écrire des annonces ou les objectifs du jour (visibles dans 『📜』ᴛᴀʙʟᴇᴀᴜ-ᴀɴɴᴏɴᴄᴇs ) pour s'organiser entre survivants, vous pourrez aussi y dormir avec quelques chambres et lits à l'intérieur !").setTimestamp()
+        message.channel.send({ embed })
+    }
+
+    if(message.content === prefix + "Puits") {
+        const embed = new Discord.RichEmbed()
+            .setColor(0xff0000)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+            .addField("Le puits :","Un des endroits les plus importants, c'est ici que les survivants pourront récupérer de l'eau à mettre dans leur bouteille pour ne pas mourir de soif, cependant l'eau n'est pas illimitée mais le puits possède 50 Ration d'eau de départ !\n\nComme pour la banque, quand vous prenez de l'eau du puits écrivez dans le salon 『💧』ʀᴀᴛɪᴏɴs-ᴅᴜ-ᴘᴜɪᴛs \"-X eau\"\n\nSi vous avez retiré trop d'eau par mégarde, prévenez un modo qui remettra de l'eau dans le puits").setTimestamp()
+        message.channel.send({ embed })
+    }
+
+    if(message.content === prefix + "Chantiers") {
+        const embed = new Discord.RichEmbed()
+            .setColor(0xff0000)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+            .addField("Les chantiers :","Une fois la ville ayant les bonnes ressources ainsi que les bons plans et les connaissances, vous pourrez aux chantiers construire justement les différentes bâtiments et défenses que la ville aura besoin pour continuer de résister aux attaques des zombies").setTimestamp()
+        message.channel.send({ embed })
+    }
+
+    if(message.content === prefix + "Grande porte") {
+        const embed = new Discord.RichEmbed()
+            .setColor(0xff0000)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+            .addField("La grande porte :","C'est la grande porte qui doit être impérativement fermée avant 22h, l'heure d'attaque de la horde\n\nLes survivants peuvent entrer/sortir de la ville uniquement part cette porte").setTimestamp()
+        message.channel.send({ embed })
+    }
+
+    
+
+
+
 
 
 
@@ -1650,7 +1696,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Défense de la ville, partie 1 :", "Le but principal de la survie en ville sera de fabriquer des défenses afin de tuer un maximum de zombies lors des attaques tous les jours à 00 H 00 [Heure en France] !\n\nIl est possible pour un survivant de défendre aussi la ville des zombies restants qui arrivent à pénétrer l'intérieur de la ville...\n\nUn zombie vaut pour un 'point d'attaque' et une défense ou un survivant aura ses 'points de défense'\n\nSi par exemple, la ville possède 45 points de défense et qu'il y a 37 zombies attaquant au jour 3, il n'y a aucun zombies qui pénétreront dans la ville, ni aucun mort par la même occasion !\n\nCependant, si la ville possède 45 points de défense et qu'il y a 50 zombies qui attaquent, 5 zombies réussiront à pénétrer en ville...\n\nCes 5 zombies pourront être combattus et tuer par les survivants qui défendent l'entrée de la ville évidemment !\n\nLa suite : `=Défense de la ville 2`").setTimestamp()
+            .addField("Défense de la ville, partie 1 :", "Le but principal de la survie en ville sera de fabriquer des défenses afin de tuer un maximum de zombies lors des attaques tous les jours à 22 H 00 [Heure en France] !\n\nIl est possible pour un survivant de défendre aussi la ville des zombies restants qui arrivent à pénétrer l'intérieur de la ville...\n\nUn zombie vaut pour un 'point d'attaque' où la ville aura ses 'points de défense'\n\nSi par exemple, la ville possède 45 points de défense et qu'il y a 37 zombies attaquant au jour 3, il n'y a aucun zombies qui pénétreront dans la ville, ni aucun mort par la même occasion !\n\nCependant, si la ville possède 45 points de défense et qu'il y a 50 zombies qui attaquent, 5 zombies réussiront à pénétrer en ville...\n\nCes 5 zombies pourront être combattus et tués par les survivants qui défendent l'entrée de la ville évidemment !\n\nLa suite : `=Défense de la ville 2`").setTimestamp()
         message.channel.send({ embed })
     }
 
@@ -1662,7 +1708,8 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Défense de la ville, partie 2 :", "Si les survivants fuient ou qu'il n'y a personne défendant l'entrée de la ville, les zombies iront attaquer les joueurs aléatoirement qui sont dans leur maison, batîments, rues etc... !\n\nChaque survivant en début de partie a un numéro, selon le numéro afficher de la commande, les zombies iront vers lui en ville\n\nA savoir que se défendre en groupe est possible (et mieux), et si le survivant n'est pas connecté, son personnage pourra être jouer par un autre survivant avec son accord [ou un modérateur, d'où l'activité importante dans ce RP surtout le soir]\n\nSi le ou les survivants fuient les zombies, ils iront attaquer d'autres joueurs, jusqu'à que tous les zombies soient tués ou que vous survivez 1 H à l'attaque (mais les zombies encore vivants reviendront la nuit prochaine) !\n\nLa suite : `=Défense de la ville 3`").setTimestamp()
+            .setTitle("Défense de la ville, partie 2 :")
+            .setDescription("Si les survivants fuient ou qu'il n'y a personne défendant l'entrée de la ville, les zombies attaqueront les joueurs aléatoirement qui sont dans leur maison, batîments, rues etc... !\n\n~~Chaque survivant en début de partie a un numéro, selon le numéro afficher de la commande, les zombies iront vers lui en ville~~ Maintenant, les zombies attaquent des lieux aléatoirement en ville. Si un survivant est dans un lieu où les zombies pénètrent, ils l'attaqueront automatiquement __en premier__\n\nA savoir que se défendre en groupe est possible (et mieux), et si le survivant n'est pas connecté, son personnage pourra être jouer par un autre survivant avec son accord [ou un modérateur, d'où l'activité importante dans ce RP surtout le soir]\n\nSi le ou les survivants fuient les zombies, ils iront attaquer d'autres joueurs, jusqu'à que tous les zombies soient tués, que les déplacements totaux des zombies ont été atteitns, ou que vous survivez 1 H à l'attaque (mais les zombies encore vivants reviendront la nuit prochaine) !\n\nLa suite : `=Défense de la ville 3`").setTimestamp()
         message.channel.send({ embed })
     }
 
@@ -1676,7 +1723,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Défense de la ville, partie 3 :", "Si à 00 H 00 pile la porte de la ville n'est pas fermé par un survivant, tous les zombies pourront rentrer...\n\nAvant chaque attaque, si vous allez à la porte, vous pouvez défendre la ville en étant un `Veilleur`\n\nUn veilleur est un survivant qui ne va pas se cacher pendant l'attaque, mais qui va justement protéger la ville en sortant et en risquant sa vie\n\nA savoir que, les veilleurs seront les premiers à mourir avant les survivants qui ne défendent pas la ville alors faite attention...\n\nLa fuite est la meilleur solution si vous êtes mal, bonne chance !").setTimestamp()
+            .addField("Défense de la ville, partie 3 :", "Si à 22 H 00 pile la porte de la ville n'est pas fermé par un survivant, tous les zombies pourront rentrer...\n\nAvant chaque attaque, si vous allez à la porte, vous pouvez défendre la ville en étant un `Veilleur`\n\nUn veilleur est un survivant qui ne va pas se cacher pendant l'attaque, mais qui va justement protéger la ville en sortant et en risquant sa vie\n\nA savoir que, les veilleurs seront les premiers à mourir avant les survivants qui ne défendent pas la ville alors faite attention...\n\nLa fuite est la meilleur solution si vous êtes mal, bonne chance !").setTimestamp()
         message.channel.send({ embed })
     }
 
@@ -1699,7 +1746,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
 
-    if (message.content.startsWith(prefix + "Exile")) {
+    if (message.content.startsWith(prefix + "Exil")) {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -1723,19 +1770,19 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
 
-    if (message.content === prefix + "Horde combat") {
+    if (message.content === prefix + "Combat") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Les combats, partie 1 :", "Lorsque vous êtes en groupe contre un ou plusieurs zombies, il faudra déterminer qui sera le premier à agir, le second, et ainsi de suite comme des numéros et en tour par tour !\n\nLes zombies attaqueront toujours après les joueurs sauf s'il y a une embuscade ou une attaque dans le dos...\n\nA savoir que les zombies attaqueront toujours un ou plusieurs survivants en même temps...\n\nPour déterminer quel survivant le ou les zombies attaqueront : `=Cible : [Nombre de survivant dans le combat]`\n\nLa suite en écrivant : `=Horde combat 2`").setTimestamp()
+            .addField("Les combats, partie 1 :", "Lorsque vous êtes en groupe contre un ou plusieurs zombies, il faudra déterminer qui sera le premier à agir, le second, et ainsi de suite comme des numéros et en tour par tour !\n\nLes zombies attaqueront toujours après les joueurs sauf s'il y a une embuscade ou une attaque dans le dos...\n\nA savoir que les zombies attaqueront toujours un ou plusieurs survivants en même temps...\n\nPour déterminer quel survivant le ou les zombies attaqueront : `=Cible : [Nombre de survivant dans le combat]`\n\nLa suite en écrivant : `=Combat 2`").setTimestamp()
         message.channel.send({ embed })
     }
 
 
 
-    if (message.content === prefix + "Horde combat 2") {
+    if (message.content === prefix + "Combat 2") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -2344,7 +2391,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
     }
 
 
-////////////////////////////////////////////////////////Correction///////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////Autres commandes dans =Horde///////////////////////////////////////////////////////////////////////////////////
 
 
 
@@ -2379,7 +2426,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
 
-    if (message.content === prefix + "Horde contexte") {
+    if (message.content === prefix + "Contexte") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -2406,97 +2453,284 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
 
-    if (message.content === prefix + "Horde états") {
+    if (message.content === prefix + "Etats") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Les états, partie 1 :", "Parfois, ou suite à un évènement, vous aurez un état négatif ou positif\n\nCertains états ne sont que temporaires et ne nécessite aucunes interventions ou objets, mais certains en demanderont obligatoirement avant que sa n'empire jusqu'à une mort certaine...\n\nLes survivants possédant le métier de 'médecin' auront un bonus pour soigner et enlever un état en particulier, cependant il faudra obligatoirement qu'il se trouve au cabinet médical\n\nCertains états devront être jouer RP...\n\nVoici la liste des états :\n\n`Nausée` : Vous avez envie de vomir, aucun appétit, et vous êtes assez pâle [Double de points d'actions pour les actions en ville]\n\n`Fièvre` : Les efforts vous demande encore plus d'énergie que d'habitude, vous sentez votre front très chaud au bord de l'explosion [Double points d'actions pour les actions à l'extérieur de la ville]\n\nSuite : `=Horde états 2`").setTimestamp()
+            .setTitle("Les états :")
+            .setDescription("Parfois, ou suite à un évènement, vous aurez un état négatif ou positif\n\nCertains états ne sont que temporaires et ne nécessite aucunes interventions ou objets, mais certains en demanderont obligatoirement avant que sa n'empire jusqu'à une mort certaine...\n\nLes survivants possédant le métier de 'médecin' auront un bonus pour soigner et enlever un état en particulier, cependant il faudra obligatoirement qu'il se trouve au cabinet médical\n\nCertains états devront être jouer RP...\n\nVoici la liste des états :\n\n`=Nausée`\n`=Fièvre`\n`=Tremblements`\n`=Perte d'équilibre`\n`=Douleurs gastriques`\n`=Migraine`\n`=Insomnie`\n`=Fatigue`\n`=Drogué`\n`=Dépendance`\n`=Hallucinations`\n`=Folie`\n`=Terreur`\n`=Rassasiement`\n`=Faim`\n`=Hydratation`\n`=Soif`\n`=Infection`\n`=Blessure`\n`=Goule`\n`=Ivresse`\n`=Hémorragie`\n\nLes états de blessures, d'hémorragies et d'infections se cumulent, voici des exemples pour mieux comprendre : `=Exemples d'accumulation`\n\nComme dis au début, vous devrez jouer les états de manière RP\n\nLorsque vous avez une blessure, vous devrez jouer la douleur tous de même en fonction de la gravité de votre blessure\n\nLorsque vous avez une infection, jouez le fait que vous devenez pâle, que vous toussez voir cracher du sang").setTimestamp()
         message.channel.send({ embed })
     }
 
-
-
-    if (message.content === prefix + "Horde états 2") {
+    if(message.content === prefix + "Nausée") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Les états, partie 2 :", "`Tremblements` : La peur n'est pas présente, vous avez juste des tremblements inhabituelles rendant vos phrases plus difficiles à comprendre\n\n`Perte d'équilibre` : Même sans vertiges, vous sentez en permanence une sensation de tomber sur le sol à tel point que marcher est un effort énorme [Double de temps à mettre pour les déplacements]\n\n`Douleurs gastriques` : L'envie de vomir constamment, rien que de penser à un bout de steak est assez pour vous faire vomir [Impossible de manger quoi que ce soit]\n\n`Migraine` : Réfléchir vous fait mal à la tête, vous n'arrivez même plus à vous concentrer à quoi que ce soit [Impossible de faire une action demandant un point d'action]\n\n`Insomnie` : Vous n'arrivez pas à dormir assez, et vous aurez toujours l'état 'Fatigue' jusqu'à que vous n'ayez plus ces insomnies\n\nSuite : `=Horde états 3`").setTimestamp()
+            .addField("Nausée :", "Vous avez envie de vomir, aucun appétit, et vous êtes assez pâle [Double de points d'actions pour les actions en ville]")
+            .setTimestamp()
         message.channel.send({ embed })
     }
 
-
-
-    if (message.content === prefix + "Horde états 3") {
+    if(message.content === prefix + "Fièvre") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Les états, partie 3 :", "`Fatigue` : Si vous dormez moins de 4 H par jour, votre énergie sera faible et la moindre action sera un effort immense [Double points d'actions pour toutes actions en ville comme en extérieur]\n\n`Drogué` : Vous êtes sous drogue, vous ne pourrez pas reprendre de drogue avant le lendemain\n\n`Dépendance` : L'abus de drogue vous mène à la dépendance, si vous ne prenez pas de drogue (la même drogue) pendant un jour vous aurez l'état 'Hallucinations', si vous ne prenez pas de drogue pendant deux jours vous aurez l'état 'Folie' et si vous ne prenez pas de drogue pendant trois jours vous... mourrez...\n\n`Hallucinations` : Des ombres ou même des zombies imaginaires, vous voyez des choses iréelles\n\n`Folie` : Vous dites et faites n'importe quoi en permanence à tel point que vous avez des hallucinations en permanence et que vous êtes presque un danger pour les autres survivants [Impossible de faire une action demandant un point d'action]\n\nLa suite : `=Horde états 4`").setTimestamp()
+            .addField("Fièvre :", "Les efforts vous demande encore plus d'énergie que d'habitude, vous sentez votre front très chaud au bord de l'explosion [Double points d'actions pour les actions à l'extérieur de la ville]")
+            .setTimestamp()
         message.channel.send({ embed })
     }
 
-
-
-    if (message.content === prefix + "Horde états 4") {
+    if(message.content === prefix + "Tremblements") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Les états, partie 4 :", "`Terreur` : La vision d'un zombie vous effraie tellement que vous ne vous défendrez pas, vous essayerez toujours de fuir [Fuite seulement autorisé durant les combats]\n\n`Rassasiement` : Vous avez mangé, vous ne pourrez pas manger de nouveau avant le lendemain\n\n`Faim` > `Très faim` > `Affamé` : Après l'état 'Rassasiement', le lendemain vous aurez l'état 'Faim', si vous ne mangez pas le lendemain vous aurez l'état 'Très faim', si vous ne mangez pas le lendemain vous aurez l'état 'Affamé' et si vous ne mangez toujours pas le lendemain vous... mourrez...\n\n`Hydratation` : Vous avez déjà bus, vous ne pourrez pas boire de nouveau avant le lendemain\n\n`Soif` > `Très soif` > `Assoifé` : Après l'état 'Hydratation', le lendemain vous aurez l'état 'Soif', si vous ne buvez pas le lendemain vous aurez l'état 'Très soif', si vous ne buvez pas le lendemain vous aurez l'état 'Assoifé' et si vous ne buvez toujours pas le lendemain vous... mourrez...\n\nLa suite : `=Horde états 5`").setTimestamp()
+            .addField("Tremblements :", "La peur n'est pas présente, vous avez juste des tremblements inhabituelles rendant vos phrases plus difficiles à comprendre")
+            .setTimestamp()
         message.channel.send({ embed })
     }
 
-
-
-    if (message.content === prefix + "Horde états 5") {
+    if(message.content === prefix + "Perte d'équilibre") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Les états, partie 5 :", "`Infection` > `Infection avancée` > `Infection mortelle` : Après l'état `Infection`, le lendemain vous aurez l'état `Infection avancée`, si vous n'êtes pas soigné le lendemain vous aurez l'état `Infection mortelle` et si vous n'êtes toujours pas soigné le lendemain, vous devrez faire : `=Infection totale`\n\nLa suite : `=Horde états 6`").setTimestamp()
+            .addField("Perte d'équilibre :", "Même sans vertiges, vous sentez en permanence une sensation de tomber sur le sol à tel point que marcher est un effort énorme [Double de temps à mettre pour les déplacements]")
+            .setTimestamp()
         message.channel.send({ embed })
     }
 
-
-
-    if (message.content === prefix + "Horde états 6") {
+    if(message.content === prefix + "Douleurs gastriques") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Les états, partie 6 :", "`Blessure légère` > `Blessure` > `Blessure avancée` > `Blessure mortelle` : Les différentes états de blessures sont croissants, si vous étiez atteint de l'état 'Blessure' et que vous subissez un état de nouveau 'Blessure légère' alors votre nouvelle état sera 'Blessure avancée', si vous ne comprenez pas alors imaginez que vous avez 5/5 HP, qu'une blessure légère retire 1 HP, une blessure 2 HP, une blessure avancée 3 HP et une blessure mortelle 4 HP avant la mort quand vous êtes à 0/5 HP\n\n`Goule` : Vous avez manger de la viande humaine ou alors pris une substance, la seul nourriture maintenant possible est la viande humaine... vous devrez dévorer un humain une fois chaque jour avant le lendemain, sinon vous ...mourrez...\n\n`Ivresse` : Après avoir pris de l'alcool, vous ne pourrez plus en boire avant le lendemain, vous êtes ivre\n\nLa suite : `=Horde états 7`").setTimestamp()
+            .addField("Douleurs gastriques :", "L'envie de vomir constamment, rien que de penser à un bout de steak est assez pour vous faire vomir [Impossible de manger quoi que ce soit]")
+            .setTimestamp()
         message.channel.send({ embed })
     }
 
-
-
-    if (message.content === prefix + "Horde états 7") {
+    if(message.content === prefix + "Migraine") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Les états, partie 7 :", "Les états de blessures, d'hémorragies et d'infections se cumulent, voici des exemples pour mieux comprendre :\n\n`Blessure légère` + `Blessure légère` = `Blessure`\n\n`Blessure` + `Blessure légère` = `Blessure avancée`\n\n`Blessure avancée` + `Blessure légère` = `Blessure mortelle`\n\n`Blessure mortelle` + `Blessure légère` = `Mort`\n\n\n`Blessure` + `Blessure` = `Blessure mortelle`\n\n`Blessure` + `Blessure avancée` = `Mort`\n\n`Infection légère` + `Infection légère` = `Infection`\n\n`Infection` + `Infection légère` = `Infection avancée`\n\n`Infection avancée` + `Infection légère` = `Infection mortelle`\n\n`Infection mortelle` + `Infection légère` = `Mort`\n\n`Infection` + `Infection` = `Infection mortelle`\n\n`Hémorragie légère` + `Hémorragie légère` = `Hémorragie`\n\n`Hémorragie` + `Hémorragie légère` = `Hémorragie avancée`\n\n`Hémorragie avancée` + `Hémorragie légère` = `Hémorragie mortelle`\n\n`Hémorragie mortelle` + `Hémorragie légère` = `Mort`\n\nLa suite : `=Horde états 8`").setTimestamp()
+            .addField("Migraine :", "Réfléchir vous fait mal à la tête, vous n'arrivez même plus à vous concentrer à quoi que ce soit [Impossible de faire une action demandant un point d'action]")
+            .setTimestamp()
         message.channel.send({ embed })
     }
 
+    if(message.content === prefix + "Insomnie") {
+        const embed = new Discord.RichEmbed()
+            .setColor(0xff0000)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .addField("Insomnie :", "Vous n'arrivez pas à dormir assez, et vous aurez toujours l'état 'Fatigue' jusqu'à que vous n'ayez plus ces insomnies")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
 
+    if(message.content === prefix + "Fatigue") {
+        const embed = new Discord.RichEmbed()
+            .setColor(0xff0000)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .addField("Fatigue :", "Si vous dormez moins de 4 H par jour, votre énergie sera faible et la moindre action sera un effort immense [Double points d'actions pour toutes actions en ville comme en extérieur]")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
 
-    if (message.content === prefix + "Horde états 8") {
+    if(message.content === prefix + "Drogué") {
+        const embed = new Discord.RichEmbed()
+            .setColor(0xff0000)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .addField("Drogué :", "Vous êtes sous drogue, vous ne pourrez pas reprendre de drogue avant le lendemain")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+
+    if(message.content === prefix + "Dépendance") {
+        const embed = new Discord.RichEmbed()
+            .setColor(0xff0000)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .addField("Dépendance :", "L'abus de drogue vous mène à la dépendance, si vous ne prenez pas de drogue (la même drogue) pendant un jour vous aurez l'état 'Hallucinations', si vous ne prenez pas de drogue pendant deux jours vous aurez l'état 'Folie' et si vous ne prenez pas de drogue pendant trois jours vous... mourrez...")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+
+    if(message.content === prefix + "Hallucinations") {
+        const embed = new Discord.RichEmbed()
+            .setColor(0xff0000)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .addField("Hallucinations :", "Des ombres ou même des zombies imaginaires, vous voyez des choses iréelles")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+
+    if(message.content === prefix + "Folie") {
+        const embed = new Discord.RichEmbed()
+            .setColor(0xff0000)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .addField("Folie :", "Vous dites et faites n'importe quoi en permanence à tel point que vous avez des hallucinations en permanence et que vous êtes presque un danger pour les autres survivants [Impossible de faire une action demandant un point d'action]")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+
+    if(message.content === prefix + "Terreur") {
+        const embed = new Discord.RichEmbed()
+            .setColor(0xff0000)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .addField("Terreur :", "La vision d'un zombie vous effraie tellement que vous ne vous défendrez pas, vous essayerez toujours de fuir [Fuite seulement autorisé durant les combats]")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+
+    if(message.content === prefix + "Rassasiement") {
+        const embed = new Discord.RichEmbed()
+            .setColor(0xff0000)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .addField("Rassasiement :", "Vous avez déjà mangé, vous ne pourrez pas manger de nouveau avant le lendemain")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+
+    if(message.content === prefix + "Faim") {
+        const embed = new Discord.RichEmbed()
+            .setColor(0xff0000)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .addField("Faim > Très faim > Affamé :", "Après l'état `Rassasiement`, le lendemain vous aurez l'état `Faim`, si vous ne mangez pas le lendemain vous aurez l'état `Très faim`, si vous ne mangez pas le lendemain vous aurez l'état `Affamé` et si vous ne mangez toujours pas le lendemain vous... mourrez... (équivaut à `+1 cran de faim` par jour)")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+
+    if(message.content === prefix + "Hydratation") {
+        const embed = new Discord.RichEmbed()
+            .setColor(0xff0000)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .addField("Hydratation :", "Vous avez déjà bu, vous ne pourrez pas boire de nouveau avant le lendemain")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+
+    if(message.content === prefix + "Soif") {
+        const embed = new Discord.RichEmbed()
+            .setColor(0xff0000)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .addField("Soif > Très soif > Assoifé :", "Après l'état `Hydratation`, le lendemain vous aurez l'état `Soif`, si vous ne buvez pas le lendemain vous aurez l'état `Très soif`, si vous ne buvez pas le lendemain vous aurez l'état `Assoifé` et si vous ne buvez toujours pas le lendemain vous... mourrez... (équivaut à `+1 cran de soif` par jour)")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+
+    if(message.content === prefix + "Infection") {
+        const embed = new Discord.RichEmbed()
+            .setColor(0xff0000)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .addField("Infection légère > Infection avancée > Infection mortelle :", "Après l'état `Infection légère`, le lendemain vous aurez l'état `Infection avancée`, si vous n'êtes pas soigné le lendemain vous aurez l'état `Infection mortelle` et si vous n'êtes toujours pas soigné le lendemain, vous devrez faire : `=Infection totale` (équivaut à `+1 cran d'infection` par jour)")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+
+    if (message.content.startsWith(prefix + "Blessure")) {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Les états, partie 8 :", "Comme dis au début, vous devrez jouer les états de manière RP\n\nLorsque vous avez une blessure, vous devrez jouer la douleur tous de même en fonction de la gravité de votre blessure\n\nLorsque vous avez une infection, jouez le fait que vous devenez pâle, que vous toussez voir cracher du sang\n\nConcernant les hémorragies, comparé à l'infection qui s'aggrave de jour en jour, l'hémorragie ne s'aggrave au fil du temps mais si elles sont cumulés, mais vous aurez un certain avant de soigner votre hémorragie avant de mourir...\n\nVoici les différents temps selon l'hémorragie :\n\n`Hémorragie` : Vous avez 24 H pour soigner cette hémorragie avant la mort...\n\n`Hémorragie avancée` : Vous avez 12 H pour soigner cette hémorragie avant la mort...\n\n`Hémorragie mortelle` : Vous avez 6 H pour soigner cette hémorragie avant la mort...").setTimestamp()
+            .setTitle("Blessure légère > Blessure > Blessure avancée > Blessure mortelle :")
+            .setDescription("Durant votre survie, il sera très fréquent de finir blessé et il existe différents types de blessures :\n\n`Blessure légère`\n`Blessure`\n`Blessure avancée`\n`Blessure mortelle`\n\nLes blessures provoquent des malus pour fuir, et plus vous vous rapprochez d'une blessure mortelle, plus vous aurez de chance d'y rester...\n\nLes blessure sont également cumulables et croissantes, si vous étiez atteint de l'état `Blessure` et que vous subissez un état de nouveau `Blessure légère` alors votre nouvelle état sera `Blessure avancée`. Si vous ne comprennez pas : `=Accumulation exemple`\n\nLes blessures se soignent à l'aide de bandage, de médicaments, d'injections et d'un tas d'autres moyens probables et possibles...")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+
+    if(message.content === prefix + "Goule") {
+        const embed = new Discord.RichEmbed()
+            .setColor(0xff0000)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .addField("Goule :", "Vous avez manger de la viande humaine ou alors pris une substance, la seul nourriture maintenant possible est la viande humaine... vous devrez dévorer un humain une fois chaque jour avant le lendemain, sinon vous ...mourrez... (Pour plus d'informations : `=Transformation`)")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+
+    if(message.content === prefix + "Ivresse") {
+        const embed = new Discord.RichEmbed()
+            .setColor(0xff0000)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .addField("Ivresse :", "Après avoir pris de l'alcool, vous ne pourrez plus en boire avant le lendemain, vous êtes ivre")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+
+    if(message.content === prefix + "Hémorragie") {
+        const embed = new Discord.RichEmbed()
+            .setColor(0xff0000)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .addField("Hémorragie :", `Concernant les hémorragies, comparé à l'infection qui s'aggrave de jour en jour, l'hémorragie ne s'aggrave qu'au fil du temps et si elles sont cumulées, mais vous aurez un certain temps avant de soigner votre hémorragie avant de mourir... (cette fonctionnalité n'est pas utilisée actuellement)
+
+Voici les différents temps selon l'hémorragie :
+            
+\`Hémorragie\` : Vous avez 24 H pour soigner cette hémorragie avant la mort...
+            
+\`Hémorragie avancée\` : Vous avez 12 H pour soigner cette hémorragie avant la mort...
+            
+\`Hémorragie mortelle\` : Vous avez 6 H pour soigner cette hémorragie avant la mort...`)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+
+    if(message.content === prefix + "Exemples d'accumulation") {
+        const embed = new Discord.RichEmbed()
+            .setColor(0xff0000)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .addField("Exemples d'accumulation :", `Les états de blessures, d'hémorragies et d'infections se cumulent, voici des exemples pour mieux comprendre :
+
+Blessure légère + Blessure légère = Blessure
+           
+Blessure + Blessure légère = Blessure avancée
+            
+Blessure avancée + Blessure légère = Blessure mortelle
+            
+Blessure mortelle + Blessure légère = Mort           
+           
+Blessure + Blessure = Blessure mortelle
+            
+Blessure + Blessure avancée = Mort
+            
+Infection légère + Infection légère = Infection
+            
+Infection + Infection légère = Infection avancée
+            
+Infection avancée + Infection légère = Infection mortelle
+            
+Infection mortelle + Infection légère = Mort
+            
+Infection + Infection = Infection mortelle
+            
+Hémorragie légère + Hémorragie légère = Hémorragie
+            
+Hémorragie + Hémorragie légère = Hémorragie avancée
+            
+Hémorragie avancée + Hémorragie légère = Hémorragie mortelle
+            
+Hémorragie mortelle + Hémorragie légère = Mort`)
+            .setTimestamp()
         message.channel.send({ embed })
     }
 
@@ -2516,7 +2750,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
 
-    if (message.content.startsWith(prefix + "Soif")) {
+    if (message.content.startsWith(prefix + "Eau")) {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -2541,20 +2775,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 
 
 
-    if (message.content.startsWith(prefix + "Blessure")) {
-        const embed = new Discord.RichEmbed()
-            .setColor(0xff0000)
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Les blessures :", "Durant votre survie, il sera très fréquent de finir blessé et il existe différents types de blessures :\n\n`Blessure légère`\n`Blessure`\n`Blessure avancée`\n`Blessure mortelle`\n\nLes blessures provoquent des malus pour fuir, et plus vous vous rapprochez d'une blessure mortelle, plus vous aurez de chance d'y rester...\n\nLes blessures se cumulent, pour comprendre cela : `=Horde états 7`\n\nLes blessures se soignent à l'aide de bandage, de médicaments, d'injections et d'un tas d'autres moyens probables et possibles...").setTimestamp()
-        message.channel.send({ embed })
-    }
-
-
-
-
-    if (message.content.startsWith(prefix + "Atouts 1")) {
+    if (message.content.startsWith(prefix + "Atouts")) {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -24472,7 +24693,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(0xff0000)
-            .addField("Atelier :", "Permet d'effectuer des transformations de ressources\n\nL'avancée d'une ville passe par la construction d'un atelier crasseux et rempli d'un bazar indéfinissable\n\nC'est un pré-requis pour tous les bâtiments avancés en ville afin de les construire ainsi qu'à l'assemblage de matériaux...\n\n:hammer_pick: Matériaux nécessaires :\n\n`10 Planche tordue`\n`8 Ferrailles`\n`1 Pavés de béton informes`\n\n:timer: Le temps de construction est de 38 minutes")
+            .addField("Atelier :", "Un autre batîment très important pour la survie de la ville qui est l'atelier, vous pourrez à l'intérieur travailler les matériaux, les transformer, les raffiner, les découper, les assembler avec le matériel de base pour le faire\n\nPermet d'effectuer des transformations de ressources\n\nL'avancée d'une ville passe par la construction d'un atelier crasseux et rempli d'un bazar indéfinissable\n\nC'est un pré-requis pour tous les bâtiments avancés en ville afin de les construire ainsi qu'à l'assemblage de matériaux...\n\n:hammer_pick: Matériaux nécessaires :\n\n`10 Planche tordue`\n`8 Ferrailles`\n`1 Pavés de béton informes`\n\n:timer: Le temps de construction est de 38 minutes")
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -24484,7 +24705,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(0xff0000)
-            .addField("Boucherie :", "Permet de transformer les animaux en nourriture\n\nPermet de transformer vos petits compagnons (chiens, chats, serpents…) en nourriture\n\nQuand on pense qu'il y en a qui préféraient le boeuf...\n\n:hammer_pick: Matériaux nécessaires :\n\n`9 Planche tordue`\n`4 Ferraille`\n\n:timer: Le temps de construction est de 26 minutes")
+            .addField("Boucherie :", "Si la ville a besoin de devoir découper un certain type de viande, de la travailler pour la rendre mangeable ou de meilleur qualité, le matériel se trouve dedans\n\nPermet de transformer les animaux en nourriture\n\nPermet de transformer vos petits compagnons (chiens, chats, serpents…) en nourriture\n\nQuand on pense qu'il y en a qui préféraient le boeuf...\n\n:hammer_pick: Matériaux nécessaires :\n\n`9 Planche tordue`\n`4 Ferraille`\n\n:timer: Le temps de construction est de 26 minutes")
             .setTimestamp()
         message.channel.send({ embed })
     }
