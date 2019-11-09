@@ -530,7 +530,7 @@ Chaque jour, vous pouvez récolter les pommes de ce pommier avec la commande "=R
             .setTitle("Tomate :")
             .setDescription(`Une tomate fraichement cueillie du potager, juteuse et goûtue... *Mmm!...*
             
-En utilisant cet objet, vous obtenez l'état \`Rassasiement\`, \`+1 cran de soif\`, ainsi que 5 points d'actions !
+En utilisant cet objet, vous obtenez l'état \`Rassasiement\`, \`-1 cran de soif\`, ainsi que 5 points d'actions !
 
 Cet objet est \`cuisinable\`
 
@@ -551,7 +551,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Tomate]"
             .setTitle("Carotte :")
             .setDescription(`Une carotte fraichement cueillie du potager, croquante et roche en fibre... *Mmm!...*
             
-En utilisant cet objet, vous obtenez \`+1 cran de faim\` ainsi que 2 points d'actions !
+En utilisant cet objet, vous obtenez \`-1 cran de faim\` ainsi que 2 points d'actions !
 
 Cet objet est \`cuisinable\`
 
@@ -885,7 +885,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Vache zo
             .setTitle("Lait couleur kaki :")
             .setDescription(`Ce drôle de lait légèrement pétillant de couleur kaki ne donne vraiment pas envie mais ça se marie bien avec la citrouille
             
-En utilisant cet objet, vous obtenez \`+1 cran de soif\` ainsi que 6 points d'actions !
+En utilisant cet objet, vous obtenez \`-1 cran de soif\` ainsi que 6 points d'actions !
             
 Cet objet est \`cuisinable\``)
             .setTimestamp()
