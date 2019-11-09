@@ -1752,7 +1752,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("L'exile :", "Il est possible qu'une fois trop de crime commis et si les survivants décident d'effectuer un vote, de vous faire exiler, c'est à dire que vous n'aurez plus le droit de retirer d'objets à la banque, vous devrez survivre de votre côté seul en quelque sorte...\n\nCependant, il est possible de ne pas respecter ces règles, mais si les survivants s'en aperçoivent, ils pourront alors vous mettre dehors et vous finirez en burger pour les zombies...\n\nL'exile peux-être temporaire comme définitif, et les règles définies peuvent être différentes d'une ville à une autre !").setTimestamp()
+            .addField("L'exil :", "Il est possible qu'une fois trop de crime commis et si les survivants décident d'effectuer un vote, de vous faire exiler, c'est à dire que vous n'aurez plus le droit de retirer d'objets à la banque, vous devrez survivre de votre côté seul en quelque sorte...\n\nCependant, il est possible de ne pas respecter ces règles, mais si les survivants s'en aperçoivent, ils pourront alors vous mettre dehors et vous finirez en burger pour les zombies...\n\nL'exile peux-être temporaire comme définitif, et les règles définies peuvent être différentes d'une ville à une autre !").setTimestamp()
         message.channel.send({ embed })
     }
 
