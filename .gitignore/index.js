@@ -249,7 +249,7 @@ bot.on('message', message => {
         }
     }
 
-    if((message.content.startsWith("+") || message.content.startsWith("-")) && message.channel === serveurChannelPuits){
+    /*/if((message.content.startsWith("+") || message.content.startsWith("-")) && message.channel === serveurChannelPuits){
         serveur.fetchMember(message.author)
             .then()
             .catch(console.error)
@@ -320,7 +320,7 @@ bot.on('message', message => {
             console.error(`${message.author.username} a mal formulé la commande : "${message.content}"`)
             return
         }
-    }
+    }/*/
 
     /*/if((message.content.startsWith("+") || message.content.startsWith("-")) && message.channel === serveurChannelBanque){
         let messageBanque;
@@ -2654,7 +2654,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
             .setTitle("Blessure légère > Blessure > Blessure avancée > Blessure mortelle :")
-            .setDescription("Durant votre survie, il sera très fréquent de finir blessé et il existe différents types de blessures :\n\n`Blessure légère`\n`Blessure`\n`Blessure avancée`\n`Blessure mortelle`\n\nLes blessures provoquent des malus pour fuir, et plus vous vous rapprochez d'une blessure mortelle, plus vous aurez de chance d'y rester...\n\nLes blessure sont également cumulables et croissantes, si vous étiez atteint de l'état `Blessure` et que vous subissez un état de nouveau `Blessure légère` alors votre nouvel état sera `Blessure avancée`. Si vous ne comprennez pas : `=Accumulation exemple`\n\nLes blessures se soignent à l'aide de bandage, de médicaments, d'injections et d'un tas d'autres moyens probables et possibles...")
+            .setDescription("Durant votre survie, il sera très fréquent de finir blessé et il existe différents types de blessures :\n\n`Blessure légère`\n`Blessure`\n`Blessure avancée`\n`Blessure mortelle`\n\nLes blessures provoquent des malus pour fuir, et plus vous vous rapprochez d'une blessure mortelle, plus vous aurez de chance d'y rester...\n\nLes blessure sont également cumulables et croissantes, si vous étiez atteint de l'état `Blessure` et que vous subissez un état de nouveau `Blessure légère` alors votre nouvel état sera `Blessure avancée`. Si vous ne comprennez pas : `=Exemples d'accumulation`\n\nLes blessures se soignent à l'aide de bandage, de médicaments, d'injections et d'un tas d'autres moyens probables et possibles...")
             .setTimestamp()
         message.channel.send({ embed })
     }
