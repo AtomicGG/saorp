@@ -22,6 +22,78 @@ bot.on('ready', () => {
         serveur.channels.find(channelRue4 => channelRue4.name.startsWith("ʀᴜᴇ-4『"))
     ]
 
+    const serveurChannelEvenements = serveur.channels.find(channel => channel.name === "『📃』ᴇ́ᴠᴇ̀ɴᴇᴍᴇɴᴛs" && channel.type ===)
+
+    let repetition = 1;
+
+    setInterval(messageDeMinuit = () => {
+        let date = new Date()
+        let heure = date.getHours()
+        if(heure === 23 && repetition === 1) { //Les heures de décallage françaises c'est la merde. A modifier au prochain solstice
+            repetition = 0
+            serveurChannelEvenements.send(`Ce jour est terminé et vous savez ce que ça veut dire ?
+- Votre niveau de faim et de soif monte d'un cran
+- Si vous êtes infecté, l'infection monte d'un cran
+- Si vous n'avez pas dormi 4 heures aujourd'hui, vous avez l'état fatigué
+- Les lieux que vous avez trouvé courageusement aujourd'hui ont été enssevelis sous le sable de la tempête de minuit. Par conséquent, vous ne pouvez plus retourner dans les bâtiments que vous avez trouvés et les objets que vous avez laissés dehors sont par la même occasion perdus à jamais !
+- Vous récupérez vos 6 PA quotidiens`)
+            const A = (Math.floor((100) * Math.random() + 1))
+            if (A < 25) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(0xff0000)
+                    .addField("Tempête :", "La tempête de cette nuit est assez calme, seulement du vent mais qui n'est pas dangereux, recouvrant peu à peu les lieux de sable")
+    
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (A > 26 & A < 50) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(0xff0000)
+                    .addField("Tempête :", "La tempête de cette nuit est assez violente, quelques petits objets volent et pas mal de sable s'envole en l'air\n\nTous les survivants dehors à l'extérieur prennent une `Blessure`")
+    
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (A > 51 & A < 75) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(0xff0000)
+                    .addField("Tempête :", "La tempête de cette nuit est violente, des panneaux de signalisation ainsi que des grosses pierres arrivent à s'envoler en l'air\n\nTous les survivants dehors à l'extérieur prennent une `Blessure sévère`")
+    
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (A > 76 & A < 90) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(0xff0000)
+                    .addField("Tempête :", "La tempête de cette nuit est très violente, des meubles ainsi que des portes de maison et des débris de verre se font emporté par le vent\n\nTous les survivants dehors à l'extérieur prennent une `Blessure mortelle`")
+    
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (A > 91) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(0xff0000)
+                    .addField("Tempête :", "La tempête de cette nuit est complètement meurtrière, des voitures ainsi que des camions se font soulevés par ce vent qui vous pique limite les yeux\n\nTous les survivants dehors à l'extérieur meurent...")
+    
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        }
+        if(heure === 12) {
+            repetition === 1
+        }
+    }, 60000) //60 secondes
+
     setInterval(temps = () => {
         let date = new Date()
         let heure = date.getHours()
