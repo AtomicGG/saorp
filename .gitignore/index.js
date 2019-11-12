@@ -22,7 +22,7 @@ bot.on('ready', () => {
         serveur.channels.find(channelRue4 => channelRue4.name.startsWith("ʀᴜᴇ-4『"))
     ]
 
-    const serveurChannelEvenements = serveur.channels.find(channel => channel.name === "『📃』ᴇ́ᴠᴇ̀ɴᴇᴍᴇɴᴛs" && channel.type ===)
+    const serveurChannelEvenements = serveur.channels.find(channel => channel.name === "『📃』ᴇ́ᴠᴇ̀ɴᴇᴍᴇɴᴛs")
 
     let repetition = 1;
 
