@@ -322,7 +322,7 @@ bot.on('message', message => {
         }
     }
 
-    if((message.content.startsWith("+") || message.content.startsWith("-")) && message.channel === serveurChannelBanque){
+    /*/if((message.content.startsWith("+") || message.content.startsWith("-")) && message.channel === serveurChannelBanque){
         let messageBanque;
         let signe = message.content.slice(0,1)
         let quantiteDeBase
@@ -405,7 +405,7 @@ bot.on('message', message => {
             console.error(`${message.author.username} a mal formulé la commande : "${message.content}"`)
             return
         }
-    }
+    }/*/
     if(message.content === `${prefix}Enclos`) { //Le combo setTitle/setDescription est plus rentable que le addFiel car le nombre
         const embed = new Discord.RichEmbed() //de caractères est doublé dans la description
             .setAuthor(message.author.username, message.author.avatarURL)
