@@ -185,7 +185,7 @@ bot.login(process.env.TOKEN)
 
 
 bot.on('message', message => {
-    if(message.guild != serveur) return
+    if(message.guild !== serveur) return
     if (message.content === 'ping') {
         message.reply('Le **BOT** a mis: ' + `[ **${msg.createdTimestamp - message.createdTimestamp}**` + ' **Ms** ] pour repondre.\nEt l\'**API** a mis: ' + `[ **${Math.round(client.ping)}**` + ' **Ms** ] pour repondre')
     }
