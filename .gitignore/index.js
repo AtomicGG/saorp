@@ -497,11 +497,11 @@ Mais bon, déjà faut-il que vous trouviez des animaux encore en vie
             
 :hammer_pick: Matériaux nécessaires :
 
-\`10 Planche tordue\`
+\`8 Planche tordue\`
 
 :pig2: Permet de pouvoir faire de l'élevage (Pour plus d'infos : =Elevage)
 
-:timer: Le temps de construction est de 20 minutes`)
+:timer: Le temps de construction est de 16 minutes`)
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -25039,7 +25039,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(0xff0000)
-            .addField("Potager :", "Le jardin permet de créer des légumes pas trop moisis, des fruits qui commencent à pourrir avant de mûrir\n\nBref, des rations alimentaires, si on ne fait pas trop le difficile...\n\n:hammer_pick: Matériaux nécessaires :\n\n`10 Poutre rafistolée`\n`10 Ration d'eau`\n`1 Produits pharmaceutiques`\n\n:corn: Permet de pouvoir faire de l'agriculture (Pour plus d'infos : =Agriculture)\n\n:timer: Le temps de construction est de 42 minutes")
+            .addField("Potager :", "Le jardin permet de créer des légumes pas trop moisis, des fruits qui commencent à pourrir avant de mûrir\n\nBref, des rations alimentaires, si on ne fait pas trop le difficile...\n\n:hammer_pick: Matériaux nécessaires :\n\n`6 Poutre rafistolée`\n`10 Ration d'eau`\n`1 Produits pharmaceutiques`\n\n:corn: Permet de pouvoir faire de l'agriculture (Pour plus d'infos : =Agriculture)\n\n:timer: Le temps de construction est de 34 minutes")
             .setTimestamp()
         message.channel.send({ embed })
     }
