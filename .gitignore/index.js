@@ -8,6 +8,11 @@ const prefix = "=";
 var fury = false;
 
 bot.on('ready', () => {
+
+    //EVENT//
+    zone[7][8] = "10/"  //La sortie du labyrinthe
+
+
     console.log("Je suis connecté !")
     bot.user.setActivity('=Horde', { type: 'PLAYING' })
         .then()
@@ -25354,11 +25359,798 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
     }
 
     if(event) {
-        //////////////////////////////////Event en lui même/////////////////////////////////////////
+        if(zone[4][4] === "0"){
+            zone[4][4] = "9/";
+        }
+        serveur.fetchMember(message.author)
+            .then()
+            .catch(console.error)
+        const membre = serveur.member(message.author)
+        let deplacement = false
+        let i = 0
+        while(i < zone.length && deplacement === false){
+            let j = 0
+            while(j < zone.length && deplacement === false){
+                if(contient(zone[i][j],membre.id)){
+                    if(message.content === prefix + "Est"){
+                        deplacement = true
+                        if(j !== 8){
+                            if(zone[i][j+1] === "0"){
+                                zone[i][j+1] = String(rdm(8))+"/"
+                            }
+                            if(zone[i][j+1].startsWith("10")){
+                                zone[i][j] = zone[i][j].replace(membre.id,"")
+                                zone[i][j+1] = zone[i][j+1] + membre.id
+                                const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setColor(0xff0000)
+                                    .setTitle("Labyrinthe :")
+                                    .setDescription("Vous entrez dans une salle et.. Bravo ! C'est la sortie du labyrinthe !\n\nA la sortie se trouve un magnifique coffre avec dedans :\n\n`10 Ferraille`\n`1 Vache zombifiée`\n(Vous pouvez faire des allez-retours avec la banque)")
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+                            }
+                            else if(zone[i][j+1].startsWith("9")){
+                                zone[i][j] = zone[i][j].replace(membre.id,"")
+                                zone[i][j+1] = zone[i][j+1] + membre.id
+                                const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setColor(0xff0000)
+                                    .setTitle("Labyrinthe :")
+                                    .setDescription("Félicitations, vous êtes de retour à l'entrée du labyrinthe... C'est pas comme ça que vous allez vous en sortir...")
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+                            }
+                            else if(zone[i][j+1].startsWith("8")){
+                                zone[i][j] = zone[i][j].replace(membre.id,"")
+                                zone[i][j+1] = zone[i][j+1] + membre.id
+                                const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setColor(0xff0000)
+                                    .setTitle("Labyrinthe :")
+                                    .setDescription("En marchant dans le labyrinthe, vous trouvez un vieux coffre\n\nOuvrez-le à vos risques et périls\n\nPour ouvrir le coffre : `=Ouverture [Vieux coffre]`")
+                                    .setTimestamp()
+                                message.channel.send({ embed })
 
+                            }
+                            else if(zone[i][j+1].startsWith("7")){
+                                zone[i][j] = zone[i][j].replace(membre.id,"")
+                                zone[i][j+1] = zone[i][j+1] + membre.id
+                                const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setColor(0xff0000)
+                                    .setTitle("Labyrinthe :")
+                                    .setDescription("En marchant dans le labyrinthe, vous trouvez un vieux coffre mais il est déjà ouvert.. passez votre chemin")
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+                            }
+                            else if(zone[i][j+1].startsWith("6")){
+                                zone[i][j] = zone[i][j].replace(membre.id,"")
+                                zone[i][j+1] = zone[i][j+1] + membre.id
+                                const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setColor(0xff0000)
+                                    .setTitle("Labyrinthe :")
+                                    .setDescription("En marchant dans le labyrinthe, vous ne trouvez pas grand chose à part des toiles d'araignée et un rat, passez votre chemin")
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+                            }
+                            else if(zone[i][j+1].startsWith("5")){
+                                zone[i][j] = zone[i][j].replace(membre.id,"")
+                                zone[i][j+1] = zone[i][j+1] + membre.id
+                                let direction;
+                                random = rdm(3)
+                                if(random === 1){
+                                    direction = "le nord"
+                                }
+                                if(random === 2){
+                                    direction = "l'est"
+                                } else {
+                                    direction = "l'ouest"
+                                }
+                                const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setColor(0xff0000)
+                                    .setTitle("Labyrinthe :")
+                                    .setDescription(`En marchant dans le labyrinthe, vous ne trouvez rien qui puisse attier l'oeil\n\nNéanmois votre intuition vous pousse à vous diriger vers ${direction}\n\nSuiverez-vous cette intuition ?`)
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+
+                            }
+                            else if(zone[i][j+1].startsWith("4")){
+                                zone[i][j] = zone[i][j].replace(membre.id,"")
+                                zone[i][j+1] = zone[i][j+1] + membre.id
+                                const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setColor(0xff0000)
+                                    .setTitle("Labyrinthe :")
+                                    .setDescription("En marchant dans le labyrinthe, vous ne trouvez pas grand chose à part des toiles d'araignée...")
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+                            }
+                            else if(zone[i][j+1].startsWith("3")){
+                                zone[i][j] = zone[i][j].replace(membre.id,"")
+                                zone[i][j+1] = zone[i][j+1] + membre.id
+                                const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setColor(0xff0000)
+                                    .setTitle("Labyrinthe :")
+                                    .setDescription("En marchant dans le labyrinthe, vous tombez dans une salle étrange avec un interrupteur...\n\nActivez-le ou passez votre chemin\n\nPour activer l'interrupteur : `=Activation [Interrupteur]`")
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+
+                            }
+                            else if(zone[i][j+1].startsWith("2")){
+                                zone[i][j] = zone[i][j].replace(membre.id,"")
+                                zone[i][j+1] = zone[i][j+1] + membre.id
+                                const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setColor(0xff0000)
+                                    .setTitle("Labyrinthe :")
+                                    .setDescription(`En marchant dans le labyrinthe, vous tombez sur une tonne de zombies !\n\nQuel dommage.. Ils sont \`${1+rdm(5)}\` !`)
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+                            }
+                            else if(zone[i][j+1].startsWith("1")){
+                                zone[i][j] = zone[i][j].replace(membre.id,"")
+                                zone[i][j+1] = zone[i][j+1] + membre.id
+                                const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setColor(0xff0000)
+                                    .setTitle("Labyrinthe :")
+                                    .setDescription(`En marchant dans le labyrinthe, vous trouvez un coffre en or massif ! Mais vous ne pouvez l'ouvrir tellement il est lourd..\n\nVous n'avez plus qu'à passer votre chemin`)
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+                            }
+                        } else {
+                            const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setColor(0xff0000)
+                                    .setTitle("Labyrinthe :")
+                                    .setDescription(`Devant vous se trouve un mur... Changez de route !`)
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+                        }
+                    }
+                    else if(message.content === prefix + "Ouest"){
+                        deplacement = true
+                        if(j !== 0){
+                            if(zone[i][j-1] === "0"){
+                                zone[i][j-1] = String(rdm(8))+"/"
+                            }
+                            if(zone[i][j-1].startsWith("10")){
+                                zone[i][j] = zone[i][j].replace(membre.id,"")
+                                zone[i][j-1] = zone[i][j-1] + membre.id
+                                const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setColor(0xff0000)
+                                    .setTitle("Labyrinthe :")
+                                    .setDescription("Vous entrez dans une salle et.. Bravo ! C'est la sortie du labyrinthe !\n\nA la sortie se trouve un magnifique coffre avec dedans :\n\n`10 Ferraille`\n`1 Vache zombifiée`\n(Vous pouvez faire des allez-retours avec la banque)")
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+                            }
+                            else if(zone[i][j-1].startsWith("9")){
+                                zone[i][j] = zone[i][j].replace(membre.id,"")
+                                zone[i][j-1] = zone[i][j-1] + membre.id
+                                const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setColor(0xff0000)
+                                    .setTitle("Labyrinthe :")
+                                    .setDescription("Félicitations, vous êtes de retour à l'entrée du labyrinthe... C'est pas comme ça que vous allez vous en sortir...")
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+                            }
+                            else if(zone[i][j-1].startsWith("8")){
+                                zone[i][j] = zone[i][j].replace(membre.id,"")
+                                zone[i][j-1] = zone[i][j-1] + membre.id
+                                const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setColor(0xff0000)
+                                    .setTitle("Labyrinthe :")
+                                    .setDescription("En marchant dans le labyrinthe, vous trouvez un vieux coffre\n\nOuvrez-le à vos risques et périls\n\nPour ouvrir le coffre : `=Ouverture [Vieux coffre]`")
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+
+                            }
+                            else if(zone[i][j-1].startsWith("7")){
+                                zone[i][j] = zone[i][j].replace(membre.id,"")
+                                zone[i][j-1] = zone[i][j-1] + membre.id
+                                const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setColor(0xff0000)
+                                    .setTitle("Labyrinthe :")
+                                    .setDescription("En marchant dans le labyrinthe, vous trouvez un vieux coffre mais il est déjà ouvert.. passez votre chemin")
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+                            }
+                            else if(zone[i][j-1].startsWith("6")){
+                                zone[i][j] = zone[i][j].replace(membre.id,"")
+                                zone[i][j-1] = zone[i][j-1] + membre.id
+                                const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setColor(0xff0000)
+                                    .setTitle("Labyrinthe :")
+                                    .setDescription("En marchant dans le labyrinthe, vous ne trouvez pas grand chose à part des toiles d'araignée et un rat, passez votre chemin")
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+                            }
+                            else if(zone[i][j-1].startsWith("5")){
+                                zone[i][j] = zone[i][j].replace(membre.id,"")
+                                zone[i][j-1] = zone[i][j-1] + membre.id
+                                let direction;
+                                random = rdm(3)
+                                if(random === 1){
+                                    direction = "le nord"
+                                }
+                                if(random === 2){
+                                    direction = "l'est"
+                                } else {
+                                    direction = "l'ouest"
+                                }
+                                const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setColor(0xff0000)
+                                    .setTitle("Labyrinthe :")
+                                    .setDescription(`En marchant dans le labyrinthe, vous ne trouvez rien qui puisse attier l'oeil\n\nNéanmois votre intuition vous pousse à vous diriger vers ${direction}\n\nSuiverez-vous cette intuition ?`)
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+
+                            }
+                            else if(zone[i][j-1].startsWith("4")){
+                                zone[i][j] = zone[i][j].replace(membre.id,"")
+                                zone[i][j-1] = zone[i][j-1] + membre.id
+                                const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setColor(0xff0000)
+                                    .setTitle("Labyrinthe :")
+                                    .setDescription("En marchant dans le labyrinthe, vous ne trouvez pas grand chose à part des toiles d'araignée...")
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+                            }
+                            else if(zone[i][j-1].startsWith("3")){
+                                zone[i][j] = zone[i][j].replace(membre.id,"")
+                                zone[i][j-1] = zone[i][j-1] + membre.id
+                                const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setColor(0xff0000)
+                                    .setTitle("Labyrinthe :")
+                                    .setDescription("En marchant dans le labyrinthe, vous tombez dans une salle étrange avec un interrupteur...\n\nActivez-le ou passez votre chemin\n\nPour activer l'interrupteur : `=Activation [Interrupteur]`")
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+
+                            }
+                            else if(zone[i][j-1].startsWith("2")){
+                                zone[i][j] = zone[i][j].replace(membre.id,"")
+                                zone[i][j-1] = zone[i][j-1] + membre.id
+                                const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setColor(0xff0000)
+                                    .setTitle("Labyrinthe :")
+                                    .setDescription(`En marchant dans le labyrinthe, vous tombez sur une tonne de zombies !\n\nQuel dommage.. Ils sont \`${1+rdm(5)}\` !`)
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+                            }
+                            else if(zone[i][j-1].startsWith("1")){
+                                zone[i][j] = zone[i][j].replace(membre.id,"")
+                                zone[i][j-1] = zone[i][j-1] + membre.id
+                                const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setColor(0xff0000)
+                                    .setTitle("Labyrinthe :")
+                                    .setDescription(`En marchant dans le labyrinthe, vous trouvez un coffre en or massif ! Mais vous ne pouvez l'ouvrir tellement il est lourd..\n\nVous n'avez plus qu'à passer votre chemin`)
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+                            }
+                        } else {
+                            const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setColor(0xff0000)
+                                    .setTitle("Labyrinthe :")
+                                    .setDescription(`Devant vous se trouve un mur... Changez de route !`)
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+                        }
+                    }
+                    else if(message.content === prefix + "Sud"){
+                        deplacement = true
+                        if(i !== 8){
+                            if(zone[i+1][j] === "0"){
+                                zone[i+1][j] = String(rdm(8))+"/"
+                            }
+                            if(zone[i+1][j].startsWith("10")){
+                                zone[i][j] = zone[i][j].replace(membre.id,"")
+                                zone[i+1][j] = zone[i+1][j] + membre.id
+                                const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setColor(0xff0000)
+                                    .setTitle("Labyrinthe :")
+                                    .setDescription("Vous entrez dans une salle et.. Bravo ! C'est la sortie du labyrinthe !\n\nA la sortie se trouve un magnifique coffre avec dedans :\n\n`10 Ferraille`\n`1 Vache zombifiée`\n(Vous pouvez faire des allez-retours avec la banque)")
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+                            }
+                            else if(zone[i+1][j].startsWith("9")){
+                                zone[i][j] = zone[i][j].replace(membre.id,"")
+                                zone[i+1][j] = zone[i+1][j] + membre.id
+                                const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setColor(0xff0000)
+                                    .setTitle("Labyrinthe :")
+                                    .setDescription("Félicitations, vous êtes de retour à l'entrée du labyrinthe... C'est pas comme ça que vous allez vous en sortir...")
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+                            }
+                            else if(zone[i+1][j].startsWith("8")){
+                                zone[i][j] = zone[i][j].replace(membre.id,"")
+                                zone[i+1][j] = zone[i+1][j] + membre.id
+                                const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setColor(0xff0000)
+                                    .setTitle("Labyrinthe :")
+                                    .setDescription("En marchant dans le labyrinthe, vous trouvez un vieux coffre\n\nOuvrez-le à vos risques et périls\n\nPour ouvrir le coffre : `=Ouverture [Vieux coffre]`")
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+
+                            }
+                            else if(zone[i+1][j].startsWith("7")){
+                                zone[i][j] = zone[i][j].replace(membre.id,"")
+                                zone[i+1][j] = zone[i+1][j] + membre.id
+                                const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setColor(0xff0000)
+                                    .setTitle("Labyrinthe :")
+                                    .setDescription("En marchant dans le labyrinthe, vous trouvez un vieux coffre mais il est déjà ouvert.. passez votre chemin")
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+                            }
+                            else if(zone[i+1][j].startsWith("6")){
+                                zone[i][j] = zone[i][j].replace(membre.id,"")
+                                zone[i+1][j] = zone[i+1][j] + membre.id
+                                const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setColor(0xff0000)
+                                    .setTitle("Labyrinthe :")
+                                    .setDescription("En marchant dans le labyrinthe, vous ne trouvez pas grand chose à part des toiles d'araignée et un rat, passez votre chemin")
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+                            }
+                            else if(zone[i+1][j].startsWith("5")){
+                                zone[i][j] = zone[i][j].replace(membre.id,"")
+                                zone[i+1][j] = zone[i+1][j] + membre.id
+                                let direction;
+                                random = rdm(3)
+                                if(random === 1){
+                                    direction = "le nord"
+                                }
+                                if(random === 2){
+                                    direction = "l'est"
+                                } else {
+                                    direction = "l'ouest"
+                                }
+                                const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setColor(0xff0000)
+                                    .setTitle("Labyrinthe :")
+                                    .setDescription(`En marchant dans le labyrinthe, vous ne trouvez rien qui puisse attier l'oeil\n\nNéanmois votre intuition vous pousse à vous diriger vers ${direction}\n\nSuiverez-vous cette intuition ?`)
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+
+                            }
+                            else if(zone[i+1][j].startsWith("4")){
+                                zone[i][j] = zone[i][j].replace(membre.id,"")
+                                zone[i+1][j] = zone[i+1][j] + membre.id
+                                const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setColor(0xff0000)
+                                    .setTitle("Labyrinthe :")
+                                    .setDescription("En marchant dans le labyrinthe, vous ne trouvez pas grand chose à part des toiles d'araignée...")
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+                            }
+                            else if(zone[i+1][j].startsWith("3")){
+                                zone[i][j] = zone[i][j].replace(membre.id,"")
+                                zone[i+1][j] = zone[i+1][j] + membre.id
+                                const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setColor(0xff0000)
+                                    .setTitle("Labyrinthe :")
+                                    .setDescription("En marchant dans le labyrinthe, vous tombez dans une salle étrange avec un interrupteur...\n\nActivez-le ou passez votre chemin\n\nPour activer l'interrupteur : `=Activation [Interrupteur]`")
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+
+                            }
+                            else if(zone[i+1][j].startsWith("2")){
+                                zone[i][j] = zone[i][j].replace(membre.id,"")
+                                zone[i+1][j] = zone[i+1][j] + membre.id
+                                const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setColor(0xff0000)
+                                    .setTitle("Labyrinthe :")
+                                    .setDescription(`En marchant dans le labyrinthe, vous tombez sur une tonne de zombies !\n\nQuel dommage.. Ils sont \`${1+rdm(5)}\` !`)
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+                            }
+                            else if(zone[i+1][j].startsWith("1")){
+                                zone[i][j] = zone[i][j].replace(membre.id,"")
+                                zone[i+1][j] = zone[i+1][j] + membre.id
+                                const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setColor(0xff0000)
+                                    .setTitle("Labyrinthe :")
+                                    .setDescription(`En marchant dans le labyrinthe, vous trouvez un coffre en or massif ! Mais vous ne pouvez l'ouvrir tellement il est lourd..\n\nVous n'avez plus qu'à passer votre chemin`)
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+                            }
+                        } else {
+                            const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setColor(0xff0000)
+                                    .setTitle("Labyrinthe :")
+                                    .setDescription(`Devant vous se trouve un mur... Changez de route !`)
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+                        }
+                    }
+                    else if(message.content === prefix + "Nord"){
+                        deplacement = true
+                        if(i !== 0){
+                            if(zone[i-1][j] === "0"){
+                                zone[i-1][j] = String(rdm(8))+"/"
+                            }
+                            if(zone[i-1][j].startsWith("10")){
+                                zone[i][j] = zone[i][j].replace(membre.id,"")
+                                zone[i-1][j] = zone[i-1][j] + membre.id
+                                const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setColor(0xff0000)
+                                    .setTitle("Labyrinthe :")
+                                    .setDescription("Vous entrez dans une salle et.. Bravo ! C'est la sortie du labyrinthe !\n\nA la sortie se trouve un magnifique coffre avec dedans :\n\n`10 Ferraille`\n`1 Vache zombifiée`\n(Vous pouvez faire des allez-retours avec la banque)")
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+                            }
+                            else if(zone[i-1][j].startsWith("9")){
+                                zone[i][j] = zone[i][j].replace(membre.id,"")
+                                zone[i-1][j] = zone[i-1][j] + membre.id
+                                const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setColor(0xff0000)
+                                    .setTitle("Labyrinthe :")
+                                    .setDescription("Félicitations, vous êtes de retour à l'entrée du labyrinthe... C'est pas comme ça que vous allez vous en sortir...")
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+                            }
+                            else if(zone[i-1][j].startsWith("8")){
+                                zone[i][j] = zone[i][j].replace(membre.id,"")
+                                zone[i-1][j] = zone[i-1][j] + membre.id
+                                const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setColor(0xff0000)
+                                    .setTitle("Labyrinthe :")
+                                    .setDescription("En marchant dans le labyrinthe, vous trouvez un vieux coffre\n\nOuvrez-le à vos risques et périls\n\nPour ouvrir le coffre : `=Ouverture [Vieux coffre]`")
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+
+                            }
+                            else if(zone[i-1][j].startsWith("7")){
+                                zone[i][j] = zone[i][j].replace(membre.id,"")
+                                zone[i-1][j] = zone[i-1][j] + membre.id
+                                const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setColor(0xff0000)
+                                    .setTitle("Labyrinthe :")
+                                    .setDescription("En marchant dans le labyrinthe, vous trouvez un vieux coffre mais il est déjà ouvert.. passez votre chemin")
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+                            }
+                            else if(zone[i-1][j].startsWith("6")){
+                                zone[i][j] = zone[i][j].replace(membre.id,"")
+                                zone[i-1][j] = zone[i-1][j] + membre.id
+                                const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setColor(0xff0000)
+                                    .setTitle("Labyrinthe :")
+                                    .setDescription("En marchant dans le labyrinthe, vous ne trouvez pas grand chose à part des toiles d'araignée et un rat, passez votre chemin")
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+                            }
+                            else if(zone[i-1][j].startsWith("5")){
+                                zone[i][j] = zone[i][j].replace(membre.id,"")
+                                zone[i-1][j] = zone[i-1][j] + membre.id
+                                let direction;
+                                random = rdm(3)
+                                if(random === 1){
+                                    direction = "le nord"
+                                }
+                                if(random === 2){
+                                    direction = "l'est"
+                                } else {
+                                    direction = "l'ouest"
+                                }
+                                const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setColor(0xff0000)
+                                    .setTitle("Labyrinthe :")
+                                    .setDescription(`En marchant dans le labyrinthe, vous ne trouvez rien qui puisse attier l'oeil\n\nNéanmois votre intuition vous pousse à vous diriger vers ${direction}\n\nSuiverez-vous cette intuition ?`)
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+
+                            }
+                            else if(zone[i-1][j].startsWith("4")){
+                                zone[i][j] = zone[i][j].replace(membre.id,"")
+                                zone[i-1][j] = zone[i-1][j] + membre.id
+                                const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setColor(0xff0000)
+                                    .setTitle("Labyrinthe :")
+                                    .setDescription("En marchant dans le labyrinthe, vous ne trouvez pas grand chose à part des toiles d'araignée...")
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+                            }
+                            else if(zone[i-1][j].startsWith("3")){
+                                zone[i][j] = zone[i][j].replace(membre.id,"")
+                                zone[i-1][j] = zone[i-1][j] + membre.id
+                                const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setColor(0xff0000)
+                                    .setTitle("Labyrinthe :")
+                                    .setDescription("En marchant dans le labyrinthe, vous tombez dans une salle étrange avec un interrupteur...\n\nActivez-le ou passez votre chemin\n\nPour activer l'interrupteur : `=Activation [Interrupteur]`")
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+
+                            }
+                            else if(zone[i-1][j].startsWith("2")){
+                                zone[i][j] = zone[i][j].replace(membre.id,"")
+                                zone[i-1][j] = zone[i-1][j] + membre.id
+                                const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setColor(0xff0000)
+                                    .setTitle("Labyrinthe :")
+                                    .setDescription(`En marchant dans le labyrinthe, vous tombez sur une tonne de zombies !\n\nQuel dommage.. Ils sont \`${1+rdm(5)}\` !`)
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+                            }
+                            else if(zone[i-1][j].startsWith("1")){
+                                zone[i][j] = zone[i][j].replace(membre.id,"")
+                                zone[i-1][j] = zone[i-1][j] + membre.id
+                                const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setColor(0xff0000)
+                                    .setTitle("Labyrinthe :")
+                                    .setDescription(`En marchant dans le labyrinthe, vous trouvez un coffre en or massif ! Mais vous ne pouvez l'ouvrir tellement il est lourd..\n\nVous n'avez plus qu'à passer votre chemin`)
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+                            }
+                        } else {
+                            const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setColor(0xff0000)
+                                    .setTitle("Labyrinthe :")
+                                    .setDescription(`Devant vous se trouve un mur... Changez de route !`)
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+                        }
+                    }
+                    else if(message.content === prefix + "Activation [Interrupteur]"){
+                        zone[i][j] = "4" + zone[i][j].slice(1)
+                        random = rdm(2)
+                        if(random === 1){
+                            const embed = new Discord.RichEmbed()
+                                .setColor(0xff0000)
+                                .setAuthor(message.author.username, message.author.avatarURL)
+                                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                .setTitle("Activation interrupteur :")
+                                .setDescription("En activant l'interrupteur, des grandes portes blindées vous enferment et de l'eau commence à s'écouler par les murs !\n\nVous avez 30 secondes pour vous sortir de ce pétrin avant que vous ne vous noyiez dans l'eau\n\nIndice pour vous enssortir : __REFLECHIR !__\n\n__Vous ne pouvez pas sortir de cette salle__")
+                                .setTimestamp()
+                            message.channel.send({ embed })
+                            channelMessageId = message.channel.id
+                            interrupteur = true
+                            motAEcrire = "Réfléchir"
+                        } else {
+                            const embed = new Discord.RichEmbed()
+                                .setColor(0xff0000)
+                                .setAuthor(message.author.username, message.author.avatarURL)
+                                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                .setTitle("Activation interrupteur :")
+                                .setDescription("En activant l'interrupteur, vous vous attendez à un truc de fou mais en fait `1 Planche tordue` vous tombe sur la tête\n\nAïe..")
+                                .setTimestamp()
+                            message.channel.send({ embed })
+                        }
+                    }
+                    else if(message.content === prefix + "Ouverture [Vieux coffre]"){
+                        zone[i][j] = "7" + zone[i][j].slice(1)
+                        random = rdm(3)
+                        if(random === 1){
+                            const embed = new Discord.RichEmbed()
+                                .setColor(0xff0000)
+                                .setAuthor(message.author.username, message.author.avatarURL)
+                                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                .setTitle("Ouverture vieux coffre :")
+                                .setDescription("En ouvrant le coffre, vous trouvez :\n\n:moneybag: `1 Bandage rudimentaire`")
+                                .setTimestamp()
+                            message.channel.send({ embed })
+                        }
+                        else if(random === 2){
+                            const embed = new Discord.RichEmbed()
+                                .setColor(0xff0000)
+                                .setAuthor(message.author.username, message.author.avatarURL)
+                                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                .setTitle("Ouverture vieux coffre :")
+                                .setDescription("En ouvrant le coffre, vous trouvez :\n\n:moneybag: `1 Poutre rafistolée`")
+                                .setTimestamp()
+                            message.channel.send({ embed })
+                        } else {
+                            const embed = new Discord.RichEmbed()
+                                .setColor(0xff0000)
+                                .setAuthor(message.author.username, message.author.avatarURL)
+                                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                .setTitle("Ouverture vieux coffre :")
+                                .setDescription("En ouvrant le coffre, vous trouvez :\n\n:moneybag: `1 Zombie`")
+                                .setTimestamp()
+                            message.channel.send({ embed })
+                        }
+                    }
+                    if(interrupteur){
+                        if(timer){
+                            timer = false
+                            let secondes = 30
+                            message.channel.send("```Temps restant : 30 secondes```")
+                            arret = setInterval(chrono = () => {
+                                if(!timer){
+                                    secondes-=3
+                                    if(secondes <= 0){
+                                        message.channel.send("```Temps restant : 0 secondes\n\nVous êtes mort noyé, quel dommage...```")
+                                        interrupteur = false
+                                        timer = true
+                                        clearInterval(arret)
+                                    } else {
+                                        message.channel.send("```Temps restant : " + secondes + " secondes```")
+                                    }
+                                } else {
+                                    clearInterval(arret)
+                                }
+                            }, 3000)
+                        }
+                        if(message.content === prefix + "Réfléchir" && motAEcrire === "Réfléchir"){
+                            random = rdm(3)
+                            if(random === 1){
+                                const embed = new Discord.RichEmbed()
+                                    .setColor(0xff0000)
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setTitle("Activation interrupteur :")
+                                    .setDescription("En réfléchissant nerveusement à votre situation, vous observez autour de vous et trouvez une manivelle !\n\nPeut-être faut-il la tourner ?\n\nPour tourner la manivelle : `=Tourner [Manivelle]`")
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+                                motAEcrire = "Tourner [Manivelle]"
+                            } else if(random === 2){
+                                const embed = new Discord.RichEmbed()
+                                    .setColor(0xff0000)
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setTitle("Activation interrupteur :")
+                                    .setDescription("En réfléchissant nerveusement à votre situation, vous observez autour de vous et trouvez un tuyau !\n\nPeut-être faut-il l'arracher ?\n\nPour arracher le tuyau : `=Arracher [Tuyau]`")
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+                                motAEcrire = "Arracher [Tuyau]"
+                            } else {
+                                const embed = new Discord.RichEmbed()
+                                    .setColor(0xff0000)
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setTitle("Activation interrupteur :")
+                                    .setDescription("En réfléchissant nerveusement à votre situation, vous observez autour de vous et trouvez un chat mort !\n\nPeut-être faut-il manger le chat mort ?\n\nPour manger le chat mort : `=Manger [Chat mort]`")
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+                                motAEcrire = "Manger [Chat mort]"
+                            }
+                        } else if(motAEcrire === "Réfléchir" && message.content !== prefix + "Activation [Interrupteur]") {
+                            const embed = new Discord.RichEmbed()
+                                .setColor(0xff0000)
+                                .setAuthor(message.author.username, message.author.avatarURL)
+                                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                .setTitle("Activation interrupteur :")
+                                .setDescription("Vous tentez de faire quelque chose mais ça ne change rien à votre situation...\n\nDépêchez-vous !")
+                                .setTimestamp()
+                            message.channel.send({ embed })
+                        } else if(message.content === prefix + motAEcrire){
+                            random = rdm(3)
+                            if(random === 1){
+                                const embed = new Discord.RichEmbed()
+                                    .setColor(0xff0000)
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setTitle("Activation interrupteur :")
+                                    .setDescription("Après avoir fait votre action plus ou moins douteuse, l'eau arrête de couler et les portes s'ouvrent, vous pouvez enfin sortir d'ici !\n\nOn a encore eu d'la chance !")
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+                                interrupteur = false
+                                timer = true
+                                clearInterval(arret)
+                                message.channel.messages.find(message => message.content.startsWith("```Temps restant :")).delete()
+                                    .then()
+                                    .catch()
+                                motAEcrire = "Réfléchir"
+                            } else {
+                                const embed = new Discord.RichEmbed()
+                                    .setColor(0xff0000)
+                                    .setAuthor(message.author.username, message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setTitle("Activation interrupteur :")
+                                    .setDescription("Après avoir fait votre action plus ou moins douteuse, l'eau n'arrête pas de couler !\n\nRéfléchissez !")
+                                    .setTimestamp()
+                                message.channel.send({ embed })
+                                motAEcrire = "Réfléchir"
+                            }
+                        }
+                    }
+                }
+                j++
+            }
+            i++
+        }
+        if(message.content === prefix + "Je participe"){
+            zone[4][4] = zone[4][4] + membre.id
+            message.channel.send("Participation enregistrée :white_check_mark:")
+        }
+        console.log(zone)
+        console.log("---------------------------------")
     }
+})
 
-
-});
-
-
+let arret;
+const zone = [
+    ["0","0","0","0","0","0","0","0","0"],
+    ["0","0","0","0","0","0","0","0","0"],
+    ["0","0","0","0","0","0","0","0","0"],
+    ["0","0","0","0","0","0","0","0","0"],
+    ["0","0","0","0","0","0","0","0","0"],
+    ["0","0","0","0","0","0","0","0","0"],
+    ["0","0","0","0","0","0","0","0","0"],
+    ["0","0","0","0","0","0","0","0","0"],
+    ["0","0","0","0","0","0","0","0","0"]
+]
+let interrupteur = false
+let timer = true
+let motAEcrire;
