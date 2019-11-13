@@ -25336,7 +25336,6 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
 //////////////////////////////////////////////////////////////////////Events/////////////////////////////////////////////////////////////////////////////////////////////////
 
     if(message.content === prefix + "Event") {
-        const membre;
         serveur.fetchMember(message.author)
             .then()
             .catch(console.error)
