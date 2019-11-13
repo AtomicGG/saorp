@@ -185,6 +185,8 @@ bot.login(process.env.TOKEN)
 
 
 bot.on('message', message => {
+    const serveur = bot.guilds.find(serveur => serveur.name === nomServeur)
+    
     if(message.guild !== serveur) return
     if (message.content === 'ping') {
         message.reply('Le **BOT** a mis: ' + `[ **${msg.createdTimestamp - message.createdTimestamp}**` + ' **Ms** ] pour repondre.\nEt l\'**API** a mis: ' + `[ **${Math.round(client.ping)}**` + ' **Ms** ] pour repondre')
@@ -201,7 +203,6 @@ bot.on('message', message => {
 
 
 
-    const serveur = bot.guilds.find(serveur => serveur.name === nomServeur)
 
     const serveurChannelStaff = serveur.channels.find(channel => channel.name === "│『👿』sᴛᴀғғ")
 
