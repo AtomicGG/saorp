@@ -186,7 +186,7 @@ bot.login(process.env.TOKEN)
 
 bot.on('message', message => {
     const serveur = bot.guilds.find(serveur => serveur.name === nomServeur)
-    
+
     if(message.guild !== serveur) return
     if (message.content === 'ping') {
         message.reply('Le **BOT** a mis: ' + `[ **${msg.createdTimestamp - message.createdTimestamp}**` + ' **Ms** ] pour repondre.\nEt l\'**API** a mis: ' + `[ **${Math.round(client.ping)}**` + ' **Ms** ] pour repondre')
@@ -25345,10 +25345,10 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
         if(membre.hasPermission("ADMINISTRATOR")){
             if(event){
                 event = false
-                serveurChannelStaff.send("```Event lancé !```")
+                serveurChannelStaff.send("```Event terminé !```")
             } else {
                 event = true
-                serveurChannelStaff.send("```Event terminé !```")
+                serveurChannelStaff.send("```Event lancé !```")
             }
         }
     }
