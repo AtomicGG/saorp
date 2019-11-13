@@ -1435,7 +1435,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
             .setTitle("Liste des constructions, partie 1 :")
-            .setDescription("`=Appâts`\n`=Arroseurs automatiques`\n`=Atelier`\n`=Barbelés`\n`=Barbelés électrifiés`\n`=Barrières`\n`=Blindage d'entrée`\n`=Boucherie`\n`=Cabinet médical`\n`=Canon à briques`\n`=Champ de mines à eau`\n`=Crémato-cue`\n`=Cuisine`\n`=Derrick artisanal`\n`=Douves`\n`=Dynamitage`\n`=Enclos`\n`=Fausse ville`\n`=Fixations de défenses`\n`=Fondations`\n`=Foreuse pour le puits`\n`=Générateur`\n`=Grogro mur`\n`=Lance-tôle`\n`=Le grand déménagement`\n`=Manufacture`\n`=Mine`\n`=Monticules pour canons`\n`=Muraille à pointes`\n`=Muraille rasoir`\n`=Oubliettes`\n`=Perforeuse`\n`=Piscine électrique`\n`=Piège à loups`\n`=Pompe`\n`=Porte améliorée`\n`=Porte à piston`\n`=Potager`\n`=Poutres de renfort`\n`=Prison`\n`=Projet Eden`\n`=Purificateur d'eau`\n\nLa suite : `=Liste des constructions 2`").setTimestamp()
+            .setDescription("`=Appâts`\n`=Arroseurs automatiques`\n`=Atelier`\n`=Barbelés`\n`=Barbelés électrifiés`\n`=Barrières`\n`=Blindage d'entrée`\n`=Boucherie`\n`=Cabinet médical`\n`=Canon à briques`\n`=Champ de mines à eau`\n`=Crémato-cue`\n`=Cuisine`\n`=Derrick artisanal`\n`=Douves`\n`=Dynamitage`\n`=Enclos`\n`=Fausse ville`\n`=Fixations de défenses`\n`=Fondations`\n`=Foreuse pour le puits`\n`=Générateur`\n`=Grogro mur`\n`=Gros tas de débris`\n`=Immense tas de débris`\n`=Lance-tôle`\n`=Le grand déménagement`\n`=Manufacture`\n`=Mine`\n`=Monticules pour canons`\n`=Muraille à pointes`\n`=Muraille rasoir`\n`=Oubliettes`\n`=Petit tas de débris`\n`=Perforeuse`\n`=Piscine électrique`\n`=Piège à loups`\n`=Pompe`\n`=Porte améliorée`\n`=Porte à piston`\n`=Potager`\n`=Poutres de renfort`\n`=Prison`\n`=Projet Eden`\n`=Purificateur d'eau`\n\nLa suite : `=Liste des constructions 2`").setTimestamp()
         message.channel.send({ embed })
     }
 
@@ -1448,7 +1448,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
             .setTitle("Liste des constructions, partie 2 :")
-            .setDescription("`=Rape à zombies`\n`=Remparts avancés`\n`=Renforts de muraille`\n`=Sani-broyeur`\n`=Scies hurlantes`\n`=Tour`\n`=Tourniquet à poutres`\n`=Tuyauteries`").setTimestamp()
+            .setDescription("`=Rape à zombies`\n`=Remparts avancés`\n`=Renforts de muraille`\n`=Sani-broyeur`\n`=Scies hurlantes`\n`=Tas de débris`\n`=Tour`\n`=Tourniquet à poutres`\n`=Tuyauteries`\n`=Ultime tas de débris`").setTimestamp()
         message.channel.send({ embed })
     }
 
@@ -25320,6 +25320,57 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(0xff0000)
             .addField("Murailles à pointes :", "Un grand nombre de pieux métalliques fixés au sommet des remparts pour faire des brochettes de zombie à la tombée de la nuit\n\n:hammer_pick: Matériaux nécessaires :\n\n`15 Ferraille`\n`4 Poignée de vis et écrous`\n`2 Poutre rafistolée`\n\n:shield: Points de défense : 15\n\n:timer: Le temps de construction est de 42 minutes\n\n:hammer: Défense possible à construire plusieurs fois")
+            .setThumbnail("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+
+    if(message.content === prefix + "Petit tas de débris") {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(0xff0000)
+            .addField("Petit tas de débris :", "Un petit tas de débris métalliques qui franchement n'est pas très rentable en terme de défense, les zombies passent par dessus sans problème\n\n:hammer_pick: Matériaux nécessaires :\n\n`3 Débris métalliques`\n\n:shield: Points de défense : 2\n\n:timer: Le temps de construction est de 6 minutes\n\n:hammer: Défense possible à construire plusieurs fois")
+            .setThumbnail("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+    if(message.content === prefix + "Tas de débris") {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(0xff0000)
+            .addField("Tas de débris :", "Ce tas de débris est une amélioration du Petit tas de débris, il protège un peu mieux mais sans plus\n\n:hammer_pick: Matériaux nécessaires :\n\n`6 Débris métalliques`\n\n:shield: Points de défense : 6\n\n:timer: Le temps de construction est de 12 minutes\n\n:hammer: Défense possible à construire plusieurs fois")
+            .setThumbnail("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+    if(message.content === prefix + "Gros tas de débris") {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(0xff0000)
+            .addField("Gros tas de débris :", "Amélioration du Tas de débris, il vaut le coup\n\n:hammer_pick: Matériaux nécessaires :\n\n`12 Débris métalliques`\n\n:shield: Points de défense : 24\n\n:timer: Le temps de construction est de 24 minutes\n\n:hammer: Défense possible à construire plusieurs fois")
+            .setThumbnail("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+    if(message.content === prefix + "Immense tas de débris") {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(0xff0000)
+            .addField("Immense tas de débris :", "Amélioration du Gros tas de débris, les zombies galèrent vraiment à passer par dessus !\n\n:hammer_pick: Matériaux nécessaires :\n\n`24 Débris métalliques`\n\n:shield: Points de défense : 64\n\n:timer: Le temps de construction est de 48 minutes\n\n:hammer: Défense possible à construire plusieurs fois")
+            .setThumbnail("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+    if(message.content === prefix + "Ultime tas de débris") {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(0xff0000)
+            .addField("Ultime tas de débris :", "Amélioration de l'Immense tas de débris, une barrière quasi-infranchissable !\n\n:hammer_pick: Matériaux nécessaires :\n\n`48 Débris métalliques`\n\n:shield: Points de défense : 192\n\n:timer: Le temps de construction est de 96 minutes\n\n:hammer: Défense possible à construire plusieurs fois")
             .setThumbnail("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
             .setTimestamp()
         message.channel.send({ embed })
