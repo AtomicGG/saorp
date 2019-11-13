@@ -984,11 +984,11 @@ Et petit bonus, vous pourrez revoir la lumière des lampadaires dans les rues de
             
 :hammer_pick: Matériaux nécessaires :
             
-\`20 ferraille\`
+\`10 ferraille\`
 \`5 Poutre rafistolée\`
 \`2 Fil de cuivre\`
             
-:timer: Le temps de construction est de 54 minutes`)
+:timer: Le temps de construction est de 34 minutes`)
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -1042,17 +1042,17 @@ Une fois la construction effectuée, vous pourrez aller miner toutes les 15 minu
             
 :hammer_pick: Matériaux nécessaires :
             
-\`8 Poutre rafistolée\`
+\`4 Poutre rafistolée\`
 \`1 Planche tordue \`
 \`2 Ferraille\`
             
-:timer: Le temps de construction est de 22 minutes`)
+:timer: Le temps de construction est de 14 minutes`)
             .setTimestamp()
         message.channel.send({ embed })
     }
     if(message.content === `${prefix}Miner`){
         random = rdm(100)
-        if(random < 4){
+        if(random < 3){
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -1163,11 +1163,11 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
             
 :hammer_pick: Matériaux nécessaires :
 
-\`8 Planche tordue\`
-\`5 Ferraille\`
+\`5 Planche tordue\`
+\`4 Ferraille\`
 \`1 Pavés de béton informes\`
             
-:timer: Le temps de construction est de 28 minutes`)
+:timer: Le temps de construction est de 20 minutes`)
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -1704,7 +1704,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .addField("La banque :","Elle permet de pouvoir stock justement tous les objets nécessaires en ville, coopérez pour survivre !\n\nQuand vous mettez des objets dans la banque, écrivez dans la salon 『💰』ᴏʙᴊᴇᴛs-ᴇɴ-ʙᴀɴϙᴜᴇ  \"+X [Objet déposé]\" et quand vous prenez des objets \"-X [Objet pris]\"\n\nQuand vous voulez déposer plusieurs objets, écrivez 1 message pour 1 type d'objet").setTimestamp()
+            .addField("La banque :","Elle permet de pouvoir stock justement tous les objets nécessaires en ville, coopérez pour survivre !\n\nQuand vous mettez/prennez des objets dans la banque, écrivez le dans la salon 『💰』ᴏʙᴊᴇᴛs-ᴇɴ-ʙᴀɴϙᴜᴇ\n\n\"+X [Objet déposé]\" quand vous mettez des objets,\n\"-X [Objet pris]\" quand vous prenez des objets\n\nEssayez d'envoyer tout en un seul message, c'est plus simple à supprimer pour les modos").setTimestamp()
         message.channel.send({ embed })
     }
 
@@ -1731,7 +1731,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .addField("Le puits :","Un des endroits les plus importants, c'est ici que les survivants pourront récupérer de l'eau à mettre dans leur bouteille pour ne pas mourir de soif, cependant l'eau n'est pas illimitée mais le puits possède 50 Ration d'eau de départ !\n\nComme pour la banque, quand vous prenez de l'eau du puits écrivez dans le salon 『💧』ʀᴀᴛɪᴏɴs-ᴅᴜ-ᴘᴜɪᴛs  \"-X eau\"\n\nSi vous avez retiré trop d'eau par mégarde, prévenez un modo qui remettra de l'eau dans le puits").setTimestamp()
+            .addField("Le puits :","Un des endroits les plus importants, c'est ici que les survivants pourront récupérer de l'eau à mettre dans leur bouteille pour ne pas mourir de soif, cependant l'eau n'est pas illimitée mais le puits possède 50 Ration d'eau de départ !\n\nComme pour la banque, quand vous prenez de l'eau du puits écrivez le dans le salon 『💧』ʀᴀᴛɪᴏɴs-ᴅᴜ-ᴘᴜɪᴛs\n\n  \"-X Ration d'eau\" quand vous prenez de l'eau\n\nSi vous avez retiré trop d'eau par mégarde, prévenez un modo qui remettra de l'eau dans le puits").setTimestamp()
         message.channel.send({ embed })
     }
 
@@ -1789,7 +1789,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
             .setTitle("Défense de la ville, partie 2 :")
-            .setDescription("Si les survivants fuient ou qu'il n'y a personne défendant l'entrée de la ville, les zombies attaqueront les joueurs aléatoirement qui sont dans leur maison, batîments, rues etc... !\n\n~~Chaque survivant en début de partie a un numéro, selon le numéro affiché de la commande de ciblage, les zombies iront vers lui en ville~~ Maintenant, les zombies attaquent des lieux aléatoirement en ville. Si un survivant est dans un lieu où les zombies pénètrent, ils l'attaqueront automatiquement __en premier__\n\nA savoir que se défendre en groupe est possible (et mieux), et si le survivant n'est pas connecté, son personnage pourra être jouer par un autre survivant avec son accord [ou un modérateur, d'où l'activité importante dans ce RP surtout le soir]\n\nSi le ou les survivants fuient les zombies, ils iront attaquer d'autres joueurs, jusqu'à que tous les zombies soient tués, que les déplacements totaux des zombies ont été atteitns, ou que vous survivez 1 H à l'attaque (mais les zombies encore vivants reviendront la nuit prochaine) !\n\nLa suite : `=Défense de la ville 3`").setTimestamp()
+            .setDescription("Si les survivants fuient ou qu'il n'y a personne défendant l'entrée de la ville, les zombies attaqueront les joueurs aléatoirement qui sont dans leur maison, batîments, rues etc... !\n\n~~Chaque survivant en début de partie a un numéro, selon le numéro affiché de la commande de ciblage, les zombies iront vers lui en ville~~ Maintenant, les zombies attaquent des lieux aléatoirement en ville. Si un survivant est dans un lieu où les zombies pénètrent, ils l'attaqueront automatiquement __en premier__\n\nA savoir que se défendre en groupe est possible (et mieux), et si le survivant n'est pas connecté, son personnage pourra être jouer par un autre survivant avec son accord [ou un modérateur, d'où l'activité importante dans ce RP surtout le soir]\n\nSi le ou les survivants fuient les zombies, ils iront attaquer d'autres joueurs, jusqu'à que tous les zombies soient tués, que les déplacements totaux des zombies ont été atteints, ou que vous survivez 1 H à l'attaque (mais les zombies encore vivants reviendront la nuit prochaine) !\n\nLa suite : `=Défense de la ville 3`").setTimestamp()
         message.channel.send({ embed })
     }
 
@@ -2524,7 +2524,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("La fouille :", "Dans ce monde, pour survivre l'objectif est de collecter un maximum de ressources et de s'en servir !\n\nCependant, pour trouver des objets, il faudra sortir de la ville et se rendre à l'extérieur pour trouver ces fameuses ressources !\n\nPlus vous irez loin de la ville, plus les ressources seront rares mais plus la présence de zombie sera importante alors... bonne chance...\n\nPour effectuer une fouille selon la distance :\n\n`=Fouille zone [chiffre] KM`\n\nFouiller coûte 1 PA alors gérer bien vos 6 PA quotidien\n\nA savoir que, lorsque votre survivant découvre un bâtiment il pourra revenir autant de fois qu'il veux étant donné qu'il connaîtra le chemin !\n\n:warning: Votre survivant doit obligatoirement avoir une raison de trouver un bâtiment, que ce soit une annonce à l'auberge, un survivant vous montrant le chemin, ou lorsque vous fouillez etc...").setTimestamp()
+            .addField("La fouille :", "Dans ce monde, pour survivre l'objectif est de collecter un maximum de ressources et de s'en servir !\n\nCependant, pour trouver des objets, il faudra sortir de la ville et se rendre à l'extérieur pour trouver ces fameuses ressources !\n\nPlus vous irez loin de la ville, plus les ressources seront rares mais plus la présence de zombie sera importante alors... bonne chance...\n\nPour effectuer une fouille selon la distance :\n\n`=Fouille zone [chiffre] KM`\n\nFouiller coûte 1 PA alors gérez bien vos 6 PA quotidien\n\n__Trouver un bâtiment, le fouiller, ou tomber sur des zombies coûte aussi un PA__\n\nA savoir que, lorsque votre survivant découvre un bâtiment il pourra revenir autant de fois qu'il veux étant donné qu'il connaîtra le chemin !\n\n:warning: Votre survivant doit obligatoirement avoir une raison de trouver un bâtiment, que ce soit une annonce à l'auberge, un survivant vous montrant le chemin, ou lorsque vous fouillez etc...").setTimestamp()
         message.channel.send({ embed })
     }
 
@@ -2836,7 +2836,7 @@ Hémorragie mortelle + Hémorragie légère = Mort`)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("L'eau :", "Comme toute apocalypse, l'eau devient une ressource assez rare à trouver et à consommer, c'est pour cela qu'il faudra en prendre en temps voulus pour ne pas en gâcher !\n\nSi vous ne buvez pas, vous serez de plus en plus assoifé et vous finirez par mourir de soif\n\nPour mieux comprendre : `=Etats`").setTimestamp()
+            .addField("L'eau :", "Comme toute apocalypse, l'eau devient une ressource assez rare à trouver et à consommer, c'est pour cela qu'il faudra en prendre en temps voulus pour ne pas en gâcher !\n\nSi vous ne buvez pas, vous serez de plus en plus assoifé et vous finirez par mourir de soif\n\nPour mieux comprendre : `=Soif`,`=Hydratation`").setTimestamp()
         message.channel.send({ embed })
     }
 
@@ -2848,7 +2848,7 @@ Hémorragie mortelle + Hémorragie légère = Mort`)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("La nourriture :", "Comme l'eau, la nourriture deviendra une ressource assez rare qui demande d'être économiser le plus possible !\n\nSi vous ne mangez pas, vous serez de plus en plus affamé et vous finirez par mourir de faim...\n\nPour mieux comprendre : `=Etats`").setTimestamp()
+            .addField("La nourriture :", "Comme l'eau, la nourriture deviendra une ressource assez rare qui demande d'être économiser le plus possible !\n\nSi vous ne mangez pas, vous serez de plus en plus affamé et vous finirez par mourir de faim...\n\nPour mieux comprendre : `=Faim`,`=Rassasiement`").setTimestamp()
         message.channel.send({ embed })
     }
 
