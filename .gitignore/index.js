@@ -26188,8 +26188,8 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
             zone[4][4] = zone[4][4] + membre.id
             message.channel.send("Participation enregistrée :white_check_mark:")
         }
-        console.log(zone)
-        console.log("---------------------------------")
+        //console.log(zone)
+        //console.log("---------------------------------")
     }
 })
 
