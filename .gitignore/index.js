@@ -1261,7 +1261,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Le revenant :", "Si vous mourrez, vous pourrez choisir oui ou non de revenir à la vie mais sous forme de zombie\n\nVous n'êtes pas plus fort qu'un zombie normal, mais légèrement plus intelligent, c'est pour cela que vous pourrez contrôlé un minimum vos actions mais sans que ce soit des actions humaines\n\nLorsque vous êtes zombie, les humains peuvent facilement vous tué alors, restez en meute\n\nLes revenants ont droit à un tour d'attaque après le tour des zombies\n\nListe des coups possibles :\n\n`=Morsure`\n`=Griffure`\n`=Etranglement` [Pas encore dispo]\n`=Vomie` [Pas encore dispo]\n\nLa suite : `=Revenant 2`")
+            .addField("Le revenant :", "Si vous mourrez, vous pourrez choisir oui ou non de revenir à la vie mais sous forme de zombie en laissant votre équipement là où vous êtes mort\n\nVous n'êtes pas plus fort qu'un zombie normal, mais légèrement plus intelligent, c'est pour cela que vous pourrez contrôlé un minimum vos actions mais sans que ce soit des actions humaines\n\nLorsque vous êtes zombie, les humains peuvent facilement vous tué alors, restez en meute\n\nLes revenants ont droit à un tour d'attaque après le tour des zombies\n\nListe des coups possibles :\n\n`=Morsure`\n`=Griffure`\n`=Etranglement` [Pas encore dispo]\n`=Vomie` [Pas encore dispo]\n\nLa suite : `=Revenant 2`")
             .setTimestamp()
         message.channel.send({ embed })
     }
