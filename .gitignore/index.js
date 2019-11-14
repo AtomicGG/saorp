@@ -25403,7 +25403,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
                 event = false
                 serveurChannelStaff.send("```Event terminé !```")
                 for(let i = 0 ; i < 9 ; i++){
-                    for(let j = 0; i < 9 ; j++){
+                    for(let j = 0; j < 9 ; j++){
                         zone[i][j]="0"
                     }
                 }
@@ -25442,7 +25442,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
                                     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                     .setColor(0xff0000)
                                     .setTitle("Labyrinthe :")
-                                    .setDescription("Vous entrez dans une salle et.. Bravo ! C'est la sortie du labyrinthe !\n\nA la sortie se trouve un magnifique coffre avec dedans :\n\n`10 Ferraille`\n`1 Vache zombifiée`\n(Vous pouvez faire des allez-retours avec la banque)")
+                                    .setDescription("Vous entrez dans une salle et.. Bravo ! C'est la sortie du labyrinthe !\n\nA la sortie se trouve un magnifique coffre avec dedans :\n\n`10 Ferraille`\n`10 Planche tordue`\n`1 Vache zombifiée`\n(Vous pouvez faire des allez-retours avec la banque)")
                                     .setTimestamp()
                                 message.channel.send({ embed })
                             }
