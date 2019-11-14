@@ -9,9 +9,6 @@ var fury = false;
 
 bot.on('ready', () => {
 
-    //EVENT//
-    zone[7][8] = "10/"  //La sortie du labyrinthe
-
 
     console.log("Je suis connecté !")
     bot.user.setActivity('=Horde', { type: 'PLAYING' })
@@ -25410,6 +25407,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
             } else {
                 event = true
                 serveurChannelStaff.send("```Event lancé !```")
+                zone[0][8] = "10/"  //La sortie du labyrinthe
             }
         }
     }
