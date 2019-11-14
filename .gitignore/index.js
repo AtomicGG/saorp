@@ -19945,7 +19945,7 @@ Hémorragie mortelle + Hémorragie légère = Mort`)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(0xff0000)
-            .addField("Bandage rudimentaire :", "Ça sent mauvais, il y a des traces de moisissure, mais franchement, vous n'êtes pas en position de faire votre difficile. Ce bandage permet de panser une blessure\n\nL'utilisation de cet objet permet de guérir les états : `Blessure`\n\nL'utilisation coûte 2 points d'actions, et seulement 1 si un médecin vous le met")
+            .addField("Bandage rudimentaire :", "Ça sent mauvais, il y a des traces de moisissure, mais franchement, vous n'êtes pas en position de faire votre difficile. Ce bandage permet de panser une blessure\n\nL'utilisation de cet objet permet de guérir les états : `Blessure` (Vous avez `Aucune blessure` après utilisation)\n\nL'utilisation coûte 2 points d'actions, et seulement 1 si un médecin vous le met")
             .setTimestamp()
         message.channel.send({ embed })
     }
