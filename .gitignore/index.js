@@ -26035,7 +26035,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
                                 .setAuthor(message.author.username, message.author.avatarURL)
                                 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                 .setTitle("Activation interrupteur :")
-                                .setDescription("En activant l'interrupteur, des grandes portes blindées vous enferment et de l'eau commence à s'écouler par les murs !\n\nVous avez 60 secondes pour vous sortir de ce pétrin avant que vous ne vous noyiez dans l'eau\n\nIndice pour vous enssortir : __REFLECHIR !__\n\n__Vous ne pouvez pas sortir de cette salle__")
+                                .setDescription("En activant l'interrupteur, des grandes portes blindées vous enferment et de l'eau commence à s'écouler par les murs !\n\nVous avez 60 secondes pour vous sortir de ce pétrin avant que vous ne vous noyiez dans l'eau\n\nIndice pour vous ensortir : __Réfléchir !__\n\n__Vous ne pouvez pas sortir de cette salle__")
                                 .setTimestamp()
                             message.channel.send({ embed })
                             channelMessageId = message.channel.id
