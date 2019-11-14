@@ -26026,7 +26026,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
                                 message.channel.send({ embed })
                         }
                     }
-                    else if(message.content === prefix + "Activation [Interrupteur]"){
+                    else if(message.content === prefix + "Activation [Interrupteur]" && !interrupteur){
                         zone[i][j] = "4" + zone[i][j].slice(1)
                         random = rdm(2)
                         if(random === 1){
