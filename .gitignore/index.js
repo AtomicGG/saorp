@@ -959,7 +959,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Vache zo
             .setTitle("Lait couleur kaki :")
             .setDescription(`Ce drôle de lait légèrement pétillant de couleur kaki ne donne vraiment pas envie mais ça se marie bien avec la citrouille
             
-En utilisant cet objet, vous obtenez \`-1 cran de soif\` ainsi que 6 points d'actions !
+En utilisant cet objet, vous obtenez 6 points d'actions !
             
 Cet objet est \`cuisinable\``)
             .setTimestamp()
