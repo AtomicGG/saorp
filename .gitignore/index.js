@@ -31,7 +31,7 @@ bot.on('ready', () => {
     setInterval(messageDeMinuit = () => {
         let date = new Date()
         let heure = date.getHours()
-        if(heure === 23 && repetition === 1) { //Les heures de décallage françaises c'est la merde. A modifier au prochain solstice
+        if(heure === 23 && repetition === 1 && !pause) { //Les heures de décallage françaises c'est la merde. A modifier au prochain solstice
             repetition = 0
             serveurChannelEvenements.send(`\`\`\`Ce jour est terminé et vous savez ce que ça veut dire ?
 - Votre niveau de faim et de soif monte d'un cran
@@ -26191,8 +26191,24 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
         //console.log(zone)
         //console.log("---------------------------------")
     }
+    if(message.content === prefix + "pause"){
+        serveur.fetchMember(message.author)
+            .then()
+            .catch(console.error)
+        const membre = serveur.member(message.author)
+        if(membre.hasPermission("ADMINISTRATOR")){
+            if(pause){
+                pause = false
+                message.channel.send("Horde a été mis en pause")
+            } else {
+                pause = true
+                message.channel.send("Horde est de retour !")
+            }
+        }
+    }
 })
 
+let pause = false
 let arret;
 const zone = [
     ["0","0","0","0","0","0","0","0","0"],
