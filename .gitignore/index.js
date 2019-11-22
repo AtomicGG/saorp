@@ -26191,7 +26191,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
         //console.log(zone)
         //console.log("---------------------------------")
     }
-    if(message.content === prefix + "pause"){
+    if(message.content === prefix + "Pause"){
         serveur.fetchMember(message.author)
             .then()
             .catch(console.error)
