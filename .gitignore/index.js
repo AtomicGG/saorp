@@ -26199,10 +26199,10 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
         if(membre.hasPermission("ADMINISTRATOR")){
             if(pause){
                 pause = false
-                message.channel.send("Horde a été mis en pause")
+                message.channel.send("Horde est de retour !")
             } else {
                 pause = true
-                message.channel.send("Horde est de retour !")
+                message.channel.send("Horde a été mis en pause")
             }
         }
     }
