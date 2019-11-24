@@ -97,32 +97,36 @@ bot.on('ready', () => {
         let minutes = date.getMinutes()
         if(heure >= 7 && heure < 19){
             for (let i = 0 ; i < 4 ; i++){
-                serveurChannelRues[i].setName(serveurChannelRues[i].name.replace(serveurChannelRues[i].name.charAt(6),"🏙"))
+                if(!contient(serveurChannelRues[i],"🏙")){
+                    serveurChannelRues[i].setName(serveurChannelRues[i].name.replace(serveurChannelRues[i].name.charAt(6),"🏙"))
                     .then()
                     .catch(console.error)
+                }
             }
-            console.log("Rue updated (" + heure + "h" + minutes + ", 🏙)")
         } else if(heure >= 6 && heure < 7){
             for (let i = 0 ; i < 4 ; i++){
-                serveurChannelRues[i].setName(serveurChannelRues[i].name.replace(serveurChannelRues[i].name.charAt(6),"🌆"))
+                if(!contient(serveurChannelRues[i],"🌆")){
+                    serveurChannelRues[i].setName(serveurChannelRues[i].name.replace(serveurChannelRues[i].name.charAt(6),"🌆"))
                     .then()
                     .catch(console.error)
+                }
             }
-            console.log("Rue updated (" + heure + "h" + minutes + ", 🌆)")
         } else if(heure >= 19 && heure < 20){
             for (let i = 0 ; i < 4 ; i++){
-                serveurChannelRues[i].setName(serveurChannelRues[i].name.replace(serveurChannelRues[i].name.charAt(6),"🌇"))
+                if(!contient(serveurChannelRues[i],"🌇")){
+                    serveurChannelRues[i].setName(serveurChannelRues[i].name.replace(serveurChannelRues[i].name.charAt(6),"🌇"))
                     .then()
                     .catch(console.error)
+                }
             }
-            console.log("Rue updated (" + heure + "h" + minutes + ", 🌇)")
         } else {
             for (let i = 0 ; i < 4 ; i++){
-                serveurChannelRues[i].setName(serveurChannelRues[i].name.replace(serveurChannelRues[i].name.charAt(6),"🌃"))
+                if(!contient(serveurChannelRues[i],"🌃")){
+                    serveurChannelRues[i].setName(serveurChannelRues[i].name.replace(serveurChannelRues[i].name.charAt(6),"🌃"))
                     .then()
                     .catch(console.error)
+                }
             }
-            console.log("Rue updated (" + heure + "h" + minutes + ", 🌃)")
         }
 
 
@@ -1035,7 +1039,7 @@ Pour transformer cet objet et obtenir \`Tube de cuivre\` vous devrez être à l'
             
 En rénovant la vieille mine de la ville, vous pourrez continuer le travail des personnes qui travaillaient là avant. Ne faites pas attention à pourquoi la mine a été fermée...
             
-Une fois la construction effectuée, vous pourrez aller miner toutes les 15 minutes dans la mine en faisant "=Miner", cela utilisera 1 point d'action
+Une fois la construction effectuée, vous pourrez aller miner dans la mine en faisant "=Miner", cela utilisera 1 point d'action
             
 :hammer_pick: Matériaux nécessaires :
             
@@ -1060,7 +1064,7 @@ Une fois la construction effectuée, vous pourrez aller miner toutes les 15 minu
 :moneybag: \`${rdm(4)} zombie(s)\``)
                 .setTimestamp()
             message.channel.send({ embed })
-        } else if(random < 55){
+        } else if(random < 40){
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -1069,7 +1073,7 @@ Une fois la construction effectuée, vous pourrez aller miner toutes les 15 minu
                 .setDescription(`:pick: En minant les cailloux devant vous, vous trouvez malheureusement que des cailloux justement`)
                 .setTimestamp()
             message.channel.send({ embed })
-        } else if (random < 65){
+        } else if (random < 55){
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -1080,7 +1084,7 @@ Une fois la construction effectuée, vous pourrez aller miner toutes les 15 minu
 :moneybag: \`1 Cuivre brut\``)
                 .setTimestamp()
             message.channel.send({ embed })
-        } else if (random < 85){
+        } else if (random < 80){
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -2521,7 +2525,7 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("La fouille :", "Dans ce monde, pour survivre l'objectif est de collecter un maximum de ressources et de s'en servir !\n\nCependant, pour trouver des objets, il faudra sortir de la ville et se rendre à l'extérieur pour trouver ces fameuses ressources !\n\nPlus vous irez loin de la ville, plus les ressources seront rares mais plus la présence de zombie sera importante alors... bonne chance...\n\nPour effectuer une fouille selon la distance :\n\n`=Fouille zone [chiffre] KM`\n\nFouiller coûte 1 PA alors gérez bien vos 6 PA quotidien\n\n__Trouver un bâtiment, le fouiller, ou tomber sur des zombies coûte aussi un PA__\n\nA savoir que, lorsque votre survivant découvre un bâtiment il pourra revenir autant de fois qu'il veux étant donné qu'il connaîtra le chemin !\n\n:warning: Votre survivant doit obligatoirement avoir une raison de trouver un bâtiment, que ce soit une annonce à l'auberge, un survivant vous montrant le chemin, ou lorsque vous fouillez etc...").setTimestamp()
+            .addField("La fouille :", "Dans ce monde, pour survivre l'objectif est de collecter un maximum de ressources et de s'en servir !\n\nCependant, pour trouver des objets, il faudra sortir de la ville et se rendre à l'extérieur pour trouver ces fameuses ressources !\n\nPlus vous irez loin de la ville, plus les ressources seront rares mais plus la présence de zombie sera importante alors... bonne chance...\n\nPour effectuer une fouille selon la distance :\n\n`=Fouille zone [chiffre] KM`\n\nFouiller coûte 1 PA alors gérez bien vos 6 PA quotidien\n\n__Trouver un bâtiment, le fouiller, ou tomber sur des zombies coûte aussi un PA__\n\nA savoir que, lorsque votre survivant découvre un bâtiment il pourra revenir autant de fois qu'il veux étant donné qu'il connaîtra le chemin !\n\nPour effectuer une fouille sur un zombie (uniquement après avoir tué TOUS les zombies de la zone) : `=Fouille zombie` (cette fouille ne coûte pas de PA)\n\n:warning: Votre survivant doit obligatoirement avoir une raison de trouver un bâtiment, que ce soit une annonce à l'auberge, un survivant vous montrant le chemin, ou lorsque vous fouillez etc...").setTimestamp()
         message.channel.send({ embed })
     }
 
@@ -2852,28 +2856,41 @@ Hémorragie mortelle + Hémorragie légère = Mort`)
 
 
 
-    if (message.content.startsWith(prefix + "Atouts")) {
+    if (message.content === prefix + "Atouts") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
             .setTimestamp()
-            .addField("Liste des atouts 1 :", "`Médecin` : Permet d'utiliser un seul point d'action à la place de deux lors de l'application de bandage sur lui ou d'autres survivants\n\n`Bricoleur` : Permet de fabriquer des meubles à partir de `Meuble en kit`\n\n`Réparateur` : La réparation d'un objet ne coûte plus aucun point d'action et le temps de réparation est réduit de moitié\n\n`Artisant` : Réduit de moitié le temps nécessaire à la transformation et fabrication d'objets à l'atelier ainsi que la mise en place d'objets pour améliorer la défense de la ville\n\n`Chercheur` : Permet de fouiller une fois en plus gratuitement par jour l'extérieur\n\n`Sprinteur` : Permet d'utiliser `=Fuite [Aucune blessure]` même si vous êtes blessé\n\n`Aigle` : Permet d'avoir une tentative supplémentaire sur `=Observation` depuis la tour de la ville\n\n`Militaire` : Trouve toujours une `Balle` supplémentaire lorsqu'il en trouve à l'extérieur\n\nLa suite : `=Atouts 2`")
+            .addField("Liste des atouts 1 :", "`Médecin` : Permet d'utiliser un seul point d'action à la place de deux lors de l'application de bandage sur lui ou d'autres survivants et de créer des médicaments à partir de produits pharmaceutiques\n\n`Bricoleur` : Permet de fabriquer des meubles à partir de `Meuble en kit`\n\n`Réparateur` : La réparation d'un objet ne coûte plus aucun point d'action et le temps de réparation est réduit de moitié\n\n`Artisant` : Réduit de moitié le temps nécessaire à la transformation et fabrication d'objets à l'atelier ainsi que la mise en place d'objets pour améliorer la défense de la ville\n\n`Chercheur` : Permet de fouiller une fois en plus gratuitement par jour l'extérieur\n\n`Sprinteur` : Permet d'utiliser `=Fuite [Aucune blessure]` même si vous êtes blessé\n\n`Aigle` : Permet d'avoir une tentative supplémentaire sur `=Observation` depuis la tour de la ville\n\n`Militaire` : Trouve toujours une `Balle` supplémentaire lorsqu'il en trouve à l'extérieur\n\nLa suite : `=Atouts 2`")
 
         message.channel.send({ embed })
     }
 
 
 
-    if (message.content.startsWith(prefix + "Atouts 2")) {
+    if (message.content === prefix + "Atouts 2") {
         const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
             .setTimestamp()
-            .addField("Liste des atouts 2 :", "`Résistant` : Permet de survivre un dernier jour supplémentaire si vous deviez mourir d'infection, d'hémorragie, de faim, ou de déshydratation, vous laissant encore du temps de vous soigné\n\n`Tireur` : Permet d'avoir l'initiative contre les zombies et les survivants si vous avez une arme à distance\n\n`Voleur` : Permet de pouvoir voler plus facilement un survivant selon le `=Vol`\n\n`Racaille` : Permet d'avoir l'initiative contre les zombies et les survivants si vous avez une arme de corps à corps\n\n`Boucher` : Permet d'avoir le double de viande lorsque vous tuez un animal dans la boucherie\n\n`Discret` : Permet d'avoir une chance supplémentaire la nuit de vous cacher chez vous, si vous échouez la première tentative\n\n`Courageux` : Empêche d'avoir l'état `Terreur`\n\n`Picoleur` : Empêche d'avoir l'état `Ivresse`\n\n`Boxeur` : Permet d'avoir accès à de meilleurs coups selon `=Horde actions`\n\n`Psychopathe` : Une fois seul, vous pouvez avoir deux attaques possibles au-lieu d'une (contre les zombies et humains)")
+            .addField("Liste des atouts 2 :", "`Résistant` : Permet de survivre un dernier jour supplémentaire si vous deviez mourir d'infection, d'hémorragie, de faim, ou de déshydratation, vous laissant encore du temps pour vous soigner\n\n`Tireur` : Permet de pouvoir retenter votre tir pendant votre tour si vous avez raté votre cible une fois par jour et d'avoir l'initiative contre les zombies et les survivants si vous avez une arme à distance\n\n`Voleur` : Permet de pouvoir voler plus facilement un survivant selon le `=Vol`\n\n`Racaille` : Permet de pouvoir retenter votre coup pendant votre tour si vous avez raté votre cible une fois par jour et d'avoir l'initiative contre les zombies et les survivants si vous avez une arme de corps à corps\n\n`Boucher` : Permet d'avoir le double de viande lorsque vous tuez un animal dans la boucherie\n\n`Discret` : Permet d'avoir une chance supplémentaire la nuit de vous cacher chez vous si vous échouez la première tentative\n\n`Courageux` : Empêche d'avoir l'état `Terreur`\n\n`Picoleur` : Empêche d'avoir l'état `Ivresse` (plus fort que ça en a l'air)\n\n`Boxeur` : Permet d'avoir accès à de meilleurs coups selon `=Horde actions`\n\n`Psychopathe` : Une fois seul, vous pouvez avoir deux attaques possibles au-lieu d'une (contre les zombies et humains)\n\nLa suite : `=Atouts 3`")
+
+        message.channel.send({ embed })
+    }
+
+
+    if (message.content === prefix + "Atouts 3") {
+        const embed = new Discord.RichEmbed()
+            .setColor(0xff0000)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+            .setTimestamp()
+            .addField("Liste des atouts 3 :", "`Agriculteur` : Permet de diviser le temps des récoltes par 2 et et de retenter la récolte si elle échoue une fois par jour\n\n`Mineur` : Permet de miner 2 fois en plus gratuitement par jour dans la mine")
 
         message.channel.send({ embed })
     }
@@ -26204,6 +26221,58 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
                 pause = true
                 message.channel.send("Horde a été mis en pause")
             }
+        }
+    }
+    if(message.content === prefix + "Fouille zombie"){
+        random = rdm(100)
+        if(random < 75) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(0xff0000)
+                .addField(":flashlight: Fouille zombie :", ":flashlight: En fouillant le zombie, vous ne trouvez rien...")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else if(random < 80){
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(0xff0000)
+                .addField(":flashlight: Fouille zombie :", ":flashlight: En fouillant le zombie, vous trouvez :\n\n:moneybag: `1 Affaires d'un citoyen`")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else if(random < 85){
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(0xff0000)
+                .addField(":flashlight: Fouille zombie :", ":flashlight: En fouillant le zombie, vous trouvez :\n\n:moneybag: `1 Ferraille`")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else if(random < 90){
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(0xff0000)
+                .addField(":flashlight: Fouille zombie :", ":flashlight: En fouillant le zombie, vous trouvez :\n\n:moneybag: `1 Planche tordue`")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else if(random < 95){
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(0xff0000)
+                .addField(":flashlight: Fouille zombie :", ":flashlight: En fouillant le zombie, vous trouvez :\n\n:moneybag: `1 Doggy-bag`")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(0xff0000)
+                .addField(":flashlight: Fouille zombie :", ":flashlight: En fouillant le zombie, vous trouvez :\n\n:moneybag: `" + rdm(3) + " Balle`")
+                .setTimestamp()
+            message.channel.send({ embed })
         }
     }
 })
