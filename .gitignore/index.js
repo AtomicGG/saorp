@@ -5,7 +5,7 @@ const bot = new Discord.Client()
 const talkedRecently = new Set();
 const prefix = "=";
 
-var fury = false;
+const pause = true;
 
 bot.on('ready', () => {
 
@@ -40,52 +40,55 @@ bot.on('ready', () => {
 - Si vous n'avez pas dormi 4 heures aujourd'hui, vous avez l'état fatigué
 - Les lieux que vous avez trouvé courageusement aujourd'hui ont été enssevelis sous le sable de la tempête de minuit. Par conséquent, vous ne pouvez plus retourner dans les bâtiments que vous avez trouvés et les objets que vous avez laissés dehors sont par la même occasion perdus à jamais !
 - Vous récupérez vos 6 PA quotidiens\`\`\``)
-				const A = (Math.floor((100) * Math.random() + 1))
-				if (A < 25) {
-					const embed = new Discord.RichEmbed()
-						.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-						.setColor(0xff0000)
-						.addField("Tempête :", "La tempête de cette nuit est assez calme, seulement du vent mais qui n'est pas dangereux, recouvrant peu à peu les lieux de sable")
-		
-						.setTimestamp()
-					serveurChannelEvenements.send({ embed })
-				}
-				if (A > 26 & A < 50) {
-					const embed = new Discord.RichEmbed()
-						.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-						.setColor(0xff0000)
-						.addField("Tempête :", "La tempête de cette nuit est assez violente, quelques petits objets volent et pas mal de sable s'envole en l'air\n\nTous les survivants dehors à l'extérieur prennent une `Blessure`")
-		
-						.setTimestamp()
-					serveurChannelEvenements.send({ embed })
-				}
-				if (A > 51 & A < 75) {
-					const embed = new Discord.RichEmbed()
-						.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-						.setColor(0xff0000)
-						.addField("Tempête :", "La tempête de cette nuit est violente, des panneaux de signalisation ainsi que des grosses pierres arrivent à s'envoler en l'air\n\nTous les survivants dehors à l'extérieur prennent une `Blessure sévère`")
-		
-						.setTimestamp()
-					serveurChannelEvenements.send({ embed })
-				}
-				if (A > 76 & A < 90) {
-					const embed = new Discord.RichEmbed()
-						.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-						.setColor(0xff0000)
-						.addField("Tempête :", "La tempête de cette nuit est très violente, des meubles ainsi que des portes de maison et des débris de verre se font emporté par le vent\n\nTous les survivants dehors à l'extérieur prennent une `Blessure mortelle`")
-		
-						.setTimestamp()
-					serveurChannelEvenements.send({ embed })
-				}
-				if (A > 91) {
-					const embed = new Discord.RichEmbed()
-						.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-						.setColor(0xff0000)
-						.addField("Tempête :", "La tempête de cette nuit est complètement meurtrière, des voitures ainsi que des camions se font soulevés par ce vent qui vous pique limite les yeux\n\nTous les survivants dehors à l'extérieur meurent...")
-		
-						.setTimestamp()
-					serveurChannelEvenements.send({ embed })
-				}
+				.then(_=> {
+					const A = (Math.floor((100) * Math.random() + 1))
+					if (A < 25) {
+						const embed = new Discord.RichEmbed()
+							.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+							.setColor(0xff0000)
+							.addField("Tempête :", "La tempête de cette nuit est assez calme, seulement du vent mais qui n'est pas dangereux, recouvrant peu à peu les lieux de sable")
+			
+							.setTimestamp()
+						serveurChannelEvenements.send({ embed })
+					}
+					if (A > 26 & A < 50) {
+						const embed = new Discord.RichEmbed()
+							.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+							.setColor(0xff0000)
+							.addField("Tempête :", "La tempête de cette nuit est assez violente, quelques petits objets volent et pas mal de sable s'envole en l'air\n\nTous les survivants dehors à l'extérieur prennent une `Blessure`")
+			
+							.setTimestamp()
+						serveurChannelEvenements.send({ embed })
+					}
+					if (A > 51 & A < 75) {
+						const embed = new Discord.RichEmbed()
+							.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+							.setColor(0xff0000)
+							.addField("Tempête :", "La tempête de cette nuit est violente, des panneaux de signalisation ainsi que des grosses pierres arrivent à s'envoler en l'air\n\nTous les survivants dehors à l'extérieur prennent une `Blessure sévère`")
+			
+							.setTimestamp()
+						serveurChannelEvenements.send({ embed })
+					}
+					if (A > 76 & A < 90) {
+						const embed = new Discord.RichEmbed()
+							.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+							.setColor(0xff0000)
+							.addField("Tempête :", "La tempête de cette nuit est très violente, des meubles ainsi que des portes de maison et des débris de verre se font emporté par le vent\n\nTous les survivants dehors à l'extérieur prennent une `Blessure mortelle`")
+			
+							.setTimestamp()
+						serveurChannelEvenements.send({ embed })
+					}
+					if (A > 91) {
+						const embed = new Discord.RichEmbed()
+							.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+							.setColor(0xff0000)
+							.addField("Tempête :", "La tempête de cette nuit est complètement meurtrière, des voitures ainsi que des camions se font soulevés par ce vent qui vous pique limite les yeux\n\nTous les survivants dehors à l'extérieur meurent...")
+			
+							.setTimestamp()
+						serveurChannelEvenements.send({ embed })
+					}
+				})
+				.catch(console.error)
 			}
 			if(heure === 12) {
 				repetition === 1
@@ -26211,21 +26214,6 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
 		//console.log(zone)
 		//console.log("---------------------------------")
 	}
-	if(message.content === prefix + "Pause"){
-		serveur.fetchMember(message.author)
-			.then()
-			.catch(console.error)
-		const membre = serveur.member(message.author)
-		if(membre.hasPermission("ADMINISTRATOR")){
-			if(pause){
-				pause = false
-				message.channel.send("Horde est de retour !")
-			} else {
-				pause = true
-				message.channel.send("Horde a été mis en pause")
-			}
-		}
-	}
 	if(message.content === prefix + "Fouille zombie"){
 		random = rdm(100)
 		if(random < 75) {
@@ -26280,7 +26268,6 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
 	}
 })
 
-let pause = false
 let arret;
 const zone = [
 	["0","0","0","0","0","0","0","0","0"],
