@@ -28,6 +28,7 @@ let A;
 let X;
 let event = false
 let serveur;
+const paMax = 6
 
 function rdm(nombreMax){ //donne un nombre random entre 1 et nombreMax
 	const random = 1 + Math.floor(Math.random()*nombreMax)
@@ -18752,7 +18753,7 @@ if (message.content.startsWith(prefix + "Horde roll")) {
 			.setAuthor(message.author.username, message.author.avatarURL)
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setColor(0xff0000)
-			.addField("Ailerons de poulet entamés :", "Deux ailerons de poulet que quelqu'un a déja commencé à manger avant de les jeter ... Hmmm ...\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !\n\nCet objet est `cuisinable`")
+			.addField("Ailerons de poulet entamés :", "Deux ailerons de poulet que quelqu'un a déja commencé à manger avant de les jeter ... Hmmm ...\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que " + paMax + " points d'actions !\n\nCet objet est `cuisinable`")
 			.setTimestamp()
 		message.channel.send({ embed })
 	}
@@ -19008,7 +19009,7 @@ if (message.content.startsWith(prefix + "Horde roll")) {
 			.setAuthor(message.author.username, message.author.avatarURL)
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setColor(0xff0000)
-			.addField("Betapropine 5mg périmée :", "Ce petit cachet a un effet pour le moins mystérieux... Sur la boîte, il est écrit : 'ne pas donner à un testeur de moins de 18 ans'\n\nEn utilisant cet objet, vous obtenez l'état `Drogué` ainsi que 6 points d'actions !\n\nEn utilisant cet objet : `=Betapropine 5MG périmée [Effets]`")
+			.addField("Betapropine 5mg périmée :", "Ce petit cachet a un effet pour le moins mystérieux... Sur la boîte, il est écrit : 'ne pas donner à un testeur de moins de 18 ans'\n\nEn utilisant cet objet, vous obtenez l'état `Drogué` ainsi que " + paMax + " points d'actions !\n\nEn utilisant cet objet : `=Betapropine 5MG périmée [Effets]`")
 			.setTimestamp()
 		message.channel.send({ embed })
 	}
@@ -19068,7 +19069,7 @@ if (message.content.startsWith(prefix + "Horde roll")) {
 			.setAuthor(message.author.username, message.author.avatarURL)
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setColor(0xff0000)
-			.addField("Biscuit fade :", "Une tartelette qui sent vraiment fort... Pensez à quelque chose d'agréable pendant que vous l'avalerez\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !")
+			.addField("Biscuit fade :", "Une tartelette qui sent vraiment fort... Pensez à quelque chose d'agréable pendant que vous l'avalerez\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que " + paMax + " points d'actions !")
 			.setTimestamp()
 		message.channel.send({ embed })
 	}
@@ -19193,7 +19194,7 @@ if (message.content.startsWith(prefix + "Horde roll")) {
 			.setAuthor(message.author.username, message.author.avatarURL)
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setColor(0xff0000)
-			.addField("Bon plat fait-maison :", "En apparence, ça n'est guère mieux qu'une ration quotidienne. Mais en réalité, ça a très bon goût et ça nourrit bien !\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !")
+			.addField("Bon plat fait-maison :", "En apparence, ça n'est guère mieux qu'une ration quotidienne. Mais en réalité, ça a très bon goût et ça nourrit bien !\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que " + paMax + " points d'actions !")
 			.setTimestamp()
 		message.channel.send({ embed })
 	}
@@ -19266,7 +19267,7 @@ if (message.content.startsWith(prefix + "Horde roll")) {
 			.setAuthor(message.author.username, message.author.avatarURL)
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setColor(0xff0000)
-			.addField("Boîte de conserve ouverte :", "Allez, on ferme les yeux, on ouvre bien grand la bouche et on avale tout. On se sent toujours mieux après\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !\n\nCet objet s'empoisonne avec `Fiole de poison`\n\nCet objet est `cuisinable`")
+			.addField("Boîte de conserve ouverte :", "Allez, on ferme les yeux, on ouvre bien grand la bouche et on avale tout. On se sent toujours mieux après\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que " + paMax + " points d'actions !\n\nCet objet s'empoisonne avec `Fiole de poison`\n\nCet objet est `cuisinable`")
 			.setTimestamp()
 		message.channel.send({ embed })
 	}
@@ -19533,7 +19534,7 @@ if (message.content.startsWith(prefix + "Horde roll")) {
 			.setAuthor(message.author.username, message.author.avatarURL)
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setColor(0xff0000)
-			.addField("Cadavre d'un voyageur :", "Ce cadavre ne date pas d\'hier : les vers ont déjà bouffé une bonne partie de ce qui pouvait l'être... Vous êtes sûr(e) que vous voulez vous promener avec cette horreur sur les épaules ?\n\nCet objet est `Encombrant`\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !\n\nEn utilisant cet objet : `=Cadavre d'un voyageur [Effets]`")
+			.addField("Cadavre d'un voyageur :", "Ce cadavre ne date pas d\'hier : les vers ont déjà bouffé une bonne partie de ce qui pouvait l'être... Vous êtes sûr(e) que vous voulez vous promener avec cette horreur sur les épaules ?\n\nCet objet est `Encombrant`\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que " + paMax + " points d'actions !\n\nEn utilisant cet objet : `=Cadavre d'un voyageur [Effets]`")
 			.setTimestamp()
 		message.channel.send({ embed })
 	}
@@ -19626,7 +19627,7 @@ if (message.content.startsWith(prefix + "Horde roll")) {
 			.setAuthor(message.author.username, message.author.avatarURL)
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setColor(0xff0000)
-			.addField("Café brûlant :", "On se demande comment cette thermos a pu rester chaude aussi longtemps. Quoiqu'il en soit, elle contient suffisamment de café pour vous remettre en forme\n\nEn utilisant cet objet, vous supprimez l'état `Rassasiement` et vous gagnez que 4 points d'actions ! (1 café par jour)")
+			.addField("Café brûlant :", "On se demande comment cette thermos a pu rester chaude aussi longtemps. Quoiqu'il en soit, elle contient suffisamment de café pour vous remettre en forme\n\nEn utilisant cet objet, vous supprimez l'état `Rassasiement` et vous gagnez que " + (Math.floor(paMax*(2/3))+1) + " points d'actions ! (1 café par jour)")
 			.setTimestamp()
 		message.channel.send({ embed })
 	}
@@ -19934,7 +19935,7 @@ if (message.content.startsWith(prefix + "Horde roll")) {
 			.setAuthor(message.author.username, message.author.avatarURL)
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setColor(0xff0000)
-			.addField("Chamallows calcinés :", "Quelques chamallows tout durcis et qui sentent le rat mort. Maintenant qu'ils sont complètement calcinés, on peut dire qu'ils sont mangeables. On peut même dire qu'ils sont appétissants, quand on y réfléchit bien...\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !")
+			.addField("Chamallows calcinés :", "Quelques chamallows tout durcis et qui sentent le rat mort. Maintenant qu'ils sont complètement calcinés, on peut dire qu'ils sont mangeables. On peut même dire qu'ils sont appétissants, quand on y réfléchit bien...\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que " + paMax + " points d'actions !")
 			.setTimestamp()
 		message.channel.send({ embed })
 	}
@@ -20026,7 +20027,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Charogna
 			.setAuthor(message.author.username, message.author.avatarURL)
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setColor(0xff0000)
-			.addField("Chewing-gums séchés :", "Une pleine poignée de chewing-gums tout séchés. En théorie, ça se mâche, mais ça ne s'avale pas\n\nSeulement, dans cet enfer, vous n'êtes pas en position de faire le ou la difficile...\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !\n\nCet objet est `Cuisinable`\n\nPour cuisiner cet objet et obtenir `Chamallows calcinés` vous devrez être à la cuisine et utiliser :\n\n`1 Chewing-gums séchés`\n`1 Torche`\n\nLa préparation prendra 5 minutes à sa réalisation ainsi que 1 point d'action")
+			.addField("Chewing-gums séchés :", "Une pleine poignée de chewing-gums tout séchés. En théorie, ça se mâche, mais ça ne s'avale pas\n\nSeulement, dans cet enfer, vous n'êtes pas en position de faire le ou la difficile...\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que " + paMax + " points d'actions !\n\nCet objet est `Cuisinable`\n\nPour cuisiner cet objet et obtenir `Chamallows calcinés` vous devrez être à la cuisine et utiliser :\n\n`1 Chewing-gums séchés`\n`1 Torche`\n\nLa préparation prendra 5 minutes à sa réalisation ainsi que 1 point d'action")
 			.setTimestamp()
 		message.channel.send({ embed })
 	}
@@ -20077,7 +20078,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Charogna
 			.setAuthor(message.author.username, message.author.avatarURL)
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setColor(0xff0000)
-			.addField("Cidre claviceps artisanal :", "Le mélange des guerriers, le cercueil des rois, le cocktail des dieux ! Si vous doutez de son effet, faites le goûter par un de vos voisins\n\nEn utilisant cet objet, vous obtenez l'état `Ivresse` ainsi que 6 points d'actions !")
+			.addField("Cidre claviceps artisanal :", "Le mélange des guerriers, le cercueil des rois, le cocktail des dieux ! Si vous doutez de son effet, faites le goûter par un de vos voisins\n\nEn utilisant cet objet, vous obtenez l'état `Ivresse` ainsi que " + paMax + " points d'actions !")
 			.setTimestamp()
 		message.channel.send({ embed })
 	}
@@ -21251,7 +21252,7 @@ L'utilisation de cet objet vous permet de fuir un combat ou alors d'empêcher le
 			.setAuthor(message.author.username, message.author.avatarURL)
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setColor(0xff0000)
-			.addField("Jambon-beurre moisi :", "Un reste de casse-croute qui n'a d'appétissant que son souvenir...\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !\n\nCet objet est `cuisinable`")
+			.addField("Jambon-beurre moisi :", "Un reste de casse-croute qui n'a d'appétissant que son souvenir...\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que " + paMax + " points d'actions !\n\nCet objet est `cuisinable`")
 			.setTimestamp()
 		message.channel.send({ embed })
 	}
@@ -21277,7 +21278,7 @@ L'utilisation de cet objet vous permet de fuir un combat ou alors d'empêcher le
 			.setAuthor(message.author.username, message.author.avatarURL)
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setColor(0xff0000)
-			.addField("Jus de mirabelle suspect :", "Cette fiole soigneusement scellée contient du jus de mirabelle, c'est vraiment suspect\n\nD'autant qu'elle porte une étiquette : 'en cas d'ingestion, contacter le centre anti-poison le plus proche de chez vous'\n\nVous n'allez quand même pas boire ça ? Si ?\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !n\nCet objet est `cuisinable`")
+			.addField("Jus de mirabelle suspect :", "Cette fiole soigneusement scellée contient du jus de mirabelle, c'est vraiment suspect\n\nD'autant qu'elle porte une étiquette : 'en cas d'ingestion, contacter le centre anti-poison le plus proche de chez vous'\n\nVous n'allez quand même pas boire ça ? Si ?\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que " + paMax + " points d'actions !n\nCet objet est `cuisinable`")
 			.setTimestamp()
 		message.channel.send({ embed })
 	}
@@ -21354,7 +21355,7 @@ L'utilisation de cet objet vous permet de fuir un combat ou alors d'empêcher le
 			.setAuthor(message.author.username, message.author.avatarURL)
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setColor(0xff0000)
-			.addField("LSD :", "On ne sait pas d'où vient ce petit papier rose, mais quand on le met dans la bouche, il fait des bulles dans le cerveau\n\nEn utilisant cet objet, vous obtenez l'état `Drogué` ainsi que 6 points d'actions !\n\nEn utilisant cet objet : `=LSD [Effets]`")
+			.addField("LSD :", "On ne sait pas d'où vient ce petit papier rose, mais quand on le met dans la bouche, il fait des bulles dans le cerveau\n\nEn utilisant cet objet, vous obtenez l'état `Drogué` ainsi que " + paMax + " points d'actions !\n\nEn utilisant cet objet : `=LSD [Effets]`")
 			.setTimestamp()
 		message.channel.send({ embed })
 	}
@@ -21603,7 +21604,7 @@ L'utilisation de cet objet vous permet de fuir un combat ou alors d'empêcher le
 			.setColor(0xff0000)
 			.addField("Légume suspect :", `Un genre de... légume, difficile à dire ce qui a essayé de pousser comme ça, mais le principal c'est que ça semble comestible, ou pas
 			
-En utilisant cet objet, vous obtenez l'état \`Rassasiement\` ainsi que 6 points d'actions !
+En utilisant cet objet, vous obtenez l'état \`Rassasiement\` ainsi que ${paMax} points d'actions !
 
 Cet objet est empoisonnable à l'aide de \`Fiole de poison\` provoquant la mort d'un humain au bout de quelques minutes...
 
@@ -21650,7 +21651,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Légume 
 			.setAuthor(message.author.username, message.author.avatarURL)
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setColor(0xff0000)
-			.addField("Melon d'intestin :", "Habituellement le Melon d'intestin pousse dans le ventre des cadavres, au niveau du gros colon. Il semblerait pourtant que votre potager en ait donné de très jolis...\n\nPeut être avez vous cultivé sur un vieux cimetière indien ?\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !")
+			.addField("Melon d'intestin :", "Habituellement le Melon d'intestin pousse dans le ventre des cadavres, au niveau du gros colon. Il semblerait pourtant que votre potager en ait donné de très jolis...\n\nPeut être avez vous cultivé sur un vieux cimetière indien ?\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que " + paMax + " points d'actions !")
 			.setTimestamp()
 		message.channel.send({ embed })
 	}
@@ -21829,7 +21830,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Légume 
 			.setAuthor(message.author.username, message.author.avatarURL)
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setColor(0xff0000)
-			.addField("Médicament sans étiquette :", "Une boîte de médicaments dont l'étiquette est totalement effacée...\n\nLes cachets dedans sont pour la plupart moisis, mais vous en trouvez quelques uns qui soient encore 'consommables'\n\nMais êtes-vous suffisamment mal pour vouloir avaler ça ?\n\nEn utilisant cet objet, vous obtenez l'état `Drogué` ainsi que 6 points d'actions !\n\nEn utilisant cet objet : `=Médicament sans étiquette [Effets]`")
+			.addField("Médicament sans étiquette :", "Une boîte de médicaments dont l'étiquette est totalement effacée...\n\nLes cachets dedans sont pour la plupart moisis, mais vous en trouvez quelques uns qui soient encore 'consommables'\n\nMais êtes-vous suffisamment mal pour vouloir avaler ça ?\n\nEn utilisant cet objet, vous obtenez l'état `Drogué` ainsi que " + paMax + " points d'actions !\n\nEn utilisant cet objet : `=Médicament sans étiquette [Effets]`")
 			.setTimestamp()
 		message.channel.send({ embed })
 	}
@@ -21937,7 +21938,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Légume 
 			.setAuthor(message.author.username, message.author.avatarURL)
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setColor(0xff0000)
-			.addField("Napoltains moisis :", "Une pâtisserie sous plastique : chocolat-vanille\n\nSi vous agitez l'emballage, vous avez l'impression que quelque chose s'est liquéfié là-dedans...\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !\n\nCet objet est `Cuisinable`")
+			.addField("Napoltains moisis :", "Une pâtisserie sous plastique : chocolat-vanille\n\nSi vous agitez l'emballage, vous avez l'impression que quelque chose s'est liquéfié là-dedans...\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que " + paMax + " points d'actions !\n\nCet objet est `Cuisinable`")
 			.setTimestamp()
 		message.channel.send({ embed })
 	}
@@ -21951,7 +21952,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Légume 
 			.setAuthor(message.author.username, message.author.avatarURL)
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setColor(0xff0000)
-			.addField("Nouilles chinoises :", "Malgré les années passées dans le désert, ces nouilles chinoises ont toujours le même gout et le même aspect\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !\n\nCet objet est `Cuisinable`\n\nPour assembler cet objet et obtenir `Nouilles chinoises épices` vous devrez être à la cuisine et utiliser :\n\n`1 Epices fortes`\n`1 Ration d'eay`\n`1 Nouilles chinoises`\n\nL'assemblage prendra 5 minutes à sa réalisation ainsi que 1 point d'action")
+			.addField("Nouilles chinoises :", "Malgré les années passées dans le désert, ces nouilles chinoises ont toujours le même gout et le même aspect\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que " + paMax + " points d'actions !\n\nCet objet est `Cuisinable`\n\nPour assembler cet objet et obtenir `Nouilles chinoises épices` vous devrez être à la cuisine et utiliser :\n\n`1 Epices fortes`\n`1 Ration d'eay`\n`1 Nouilles chinoises`\n\nL'assemblage prendra 5 minutes à sa réalisation ainsi que 1 point d'action")
 			.setTimestamp()
 		message.channel.send({ embed })
 	}
@@ -21963,7 +21964,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Légume 
 			.setAuthor(message.author.username, message.author.avatarURL)
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setColor(0xff0000)
-			.addField("Nouilles chinoises épicées :", "Des nouilles copieusement assaisonnées ! Hmm, ça va vous changer de vos repas à base de choses en décomposition\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !\n\nCet objet est `Cuisinable`")
+			.addField("Nouilles chinoises épicées :", "Des nouilles copieusement assaisonnées ! Hmm, ça va vous changer de vos repas à base de choses en décomposition\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que " + paMax + " points d'actions !\n\nCet objet est `Cuisinable`")
 			.setTimestamp()
 		message.channel.send({ embed })
 	}
@@ -21975,7 +21976,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Légume 
 			.setAuthor(message.author.username, message.author.avatarURL)
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setColor(0xff0000)
-			.addField("Oeuf :", "Un oeuf voilà qui devrait vous réconforter, mais une seule idée hante votre esprit, où est donc cette satanée poule...\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !\n\nCet objet est `Cuisinable`")
+			.addField("Oeuf :", "Un oeuf voilà qui devrait vous réconforter, mais une seule idée hante votre esprit, où est donc cette satanée poule...\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que " + paMax + " points d'actions !\n\nCet objet est `Cuisinable`")
 			.setTimestamp()
 		message.channel.send({ embed })
 	}
@@ -21987,7 +21988,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Légume 
 			.setAuthor(message.author.username, message.author.avatarURL)
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setColor(0xff0000)
-			.addField("Os charnu :", "Un os avec encore un peu de viande autour... Bizarre. Ça a l'air encore frais en plus. Peut-être un animal tué pendant la nuit ?\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !\n\nCet objet est `Cuisinable`\n\nEn utilisant cet objet : `=Os charnu [Effets]`")
+			.addField("Os charnu :", "Un os avec encore un peu de viande autour... Bizarre. Ça a l'air encore frais en plus. Peut-être un animal tué pendant la nuit ?\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que " + paMax + " points d'actions !\n\nCet objet est `Cuisinable`\n\nEn utilisant cet objet : `=Os charnu [Effets]`")
 			.setTimestamp()
 		message.channel.send({ embed })
 	}
@@ -22133,7 +22134,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Légume 
 			.setAuthor(message.author.username, message.author.avatarURL)
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setColor(0xff0000)
-			.addField("Paquet de chips molles :", "Les chips de ce paquet sont molles et ont un goût de papier séché, mais on ne va pas faire le difficile... Un repas est un repas\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !\n\nCet objet est `cuisinable`")
+			.addField("Paquet de chips molles :", "Les chips de ce paquet sont molles et ont un goût de papier séché, mais on ne va pas faire le difficile... Un repas est un repas\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que " + paMax + " points d'actions !\n\nCet objet est `cuisinable`")
 			.setTimestamp()
 		message.channel.send({ embed })
 	}
@@ -22145,7 +22146,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Légume 
 			.setAuthor(message.author.username, message.author.avatarURL)
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setColor(0xff0000)
-			.addField("Paquet de cigarettes entamé :", "Un vieux paquet de cigarettes qui sent la charogne et la moisissure\n\nMais c'est tellement rare d'en trouver de nos jours...\n\nIl porte une mention en rouge ainsi qu'une demi-douzaine de têtes de morts : 'Fumer tue'\n\nVous disposez de 5 cigarettes à l'intérieur, permettant de soigner l'état `Terreur` en vous calmant")
+			.addField("Paquet de cigarettes entamé :", "Un vieux paquet de cigarettes qui sent la charogne et la moisissure\n\nMais c'est tellement rare d'en trouver de nos jours...\n\nIl porte une mention en rouge ainsi qu'une demi-douzaine de têtes de morts : 'Fumer tue'\n\nVous disposez de " + rdm(25) + " cigarettes à l'intérieur, permettant de soigner l'état `Terreur` en vous calmant")
 			.setTimestamp()
 		message.channel.send({ embed })
 	}
@@ -22230,7 +22231,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Légume 
 			.setAuthor(message.author.username, message.author.avatarURL)
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setColor(0xff0000)
-			.addField("Petits beurres rances :", "C'est sec et ça a un aspect rassi, vous donneriez n'importe quoi pour faire passer le gout de ces biscuits...\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !\n\nCet objet est `Cuisinable`")
+			.addField("Petits beurres rances :", "C'est sec et ça a un aspect rassi, vous donneriez n'importe quoi pour faire passer le gout de ces biscuits...\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que " + paMax + " points d'actions !\n\nCet objet est `Cuisinable`")
 			.setTimestamp()
 		message.channel.send({ embed })
 	}
@@ -22254,7 +22255,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Légume 
 			.setAuthor(message.author.username, message.author.avatarURL)
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setColor(0xff0000)
-			.addField("Pim's périmé :", "Une poignée de biscuits fourrés à la confiture de ... en fait vous l'ignorez...\n\nPeut-être un fruit, mais ça a un gout de viande maintenant\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !\n\nCet objet est `Cuisinable`")
+			.addField("Pim's périmé :", "Une poignée de biscuits fourrés à la confiture de ... en fait vous l'ignorez...\n\nPeut-être un fruit, mais ça a un gout de viande maintenant\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que " + paMax + " points d'actions !\n\nCet objet est `Cuisinable`")
 			.setTimestamp()
 		message.channel.send({ embed })
 	}
@@ -22460,7 +22461,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Légume 
 			.setAuthor(message.author.username, message.author.avatarURL)
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setColor(0xff0000)
-			.addField("Plat fait-maison douteux :", "Des ingrédients combinés un peu n'importe comment, une ébauche de cuisson et un assaisonnement au sable du désert\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !")
+			.addField("Plat fait-maison douteux :", "Des ingrédients combinés un peu n'importe comment, une ébauche de cuisson et un assaisonnement au sable du désert\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que " + paMax + " points d'actions !")
 			.setTimestamp()
 		message.channel.send({ embed })
 	}
@@ -22472,7 +22473,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Légume 
 			.setAuthor(message.author.username, message.author.avatarURL)
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setColor(0xff0000)
-			.addField("Poignée de bonbons :", "Vous avez une petite larme à l'oeil en contemplant cette poignée de délicieux bonbons...\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !")
+			.addField("Poignée de bonbons :", "Vous avez une petite larme à l'oeil en contemplant cette poignée de délicieux bonbons...\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que " + paMax + " points d'actions !")
 			.setTimestamp()
 		message.channel.send({ embed })
 	}
@@ -22539,7 +22540,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Légume 
 			
 Cela étant dit, il doit bien y avoir quelques vitamines là dedans
 
-En utilisant cet objet, vous obtenez l'état \`Rassasiement\` ainsi que 6 points d'actions !
+En utilisant cet objet, vous obtenez l'état \`Rassasiement\` ainsi que ${paMax} points d'actions !
 
 Cette pomme peut être plantée dans le potager pour obtenir un pommier :
 
@@ -22764,7 +22765,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
 			.setAuthor(message.author.username, message.author.avatarURL)
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setColor(0xff0000)
-			.addField("Purée de charognardes :", "Ça sent vraiment très mauvais\n\nCette boule est un agrégat de 'Baies charognardes' qui ont poussé sur un cadavre quelconque\n\nSi vous n'avez pas peur de mourir d'une infection virulente, peut-être qu'elle pourrait vous rassasier si vous la mangiez ?\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !\n\nCet objet est `Cuisinable`\n\nCet objet est empoisonnable à l'aide de `Fiole de poison` provoquant la mort d'un humain au bout de quelques minutes...\n\nEn utilisant cet objet : `=Purée de charognardes [Effets]`")
+			.addField("Purée de charognardes :", "Ça sent vraiment très mauvais\n\nCette boule est un agrégat de 'Baies charognardes' qui ont poussé sur un cadavre quelconque\n\nSi vous n'avez pas peur de mourir d'une infection virulente, peut-être qu'elle pourrait vous rassasier si vous la mangiez ?\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que " + paMax + " points d'actions !\n\nCet objet est `Cuisinable`\n\nCet objet est empoisonnable à l'aide de `Fiole de poison` provoquant la mort d'un humain au bout de quelques minutes...\n\nEn utilisant cet objet : `=Purée de charognardes [Effets]`")
 			.setTimestamp()
 		message.channel.send({ embed })
 	}
@@ -22827,7 +22828,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
 			.setAuthor(message.author.username, message.author.avatarURL)
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setColor(0xff0000)
-			.addField("Ration d'eau :", "La gourde vous permet de vous désaltérer en dehors de la ville\n\nL'eau permet de récupérer ses points d'action (1 fois par jour) et d'étancher la soif (pas de limitation par jour)\n\nEn utilisant cet objet, vous obtenez l'état `Hydratation` ainsi que 6 points d'actions !\n\nCet objet est empoisonnable à l'aide de `Fiole de poison` provoquant la mort d'un humain au bout de quelques minutes...\n\nCet objet permet aussi de fabriquer un tas d'objets mais aussi d'être utilisé comme munition")
+			.addField("Ration d'eau :", "La gourde vous permet de vous désaltérer en dehors de la ville\n\nL'eau permet de récupérer ses points d'action (1 fois par jour) et d'étancher la soif (pas de limitation par jour)\n\nEn utilisant cet objet, vous obtenez l'état `Hydratation` ainsi que " + paMax + " points d'actions !\n\nCet objet est empoisonnable à l'aide de `Fiole de poison` provoquant la mort d'un humain au bout de quelques minutes...\n\nCet objet permet aussi de fabriquer un tas d'objets mais aussi d'être utilisé comme munition")
 			.setTimestamp()
 		message.channel.send({ embed })
 	}
@@ -23217,7 +23218,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
 			.setAuthor(message.author.username, message.author.avatarURL)
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setColor(0xff0000)
-			.addField("Steak appétissant :", "C'est un peu élastique et ça sent même le poisson... On se demande bien ce que ça peut être, mais c'est surement plein de vitamines\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !")
+			.addField("Steak appétissant :", "C'est un peu élastique et ça sent même le poisson... On se demande bien ce que ça peut être, mais c'est surement plein de vitamines\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que " + paMax + " points d'actions !")
 			.setTimestamp()
 		message.channel.send({ embed })
 	}
@@ -23229,7 +23230,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
 			.setAuthor(message.author.username, message.author.avatarURL)
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setColor(0xff0000)
-			.addField("Steak de sciure :", "Une tranche de viande recouverte de sciure et de copeaux de bois...\n\nA moins que ce ne soit pas des copeaux, mais des vers à bois, ce qui semblerait logique puisque ca n'arrête de pas de bouger\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !")
+			.addField("Steak de sciure :", "Une tranche de viande recouverte de sciure et de copeaux de bois...\n\nA moins que ce ne soit pas des copeaux, mais des vers à bois, ce qui semblerait logique puisque ca n'arrête de pas de bouger\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que " + paMax + " points d'actions !")
 			.setTimestamp()
 		message.channel.send({ embed })
 	}
@@ -23253,7 +23254,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
 			.setAuthor(message.author.username, message.author.avatarURL)
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setColor(0xff0000)
-			.addField("Stéroïdes anabolisants :", "Cette drogue est idéale pour vous faire voir la vie en rose : plus de Fatigue au prix de seulement quelques convulsions et d'un peu de bave aux lèvres... Gare à l'accoutumance !\n\nEn utilisant cet objet, vous obtenez l'état `Drogué` ainsi que 6 points d'actions !\n\nCet objet est empoisonnable à l'aide de `Fiole de poison` provoquant la mort d'un humain au bout de quelques minutes...\n\nEn utilisant cet objet : `=Stéroïdes anabolisants [Effets]`")
+			.addField("Stéroïdes anabolisants :", "Cette drogue est idéale pour vous faire voir la vie en rose : plus de Fatigue au prix de seulement quelques convulsions et d'un peu de bave aux lèvres... Gare à l'accoutumance !\n\nEn utilisant cet objet, vous obtenez l'état `Drogué` ainsi que " + paMax + " points d'actions !\n\nCet objet est empoisonnable à l'aide de `Fiole de poison` provoquant la mort d'un humain au bout de quelques minutes...\n\nEn utilisant cet objet : `=Stéroïdes anabolisants [Effets]`")
 			.setTimestamp()
 		message.channel.send({ embed })
 	}
@@ -23596,7 +23597,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
 			.setAuthor(message.author.username, message.author.avatarURL)
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setColor(0xff0000)
-			.addField("Twinoïde 500MG :", "Un concentré de caféïne, de théine, de diverses drogues chimiques et de testicules de taureau broyées\n\nLa drogue idéale pour les coups de fouets en fin de journée, ou quand il s'agit de fuir face à une horde de zombies qui en veulent à votre foie\n\nEn utilisant cet objet, vous obtenez l'état `Drogué` ainsi que 6 points d'actions !\n\nEn utilisant cet objet : `=Twinoïde 500MG [Effets]`")
+			.addField("Twinoïde 500MG :", "Un concentré de caféïne, de théine, de diverses drogues chimiques et de testicules de taureau broyées\n\nLa drogue idéale pour les coups de fouets en fin de journée, ou quand il s'agit de fuir face à une horde de zombies qui en veulent à votre foie\n\nEn utilisant cet objet, vous obtenez l'état `Drogué` ainsi que " + paMax + " points d'actions !\n\nEn utilisant cet objet : `=Twinoïde 500MG [Effets]`")
 			.setTimestamp()
 		message.channel.send({ embed })
 	}
@@ -23682,7 +23683,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
 			.setAuthor(message.author.username, message.author.avatarURL)
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setColor(0xff0000)
-			.addField("Viande humaine :", "Hop, on oublie rapidement ce qu'on vient d'avaler et on passe à la suite...\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !\n\nCet objet est `Cuisinable`\n\nEn utilisant cet objet : `=Viande humaine [Effets]`")
+			.addField("Viande humaine :", "Hop, on oublie rapidement ce qu'on vient d'avaler et on passe à la suite...\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que " + paMax + " points d'actions !\n\nCet objet est `Cuisinable`\n\nEn utilisant cet objet : `=Viande humaine [Effets]`")
 			.setTimestamp()
 		message.channel.send({ embed })
 	}
@@ -23694,7 +23695,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
 			.setAuthor(message.author.username, message.author.avatarURL)
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setColor(0xff0000)
-			.addField("Viande indéfinissable :", "Vous êtes quasiment certain que cette chose molle et visqueuse peut se manger\n\nEn tous cas, ça ne sent pas mauvais et ça ne bouge pas\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !\n\nCet objet est `Cuisinable`")
+			.addField("Viande indéfinissable :", "Vous êtes quasiment certain que cette chose molle et visqueuse peut se manger\n\nEn tous cas, ça ne sent pas mauvais et ça ne bouge pas\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que " + paMax + " points d'actions !\n\nCet objet est `Cuisinable`")
 			.setTimestamp()
 		message.channel.send({ embed })
 	}
@@ -23779,7 +23780,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
 			.setAuthor(message.author.username, message.author.avatarURL)
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setColor(0xff0000)
-			.addField("Vodka marinostov :", "Un coup de fouet très violent pour oublier la fatigue (et récupérer tous ses points d'action !)...\n\n85° d'alcool pur, avec diverses choses vaguement organiques qui flottent dedans, santé camarade !\n\nEn utilisant cet objet, vous obtenez l'état `Ivresse` ainsi que 6 points d'actions !\n\nPour assembler cet objet et obtenir `Cidre claviceps artisanal` vous devrez être à l'atelier et utiliser :\n\n`1 Bidon d'huile vide`\n`1 Vodka marinostov`\n`1 Claviceps purpurea`\n\nL'assemblage prendra 5 minutes à sa réalisation ainsi que 1 point d'action")
+			.addField("Vodka marinostov :", "Un coup de fouet très violent pour oublier la fatigue (et récupérer tous ses points d'action !)...\n\n85° d'alcool pur, avec diverses choses vaguement organiques qui flottent dedans, santé camarade !\n\nEn utilisant cet objet, vous obtenez l'état `Ivresse` ainsi que " + paMax + " points d'actions !\n\nPour assembler cet objet et obtenir `Cidre claviceps artisanal` vous devrez être à l'atelier et utiliser :\n\n`1 Bidon d'huile vide`\n`1 Vodka marinostov`\n`1 Claviceps purpurea`\n\nL'assemblage prendra 5 minutes à sa réalisation ainsi que 1 point d'action")
 			.setTimestamp()
 		message.channel.send({ embed })
 	}
@@ -23791,7 +23792,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
 			.setAuthor(message.author.username, message.author.avatarURL)
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setColor(0xff0000)
-			.addField("'Debout-les-morts' :", "Un cocktail inventé par un certain Joey si on en croit l'étiquette\n\nMélange de rhum, de piment rouge et de whiskey, avec un doigt mariné qui flotte entre deux eaux...\n\nEn utilisant cet objet, vous obtenez l'état `Drogué` ainsi que 6 points d'actions !")
+			.addField("'Debout-les-morts' :", "Un cocktail inventé par un certain Joey si on en croit l'étiquette\n\nMélange de rhum, de piment rouge et de whiskey, avec un doigt mariné qui flotte entre deux eaux...\n\nEn utilisant cet objet, vous obtenez l'état `Drogué` ainsi que " + paMax + " points d'actions !")
 			.setTimestamp()
 		message.channel.send({ embed })
 	}
@@ -23841,7 +23842,7 @@ Chaque jour, vous pouvez récolter les pommes de ce pommier avec la commande "=R
 			.setTitle("Tomate :")
 			.setDescription(`Une tomate fraichement cueillie du potager, juteuse et goûtue... *Mmm!...*
 			
-En utilisant cet objet, vous obtenez l'état \`Rassasiement\`, \`-1 cran de soif\`, ainsi que 5 points d'actions !
+En utilisant cet objet, vous obtenez l'état \`Rassasiement\` ainsi que ${paMax} points d'actions !
 
 Cet objet est \`cuisinable\`
 
@@ -23861,9 +23862,9 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Tomate]"
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setColor(0xff0000)
 			.setTitle("Carotte :")
-			.setDescription(`Une carotte fraichement cueillie du potager, croquante et roche en fibre... *Mmm!...*
+			.setDescription(`Une carotte fraichement cueillie du potager, croquante et riche en fibre... *Mmm!...*
 			
-En utilisant cet objet, vous obtenez \`-1 cran de faim\` ainsi que 2 points d'actions !
+En utilisant cet objet, vous obtenez l'état \`Rassasiement\` ainsi que ${paMax} points d'actions !
 
 Cet objet est \`cuisinable\`
 
@@ -23885,7 +23886,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Carotte]
 			.setTitle("Citrouille :")
 			.setDescription(`Une citrouille fraichement cueillie du potager, géante et craquante... *Mmm!...*
 			
-En utilisant cet objet, vous obtenez l'état \`Rassasiement\` ainsi que 6 points d'actions !
+En utilisant cet objet, vous obtenez l'état \`Rassasiement\` ainsi que ${paMax} points d'actions !
 
 Cet objet est \`cuisinable\`
 
@@ -24193,7 +24194,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Vache zo
 			.setTitle("Lait couleur kaki :")
 			.setDescription(`Ce drôle de lait légèrement pétillant de couleur kaki ne donne vraiment pas envie mais ça se marie bien avec la citrouille
 			
-En utilisant cet objet, vous obtenez 6 points d'actions !
+En utilisant cet objet, vous obtenez ${paMax} points d'actions !
 			
 Cet objet est \`cuisinable\``)
 			.setTimestamp()
@@ -24340,11 +24341,11 @@ En bonus, le cabinet médical permet de pouvoir réutiliser un bandage une fois 
 		
 :hammer_pick: Matériaux nécessaires :
 
-\`5 Planche tordue\`
-\`4 Ferraille\`
+\`10 Planche tordue\`
+\`8 Ferraille\`
 \`1 Pavés de béton informes\`
 		
-:timer: Le temps de construction est de 20 minutes`)
+:timer: Le temps de construction est de 38 minutes`)
 		.setTimestamp()
 	message.channel.send({ embed })
 }
@@ -24359,10 +24360,10 @@ if(message.content === `${prefix}Prison`){
 
 :hammer_pick: Matériaux nécessaires :
 
-\`7 Planche tordue\`
-\`4 Ferraille\`
+\`8 Planche tordue\`
+\`8 Ferraille\`
 		
-:timer: Le temps de construction est de 22 minutes`)
+:timer: Le temps de construction est de 32 minutes`)
 		.setTimestamp()
 	message.channel.send({ embed })
 }
@@ -24377,11 +24378,11 @@ if(message.content === `${prefix}Cuisine`){
 
 :hammer_pick: Matériaux nécessaires :
 
-\`8 Planche tordue\`
+\`10 Planche tordue\`
 \`5 Ferraille\`
 \`1 Pavés de béton informes\`
 		
-:timer: Le temps de construction est de 28 minutes`)
+:timer: Le temps de construction est de 32 minutes`)
 		.setTimestamp()
 	message.channel.send({ embed })
 }
@@ -24401,7 +24402,7 @@ if (message.content === prefix + "Boucherie") {
 		.setAuthor(message.author.username, message.author.avatarURL)
 		.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 		.setColor(0xff0000)
-		.addField("Boucherie :", "Si la ville a besoin de devoir découper un certain type de viande, de la travailler pour la rendre mangeable ou de meilleur qualité, le matériel se trouve dedans\n\nPermet de transformer les animaux en nourriture\n\nPermet de transformer vos petits compagnons (chiens, chats, serpents…) en nourriture\n\nQuand on pense qu'il y en a qui préféraient le boeuf...\n\n:hammer_pick: Matériaux nécessaires :\n\n`9 Planche tordue`\n`4 Ferraille`\n\n:timer: Le temps de construction est de 26 minutes")
+		.addField("Boucherie :", "Si la ville a besoin de devoir découper un certain type de viande, de la travailler pour la rendre mangeable ou de meilleur qualité, le matériel se trouve dedans\n\nPermet de transformer les animaux en nourriture\n\nPermet de transformer vos petits compagnons (chiens, chats, serpents…) en nourriture\n\nQuand on pense qu'il y en a qui préféraient le boeuf...\n\n:hammer_pick: Matériaux nécessaires :\n\n`10 Planche tordue`\n`4 Ferraille`\n\n:timer: Le temps de construction est de 28 minutes")
 		.setTimestamp()
 	message.channel.send({ embed })
 }
