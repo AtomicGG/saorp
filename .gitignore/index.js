@@ -4,8 +4,34 @@ const Discord = require('discord.js')
 const bot = new Discord.Client()
 const talkedRecently = new Set();
 const prefix = "=";
-
 const pause = true;
+let arret;
+const zone = [
+	["0","0","0","0","0","0","0","0","0"],
+	["0","0","0","0","0","0","0","0","0"],
+	["0","0","0","0","0","0","0","0","0"],
+	["0","0","0","0","0","0","0","0","0"],
+	["0","0","0","0","0","0","0","0","0"],
+	["0","0","0","0","0","0","0","0","0"],
+	["0","0","0","0","0","0","0","0","0"],
+	["0","0","0","0","0","0","0","0","0"],
+	["0","0","0","0","0","0","0","0","0"]
+]
+let interrupteur = false
+let timer = true
+let motAEcrire;
+let random;
+const nomServeur = "Horde [RP]"
+let cont;
+let args;
+let A;
+let X;
+let event = false
+
+function rdm(nombreMax){ //donne un nombre random entre 1 et nombreMax
+	const random = 1 + Math.floor(Math.random()*nombreMax)
+	return random
+}
 
 bot.on('ready', () => {
 
@@ -100,10 +126,9 @@ bot.on('ready', () => {
 		if(!pause){
 			let date = new Date()
 			let heure = date.getHours()
-			let minutes = date.getMinutes()
 			if(heure >= 7 && heure < 19){
 				for (let i = 0 ; i < 4 ; i++){
-					if(!contient(serveurChannelRues[i].name,"🏙")){
+					if(!/🏙/.test(serveurChannelRues[i].name)){
 						serveurChannelRues[i].setName(serveurChannelRues[i].name.replace(serveurChannelRues[i].name.charAt(6),"🏙"))
 						.then()
 						.catch(console.error)
@@ -111,7 +136,7 @@ bot.on('ready', () => {
 				}
 			} else if(heure >= 6 && heure < 7){
 				for (let i = 0 ; i < 4 ; i++){
-					if(!contient(serveurChannelRues[i].name,"🌆")){
+					if(!/🌆/.test(serveurChannelRues[i].name)){
 						serveurChannelRues[i].setName(serveurChannelRues[i].name.replace(serveurChannelRues[i].name.charAt(6),"🌆"))
 						.then()
 						.catch(console.error)
@@ -119,7 +144,7 @@ bot.on('ready', () => {
 				}
 			} else if(heure >= 19 && heure < 20){
 				for (let i = 0 ; i < 4 ; i++){
-					if(!contient(serveurChannelRues[i].name,"🌇")){
+					if(!/🌇/.test(serveurChannelRues[i].name)){
 						serveurChannelRues[i].setName(serveurChannelRues[i].name.replace(serveurChannelRues[i].name.charAt(6),"🌇"))
 						.then()
 						.catch(console.error)
@@ -127,7 +152,7 @@ bot.on('ready', () => {
 				}
 			} else {
 				for (let i = 0 ; i < 4 ; i++){
-					if(!contient(serveurChannelRues[i].name,"🌃")){
+					if(!/🌃/.test(serveurChannelRues[i].name)){
 						serveurChannelRues[i].setName(serveurChannelRues[i].name.replace(serveurChannelRues[i].name.charAt(6),"🌃"))
 						.then()
 						.catch(console.error)
@@ -135,45 +160,8 @@ bot.on('ready', () => {
 				}
 			}
 		}
-	},0.5 * 3600000) // 3,600,000 = 1h en millisecondes
+	},0.5 * 3600000) //30 minutes
 })
-
-
-
-
-function rdm(nombreMax){ //donne un nombre random entre 1 et nombreMax
-	const random = 1 + Math.floor(Math.random()*nombreMax)
-	return random
-}
-
-function contient(partieTrouvee,partieCherchee){//donne true si la partie trouvée (message.content) contient la partie cherchée, sinon false
-	let recherche = true
-	while(!partieTrouvee.startsWith(partieCherchee) && recherche === true){
-		if(partieTrouvee.length === 0){
-			recherche = false
-		}
-		partieTrouvee = partieTrouvee.slice(1)
-	}
-	if(partieTrouvee.startsWith(partieCherchee)){
-		return true
-	} else {
-		return false
-	}
-}
-
-function regEscape(s) {
-	return s.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
-}
-
-let random;
-
-const nomServeur = "Horde [RP]"
-let cont;
-let args;
-let A;
-let X;
-let event = false
-let participants = []
 
 bot.off('guildMemberAdd', member => {
 	member.createDM().then(channel => {
@@ -331,163 +319,6 @@ bot.on('message', message => {
 		}
 	}
 
-	/*/if((message.content.startsWith("+") || message.content.startsWith("-")) && message.channel === serveurChannelPuits){
-		serveur.fetchMember(message.author)
-			.then()
-			.catch(console.error)
-		const membre = serveur.member(message.author)
-		let messagePuits
-		let signe = message.content.slice(0,1)
-		let quantiteDeBase
-		let quantite
-		try {
-			message.delete()
-			.then()
-			.catch(console.error)
-			let contenu = message.content.slice(1).trim()
-			let ajout = Number(contenu.match(/^\d+/)[0])
-
-			let expressionQuantite = new RegExp(`\\d+(?=\\s(?=eau))`)
-
-			if(message.channel.messages.some(messagePuits => messagePuits.content.startsWith("Rations d'eau dans le puits actuellement :"))){
-				messagePuits = message.channel.messages.find(messagePuits => messagePuits.content.startsWith("Rations d'eau dans le puits actuellement :")).content
-				if(signe === "+" && membre.hasPermission("ADMINISTRATOR")){
-					if(contient(messagePuits,"eau")){
-						
-						quantiteDeBase = Number(messagePuits.match(expressionQuantite)[0])
-						quantite = quantiteDeBase + ajout
-
-						let limitePartieGauche = messagePuits.search(expressionQuantite)
-						let partieGauche = messagePuits.slice(0,limitePartieGauche).trim()+"\n"
-						let partieDroite = messagePuits.slice(limitePartieGauche+String(quantiteDeBase).length).trim()
-
-						message.channel.messages.find(messagePuits => messagePuits.content.startsWith("Rations d'eau dans le puits actuellement :"))
-						.edit(`${partieGauche}${quantite} ${partieDroite}`)
-						.then(console.log(`${message.author.username} a mis ${ajout} eau dans le puits (${quantiteDeBase} => ${quantite})`))
-						.catch(console.error)
-					} else {
-						return
-					}
-
-				} else if (signe === "-") {
-					if(contient(messagePuits,"eau")){
-
-						quantiteDeBase = Number(messagePuits.match(expressionQuantite)[0])
-						quantite = quantiteDeBase - ajout
-
-						if(quantite < 0){
-							console.log(`${message.author.username} a tenté de prendre ${-quantite} (${-ajout}) d'eau en plus dans le puits (${quantiteDeBase} => ${quantite})`)
-						} else {
-							let limitePartieGauche = messagePuits.search(expressionQuantite)
-							let partieGauche = messagePuits.slice(0,limitePartieGauche).trim()+"\n"
-							let partieDroite = messagePuits.slice(limitePartieGauche+String(quantiteDeBase).length).trim()
-
-							message.channel.messages.find(messagePuits => messagePuits.content.startsWith("Rations d'eau dans le puits actuellement :")) 
-							.edit(`${partieGauche}${quantite} ${partieDroite}`)
-							.then(console.log(`${message.author.username} a pris ${ajout} eau dans le puits (${quantiteDeBase} => ${quantite})`))
-							.catch(console.error)
-						}
-
-					} else {
-						return
-					}
-				} else {
-					return
-				}
-			} else if(membre.hasPermission("ADMINISTRATOR")) {
-				message.channel.send(`Rations d'eau dans le puits actuellement :\n${ajout} eau`)
-				console.log(`${message.author.username} a mis pour la 1ère fois ${ajout} eau dans le puits`)
-			}
-		} catch(e) {
-			console.error(`${message.author.username} a mal formulé la commande : "${message.content}"`)
-			return
-		}
-	}/*/
-
-	/*/if((message.content.startsWith("+") || message.content.startsWith("-")) && message.channel === serveurChannelBanque){
-		let messageBanque;
-		let signe = message.content.slice(0,1)
-		let quantiteDeBase
-		let quantite
-		try{
-			message.delete()
-			.then()
-			.catch(console.error)
-			let contenu = message.content.slice(1).trim()
-			let ajout = Number(contenu.match(/^\d+/)[0])
-			let matiere = contenu.slice(contenu.search(/^\d+/)+String(ajout).length).trim()
-
-			let expressionQuantite = new RegExp(`\\d+(?=\\s(?=${regEscape(matiere)}))`)
-
-			if(message.channel.messages.some(messageBanque => messageBanque.content.startsWith("Objets en banque actuellement :"))){
-				messageBanque = message.channel.messages.find(messageBanque => messageBanque.content.startsWith("Objets en banque actuellement :")).content
-				if(signe === "+"){
-					if(contient(messageBanque,matiere)){
-						
-						quantiteDeBase = Number(messageBanque.match(expressionQuantite)[0])
-						quantite = quantiteDeBase + ajout
-
-						let limitePartieGauche = messageBanque.search(expressionQuantite)
-						let partieGauche = messageBanque.slice(0,limitePartieGauche).trim()+"\n"
-						let partieDroite = messageBanque.slice(limitePartieGauche+String(quantiteDeBase).length).trim()
-
-						message.channel.messages.find(messageBanque => messageBanque.content.startsWith("Objets en banque actuellement :"))
-						.edit(`${partieGauche}${quantite} ${partieDroite}`)
-						.then(console.log(`${message.author.username} a mis ${ajout} ${matiere} dans la banque (${quantiteDeBase} => ${quantite})`))
-						.catch(console.error)
-					} else {
-						message.channel.messages.find(messageBanque => messageBanque.content.startsWith("Objets en banque actuellement :"))
-							.edit(`${messageBanque}\n${ajout} ${matiere}`)
-							.then(console.log(`${message.author.username} a mis pour la 1ère fois ${ajout} ${matiere} dans la banque`))
-							.catch(console.error)
-					}
-				} else if (signe === "-") {
-					if(contient(messageBanque,matiere)){
-
-						quantiteDeBase = Number(messageBanque.match(expressionQuantite)[0])
-						quantite = quantiteDeBase - ajout
-
-						if(quantite === 0){ 
-
-							let expressionSplit = new RegExp(`${regEscape(contenu)}\.*`)
-
-							let partie = messageBanque.split(expressionSplit)
-							if(partie[1] === undefined){
-								partie[1] = ""
-							}
-
-							message.channel.messages.find(messageBanque => messageBanque.content.startsWith("Objets en banque actuellement :"))
-							.edit(partie[0].trim()+"\n"+partie[1].trim())
-							.then(console.log(`${message.author.username} a pris pour la dernière fois ${ajout} ${matiere} dans la banque (${quantiteDeBase} => ${quantite})`))
-							.catch(console.error)
-						} else if(quantite < 0){
-							console.log(`${message.author.username} a tenté de prendre ${-quantite} (${-ajout}) de ${matiere} en plus dans la banque (${quantiteDeBase} => ${quantite})`)
-						} else {
-							let limitePartieGauche = messageBanque.search(expressionQuantite)
-							let partieGauche = messageBanque.slice(0,limitePartieGauche).trim()+"\n"
-							let partieDroite = messageBanque.slice(limitePartieGauche+String(quantiteDeBase).length).trim()
-
-							message.channel.messages.find(messageBanque => messageBanque.content.startsWith("Objets en banque actuellement :")) 
-							.edit(`${partieGauche}${quantite} ${partieDroite}`)
-							.then(console.log(`${message.author.username} a pris ${ajout} ${matiere} dans la banque (${quantiteDeBase} => ${quantite})`))
-							.catch(console.error)
-						}
-
-					} else {
-						return
-					}
-				} else {
-					return
-				}
-			} else {
-				message.channel.send(`Objets en banque actuellement :\n${ajout} ${matiere}`)
-				console.log(`${message.author.username} a mis pour la 1ère fois ${ajout} ${matiere} dans la banque`)
-			}
-		} catch(e) {
-			console.error(`${message.author.username} a mal formulé la commande : "${message.content}"`)
-			return
-		}
-	}/*/
 	if(message.content === `${prefix}Enclos`) { //Le combo setTitle/setDescription est plus rentable que le addFiel car le nombre
 		const embed = new Discord.RichEmbed() //de caractères est doublé dans la description
 			.setAuthor(message.author.username, message.author.avatarURL)
@@ -25448,7 +25279,7 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
 		while(i < zone.length && deplacement === false){
 			let j = 0
 			while(j < zone.length && deplacement === false){
-				if(contient(zone[i][j],membre.id)){
+				if(new RegExp(membre.id).test(zone[i][j])){
 					if(message.content === prefix + "Est"){
 						deplacement = true
 						if(j !== 8){
@@ -26267,19 +26098,3 @@ Une fois les conditions remplies et le temps atteint faites "=Récolte [Poule]"`
 		}
 	}
 })
-
-let arret;
-const zone = [
-	["0","0","0","0","0","0","0","0","0"],
-	["0","0","0","0","0","0","0","0","0"],
-	["0","0","0","0","0","0","0","0","0"],
-	["0","0","0","0","0","0","0","0","0"],
-	["0","0","0","0","0","0","0","0","0"],
-	["0","0","0","0","0","0","0","0","0"],
-	["0","0","0","0","0","0","0","0","0"],
-	["0","0","0","0","0","0","0","0","0"],
-	["0","0","0","0","0","0","0","0","0"]
-]
-let interrupteur = false
-let timer = true
-let motAEcrire;
