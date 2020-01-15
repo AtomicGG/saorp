@@ -600,7 +600,7 @@ bot.on('message', message => {
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
 			.setTitle("Liste des constructions :")
-			.setDescription("`=Atelier`\n`=Boucherie`\n`=Cabinet médical`\n`=Crémato-cue`\n`=Cuisine`\n`=Derrick artisanal`\n`=Enclos`\n`=Fondations`\n`=Foreuse pour le puits`\n`=Générateur`\n`=Manufacture`\n`=Mine`\n`=Monticules pour canons`\n`=Pompe`\n`=Porte améliorée`\n`=Porte à piston`\n`=Potager`\n`=Poutres de renfort`\n`=Prison`\n`=Projet Eden`\n`=Purificateur d'eau`\n`=Tour`\n`=Tuyauteries`").setTimestamp()
+			.setDescription("`=Atelier`\n`=Boucherie`\n`=Cabinet médical`\n`=Crémato-cue`\n`=Cuisine`\n`=Derrick artisanal`\n`=Enclos`\n`=Fondations`\n`=Foreuse pour le puits`\n`=Générateur`\n`=Manufacture`\n`=Mine`\n`=Pompe`\n`=Potager`\n`=Prison`\n`=Projet Eden`\n`=Purificateur d'eau`\n`=Tuyauteries`").setTimestamp()
 		message.channel.send({ embed })
 	}
 
@@ -613,7 +613,7 @@ bot.on('message', message => {
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
 			.setTitle("Liste des défenses :")
-			.setDescription("`=Appâts`\n`=Arroseurs automatiques`\n`=Barbelés`\n`=Barbelés électrifiés`\n`=Barrières`\n`=Blindage d'entrée`\n`=Canon à briques`\n`=Champ de mines à eau`\n`=Douves`\n`=Dynamitage`\n`=Fausse ville`\n`=Fixations de défenses`\n`=Grogro mur`\n`=Gros tas de débris`\n`=Immense tas de débris`\n`=Lance-tôle`\n`=Le grand déménagement`\n`=Muraille à pointes`\n`=Muraille rasoir`\n`=Oubliettes`\n`=Petit tas de débris`\n`=Perforeuse`\n`=Piscine électrique`\n`=Piège à loups`\n`=Rape à zombies`\n`=Remparts avancés`\n`=Renforts de muraille`\n`=Sani-broyeur`\n`=Scies hurlantes`\n`=Tas de débris`\n`=Tourniquet à poutres`\n`=Ultime tas de débris`").setTimestamp()
+			.setDescription("`=Appâts`\n`=Arroseurs automatiques`\n`=Barbelés`\n`=Barbelés électrifiés`\n`=Barrières`\n`=Blindage d'entrée`\n`=Canon à briques`\n`=Champ de mines à eau`\n`=Douves`\n`=Dynamitage`\n`=Fausse ville`\n`=Fixations de défenses`\n`=Grogro mur`\n`=Gros tas de débris`\n`=Immense tas de débris`\n`=Lance-tôle`\n`=Le grand déménagement`\n`=Monticules pour canons`\n`=Muraille à pointes`\n`=Muraille rasoir`\n`=Oubliettes`\n`=Petit tas de débris`\n`=Perforeuse`\n`=Piscine électrique`\n`=Piège à loups`\n`=Porte améliorée`\n`=Porte à piston`\n`=Poutres de renfort`\n`=Rape à zombies`\n`=Remparts avancés`\n`=Renforts de muraille`\n`=Sani-broyeur`\n`=Scies hurlantes`\n`=Tas de débris`\n`=Tour`\n`=Tourniquet à poutres`\n`=Ultime tas de débris`").setTimestamp()
 		message.channel.send({ embed })
 	}
 
