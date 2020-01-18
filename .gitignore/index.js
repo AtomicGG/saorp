@@ -426,7 +426,7 @@ bot.on('message', message => {
 
 	if (message.content.startsWith(prefix + "Cible")) {
 		if(/:.+$/.test(message.content)){
-			const survivants = message.content.match(/:.+$/)[0].split(",")
+			const survivants = message.content.match(/(?<=:).+$/)[0].split(",")
 			const embed = new Discord.RichEmbed()
 				.setAuthor(message.author.username, message.author.avatarURL)
 				.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
