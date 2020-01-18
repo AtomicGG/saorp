@@ -431,7 +431,7 @@ bot.on('message', message => {
 				.setAuthor(message.author.username, message.author.avatarURL)
 				.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 				.setColor(0xff0000)
-				.addField("Cible :", "Le groupe de zombie attaquera le survivant [" + survivants[rdm(survivants.length)-1] + "]...")
+				.addField("Cible :", "Le groupe de zombie attaquera " + survivants[rdm(survivants.length)-1] + "...")
 				.setTimestamp()
 			message.channel.send({ embed })
 		} else {
