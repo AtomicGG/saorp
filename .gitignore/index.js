@@ -424,16 +424,15 @@ bot.on('message', message => {
 		}
 	}
 
-	cont = message.content.slice(prefix.length).split(" ");
-	args = cont.slice(1);
 	if (message.content.startsWith(prefix + "Cible")) {
-		let X = args.slice(1).join(" : ");
-		const Joueurs = (Math.floor((X) * Math.random() + 1))
+		if(/:.+$/.test(message.content)){
+			const survivants = message.content.match(/:.+$/)[0].split(",")
+		}
 		const embed = new Discord.RichEmbed()
 			.setAuthor(message.author.username, message.author.avatarURL)
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setColor(0xff0000)
-			.addField("Cible :", "Le groupe de zombie attaquera le survivant [" + Joueurs + "]...\n\n[C'est à vous lors d'un combat de déterminer qui aura quel numéro]")
+			.addField("Cible :", "Le groupe de zombie attaquera le survivant [" + survivants[rdm(survivants.length)-1] + "]...\n\n[C'est à vous lors d'un combat de déterminer qui aura quel numéro]")
 			.setTimestamp()
 		message.channel.send({ embed })
 	}
