@@ -292,11 +292,11 @@ bot.on('message', message => {
 					let nombreZombies = message.content.match(/\d+/)[0]
 					const nombreGroupe = rdm(3)
 					let groupe = new Array()
-					let msg = "Attaque :"
+					let msg = "__Attaque :__\n"
 					for(let i = 0 ; i < nombreGroupe ; i++){
 						groupe[i] = rdm(nombreZombies)
 						nombreZombies -= groupe[i]
-						msg += "Groupe " + i + " : " + groupe[i] + " zombies\n"
+						msg += "Groupe " + i + 1 + " : " + groupe[i] + " zombies\n"
 					}
 					message.channel.send(msg)
 
