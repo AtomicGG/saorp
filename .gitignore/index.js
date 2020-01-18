@@ -434,6 +434,14 @@ bot.on('message', message => {
 				.addField("Cible :", "Le groupe de zombie attaquera le survivant [" + survivants[rdm(survivants.length)-1] + "]...\n\n[C'est à vous lors d'un combat de déterminer qui aura quel numéro]")
 				.setTimestamp()
 			message.channel.send({ embed })
+		} else {
+			message.channel.send("*Format de la commande non respecté*")
+			.then(message => {
+				setTimeout(_=> {
+					message.delete()
+					.then()
+					.catch(console.error)
+			}, 2000)})
 		}
 	}
 	
