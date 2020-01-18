@@ -310,7 +310,7 @@ bot.on('message', message => {
 		})
 		.catch(console.error)
 	}
-	if(message.content === `${prefix}Déplacement zombies`) {
+	if(message.content.startsWith(`${prefix}Déplacement zombies`)) {
 		let zone; //25% immeubles, 90% autres zones
 		let zoneDispo = []
 		let j = 0
@@ -340,12 +340,16 @@ bot.on('message', message => {
 				i++
 			}
 		}
+		let note = ""
+		if(/,/.test(message.content)){
+			note = "\n\n*Note : " + message.content.match(/(?<=,).+$/)[0] + "*"
+		}
 		const embed = new Discord.RichEmbed()
 			.setAuthor(message.author.username, message.author.avatarURL)
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setColor(0xff0000)
 			.setTitle("Déplacement zombies :")
-			.setDescription(`Le groupe de zombies se déplace vers : ${zone}`)
+			.setDescription(`Le groupe de zombies se déplace vers : ${zone}${note}`)
 			.setTimestamp()
 		message.channel.send({ embed })
 		return
