@@ -297,7 +297,7 @@ bot.on('message', message => {
 							if(i === nombreGroupe - 1){
 								groupe[i] = nombreZombies
 							} else {
-								groupe[i] = rdm(nombreZombies)
+								groupe[i] = rdm(nombreZombies)-1
 							}
 							nombreZombies -= groupe[i]
 							msg += "Groupe " + (i + 1) + " : " + groupe[i] + " zombies\n"
