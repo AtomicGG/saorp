@@ -435,7 +435,7 @@ bot.on('message', message => {
 				.setTimestamp()
 			message.channel.send({ embed })
 		} else {
-			message.channel.send("*Format de la commande non respecté*")
+			message.channel.send("*Format de la commande non respecté\nExemple : \"=Cible : Jamy, Georges\"*")
 			.then(message => {
 					message.delete(2000)
 					.then()
