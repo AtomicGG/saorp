@@ -285,6 +285,7 @@ bot.on('message', message => {
 		serveur.fetchMember(message.author)
 		.then(membre => {
 			if(membre.hasPermission("ADMINISTRATOR")){
+				console.log(2)
 				if(/d+/.test(message.content)){
 					let nombreZombies = message.content.match(/d+/)[0]
 					const nombreGroupe = rdm(3)
