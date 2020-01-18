@@ -437,11 +437,10 @@ bot.on('message', message => {
 		} else {
 			message.channel.send("*Format de la commande non respecté*")
 			.then(message => {
-				setTimeout(_=> {
-					message.delete()
+					message.delete(2000)
 					.then()
 					.catch(console.error)
-			}, 2000)})
+			})
 		}
 	}
 	
