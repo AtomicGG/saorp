@@ -287,7 +287,7 @@ bot.on('message', message => {
 			console.log(1)
 			if(membre.hasPermission("ADMINISTRATOR")){
 				console.log(2)
-				if(/d+/.test(message.content)){
+				if(/\d+/.test(message.content)){
 					console.log(3)
 					let nombreZombies = message.content.match(/d+/)[0]
 					const nombreGroupe = rdm(3)
