@@ -296,7 +296,7 @@ bot.on('message', message => {
 					for(let i = 0 ; i < nombreGroupe ; i++){
 						groupe[i] = rdm(nombreZombies)
 						nombreZombies -= groupe[i]
-						msg += "Groupe " + i + 1 + " : " + groupe[i] + " zombies\n"
+						msg += "Groupe " + (i + 1) + " : " + groupe[i] + " zombies\n"
 					}
 					message.channel.send(msg)
 
