@@ -284,6 +284,7 @@ bot.on('message', message => {
 	if(message.content.startsWith(prefix + "Attaque")){
 		serveur.fetchMember(message.author)
 		.then(membre => {
+			console.log(2)
 			if(membre.hasPermission("ADMINISTRATOR")){
 				console.log(2)
 				if(/d+/.test(message.content)){
