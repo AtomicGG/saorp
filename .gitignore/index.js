@@ -34,6 +34,13 @@ function rdm(nombreMax){ //donne un nombre random entre 1 et nombreMax
 	const random = 1 + Math.floor(Math.random()*nombreMax)
 	return random
 }
+function plusOuMoins(nombre){
+	if(rdm(2) === 1){
+	} else {
+		nombre = -nombre
+	}
+	return nombre
+}
 
 bot.on('ready', () => {
 	serveur = bot.guilds.find(serveur => serveur.name === nomServeur)
@@ -237,43 +244,64 @@ bot.on('message', message => {
 			.then()
 			.catch(console.error)
 		serveur.fetchMember(message.author)
-			.then()
+			.then(membre => {
+				if(membre.hasPermission("ADMINISTRATOR")){
+					if(message.content.startsWith(`${prefix}Bloquer`)){
+						if(message.content.endsWith("tout")){
+							for (let i = 0 ; i < serveurVilleChannels.length ; i++){
+								serveurVilleChannels[i].overwritePermissions(serveurRoleVille,{"VIEW_CHANNEL": false})
+								message.channel.send(`${serveurVilleChannels[i].name} bloqué(e)`)
+							}
+						} else {
+							for (let i = 0 ; i < serveurVilleChannels.length ; i++){
+								if(new RegExp(`\\s${i}$`).test(message.content)){
+									serveurVilleChannels[i].overwritePermissions(serveurRoleVille,{"VIEW_CHANNEL": false})
+									message.channel.send(`${serveurVilleChannels[i].name} bloqué(e)`)
+								}
+							}
+						}
+					} else if (message.content.startsWith(`${prefix}Débloquer`)){
+						if(message.content.endsWith("tout")){
+							for (let i = 0 ; i < serveurVilleChannels.length ; i++){
+								serveurVilleChannels[i].overwritePermissions(serveurRoleVille,{"VIEW_CHANNEL": true})
+								message.channel.send(`${serveurVilleChannels[i].name} débloqué(e)`)
+							}
+						} else {
+							for (let i = 0 ; i < serveurVilleChannels.length ; i++){
+								if(new RegExp(`\\s${i}$`).test(message.content)){
+									serveurVilleChannels[i].overwritePermissions(serveurRoleVille,{"VIEW_CHANNEL": true})
+									message.channel.send(`${serveurVilleChannels[i].name} débloqué(e)`)
+								}
+							}
+						}
+					}
+				}
+			})
 			.catch(console.error)
-		const membre = serveur.member(message.author)
-		if(membre.hasPermission("ADMINISTRATOR")){
-			if(message.content.startsWith(`${prefix}Bloquer`)){
-				if(message.content.endsWith("tout")){
-					for (let i = 0 ; i < serveurVilleChannels.length ; i++){
-						serveurVilleChannels[i].overwritePermissions(serveurRoleVille,{"VIEW_CHANNEL": false})
-						message.channel.send(`${serveurVilleChannels[i].name} bloqué(e)`)
-					}
-				} else {
-					for (let i = 0 ; i < serveurVilleChannels.length ; i++){
-						if(new RegExp(`\\s${i}$`).test(message.content)){
-							serveurVilleChannels[i].overwritePermissions(serveurRoleVille,{"VIEW_CHANNEL": false})
-							message.channel.send(`${serveurVilleChannels[i].name} bloqué(e)`)
-						}
-					}
-				}
-			} else if (message.content.startsWith(`${prefix}Débloquer`)){
-				if(message.content.endsWith("tout")){
-					for (let i = 0 ; i < serveurVilleChannels.length ; i++){
-						serveurVilleChannels[i].overwritePermissions(serveurRoleVille,{"VIEW_CHANNEL": true})
-						message.channel.send(`${serveurVilleChannels[i].name} débloqué(e)`)
-					}
-				} else {
-					for (let i = 0 ; i < serveurVilleChannels.length ; i++){
-						if(new RegExp(`\\s${i}$`).test(message.content)){
-							serveurVilleChannels[i].overwritePermissions(serveurRoleVille,{"VIEW_CHANNEL": true})
-							message.channel.send(`${serveurVilleChannels[i].name} débloqué(e)`)
-						}
-					}
-				}
-			}
-		}
 	}
 
 //Organisation nuit////////////////////////////////////////////////////////
+	if(message.content.startsWith(prefix + "Attaque")){
+		serveur.fetchMember(message.author)
+		.then(membre => {
+			if(membre.hasPermission("ADMINISTRATOR")){
+				if(/d+/.test(message.content)){
+					let nombreZombies = message.content.match(/d+/)[0]
+					const nombreGroupe = rdm(3)
+					let groupe = new Array()
+					let msg = "Attaque :"
+					for(let i = 0 ; i < nombreGroupe ; i++){
+						groupe[i] = rdm(nombreZombies)
+						nombreZombies -= groupe[i]
+						msg += "Groupe " + i + " : " + groupe[i] + " zombies\n"
+					}
+					message.channel.send(msg)
+
+				}
+			}
+		})
+		.catch(console.error)
+	}
 	if(message.content === `${prefix}Déplacement zombies`) {
 		let zone; //25% immeubles, 90% autres zones
 		let zoneDispo = []
