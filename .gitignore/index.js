@@ -998,7 +998,7 @@ bot.on('message', message => {
 			.setAuthor(message.author.username, message.author.avatarURL)
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-			.addField("Les combats, partie 1 :", "Lorsque vous êtes en groupe contre un ou plusieurs zombies, il faudra déterminer qui sera le premier à agir, le second, et ainsi de suite comme des numéros et en tour par tour !\n\nLes zombies attaqueront toujours après les joueurs sauf s'il y a une embuscade ou __si ils attaquent pendant l'attaque de la ville__\n\nA savoir que les zombies attaqueront toujours un ou plusieurs survivants en même temps...\n\nPour déterminer quel survivant le ou les zombies attaqueront : `=Cible : [Nombre de survivant dans le combat]`\n\nLa suite en écrivant : `=Combat 2`").setTimestamp()
+			.addField("Les combats, partie 1 :", "Lorsque vous êtes en groupe contre un ou plusieurs zombies, il faudra déterminer qui sera le premier à agir, le second, et ainsi de suite comme des numéros et en tour par tour !\n\nLes zombies attaqueront toujours après les joueurs sauf s'il y a une embuscade ou __si ils attaquent pendant l'attaque de la ville__\n\nA savoir que les zombies attaqueront toujours un ou plusieurs survivants en même temps...\n\nPour déterminer quel survivant le ou les zombies attaqueront : `=Cible : [Noms des survivants séparés par des virgules]`\n\nLa suite en écrivant : `=Combat 2`").setTimestamp()
 		message.channel.send({ embed })
 	}
 
