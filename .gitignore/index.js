@@ -290,7 +290,7 @@ bot.on('message', message => {
 				if(/\d+/.test(message.content)){
 					console.log(3)
 					let nombreZombies = message.content.match(/\d+/)[0]
-					const nombreGroupe = rdm(3)
+					const nombreGroupe = rdm(3)+1
 					let groupe = new Array()
 					let msg = "__Attaque :__\n"
 					for(let i = 0 ; i < nombreGroupe ; i++){
