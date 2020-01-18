@@ -300,7 +300,7 @@ bot.on('message', message => {
 								groupe[i] = rdm(nombreZombies)-1
 							}
 							nombreZombies -= groupe[i]
-							msg += "Groupe " + (i + 1) + " : " + groupe[i] + " zombies\n"
+							msg += "Groupe " + (i + 1) + " : " + groupe[i] + " zombies ; " +  (rdm(8)+3) + " déplacements\n"
 						}
 					}
 					message.channel.send(msg)
