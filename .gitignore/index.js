@@ -293,7 +293,7 @@ bot.on('message', message => {
 					const nombreGroupe = rdm(3)
 					let groupe = new Array()
 					let msg = "__Attaque :__\n"
-					if(nombreGroupe = 1){
+					if(nombreGroupe === 1){
 						msg += "Groupe 1 : " + nombreZombies + " zombies"
 					} else {
 						for(let i = 0 ; i < nombreGroupe ; i++){
