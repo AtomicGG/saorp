@@ -290,13 +290,17 @@ bot.on('message', message => {
 				if(/\d+/.test(message.content)){
 					console.log(3)
 					let nombreZombies = message.content.match(/\d+/)[0] + 1
-					const nombreGroupe = rdm(3)+1
+					const nombreGroupe = rdm(3)
 					let groupe = new Array()
 					let msg = "__Attaque :__\n"
-					for(let i = 0 ; i < nombreGroupe ; i++){
-						groupe[i] = rdm(nombreZombies)
-						nombreZombies -= groupe[i]
-						msg += "Groupe " + (i + 1) + " : " + groupe[i] + " zombies\n"
+					if(nombreGroupe = 1){
+						msg += "Groupe 1 : " + nombreZombies + " zombies"
+					} else {
+						for(let i = 0 ; i < nombreGroupe ; i++){
+							groupe[i] = rdm(nombreZombies)
+							nombreZombies -= groupe[i]
+							msg += "Groupe " + (i + 1) + " : " + groupe[i] + " zombies\n"
+						}
 					}
 					message.channel.send(msg)
 
