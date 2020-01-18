@@ -284,13 +284,10 @@ bot.on('message', message => {
 	if(message.content.startsWith(prefix + "Attaque")){
 		serveur.fetchMember(message.author)
 		.then(membre => {
-			console.log(1)
 			if(membre.hasPermission("ADMINISTRATOR")){
-				console.log(2)
 				if(/\d+/.test(message.content)){
-					console.log(3)
 					let nombreZombies = message.content.match(/\d+/)[0]
-					const nombreGroupe = 20//rdm(3)
+					const nombreGroupe = rdm(3)
 					let groupe = new Array()
 					let msg = "__Attaque :__\n"
 					if(nombreGroupe === 1){
