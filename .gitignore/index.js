@@ -1426,7 +1426,7 @@ Hémorragie mortelle + Hémorragie légère = Mort`)
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
 			.setTimestamp()
-			.addField("Liste des atouts 3 :", "`Picoleur` : Empêche d'avoir l'état `Ivresse`\n\n`Boxeur` : Permet d'avoir accès à de meilleurs coups selon `=Horde actions`\n\n`Psychopathe` : Une fois seul, vous pouvez avoir deux attaques possibles au-lieu d'une (contre les zombies et humains)\n\n`Agriculteur` : Permet de diviser le temps des récoltes par 2 et et de retenter la récolte si elle échoue une fois par jour\n\n`Mineur` : Permet de miner une fois en plus gratuitement par jour dans la mine")
+			.addField("Liste des atouts 3 :", "`Picoleur` : Empêche d'avoir l'état `Ivresse`\n\n`Boxeur` : Permet d'avoir accès à de meilleurs coups selon `=Horde actions`\n\n`Psychopathe` : Une fois seul, vous pouvez avoir deux attaques possibles au-lieu d'une (contre les zombies et humains)\n\n`Agriculteur` : Permet de diviser le temps des récoltes par 2 et et de retenter la récolte si elle échoue une fois par jour\n\n`Mineur` : Permet de miner une fois en plus gratuitement par jour dans la mine\n\n`Piégeur` : Les défenses temporaires posées par les piégeurs ont 2x plus de points de défense")
 
 		message.channel.send({ embed })
 	}
