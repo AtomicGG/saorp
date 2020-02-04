@@ -25976,6 +25976,8 @@ if(message.content === `${prefix}Miner`){
 		//console.log(zone)
 		//console.log("---------------------------------")
 	}
+
+// Fouille zombie /////////////////////////////////////////////////////////////////////////
 	if(message.content === prefix + "Fouille zombie"){
 		random = rdm(100)
 		if(random < 75) {
@@ -26026,6 +26028,46 @@ if(message.content === `${prefix}Miner`){
 				.addField(":flashlight: Fouille zombie :", ":flashlight: En fouillant le zombie, vous trouvez :\n\n:moneybag: `" + rdm(3) + " Balle`")
 				.setTimestamp()
 			message.channel.send({ embed })
+		}
+	}
+
+// Enchaînements spéciaux //////////////////////////////////////////////////////////////////////
+	if(/^.Coup/.test(message.content)){
+		random = rdm(100)
+		if(random > 80){
+			if(random <= 85){
+				const embed = new Discord.RichEmbed()
+					.setAuthor(message.author.username, message.author.avatarURL)
+					.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+					.setColor(0xff0000)
+					.addField(":zap: Attaque spéciale :", ":zap: En plus du coup que vous venez de faire, vous faites un coup de boule sur " +  rdm(2) + " cibles\n\nSi la cible est un zombie, il meurt\n\nSi la cible est un survivant, il subit l'état `Blessure`")
+					.setTimestamp()
+				message.channel.send({ embed })
+			} else if(random <= 90){
+				const embed = new Discord.RichEmbed()
+					.setAuthor(message.author.username, message.author.avatarURL)
+					.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+					.setColor(0xff0000)
+					.addField(":zap: Attaque spéciale :", ":zap: En plus du coup que vous venez de faire, vous faites un Attitude Adjustment comme John Cena sur " + rdm(2) + " cibles\n\nSi la cible est un zombie, il meurt\n\nSi la cible est un survivant, il subit l'état `Blessure avancée`")
+					.setTimestamp()
+				message.channel.send({ embed })
+			} else if(random <= 95){
+				const embed = new Discord.RichEmbed()
+					.setAuthor(message.author.username, message.author.avatarURL)
+					.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+					.setColor(0xff0000)
+					.addField(":zap: Attaque spéciale :", ":zap: En plus du coup que vous venez de faire, vous faites un uppercut sur 1 cible\n\nSi la cible est un zombie, il meurt\n\nSi la cible est un survivant, il subit l'état `Blessure`")
+					.setTimestamp()
+				message.channel.send({ embed })
+			} else {
+				const embed = new Discord.RichEmbed()
+					.setAuthor(message.author.username, message.author.avatarURL)
+					.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+					.setColor(0xff0000)
+					.addField(":zap: Attaque spéciale :", ":zap: En plus du coup que vous venez de faire, vous faites une balayette sur 1 cible\n\nSi la cible est un zombie, il meurt et vous pouvez fuir le combat sans faire la commande\n\nSi la cible est un survivant, il subit l'état `Blessure légère` et vous pouvez fuir le combat sans faire la commande")
+					.setTimestamp()
+				message.channel.send({ embed })
+			}
 		}
 	}
 })
