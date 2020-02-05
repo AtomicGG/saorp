@@ -555,7 +555,7 @@ bot.on('message', message => {
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
 			.setTitle("Liste des objets, partie 2 :")
-			.setDescription("`=Boîte de jeu`\n`=Boîte-déjeuner`\n`=Boîte en métal`\n`=Brico'facile`\n`=Buche en bon état`\n`=Bureau monté à la rache`\n`=Bâton cassé`\n`=Cadavre de voyageur`\n`=Caddie`\n`=Caddie bancal`\n`=Cafetière`\n`=Cafetière incomplète`\n`=Café brûlant`\n`=Caisse de feux d'artifice`\n`=Caisse matériel`\n`=Caisse de nourriture`\n`=Calibrateur PDTT MARK II`\n`=Cantine de fer`\n`=Caisse de matériaux`\n`=Carotte`\n`=Cartons`\n`=Ceinture à poches`\n`=Chaîne hifi`\n`=Chaise EKTÖRP-GLUTEN`\n`=Chamallows calcinés`\n`=Chamallows séchés`\n`=Charbon`\n`=Charognardes`\n`=Chaîne de porte & cadenas`\n`=Chewing-gums séchés`\n`=Chien hargneux`\n`=Cidre claviceps artisanal`\n`=Citrouille`\n`=Claviceps purpurea`\n`=Clé magnétique`\n\nLa suite : `=Liste des objets 3`").setTimestamp()
+			.setDescription("`=Boîte de jeu`\n`=Boîte-déjeuner`\n`=Boîte en métal`\n`=Brico'facile`\n`=Buche en bon état`\n`=Bureau monté à la rache`\n`=Bâton cassé`\n`=Cadavre d'un voyageur`\n`=Caddie`\n`=Caddie bancal`\n`=Cafetière`\n`=Cafetière incomplète`\n`=Café brûlant`\n`=Caisse de feux d'artifice`\n`=Caisse matériel`\n`=Caisse de nourriture`\n`=Calibrateur PDTT MARK II`\n`=Cantine de fer`\n`=Caisse de matériaux`\n`=Carotte`\n`=Cartons`\n`=Ceinture à poches`\n`=Chaîne hifi`\n`=Chaise EKTÖRP-GLUTEN`\n`=Chamallows calcinés`\n`=Chamallows séchés`\n`=Charbon`\n`=Charognardes`\n`=Chaîne de porte & cadenas`\n`=Chewing-gums séchés`\n`=Chien hargneux`\n`=Cidre claviceps artisanal`\n`=Citrouille`\n`=Claviceps purpurea`\n`=Clé magnétique`\n\nLa suite : `=Liste des objets 3`").setTimestamp()
 		message.channel.send({ embed })
 	}
 
@@ -633,7 +633,7 @@ bot.on('message', message => {
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
 			.setTitle("Liste des objets, partie 8 :")
-			.setDescription("`=Taser d'auto-défense`\n`=Teddy n'ours`\n`=Toile de tente`\n`=Tomate`\n`=Tondeuse à gazon`\n`=Tondeuse à gazon (démonté)`\n`=Torche`\n`=Torche consumée`\n`=Tournevis`\n`=Tronçonneuse`\n`=Tronçonneuse (démonté)`\n`=Tréteau`\n`=Tube de cuivre`\n`=Tube de lancement floush`\n`=Twinoïde 500MG`\n`=Téléphone portable`\n`=Unité centrale`\n`=Vache zombifiée`\n`=Viande humaine`\n`=Viande indéfinissable`\n`=Vieille machine à laver`\n`=Vieille porte`\n`=Vodka marinostov`\n`='Debout-les-morts'`").setTimestamp()
+			.setDescription("`=Taser d'auto-défense`\n`=Teddy n'ours`\n`=Toile de tente`\n`=Tomate`\n`=Tondeuse à gazon`\n`=Tondeuse à gazon (démonté)`\n`=Torche`\n`=Torche consumée`\n`=Tournevis`\n`=Tronçonneuse`\n`=Tronçonneuse (démonté)`\n`=Tréteau`\n`=Tube de cuivre`\n`=Tube de lancement floush`\n`=Twinoïde 500MG`\n`=Téléphone portable`\n`=Unité centrale`\n`=Vache zombifiée`\n`=Vélo`\n`=Viande humaine`\n`=Viande indéfinissable`\n`=Vieille machine à laver`\n`=Vieille porte`\n`=Vodka marinostov`\n`='Debout-les-morts'`").setTimestamp()
 		message.channel.send({ embed })
 	}
 
@@ -12927,7 +12927,16 @@ if (message.content.startsWith(prefix + "Horde roll")) {
 				.setTimestamp()
 			message.channel.send({ embed })
 		}
-		if (X >= 34) {
+		if (X >= 34 && X <= 35) {
+			const embed = new Discord.RichEmbed()
+				.setAuthor(message.author.username, message.author.avatarURL)
+				.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+				.setColor(0xff0000)
+				.addField(":flashlight: Fouille ancien velib :", ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Vélo`")
+				.setTimestamp()
+			message.channel.send({ embed })
+		}
+		if (X >= 36) {
 			const embed = new Discord.RichEmbed()
 				.setAuthor(message.author.username, message.author.avatarURL)
 				.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -24311,6 +24320,17 @@ Pour transformer cet objet et obtenir \`Ferraille\` vous devrez être à l'ateli
 		message.channel.send({ embed })
 	}
 
+	if(message.content === `${prefix}Vélo`){
+		const embed = new Discord.RichEmbed()
+			.setAuthor(message.author.username, message.author.avatarURL)
+			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+			.setColor(0xff0000)
+			.setTitle("Vélo :")
+			.setDescription(`Ce vélo permet de réduire de 1 minute les déplacements à l'intérieur et à l'extérieur de la ville\n\nIl prend une place dans l'inventaire mais n'est pas encombrant`)
+			.setTimestamp()
+		message.channel.send({ embed })
+	}
+
 //Bâtiments///////////////////////////////////////////////////////////////
 if(message.content === prefix + "Banque") {
 	const embed = new Discord.RichEmbed()
@@ -26039,28 +26059,28 @@ if(message.content === `${prefix}Miner`){
 				const embed = new Discord.RichEmbed()
 					.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 					.setColor(0xff0000)
-					.addField(":zap: Attaque spéciale :", ":zap: En plus du coup que vous venez de faire, vous faites un coup de boule sur " +  rdm(2) + " cibles\n\nSi la cible est un zombie, il meurt\n\nSi la cible est un survivant, il subit l'état `Blessure`")
+					.addField(":zap: Enchaînement :", ":zap: En plus du coup que vous venez de faire, vous faites un coup de boule sur " +  rdm(2) + " cibles\n\nSi la cible est un zombie, il meurt\n\nSi la cible est un survivant, il subit l'état `Blessure`")
 					.setTimestamp()
 				message.channel.send({ embed })
 			} else if(random <= 96){
 				const embed = new Discord.RichEmbed()
 					.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 					.setColor(0xff0000)
-					.addField(":zap: Attaque spéciale :", ":zap: En plus du coup que vous venez de faire, vous faites un Attitude Adjustment comme John Cena sur " + rdm(2) + " cibles\n\nSi la cible est un zombie, il meurt\n\nSi la cible est un survivant, il subit l'état `Blessure avancée`")
+					.addField(":zap: Enchaînement :", ":zap: En plus du coup que vous venez de faire, vous faites un Attitude Adjustment comme John Cena sur " + rdm(2) + " cibles\n\nSi la cible est un zombie, il meurt\n\nSi la cible est un survivant, il subit l'état `Blessure avancée`")
 					.setTimestamp()
 				message.channel.send({ embed })
 			} else if(random <= 98){
 				const embed = new Discord.RichEmbed()
 					.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 					.setColor(0xff0000)
-					.addField(":zap: Attaque spéciale :", ":zap: En plus du coup que vous venez de faire, vous faites un uppercut sur 1 cible\n\nSi la cible est un zombie, il meurt\n\nSi la cible est un survivant, il subit l'état `Blessure`")
+					.addField(":zap: Enchaînement :", ":zap: En plus du coup que vous venez de faire, vous faites un uppercut sur 1 cible\n\nSi la cible est un zombie, il meurt\n\nSi la cible est un survivant, il subit l'état `Blessure`")
 					.setTimestamp()
 				message.channel.send({ embed })
 			} else {
 				const embed = new Discord.RichEmbed()
 					.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 					.setColor(0xff0000)
-					.addField(":zap: Attaque spéciale :", ":zap: En plus du coup que vous venez de faire, vous faites une balayette sur 1 cible\n\nSi la cible est un zombie, il meurt et vous pouvez fuir le combat sans faire la commande\n\nSi la cible est un survivant, il subit l'état `Blessure légère` et vous pouvez fuir le combat sans faire la commande")
+					.addField(":zap: Enchaînement :", ":zap: En plus du coup que vous venez de faire, vous faites une balayette sur 1 cible\n\nSi la cible est un zombie, il meurt et vous pouvez fuir le combat sans faire la commande\n\nSi la cible est un survivant, il subit l'état `Blessure légère` et vous pouvez fuir le combat sans faire la commande")
 					.setTimestamp()
 				message.channel.send({ embed })
 			}
