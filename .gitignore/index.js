@@ -72,7 +72,7 @@ bot.on('ready', () => {
 - Si vous êtes infecté, l'infection monte d'un cran
 - Si vous n'avez pas dormi 4 heures aujourd'hui, vous avez l'état fatigué
 - Les lieux que vous avez trouvé courageusement aujourd'hui ont été enssevelis sous le sable de la tempête de minuit. Par conséquent, vous ne pouvez plus retourner dans les bâtiments que vous avez trouvés et les objets que vous avez laissés dehors sont par la même occasion perdus à jamais !
-- Vous récupérez vos 6 PA quotidiens\`\`\``)
+- Vous récupérez vos ${paMax} PA quotidiens\`\`\``)
 				.then(_=> {
 					const A = (Math.floor((100) * Math.random() + 1))
 					if (A < 25) {
@@ -26054,33 +26054,48 @@ if(message.content === `${prefix}Miner`){
 // Enchaînements spéciaux //////////////////////////////////////////////////////////////////////
 	if(/^.Coup/.test(message.content)){
 		random = rdm(100)
-		if(random > 92){
-			if(random <= 94){
+		if(random > 90){
+			random = rdm(6)
+			if(random === 1){
 				const embed = new Discord.RichEmbed()
 					.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 					.setColor(0xff0000)
 					.addField(":zap: Enchaînement :", ":zap: En plus du coup que vous venez de faire, vous faites un coup de boule sur " +  rdm(2) + " cibles\n\nSi la cible est un zombie, il meurt\n\nSi la cible est un survivant, il subit l'état `Blessure`")
 					.setTimestamp()
 				message.channel.send({ embed })
-			} else if(random <= 96){
+			} else if(random === 2){
 				const embed = new Discord.RichEmbed()
 					.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 					.setColor(0xff0000)
 					.addField(":zap: Enchaînement :", ":zap: En plus du coup que vous venez de faire, vous faites un Attitude Adjustment comme John Cena sur " + rdm(2) + " cibles\n\nSi la cible est un zombie, il meurt\n\nSi la cible est un survivant, il subit l'état `Blessure avancée`")
 					.setTimestamp()
 				message.channel.send({ embed })
-			} else if(random <= 98){
+			} else if(random === 3){
 				const embed = new Discord.RichEmbed()
 					.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 					.setColor(0xff0000)
 					.addField(":zap: Enchaînement :", ":zap: En plus du coup que vous venez de faire, vous faites un uppercut sur 1 cible\n\nSi la cible est un zombie, il meurt\n\nSi la cible est un survivant, il subit l'état `Blessure`")
 					.setTimestamp()
 				message.channel.send({ embed })
-			} else {
+			} else if(random === 4){
 				const embed = new Discord.RichEmbed()
 					.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 					.setColor(0xff0000)
 					.addField(":zap: Enchaînement :", ":zap: En plus du coup que vous venez de faire, vous faites une balayette sur 1 cible\n\nSi la cible est un zombie, il meurt et vous pouvez fuir le combat sans faire la commande\n\nSi la cible est un survivant, il subit l'état `Blessure légère` et vous pouvez fuir le combat sans faire la commande")
+					.setTimestamp()
+				message.channel.send({ embed })
+			} else if(random === 5){
+				const embed = new Discord.RichEmbed()
+					.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+					.setColor(0xff0000)
+					.addField(":zap: Enchaînement :", ":zap: En plus du coup que vous venez de faire, vous faites une roulade stratégique sur le côté juste pour la classe :sunglasses:")
+					.setTimestamp()
+				message.channel.send({ embed })
+			} else if(random === 6){
+				const embed = new Discord.RichEmbed()
+					.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+					.setColor(0xff0000)
+					.addField(":zap: Enchaînement :", ":zap: En plus du coup que vous venez de faire, vous donnez un coup de pied violent entre les jambes d'1 cible\n\nSi la cible est un zombie, il ne peut pas agir pendant son prochain tour\n\nSi la cible est un survivant féminin, il ne se passe rien\n\nSi la cible est un survivant masculin, il ne peut pas agir pendant 3 tours")
 					.setTimestamp()
 				message.channel.send({ embed })
 			}
