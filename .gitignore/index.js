@@ -1010,7 +1010,7 @@ bot.on('message', message => {
 			.setAuthor(message.author.username, message.author.avatarURL)
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-			.addField("Les combats, partie 2 :", "Les différentes attaques spéciales grâce aux armes sont écrites sur les informations de l'arme en question !\n\nPour avoir la liste des actions possibles sans armes : `=Horde actions`\n\nLorsque vous fuiyez les zombies en allant ailleurs, vous aurez toujours l'initiative pour les attaquer si vous revenez !\n\nEn général, les combats s'apprennent sur le terrain alors n'hésite pas à observer comment les autres survivants font !").setTimestamp()
+			.addField("Les combats, partie 2 :", "Les différentes attaques spéciales grâce aux armes sont écrites sur les informations de l'arme en question !\n\nPour avoir la liste des actions possibles sans armes : `=Horde actions`\n\nIl est possible que des enchaînements particuliers se fassent juste après votre coup, profitez-en ils sont rares\n\nLorsque vous fuiyez les zombies en allant ailleurs, vous aurez toujours l'initiative pour les attaquer si vous revenez même la nuit ou contre des zombies joueurs !\n\nEn général, les combats s'apprennent sur le terrain alors n'hésite pas à observer comment les autres survivants font !").setTimestamp()
 		message.channel.send({ embed })
 	}
 
