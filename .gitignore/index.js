@@ -26054,7 +26054,7 @@ if(message.content === `${prefix}Miner`){
 // Enchaînements spéciaux //////////////////////////////////////////////////////////////////////
 	if(/^.Coup/.test(message.content)){
 		random = rdm(100)
-		if(random > 90){
+		if(random >= 95){
 			random = rdm(6)
 			if(random === 1){
 				const embed = new Discord.RichEmbed()
