@@ -26095,7 +26095,7 @@ if(message.content === `${prefix}Miner`){
 				const embed = new Discord.RichEmbed()
 					.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 					.setColor(0xff0000)
-					.addField(":zap: Enchaînement :", ":zap: En plus du coup que vous venez de faire, vous donnez un coup de pied violent entre les jambes d'1 cible\n\nSi la cible est un zombie, il ne pourra pas agir pendant son prochain tour\n\nSi la cible est un survivant féminin, il ne pourra pas agir pendant son prochain tour\n\nSi la cible est un survivant masculin, il ne pourra pas agir pendant ses 3 prochains tours")
+					.addField(":zap: Enchaînement :", ":zap: En plus du coup que vous venez de faire, vous donnez un coup de pied violent entre les jambes de 1 cible\n\nSi la cible est un zombie, il ne pourra pas agir pendant son prochain tour\n\nSi la cible est un survivant féminin, il ne pourra pas agir pendant son prochain tour\n\nSi la cible est un survivant masculin, il ne pourra pas agir pendant ses 3 prochains tours")
 					.setTimestamp()
 				message.channel.send({ embed })
 			}
