@@ -24326,7 +24326,7 @@ Pour transformer cet objet et obtenir \`Ferraille\` vous devrez être à l'ateli
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setColor(0xff0000)
 			.setTitle("Vélo :")
-			.setDescription(`Ce vélo permet de réduire de 1 minute les déplacements à l'intérieur et à l'extérieur de la ville\n\nIl prend une place dans l'inventaire mais n'est pas encombrant`)
+			.setDescription(`Ce vélo permet de réduire de moitié le temps des déplacements à l'intérieur et à l'extérieur de la ville\n\nIl prend une place dans l'inventaire mais n'est pas encombrant et permet de porter 2 objets encombrants au lieu d'un seul`)
 			.setTimestamp()
 		message.channel.send({ embed })
 	}
