@@ -21295,7 +21295,7 @@ L'utilisation de cet objet vous permet de fuir un combat ou alors d'empêcher le
 			.setAuthor(message.author.username, message.author.avatarURL)
 			.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 			.setColor(0xff0000)
-			.addField("Hydratone 100MG :", "Pratique, l'Hydratone tient dans la poche et peut étancher votre soif quelques minutes après l'ingestion\n\nToutefois, elle ne retire PAS les effets de la fatigue et ne régénère PAS les points d'actions\n\nUne fois cet objet utilisé, tous les états de soifs seront supprimés")
+			.addField("Hydratone 100MG :", "Pratique, l'Hydratone tient dans la poche et peut étancher votre soif quelques minutes après l'ingestion\n\nToutefois, elle ne retire PAS les effets de la fatigue et ne régénère PAS les points d'actions\n\nUne fois cet objet utilisé, tous les états de soifs seront supprimés (Vous aurez `Hydratation`)")
 			.setTimestamp()
 		message.channel.send({ embed })
 	}
