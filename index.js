@@ -808,7 +808,6 @@ bot.on("message", async message =>{
                 if(chose === "Balle"){
                     description = ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `"+ (1 + arrondi(Math.random()*km/2)) + "Balles`"
                 }
-                console.log(fouille)
                 const embed = new Discord.MessageEmbed()
                 .setTitle(":flashlight: Fouille zone " + km + " KM")
                 .setDescription(description)
