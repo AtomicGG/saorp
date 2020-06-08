@@ -52,6 +52,8 @@ bot.on("ready", _=>{
     console.log("Horderp opérationnel !")
     bot.user.setActivity('=Horde', { type: 'PLAYING' })
     .catch(console.error)
+    const date = new Date().toLocaleTimeString("fr-FR",{timeZone:"Europe/Paris"})
+    console.log(date)
     setInterval(toutesLes1Minutes = () => {
         const date = new Date().toLocaleTimeString("fr-FR",{timeZone:"Europe/Paris"})
         const heure = Number(date.split(":")[0])
