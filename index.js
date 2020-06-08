@@ -49,7 +49,7 @@ bot.on("ready", _=>{
 		serveur.channels.cache.find(channelRue4 => channelRue4.name.startsWith("ʀᴜᴇ-4『"))
     ]
     const serveurChannelEvenements = serveur.channels.cache.find(channel => channel.name === "『📃』ᴇ́ᴠᴇ̀ɴᴇᴍᴇɴᴛs")
-    console.log("Optibot opérationnel !")
+    console.log("Horderp opérationnel !")
     bot.user.setActivity('=Horde', { type: 'PLAYING' })
     .catch(console.error)
     setInterval(toutesLes1Minutes = () => {
