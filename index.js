@@ -55,7 +55,7 @@ bot.on("ready", _=>{
     const date = new Date().toLocaleTimeString("fr-FR",{timeZone:"Europe/Paris"})
     console.log(date)
     setInterval(toutesLes1Minutes = () => {
-        const date = new Date().toLocaleTimeString("fr-FR",{timeZone:"Europe/Paris"})
+        const date = new Date().toLocaleTimeString("fr-FR",{timeZone:"Europe/Paris",hour12:false})
         const heure = Number(date.split(":")[0])
         console.log(heure)
         if(heure === 0 && actif) {
