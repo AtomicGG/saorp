@@ -1,0 +1,19 @@
+{
+  "name": "horde-rp",
+  "version": "1.0.0",
+  "description": "bot discord horderp",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AtomicGG/Horde-RP.git"
+  },
+  "author": "AtomicGG",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AtomicGG/Horde-RP/issues"
+  },
+  "homepage": "https://github.com/AtomicGG/Horde-RP#readme",
+  "dependencies": {
+    "discord.js": "^12.2.0"
+  }
+}
