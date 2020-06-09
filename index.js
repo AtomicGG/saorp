@@ -39,6 +39,7 @@ function escapeRegExp(string) {
   }
 
 bot.login(process.env.TOKEN)
+bot.generateInvite(["ADMINISTRATOR"]).then(link => console.log(link))
 bot.on("guildMemberAdd", membre => {
     const serveur = bot.guilds.cache.find(serveur => serveur.name === nomServeur)
     if(serveur.roles.cache.some(nom => nom.name === "Sans fiche")){
