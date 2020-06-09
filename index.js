@@ -2774,5 +2774,25 @@ bot.on("message", async message =>{
                 .setTimestamp()
             message.channel.send({ embed })
         }
+        if(/^Agriculture$/i.test(truc)){
+            const embed = new Discord.MessageEmbed()
+            .setTitle("Agriculture")
+            .setDescription("Vous pouvez planter des choses dans le `Potager` et les récolter plus tard !\n\nPour se faire, vous devez respecter les conditions de pousse qui sont écrites sur la description de la plante en question\n\nSi vous ne respectez pas ces conditions, votre plante ne poussera pas\n\nPar ailleurs, si vous êtes en train de faire pousser une plante mais que vous oubliez de respecter les conditions de pousse, la plante fânera et mourra, vous perdrez alors celle-ci")
+            .setColor(0xff0000)
+            .setAuthor(message.author.username, message.author.avatarURL())
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setTimestamp()
+            message.channel.send(embed)
+        }
+        if(/^Elevage$/i.test(truc)){
+            const embed = new Discord.MessageEmbed()
+            .setTitle("Elevage")
+            .setDescription("Vous pouvez élever certains animaux que vous trouvez dans l'`Enclos` pour récolter périodiquement leur ressources !\n\nPour se faire, vous devez respecter les conditions d'élevage qui sont écrites sur la description de l'animal en question\n\nSi vous ne respectez pas ces conditions, votre animal ne produira pas de ressources\n\nSi vous êtes en train d'élever un animal mais que vous oubliez de respecter les conditions d'élevage, l'animal ne produira pas non plus de ressources et vous devrez recommencer l'élevage depuis le début des conditions\n\nLes animaux ne peuvent pas se reproduire et n'ont pas besoin de manger/boire pour survivre (uniquement pour être élevés) afin de simplifier votre expérience de jeu")
+            .setColor(0xff0000)
+            .setAuthor(message.author.username, message.author.avatarURL())
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setTimestamp()
+            message.channel.send(embed)
+        }
     }
 })
