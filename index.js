@@ -1020,7 +1020,7 @@ bot.on("message", async message =>{
         if(/^Horde$/i.test(truc)){
             const embed = new Discord.MessageEmbed()
             .setTitle("Horde")
-            .setDescription("Vous voulez rejoindre la ville et essayer de survivre le plus longtemps possible ? Alors les commandes pour avoir les informations et commencer la survie sont juste en dessous !\n\n`=Contexte`\n`=Survivant`\n`=Inventaire`\n\n`=Points d'action`\n`=Fouille`\n`=Déplacements`\n\n`Nuit`\n`Défense de la ville`\n`=Combat`\n`=Zombies`\n`=Habitations`\n\n`=Etats`\n`=Médicaments`\n`=Eau`\n`=Nourriture`\n`=Alcool`\n`=Drogue`\n\n`=Armes`\n`=Fabrication`\n`=Encyclopédie`\n\n`=Revenant`\n`=Vol`\n`=Exil`\n`=Sommeil`\n`=Transformation`\n`=Cargaison`\n`=Plans`\n`=Informations importantes`")
+            .setDescription("Vous voulez rejoindre la ville et essayer de survivre le plus longtemps possible ? Alors les commandes pour avoir les informations et commencer la survie sont juste en dessous !\n\n`=Contexte`\n`=Survivant`\n`=Inventaire`\n\n`=Points d'actions`\n`=Fouille`\n`=Déplacements`\n\n`=Nuit`\n`=Défense de la ville`\n`=Combat`\n`=Zombies`\n`=Habitations`\n\n`=Etats`\n`=Médicaments`\n`=Eau`\n`=Nourriture`\n`=Alcool`\n`=Drogue`\n\n`=Armes`\n`=Fabrication`\n`=Encyclopédie`\n\n`=Revenant`\n`=Vol`\n`=Exil`\n`=Sommeil`\n`=Transformation`\n`=Cargaison`\n`=Plans`\n`=Informations importantes`")
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL())
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
