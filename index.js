@@ -41,16 +41,38 @@ function escapeRegExp(string) {
 bot.login(process.env.TOKEN)
 bot.generateInvite(["ADMINISTRATOR"]).then(link => console.log(link))
 bot.on("guildMemberAdd", membre => {
+    if(membre.user.bot) return
     const serveur = bot.guilds.cache.find(serveur => serveur.name === nomServeur)
     if(serveur.roles.cache.some(nom => nom.name === "Sans fiche")){
-        const roleSansFiche = serveur.roles.cache.find(nom => nom.name === "Sans fiche")
-        membre.roles.add(roleSansFiche)
-        .then(()=>{
-            if(serveur.channels.cache.some(nom => nom.name === "│『💬』ᴅɪsᴄᴜssɪᴏɴ")){
-                const salonDiscussion = serveur.channels.cache.find(nom => nom.name === "│『💬』ᴅɪsᴄᴜssɪᴏɴ")
-                salonDiscussion.send("۝▬▬๑₪۩۞『ʜᴏʀᴅᴇ [ʀᴘ]』۞۩₪๑▬▬۝\n\n\n:crossed_swords: Bienvenue à toi <@" + membre.user.id + "> tu es maintenant un survivant du monde de Horde [RP] ...\n\n:busts_in_silhouette: Il y a actuellement `" + serveur.memberCount + "` survivants !\n\n:page_with_curl: Si tu as des questions, les assistants et modérateurs sont là pour t'aider !\n\n:book: Pour comprendre comment marche le RP, écris la commande `=Horde` dans le salon #│『📠』ᴄᴏᴍᴍᴀɴᴅᴇs qui te permettra d'afficher toutes les informations nécessaires !\n\n:shield: Souhaitez lui la bienvenue parmi nous mais aussi bonne chance !\n\n\n۝▬▬๑₪۩≡۞≡۩₪๑▬๑₪۩≡۞≡۩₪๑▬▬۝")
-            }
-        })
+        membre.roles.add(serveur.roles.cache.find(nom => nom.name === "Sans fiche"))
+    }
+    if(serveur.roles.cache.some(nom => nom.name === "▬▬▬▬▬[BLESSURE]▬▬▬▬▬")){
+        membre.roles.add(serveur.roles.cache.find(nom => nom.name === "▬▬▬▬▬[BLESSURE]▬▬▬▬▬"))
+    }
+    if(serveur.roles.cache.some(nom => nom.name === "▬▬▬▬▬▬[SEXE]▬▬▬▬▬▬")){
+        membre.roles.add(serveur.roles.cache.find(nom => nom.name === "▬▬▬▬▬▬[SEXE]▬▬▬▬▬▬"))
+    }
+    if(serveur.roles.cache.some(nom => nom.name === "▬▬▬▬▬[INFECTION]▬▬▬▬▬")){
+        membre.roles.add(serveur.roles.cache.find(nom => nom.name === "▬▬▬▬▬[INFECTION]▬▬▬▬▬"))
+    }
+    if(serveur.roles.cache.some(nom => nom.name === "▬▬▬▬▬[FAIM]▬▬▬▬▬")){
+        membre.roles.add(serveur.roles.cache.find(nom => nom.name === "▬▬▬▬▬[FAIM]▬▬▬▬▬"))
+    }
+    if(serveur.roles.cache.some(nom => nom.name === "▬▬▬▬▬[SOIF]▬▬▬▬▬")){
+        membre.roles.add(serveur.roles.cache.find(nom => nom.name === "▬▬▬▬▬[SOIF]▬▬▬▬▬"))
+    }
+    if(serveur.roles.cache.some(nom => nom.name === "▬▬▬▬▬[ETATS]▬▬▬▬▬")){
+        membre.roles.add(serveur.roles.cache.find(nom => nom.name === "▬▬▬▬▬[ETATS]▬▬▬▬▬"))
+    }
+    if(serveur.roles.cache.some(nom => nom.name === "▬▬▬▬▬[ZONE]▬▬▬▬▬")){
+        membre.roles.add(serveur.roles.cache.find(nom => nom.name === "▬▬▬▬▬[ZONE]▬▬▬▬▬"))
+    }
+    if(serveur.roles.cache.some(nom => nom.name === "▬▬▬▬▬▬▬▬▬▬▬▬▬")){
+        membre.roles.add(serveur.roles.cache.find(nom => nom.name === "▬▬▬▬▬▬▬▬▬▬▬▬▬"))
+    }
+    if(serveur.channels.cache.some(nom => nom.name === "│『💬』ᴅɪsᴄᴜssɪᴏɴ")){
+        const salonDiscussion = serveur.channels.cache.find(nom => nom.name === "│『💬』ᴅɪsᴄᴜssɪᴏɴ")
+        salonDiscussion.send("۝▬▬๑₪۩۞『ʜᴏʀᴅᴇ [ʀᴘ]』۞۩₪๑▬▬۝\n\n\n:crossed_swords: Bienvenue à toi <@" + membre.user.id + "> tu es maintenant un survivant du monde de Horde [RP] ...\n\n:busts_in_silhouette: Il y a actuellement `" + serveur.memberCount + "` survivants !\n\n:page_with_curl: Si tu as des questions, les assistants et modérateurs sont là pour t'aider !\n\n:book: Pour comprendre comment marche le RP, écris la commande `=Horde` dans le salon #│『📠』ᴄᴏᴍᴍᴀɴᴅᴇs qui te permettra d'afficher toutes les informations nécessaires !\n\n:shield: Souhaitez lui la bienvenue parmi nous mais aussi bonne chance !\n\n\n۝▬▬๑₪۩≡۞≡۩₪๑▬๑₪۩≡۞≡۩₪๑▬▬۝")
     }
 })
 bot.on("ready", _=>{
