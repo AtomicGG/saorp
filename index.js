@@ -805,22 +805,22 @@ bot.on("message", async message =>{
                 const chose = fouille[arrondi(Math.random()*(fouille.length - 1))]
                 let description = "*erreur*"
                 if(chose === "zombie"){
-                    description = ":flashlight: En fouillant les environs, vous tombez sur des zombies... :\n\n:imp: `" + (km + plusOuMoins(arrondi(Math.random()*km/2))) + " zombies`"
+                    description = ":flashlight: En fouillant les environs, vous dépensez 1 PA et vous tombez sur des zombies... :\n\n:imp: `" + (km + plusOuMoins(arrondi(Math.random()*km/2))) + " zombies`"
                 }
                 for(let i = 0 ; i < objets.length ; i++){
                     if(chose === objets[i].nom){
-                        description = ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 " + objets[i].nom + "`"
+                        description = ":flashlight: En fouillant les environs, vous dépensez 1 PA et vous trouvez :\n\n:moneybag: `1 " + objets[i].nom + "`"
                         break
                     }
                 }
                 for(let i = 0 ; i < lieux.length ; i++){
                     if(chose === lieux[i].nom){
-                        description = ":flashlight: En fouillant les environs, vous découvrez : " + lieux[i].nom + "\n\n" + lieux[i].description + "\n\nPour fouiller : `=Fouille " + lieux[i].nom + "`"
+                        description = ":flashlight: En fouillant les environs, vous dépensez 1 PA et vous découvrez : " + lieux[i].nom + "\n\n" + lieux[i].description + "\n\nPour fouiller : `=Fouille " + lieux[i].nom + "`"
                         break
                     }
                 }
                 if(chose === "Balle"){
-                    description = ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `"+ (1 + arrondi(Math.random()*km/2)) + "Balles`"
+                    description = ":flashlight: En fouillant les environs, vous dépensez 1 PA et vous trouvez :\n\n:moneybag: `"+ (1 + arrondi(Math.random()*km/2)) + "Balles`"
                 }
                 const embed = new Discord.MessageEmbed()
                 .setTitle(":flashlight: Fouille zone " + km + " KM")
@@ -865,15 +865,15 @@ bot.on("message", async message =>{
                             const chose = fouille[arrondi(Math.random()*(fouille.length - 1))]
                             let description = "*erreur*"
                             if(chose === "zombie"){
-                                description = ":flashlight: Sur les lieux, après quelques recherches vous tombez sur des zombies... :\n\n:imp: `" + (kMmoyen + plusOuMoins(arrondi(Math.random()*kMmoyen/2))) + " zombies`"
+                                description = ":flashlight: Sur les lieux, après quelques recherches, vous dépensez 1 PA et vous tombez sur des zombies... :\n\n:imp: `" + (kMmoyen + plusOuMoins(arrondi(Math.random()*kMmoyen/2))) + " zombies`"
                             }
                             for(let i = 0 ; i < objets.length ; i++){
                                 if(chose === objets[i].nom){
-                                    description = ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 " + objets[i].nom + "`"
+                                    description = ":flashlight: Sur les lieux, après quelques recherches, vous dépensez 1 PA et vous trouvez :\n\n:moneybag: `1 " + objets[i].nom + "`"
                                     break
                                 }
                                 if(chose === "Balle"){
-                                    description = ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `"+ (1 + arrondi(Math.random()*kMmoyen/2)) + "Balles`"
+                                    description = ":flashlight: Sur les lieux, après quelques recherches, vous dépensez 1 PA et vous trouvez :\n\n:moneybag: `"+ (1 + arrondi(Math.random()*kMmoyen/2)) + "Balles`"
                                 }
                             }
                             const embed = new Discord.MessageEmbed()
