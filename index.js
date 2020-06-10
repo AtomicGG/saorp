@@ -623,13 +623,13 @@ bot.on("message", async message =>{
             }
             const chose = miner[arrondi(Math.random()*(miner.length - 1))]
             if(chose === "zombie"){
-                description = ":pick: En minant les cailloux devant vous, vous tombez bizarrement et malheureusement sur :\n\n:imp: `" + arrondi(Math.random()*4) + " zombie(s)`"
+                description = ":pick: En minant les cailloux devant vous, vous dépensez 1 PA et vous tombez bizarrement et malheureusement sur :\n\n:imp: `" + arrondi(Math.random()*4) + " zombie(s)`"
             }
             else if(chose === "rien"){
-                description = ":pick: En minant les cailloux devant vous, vous trouvez malheureusement que des cailloux justement"
+                description = ":pick: En minant les cailloux devant vous, vous dépensez 1 PA et vous trouvez malheureusement que des cailloux justement"
             }
             else{
-                description = ":pick: En minant les cailloux devant vous, vous trouvez :\n\n:moneybag: `1 " + chose + "`"
+                description = ":pick: En minant les cailloux devant vous, vous dépensez 1 PA et vous trouvez :\n\n:moneybag: `1 " + chose + "`"
             }
             const embed = new Discord.MessageEmbed()
             .setTitle(":pick: Miner")
