@@ -207,7 +207,7 @@ bot.on("message", async message =>{
 		serveur.channels.cache.find(channelGrandePorte => channelGrandePorte.name === "〚ɢʀᴀɴᴅᴇ-ᴘᴏʀᴛᴇ〛") // [19]
 	]
 	const serveurRoleVille = serveur.roles.cache.find(roleVille => roleVille.name === "Ville")
-    if(message.content.startsWith(prefix) && ((message.channel.name === "│『📠』ᴄᴏᴍᴍᴀɴᴅᴇs" || message.channel.name === "│『⌨』dev") || (message.channel.parent.name !== "MENU RP" && message.channel.parent.name !== "INFORMATIONS VILLE"))){
+    if(message.content.startsWith(prefix) && ((message.channel.name === "│『📠』ᴄᴏᴍᴍᴀɴᴅᴇs" || message.channel.name === "│『⌨』dev" || message.channel.name === "『☠』ᴀᴛᴛᴀϙᴜᴇ-ᴅᴇ-ᴢᴏᴍʙɪᴇ") || (message.channel.parent.name !== "MENU RP" && message.channel.parent.name !== "INFORMATIONS VILLE"))){
         const truc = message.content.slice(1).trim()
         let longueur = objets.length
         for(let i = 0 ; i < longueur ; i++){
