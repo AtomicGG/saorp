@@ -93,7 +93,7 @@ bot.on("ready", _=>{
         const heure = Number(date.split(":")[0])
         if(heure === 0 && actif) {
             actif = false
-            serveurChannelEvenements.send("```Ce jour est terminé et vous savez ce que ça veut dire ?\n- Votre niveau de faim et de soif monte d'un cran\n- Si vous êtes infecté, l'infection monte d'un cran\n- Si vous n'avez pas dormi 4 heures aujourd'hui, vous avez l'état fatigué\n- Les lieux que vous avez trouvé courageusement aujourd'hui ont été enssevelis sous le sable de la tempête de minuit. Par conséquent, vous ne pouvez plus retourner dans les bâtiments que vous avez trouvés et les objets que vous avez laissés dehors sont par la même occasion perdus à jamais !\n- Vous récupérez vos 6 PA quotidiens```")
+            serveurChannelEvenements.send("<@&564883579214233600> Ce jour est terminé et vous savez ce que ça veut dire ?\n- Votre niveau de faim et de soif monte d'un cran\n- Si vous êtes infecté, l'infection monte d'un cran\n- Si vous n'avez pas dormi 4 heures aujourd'hui, vous avez l'état fatigué\n- Les lieux que vous avez trouvé courageusement aujourd'hui ont été enssevelis sous le sable de la tempête de minuit. Par conséquent, vous ne pouvez plus retourner dans les bâtiments que vous avez trouvés et les objets que vous avez laissés dehors sont par la même occasion perdus à jamais !\n- Vous récupérez vos 6 PA quotidiens")
             .then(()=> {
                 const A = (Math.floor((100) * Math.random() + 1))
                 if (A < 25) {
