@@ -43,6 +43,7 @@ bot.generateInvite(["ADMINISTRATOR"]).then(link => console.log(link))
 bot.on("guildMemberAdd", membre => {
     if(membre.user.bot) return
     const serveur = bot.guilds.cache.find(serveur => serveur.name === nomServeur)
+    if(membre.guild !== serveur) return
     if(serveur.roles.cache.some(nom => nom.name === "Sans fiche")){
         membre.roles.add(serveur.roles.cache.find(nom => nom.name === "Sans fiche"))
     }
