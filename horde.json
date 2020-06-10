@@ -3759,7 +3759,7 @@
         },
         {
             "nom":"Tour",
-            "description":"Permet de savoir observer les environs grâce à : `=Observation`\n\nCette tour placée près de l'entrée permet d'obtenir aussi une meilleur défense et une meilleur organisation en cas d'attaque\n\n:hammer_pick: Matériaux nécessaires :\n\n`3 Poutre rafistolée`\n`2 Structures métalliques`\n\n:shield: Points de défense : 5\n\n:timer: Le temps de construction est de 10 minutes"
+            "description":"Permet de savoir observer les environs grâce à : `=Observation`\n\nCette tour placée près de l'entrée permet d'obtenir aussi une meilleur défense et une meilleur organisation en cas d'attaque\n\n:hammer_pick: Matériaux nécessaires :\n\n`3 Poutre rafistolée`\n`2 Structures métalliques`\n\n:shield: Points de défense : 10\n\n:timer: Le temps de construction est de 10 minutes"
         },
         {
             "nom":"Tourniquet à poutres",
