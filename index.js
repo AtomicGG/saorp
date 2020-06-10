@@ -1027,7 +1027,7 @@ bot.on("message", async message =>{
         if(/^Horde$/i.test(truc)){
             const embed = new Discord.MessageEmbed()
             .setTitle("Horde")
-            .setDescription("Vous voulez rejoindre la ville et essayer de survivre le plus longtemps possible ? Alors les commandes pour avoir les informations et commencer la survie sont juste en dessous !\n\n`=Contexte`\n`=Survivant`\n`=Inventaire`\n`=Discord`\n\n`=Points d'actions`\n`=Fouille`\n`=Déplacements`\n\n`=Nuit`\n`=Défense de la ville`\n`=Combat`\n`=Zombies`\n`=Habitations`\n\n`=Etats`\n`=Médicaments`\n`=Eau`\n`=Nourriture`\n`=Alcool`\n`=Drogue`\n\n`=Armes`\n`=Fabrication`\n`=Encyclopédie`\n\n`=Revenant`\n`=Vol`\n`=Exil`\n`=Sommeil`\n`=Transformation`\n`=Cargaison`\n`=Plans`\n`=Informations importantes`")
+            .setDescription("Vous voulez rejoindre la ville et essayer de survivre le plus longtemps possible ? Alors les commandes pour avoir les informations et commencer la survie sont juste en dessous !\n\nRP :\n`=Contexte`\n`=Survivant`\n`=Inventaire`\n`=Discord`\n\nEXPLORATION :\n`=Points d'actions`\n`=Fouille`\n`=Déplacements`\n\nATTAQUE DE LA VILLE :\n`=Nuit`\n`=Défense de la ville`\n`=Combat`\n`=Zombies`\n`=Habitations`\n\nSURVIE :\n`=Etats`\n`=Médicaments`\n`=Eau`\n`=Nourriture`\n`=Alcool`\n`=Drogue`\n\nOBJETS/CONSTRUCTIONS :\n`=Armes`\n`=Fabrication`\n`=Encyclopédie`\n\nAUTRES :\n`=Revenant`\n`=Vol`\n`=Exil`\n`=Sommeil`\n`=Transformation`\n`=Cargaison`\n`=Plans`\n`=Informations complémentaires`")
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL())
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -2164,9 +2164,9 @@ bot.on("message", async message =>{
             .setTimestamp()
             message.channel.send(embed)
         }
-        if(/^Informations importantes$/i.test(truc)){
+        if(/^Informations complémentaires$/i.test(truc)){
             const embed = new Discord.MessageEmbed()
-            .setTitle("Informations importantes")
+            .setTitle("Informations complémentaires")
             .setDescription("Lorsque vous faites un batîment, ou la mise en place d'un objet pour améliorer la défense de la ville, écrivez le dans le salon #『🔨』ᴄᴏɴsᴛʀᴜᴄᴛɪᴏɴs\n\nSi vous échouez un coup avec une arme qui n'utilise aucune munition, cela ne coûte pas d'utilisation, mais si vous échouez un coup ou un tir avec une arme qui nécessite des munitions, cela utilise bien une utilisation\n\nTous les crafts et constructions possibles à faire (que le bot affiche) sont connus par vos survivants de manière logique et RP, à l'avenir lorsqu'il y aura les `Plans` il faudra trouver les plans pour les connaître\n\nVous pouvez jouer le personnage d'un survivant qui n'est pas ou plus là, mais il faut son autorisation et pas de META RP\n\nVous pouvez écrire dans le salon #『📜』ᴛᴀʙʟᴇᴀᴜ-ᴀɴɴᴏɴᴄᴇs de manière RP un message, c'est un tableau uniquement visible à l'auberge par les autres survivants\n\nLorsqu'un survivant fuit, les zombies ne peuvent pas le suivre et le retrouver directement")
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL())
