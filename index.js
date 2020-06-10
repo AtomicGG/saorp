@@ -832,6 +832,9 @@ bot.on("message", async message =>{
                 for(let i = 0 ; i < objets.length ; i++){
                     if(chose === objets[i].nom){
                         description = ":flashlight: En fouillant les environs, vous dépensez 1 PA et vous trouvez :\n\n:moneybag: `1 " + objets[i].nom + "`"
+                        if(/Encombrant/.test(objets[i].description)){
+                            description += " (encombrant)"
+                        }
                         break
                     }
                 }
@@ -892,6 +895,9 @@ bot.on("message", async message =>{
                             for(let i = 0 ; i < objets.length ; i++){
                                 if(chose === objets[i].nom){
                                     description = ":flashlight: Sur les lieux, après quelques recherches, vous dépensez 1 PA et vous trouvez :\n\n:moneybag: `1 " + objets[i].nom + "`"
+                                    if(/Encombrant/.test(objets[i].description)){
+                                        description += " (encombrant)"
+                                    }
                                     break
                                 }
                                 if(chose === "Balle"){
