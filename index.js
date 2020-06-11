@@ -2860,9 +2860,9 @@ bot.on("message", async message =>{
             }
         }
     
-        if (/^Cible :.+$/i.test(truc)) {
+        if (/^Cible\s*:.+$/i.test(truc)) {
             if(/:.+$/.test(message.content)){
-                const survivants = message.content.match(/(?<=^Cible\s*:).+$/)[0].split(",")
+                const survivants = truc.match(/(?<=^Cible\s*:).+$/)[0].split(",")
                 const embed = new Discord.MessageEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL())
                     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
