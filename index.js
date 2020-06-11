@@ -2860,7 +2860,7 @@ bot.on("message", async message =>{
             }
         }
     
-        if (/^Cible\s*:.+$/i.test(truc)) {
+        if (/^Cible :.+$/i.test(truc)) {
             if(/:.+$/.test(message.content)){
                 const survivants = message.content.match(/(?<=^Cible\s*:).+$/)[0].split(",")
                 const embed = new Discord.MessageEmbed()
