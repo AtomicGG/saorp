@@ -3654,6 +3654,10 @@
             "description":"Assemblez de la poudre, des dispositifs détonateurs et de l'eau pure et vous obtiendrez une belle bouillie de chair putréfiée ce soir\n\n:hammer_pick: Matériaux nécessaires :\n\n`20 Ration d'eau`\n`3 Ferrailles`\n`1 Explosifs bruts`\n`1 Détonateur compact`\n\n:shield: Points de défense [Utilisation unique] : 60\n\n:timer: Le temps de construction est de 50 minutes\n\n:hammer: Défense possible à construire plusieurs fois"
         },
         {
+            "nom":"Champ de pieux",
+            "description":"Une amélioration du Grand Fossé : le remplir de gros pieux en bois acérés\n\n:hammer_pick: Matériaux nécessaires :\n\n`20 Planche tordue`\n\n:shield: Points de défense : 30\n\n:timer: Le temps de construction est de 40 minutes\n\n:hammer: Défense possible à construire plusieurs fois"
+        },
+        {
             "nom":"Douves",
             "description":"Une amélioration du Grand Fossé : y mettre de l'eau\n\n:hammer_pick: Matériaux nécessaires :\n\n`20 Ration d'eau`\n\n:shield: Points de défense : 25\n\n:timer: Le temps de construction est de 40 minutes\n\n:hammer: Défense possible à construire qu'une seul fois"
         },
@@ -3668,6 +3672,10 @@
         {
             "nom":"Fixations de défenses",
             "description":"Un système ingénieux pour optimiser l'usage de plaques de défenses (tôle ou autre)\n\nChaque objet pourra sûrement servir à améliorer la défense de la ville, cela permet de pouvoir les placer !\n\n:hammer_pick: Matériaux nécessaires :\n\n`10 Poutre rafistolée`\n`7 Structures métalliques`\n`7 Poignée de vis et écrous`\n\n:shield: Points de défense : 5\n\n:timer: Le temps de construction est de 48 minutes\n\n:hammer: Défense possible à construire qu'une seul fois"
+        },
+        {
+            "nom":"Grand fossé",
+            "description":"Le Grand Fossé est une défense efficace : un grand trou entourant la ville\n\nPratique sur le long terme, on pourra le remplir avec un tas de choses pour le rendre encore plus efficace ! \n\n:hammer_pick: Matériaux nécessaires :\n\n`8 Planche tordue`\n\n:shield: Points de défense : 20\n\n:timer: Le temps de construction est de 16 minutes\n\n:hammer: Défense possible à construire qu'une seul fois"
         },
         {
             "nom":"Grogro mur",
