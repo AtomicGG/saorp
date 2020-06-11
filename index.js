@@ -93,7 +93,7 @@ bot.on("ready", _=>{
         const heure = Number(date.split(":")[0])
         if(heure === 0 && actif) {
             actif = false
-            serveurChannelEvenements.send("<@&564883579214233600> Ce jour est terminé et vous savez ce que ça veut dire ?\n- Votre niveau de faim et de soif monte d'un cran\n- Si vous êtes infecté, l'infection monte d'un cran\n- Si vous n'avez pas dormi 4 heures aujourd'hui, vous avez l'état fatigué\n- Les lieux que vous avez trouvé courageusement aujourd'hui ont été enssevelis sous le sable de la tempête de minuit. Par conséquent, vous ne pouvez plus retourner dans les bâtiments que vous avez trouvés et les objets que vous avez laissés dehors sont par la même occasion perdus à jamais !\n- Vous récupérez vos 6 PA quotidiens")
+            serveurChannelEvenements.send("<@&564883579214233600> Ce jour est terminé et vous savez ce que ça veut dire ?\n- Votre niveau de faim et de soif monte d'un cran\n- Si vous êtes infecté, l'infection monte d'un cran\n- Si vous n'avez pas dormi 4 heures aujourd'hui, vous avez l'état fatigué\n- Les lieux que vous avez trouvé courageusement aujourd'hui ont été enssevelis sous le sable de la tempête de minuit. Par conséquent, vous ne pouvez plus retourner dans les bâtiments que vous avez trouvés et les objets que vous avez laissés dehors sont par la même occasion perdus à jamais !\n- Vous récupérez vos 6 PA quotidiens\n\n__Ne modifiez pas vos états, ils sont modifiés automatiquement par le bot !__")
             .then(()=> {
                 const A = (Math.floor((100) * Math.random() + 1))
                 if (A < 25) {
@@ -136,6 +136,74 @@ bot.on("ready", _=>{
                         .setTimestamp()
                     serveurChannelEvenements.send({ embed })
                 }
+                const rolesFaim = [
+                    serveur.roles.cache.find(role => role.name === "Rassasiement"),
+                    serveur.roles.cache.find(role => role.name === "Faim"),
+                    serveur.roles.cache.find(role => role.name === "Très faim"),
+                    serveur.roles.cache.find(role => role.name === "Affamé")
+                ]
+                const rolesSoif = [
+                    serveur.roles.cache.find(role => role.name === "Hydratation"),
+                    serveur.roles.cache.find(role => role.name === "Soif"),
+                    serveur.roles.cache.find(role => role.name === "Très soif"),
+                    serveur.roles.cache.find(role => role.name === "Assoifé")
+                ]
+                const rolesInfection = [
+                    serveur.roles.cache.find(role => role.name === "Aucune infection"),
+                    serveur.roles.cache.find(role => role.name === "Infection légère"),
+                    serveur.roles.cache.find(role => role.name === "Infection avancée"),
+                    serveur.roles.cache.find(role => role.name === "Infection mortelle")
+                ]
+                const roleMort = serveur.roles.cache.find(role => role.name === "Mort")
+                const roleSurvivant = serveur.roles.cache.find(role => role.name === "Survivant")
+                serveur.members.cache.forEach(async membre => {
+                    if (membre.roles.cache.some(role => role.name === "Survivant")) {
+                        if (membre.roles.cache.some(role => role.name === "Rassasiement")) {
+                            await membre.roles.remove(rolesFaim[0])
+                            await membre.roles.add(rolesFaim[1])
+                        }
+                        else if (membre.roles.cache.some(role => role.name === "Faim")) {
+                            await membre.roles.remove(rolesFaim[1])
+                            await membre.roles.add(rolesFaim[2])
+                        }
+                        else if (membre.roles.cache.some(role => role.name === "Très faim")) {
+                            await membre.roles.remove(rolesFaim[2])
+                            await membre.roles.add(rolesFaim[3])
+                        }
+                        else if (membre.roles.cache.some(role => role.name === "Affamé")) {
+                            await membre.roles.remove(roleSurvivant)
+                            await membre.roles.add(roleMort)
+                        }
+                        if (membre.roles.cache.some(role => role.name === "Hydratation")) {
+                            await membre.roles.remove(rolesSoif[0])
+                            await membre.roles.add(rolesSoif[1])
+                        }
+                        else if (membre.roles.cache.some(role => role.name === "Soif")) {
+                            await membre.roles.remove(rolesSoif[1])
+                            await membre.roles.add(rolesSoif[2])
+                        }
+                        else if (membre.roles.cache.some(role => role.name === "Très soif")) {
+                            await membre.roles.remove(rolesSoif[2])
+                            await membre.roles.add(rolesSoif[3])
+                        }
+                        else if (membre.roles.cache.some(role => role.name === "Assoifé")) {
+                            await membre.roles.remove(roleSurvivant)
+                            await membre.roles.add(roleMort)
+                        }
+                        if (membre.roles.cache.some(role => role.name === "Infection légère")) {
+                            await membre.roles.remove(rolesInfection[1])
+                            await membre.roles.add(rolesInfection[2])
+                        }
+                        else if (membre.roles.cache.some(role => role.name === "Infection avancée")) {
+                            await membre.roles.remove(rolesInfection[2])
+                            await membre.roles.add(rolesInfection[3])
+                        }
+                        else if (membre.roles.cache.some(role => role.name === "Infection mortelle")) {
+                            await membre.roles.remove(roleSurvivant)
+                            await membre.roles.add(roleMort)
+                        }
+                    }
+                })
             })
             .catch(console.error)
         }
@@ -206,7 +274,27 @@ bot.on("message", async message =>{
 		serveur.channels.cache.find(channelRue4 => channelRue4.name.startsWith("ʀᴜᴇ-4『")), // [18]
 		serveur.channels.cache.find(channelGrandePorte => channelGrandePorte.name === "〚ɢʀᴀɴᴅᴇ-ᴘᴏʀᴛᴇ〛") // [19]
 	]
-	const serveurRoleVille = serveur.roles.cache.find(roleVille => roleVille.name === "Ville")
+    const serveurRoleVille = serveur.roles.cache.find(roleVille => roleVille.name === "Ville")
+    const rolesFaim = [
+        serveur.roles.cache.find(role => role.name === "Rassasiement"),
+        serveur.roles.cache.find(role => role.name === "Faim"),
+        serveur.roles.cache.find(role => role.name === "Très faim"),
+        serveur.roles.cache.find(role => role.name === "Affamé")
+    ]
+    const rolesSoif = [
+        serveur.roles.cache.find(role => role.name === "Hydratation"),
+        serveur.roles.cache.find(role => role.name === "Soif"),
+        serveur.roles.cache.find(role => role.name === "Très soif"),
+        serveur.roles.cache.find(role => role.name === "Assoifé")
+    ]
+    const rolesInfection = [
+        serveur.roles.cache.find(role => role.name === "Aucune infection"),
+        serveur.roles.cache.find(role => role.name === "Infection légère"),
+        serveur.roles.cache.find(role => role.name === "Infection avancée"),
+        serveur.roles.cache.find(role => role.name === "Infection mortelle")
+    ]
+    const roleMort = serveur.roles.cache.find(role => role.name === "Mort")
+    const roleSurvivant = serveur.roles.cache.find(role => role.name === "Survivant")
     if(message.content.startsWith(prefix) && ((message.channel.name === "│『📠』ᴄᴏᴍᴍᴀɴᴅᴇs" || message.channel.name === "│『⌨』dev" || message.channel.name === "『☠』ᴀᴛᴛᴀϙᴜᴇ-ᴅᴇ-ᴢᴏᴍʙɪᴇ" || message.channel.name === "『💀』ᴏʀɢᴀɴɪsᴀᴛɪᴏɴ-ᴀᴛᴛᴀϙᴜᴇ") || (message.channel.parent.name !== "MENU RP" && message.channel.parent.name !== "INFORMATIONS VILLE"))){
         const truc = message.content.slice(1).trim()
         let longueur = objets.length
@@ -2832,6 +2920,104 @@ bot.on("message", async message =>{
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setTimestamp()
             message.channel.send(embed)
+        }
+        if(/^Avancer états$/i.test(truc)){
+            serveur.members.fetch(message.author)
+            .then(messageMembre => {
+                if(messageMembre.hasPermission(["ADMINISTRATOR"])){
+                    serveur.members.cache.forEach(async membre => {
+                        if (membre.roles.cache.some(role => role.name === "Survivant")) {
+                            if (membre.roles.cache.some(role => role.name === "Rassasiement")) {
+                                await membre.roles.remove(rolesFaim[0])
+                                await membre.roles.add(rolesFaim[1])
+                            }
+                            else if (membre.roles.cache.some(role => role.name === "Faim")) {
+                                await membre.roles.remove(rolesFaim[1])
+                                await membre.roles.add(rolesFaim[2])
+                            }
+                            else if (membre.roles.cache.some(role => role.name === "Très faim")) {
+                                await membre.roles.remove(rolesFaim[2])
+                                await membre.roles.add(rolesFaim[3])
+                            }
+                            else if (membre.roles.cache.some(role => role.name === "Affamé")) {
+                                await membre.roles.remove(roleSurvivant)
+                                await membre.roles.add(roleMort)
+                            }
+                            if (membre.roles.cache.some(role => role.name === "Hydratation")) {
+                                await membre.roles.remove(rolesSoif[0])
+                                await membre.roles.add(rolesSoif[1])
+                            }
+                            else if (membre.roles.cache.some(role => role.name === "Soif")) {
+                                await membre.roles.remove(rolesSoif[1])
+                                await membre.roles.add(rolesSoif[2])
+                            }
+                            else if (membre.roles.cache.some(role => role.name === "Très soif")) {
+                                await membre.roles.remove(rolesSoif[2])
+                                await membre.roles.add(rolesSoif[3])
+                            }
+                            else if (membre.roles.cache.some(role => role.name === "Assoifé")) {
+                                await membre.roles.remove(roleSurvivant)
+                                await membre.roles.add(roleMort)
+                            }
+                            if (membre.roles.cache.some(role => role.name === "Infection légère")) {
+                                await membre.roles.remove(rolesInfection[1])
+                                await membre.roles.add(rolesInfection[2])
+                            }
+                            else if (membre.roles.cache.some(role => role.name === "Infection avancée")) {
+                                await membre.roles.remove(rolesInfection[2])
+                                await membre.roles.add(rolesInfection[3])
+                            }
+                            else if (membre.roles.cache.some(role => role.name === "Infection mortelle")) {
+                                await membre.roles.remove(roleSurvivant)
+                                await membre.roles.add(roleMort)
+                            }
+                        }
+                    })
+                }
+            })
+        }
+        if(/^Reculer états$/i.test(truc)){
+            serveur.members.fetch(message.author)
+            .then(messageMembre => {
+                if(messageMembre.hasPermission(["ADMINISTRATOR"])){
+                    serveur.members.cache.forEach(membre =>{
+                        if(membre.roles.cache.some(role => role.name === "Survivant")){
+                            if(membre.roles.cache.some(role => role.name === "Faim")){
+                                membre.roles.remove(rolesFaim[1])
+                                membre.roles.add(rolesFaim[0])
+                            }
+                            else if(membre.roles.cache.some(role => role.name === "Très faim")){
+                                membre.roles.remove(rolesFaim[2])
+                                membre.roles.add(rolesFaim[1])
+                            }
+                            else if(membre.roles.cache.some(role => role.name === "Affamé")){
+                                membre.roles.remove(rolesFaim[3])
+                                membre.roles.add(rolesFaim[2])
+                            }
+                            if(membre.roles.cache.some(role => role.name === "Soif")){
+                                membre.roles.remove(rolesSoif[1])
+                                membre.roles.add(rolesSoif[0])
+                            }
+                            else if(membre.roles.cache.some(role => role.name === "Très soif")){
+                                membre.roles.remove(rolesSoif[2])
+                                membre.roles.add(rolesSoif[1])
+                            }
+                            else if(membre.roles.cache.some(role => role.name === "Assoifé")){
+                                membre.roles.remove(rolesSoif[3])
+                                membre.roles.add(rolesSoif[2])
+                            }
+                            if(membre.roles.cache.some(role => role.name === "Infection avancée")){
+                                membre.roles.remove(rolesInfection[2])
+                                membre.roles.add(rolesInfection[1])
+                            }
+                            else if(membre.roles.cache.some(role => role.name === "Infection mortelle")){
+                                membre.roles.remove(rolesInfection[3])
+                                membre.roles.add(rolesInfection[2])
+                            }
+                        }
+                    })
+                }
+            })
         }
     }
 })
