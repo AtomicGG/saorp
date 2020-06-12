@@ -2916,7 +2916,31 @@
         },
         {
             "nom":"Charbon",
-            "description":"Du bon gros charbon noir minier pas du tout bon pour l'environnement. Mais est-ce qu'on a vraiment le temps de penser à l'écologie ? Allez hop, dans le générateur ! (=Générateur)"
+            "description":"Du bon gros charbon noir minier pas du tout bon pour l'environnement. Mais est-ce qu'on a vraiment le temps de penser à l'écologie ? Allez hop, dans le générateur ! (=Générateur)",
+            "zones":[
+                {"nom":3,"poids":2},
+                {"nom":4,"poids":2},
+                {"nom":5,"poids":1},
+                {"nom":"Abri anti-atomique","poids":1},
+                {"nom":"Carrière effondrée","poids":4},
+                {"nom":"Caverne","poids":4},
+                {"nom":"Caverne anciennement habitée","poids":3},
+                {"nom":"Entrepôt désaffecté","poids":3}
+            ]
+        },
+        {
+            "nom":"Bidon d'essence",
+            "description":"Ce bidon d'essence permet de donner un p'tit coup de boost au `Générateur` !\nVous ne savez pas trop quelle essence il y a dedans mais tant que ça brûle ça peut produire de l'énergie !",
+            "zones":[
+                {"nom":8,"poids":2},
+                {"nom":9,"poids":2},
+                {"nom":10,"poids":3},
+                {"nom":"Entrepôt désaffecté","poids":3},
+                {"nom":"Parking désaffecté","poids":5},
+                {"nom":"Carcasses de voitures","poids":4},
+                {"nom":"Camion en panne","poids":2},
+                {"nom":"Carlingue d'avion","poids":3}
+            ]
         },
         {
             "nom":"Vélo",
@@ -3569,7 +3593,7 @@
         },
         {
             "nom":"Générateur",
-            "description":"Permet de produire de l'électricité à partir de charbon !\n\nPour l'utiliser, rien de plus simple ! Il suffit de mettre 1 Charbon dans la machine et elle fonctionnera pendant 2h (sans pouvoir l'arrêter), n'est-ce pas génial ?\n\nLe générateur permet d'utiliser de nouvelles défenses et de recharger vos piles déchargées sans limites !\n\nEt petit bonus, vous pourrez revoir la lumière des lampadaires dans les rues de la ville (c'est d'ailleurs comme ça que vous saurez si le générateur est actif ou non dans toute la ville)\n\n:hammer_pick: Matériaux nécessaires :\n\n`10 ferraille`\n`5 Poutre rafistolée`\n`2 Fil de cuivre`\n\n:timer: Le temps de construction est de 34 minutes"
+            "description":"Permet de produire de l'électricité à partir de charbon ou d'essence !\n\nPour l'utiliser, rien de plus simple ! Il suffit de mettre 1 `Charbon` ou 1 `Essence`dans la machine et elle fonctionnera pendant 2h (sans pouvoir l'arrêter), n'est-ce pas génial ?\n\nLe générateur permet d'utiliser de nouvelles défenses et de recharger vos piles déchargées sans limites !\n\nEt petit bonus, vous pourrez revoir la lumière des lampadaires dans les rues de la ville (c'est d'ailleurs comme ça que vous saurez si le générateur est actif ou non dans toute la ville)\n\n:hammer_pick: Matériaux nécessaires :\n\n`10 ferraille`\n`5 Poutre rafistolée`\n`2 Fil de cuivre`\n\n:timer: Le temps de construction est de 34 minutes"
         },
         {
             "nom":"Grande porte",
