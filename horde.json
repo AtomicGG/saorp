@@ -3593,7 +3593,7 @@
         },
         {
             "nom":"Générateur",
-            "description":"Permet de produire de l'électricité à partir de charbon ou d'essence !\n\nPour l'utiliser, rien de plus simple ! Il suffit de mettre 1 `Charbon` ou 1 `Essence`dans la machine et elle fonctionnera pendant 2h (sans pouvoir l'arrêter), n'est-ce pas génial ?\n\nLe générateur permet d'utiliser de nouvelles défenses et de recharger vos piles déchargées sans limites !\n\nEt petit bonus, vous pourrez revoir la lumière des lampadaires dans les rues de la ville (c'est d'ailleurs comme ça que vous saurez si le générateur est actif ou non dans toute la ville)\n\n:hammer_pick: Matériaux nécessaires :\n\n`10 ferraille`\n`5 Poutre rafistolée`\n`2 Fil de cuivre`\n\n:timer: Le temps de construction est de 34 minutes"
+            "description":"Permet de produire de l'électricité à partir de charbon ou d'essence !\n\nPour l'utiliser, rien de plus simple ! Il suffit de mettre `1 Charbon` ou `1 Bidon d'essence`dans la machine et elle fonctionnera pendant 2h (sans pouvoir l'arrêter), n'est-ce pas génial ?\n\nLe générateur permet d'utiliser de nouvelles défenses et de recharger vos piles déchargées sans limites !\n\nEt petit bonus, vous pourrez revoir la lumière des lampadaires dans les rues de la ville (c'est d'ailleurs comme ça que vous saurez si le générateur est actif ou non dans toute la ville)\n\n:hammer_pick: Matériaux nécessaires :\n\n`10 ferraille`\n`5 Poutre rafistolée`\n`2 Fil de cuivre`\n\n:timer: Le temps de construction est de 34 minutes"
         },
         {
             "nom":"Grande porte",
