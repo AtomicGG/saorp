@@ -1478,7 +1478,7 @@
         },
         {
             "nom":"Légume suspect",
-            "description":"Un genre de... légume, difficile à dire ce qui a essayé de pousser comme ça, mais le principal c'est que ça semble comestible, ou pas\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que ${paMax} points d'actions !\n\nCet objet est empoisonnable à l'aide de `Fiole de poison` provoquant la mort d'un humain au bout de quelques minutes...\n\nCe légume suspect peut être planté dans le potager pour obtenir un (ou plus) légume random (citrouille, carotte ou tomate) :\n\n:warning: Conditions de pousse : 1 ration d'eau par jour\n:timer: Le temps de pousse est de 2 jours\n\nUne fois les conditions remplies et le temps atteint faites `=Récolte [Légume suspect]`",
+            "description":"Un genre de... légume, difficile à dire ce qui a essayé de pousser comme ça, mais le principal c'est que ça semble comestible, ou pas\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !\n\nCet objet est empoisonnable à l'aide de `Fiole de poison` provoquant la mort d'un humain au bout de quelques minutes...\n\nCe légume suspect peut être planté dans le potager pour obtenir un (ou plus) légume random (citrouille, carotte ou tomate) :\n\n:warning: Conditions de pousse : 1 ration d'eau par jour\n:timer: Le temps de pousse est de 2 jours\n\nUne fois les conditions remplies et le temps atteint faites `=Récolte [Légume suspect]`",
             "récolte":[
                 {"nom":"rien","poids":3,"quantitéMax":0},
                 {"nom":"Tomate","poids":2,"quantitéMax":3},
