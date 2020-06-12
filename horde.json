@@ -2791,7 +2791,7 @@
             "description":"Hop, on oublie rapidement ce qu'on vient d'avaler et on passe à la suite...\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !\n\nCet objet est `Cuisinable`\n\nEn utilisant cet objet : `=Effets [Viande humaine]`",
             "effets":[
                 {"nom":"rien","poids":70,"type":""},
-                {"nom":"Goule","poids":30,"type":"soignez"}
+                {"nom":"Goule","poids":30,"type":"gagnez"}
             ],
             "zones":[
                 {"nom":"Carrière effondrée","poids":10},
