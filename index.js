@@ -309,7 +309,14 @@ bot.on("message", async message =>{
         serveur.roles.cache.find(role => role.name === "Infection avancée"),
         serveur.roles.cache.find(role => role.name === "Infection mortelle")
     ]
-    const roleMort = serveur.roles.cache.find(role => role.name === "Mort")
+    const rolesBlessure = [
+        serveur.roles.cache.find(role => role.name === "Aucune blessure"),
+        serveur.roles.cache.find(role => role.name === "Blessure légère"),
+        serveur.roles.cache.find(role => role.name === "Blessure"),
+        serveur.roles.cache.find(role => role.name === "Blessure avancée"),
+        serveur.roles.cache.find(role => role.name === "Blessure mortelle"),
+        serveur.roles.cache.find(role => role.name === "Mort")
+    ]
     const roleSurvivant = serveur.roles.cache.find(role => role.name === "Survivant")
     if(message.content.startsWith(prefix) && ((message.channel.name === "│『📠』ᴄᴏᴍᴍᴀɴᴅᴇs" || message.channel.name === "│『⌨』dev" || message.channel.name === "『☠』ᴀᴛᴛᴀϙᴜᴇ-ᴅᴇ-ᴢᴏᴍʙɪᴇ" || message.channel.name === "『💀』ᴏʀɢᴀɴɪsᴀᴛɪᴏɴ-ᴀᴛᴛᴀϙᴜᴇ") || (message.channel.parent.name !== "MENU RP" && message.channel.parent.name !== "INFORMATIONS VILLE"))){
         const truc = message.content.slice(1).trim()
@@ -2957,6 +2964,11 @@ bot.on("message", async message =>{
                             }
                             else if (membre.roles.cache.some(role => role.name === "Affamé")) {
                                 await membre.roles.remove(roleSurvivant)
+                                for(let i = 0 ; i < rolesBlessure.length ; i++){
+                                    if(membre.roles.cache.some(role => role.name === rolesBlessure[i].name)){
+                                        await membre.roles.remove(rolesBlessure[i])
+                                    }
+                                }
                                 await membre.roles.add(roleMort)
                             }
                             if (membre.roles.cache.some(role => role.name === "Hydratation")) {
@@ -2973,7 +2985,12 @@ bot.on("message", async message =>{
                             }
                             else if (membre.roles.cache.some(role => role.name === "Assoifé")) {
                                 await membre.roles.remove(roleSurvivant)
-                                await membre.roles.add(roleMort)
+                                for(let i = 0 ; i < rolesBlessure.length ; i++){
+                                    if(membre.roles.cache.some(role => role.name === rolesBlessure[i].name)){
+                                        await membre.roles.remove(rolesBlessure[i])
+                                    }
+                                }
+                                await membre.roles.add(rolesBlessure[5])
                             }
                             if (membre.roles.cache.some(role => role.name === "Infection légère")) {
                                 await membre.roles.remove(rolesInfection[1])
@@ -2984,8 +3001,7 @@ bot.on("message", async message =>{
                                 await membre.roles.add(rolesInfection[3])
                             }
                             else if (membre.roles.cache.some(role => role.name === "Infection mortelle")) {
-                                await membre.roles.remove(roleSurvivant)
-                                await membre.roles.add(roleMort)
+                                await serveurChannelEvenements.send(`<@${membre.id}> doit effectuer la commande \`=Infection totale\``)
                             }
                         }
                     })
