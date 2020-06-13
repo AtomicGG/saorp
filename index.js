@@ -154,7 +154,14 @@ bot.on("ready", _=>{
                     serveur.roles.cache.find(role => role.name === "Infection avancée"),
                     serveur.roles.cache.find(role => role.name === "Infection mortelle")
                 ]
-                const roleMort = serveur.roles.cache.find(role => role.name === "Mort")
+                const rolesBlessure = [
+                    serveur.roles.cache.find(role => role.name === "Aucune blessure"),
+                    serveur.roles.cache.find(role => role.name === "Blessure légère"),
+                    serveur.roles.cache.find(role => role.name === "Blessure"),
+                    serveur.roles.cache.find(role => role.name === "Blessure avancée"),
+                    serveur.roles.cache.find(role => role.name === "Blessure mortelle"),
+                    serveur.roles.cache.find(role => role.name === "Mort")
+                ]
                 const roleSurvivant = serveur.roles.cache.find(role => role.name === "Survivant")
                 serveur.members.cache.forEach(async membre => {
                     if (membre.roles.cache.some(role => role.name === "Survivant")) {
@@ -172,6 +179,11 @@ bot.on("ready", _=>{
                         }
                         else if (membre.roles.cache.some(role => role.name === "Affamé")) {
                             await membre.roles.remove(roleSurvivant)
+                            for(let i = 0 ; i < rolesBlessure.length ; i++){
+                                if(membre.roles.cache.some(role => role.name === rolesBlessure[i].name)){
+                                    await membre.roles.remove(rolesBlessure[i])
+                                }
+                            }
                             await membre.roles.add(roleMort)
                         }
                         if (membre.roles.cache.some(role => role.name === "Hydratation")) {
@@ -188,7 +200,12 @@ bot.on("ready", _=>{
                         }
                         else if (membre.roles.cache.some(role => role.name === "Assoifé")) {
                             await membre.roles.remove(roleSurvivant)
-                            await membre.roles.add(roleMort)
+                            for(let i = 0 ; i < rolesBlessure.length ; i++){
+                                if(membre.roles.cache.some(role => role.name === rolesBlessure[i].name)){
+                                    await membre.roles.remove(rolesBlessure[i])
+                                }
+                            }
+                            await membre.roles.add(rolesBlessure[5])
                         }
                         if (membre.roles.cache.some(role => role.name === "Infection légère")) {
                             await membre.roles.remove(rolesInfection[1])
@@ -199,8 +216,7 @@ bot.on("ready", _=>{
                             await membre.roles.add(rolesInfection[3])
                         }
                         else if (membre.roles.cache.some(role => role.name === "Infection mortelle")) {
-                            await membre.roles.remove(roleSurvivant)
-                            await membre.roles.add(roleMort)
+                            await serveurChannelEvenements.send(`<@${membre.id}> doit effectuer la commande \`=Infection totale\``)
                         }
                     }
                 })
