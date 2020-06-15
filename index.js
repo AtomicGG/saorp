@@ -878,30 +878,30 @@ bot.on("message", async message =>{
                     console.log("Description de Recherche trop longue (>2048)")
                 }
             }
-            if(/^Démontage.*\[.+\]$/i.test(truc)){
-                console.log("mm")
-                const contenu = message.content.match(/(?<=Démontage.*\[).+(?=\])/i)[0].trim()
-                for(let i = 0 ; i < objets.length ; i++){
-                    if(new RegExp("^" + escapeRegExp(objets[i].nom) + "$","i").test(contenu)){
-                        if("démontage" in objets[i]){
-                            let fouille = []
-                            for(let j = 0 ; j < objets[i].démontage.length ; j++){
-                                for(let k = 0 ; k < objets[i].démontage[j].poids ; k++){
-                                    fouille.push(objets[i].démontage[j].nom)
-                                }
+        }
+        if(/^Démontage.*\[.+\]$/i.test(truc)){
+            console.log("mm")
+            const contenu = message.content.match(/(?<=Démontage.*\[).+(?=\])/i)[0].trim()
+            for(let i = 0 ; i < objets.length ; i++){
+                if(new RegExp("^" + escapeRegExp(objets[i].nom) + "$","i").test(contenu)){
+                    if("démontage" in objets[i]){
+                        let fouille = []
+                        for(let j = 0 ; j < objets[i].démontage.length ; j++){
+                            for(let k = 0 ; k < objets[i].démontage[j].poids ; k++){
+                                fouille.push(objets[i].démontage[j].nom)
                             }
-                            const chose = fouille[arrondi(Math.random()*(fouille.length - 1))]
-                            const embed = new Discord.MessageEmbed()
-                            .setTitle("Démontage [" + objets[i].nom + "]")
-                            .setDescription("Vous obtenez l'objet : \n\n`1 " + chose + "`")
-                            .setColor(0xff0000)
-                            .setAuthor(message.author.username, message.author.avatarURL())
-                            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                            .setTimestamp()
-                            message.channel.send(embed)
                         }
-                        break
+                        const chose = fouille[arrondi(Math.random()*(fouille.length - 1))]
+                        const embed = new Discord.MessageEmbed()
+                        .setTitle("Démontage [" + objets[i].nom + "]")
+                        .setDescription("Vous obtenez l'objet : \n\n`1 " + chose + "`")
+                        .setColor(0xff0000)
+                        .setAuthor(message.author.username, message.author.avatarURL())
+                        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setTimestamp()
+                        message.channel.send(embed)
                     }
+                    break
                 }
             }
         }
