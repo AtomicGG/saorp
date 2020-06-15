@@ -879,6 +879,7 @@ bot.on("message", async message =>{
                 }
             }
             if(/^Démontage.*\[.+\]$/i.test(truc)){
+                console.log("mm")
                 const contenu = message.content.match(/(?<=Démontage.*\[).+(?=\])/i)[0].trim()
                 for(let i = 0 ; i < objets.length ; i++){
                     if(new RegExp("^" + escapeRegExp(objets[i].nom) + "$","i").test(contenu)){
