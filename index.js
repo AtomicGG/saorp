@@ -218,6 +218,22 @@ bot.on("ready", _=>{
                         else if (membre.roles.cache.some(role => role.name === "Infection mortelle")) {
                             await serveurChannelEvenements.send(`<@${membre.id}> doit effectuer la commande \`=Infection totale\``)
                         }
+                        if (membre.roles.cache.some(role => role.name === "Blessure légère")) {
+                            await membre.roles.remove(rolesBlessure[1])
+                            await membre.roles.add(rolesBlessure[0])
+                        }
+                        else if (membre.roles.cache.some(role => role.name === "Blessure")) {
+                            await membre.roles.remove(rolesBlessure[2])
+                            await membre.roles.add(rolesBlessure[1])
+                        }
+                        else if (membre.roles.cache.some(role => role.name === "Blessure avancée")) {
+                            await membre.roles.remove(rolesBlessure[3])
+                            await membre.roles.add(rolesBlessure[2])
+                        }
+                        else if (membre.roles.cache.some(role => role.name === "Blessure mortelle")) {
+                            await membre.roles.remove(rolesBlessure[4])
+                            await membre.roles.add(rolesBlessure[3])
+                        }
                     }
                 })
             })
@@ -1934,7 +1950,7 @@ bot.on("message", async message =>{
                 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
                 .setTitle("Blessure légère > Blessure > Blessure avancée > Blessure mortelle :")
-                .setDescription("Durant votre survie, il sera très fréquent de finir blessé et il existe différents types de blessures :\n\n`Blessure légère`\n`Blessure`\n`Blessure avancée`\n`Blessure mortelle`\n\nLes blessures provoquent des malus pour fuir, et plus vous vous rapprochez d'une blessure mortelle, plus vous aurez de chance d'y rester...\n\nLes blessure sont également cumulables et croissantes, si vous étiez atteint de l'état `Blessure` et que vous subissez un état de nouveau `Blessure légère` alors votre nouvel état sera `Blessure avancée`. Si vous ne comprennez pas : `=Exemples d'accumulation`\n\nLes blessures se soignent à l'aide de bandage, de médicaments, d'injections et d'un tas d'autres moyens probables et possibles...")
+                .setDescription("Durant votre survie, il sera très fréquent de finir blessé et il existe différents types de blessures :\n\n`Blessure légère`\n`Blessure`\n`Blessure avancée`\n`Blessure mortelle`\n\nLes blessures provoquent des malus pour fuir, et plus vous vous rapprochez d'une blessure mortelle, plus vous aurez de chance d'y rester...\n\nLes blessures sont également cumulables et croissantes, si vous étiez atteint de l'état `Blessure` et que vous subissez un état de nouveau `Blessure légère` alors votre nouvel état sera `Blessure avancée`. Si vous ne comprennez pas : `=Exemples d'accumulation`\n\nLes blessures se soignent à l'aide de bandage, de médicaments, d'injections et de repos (Vous perdrez un niveau de blessure à minuit tous les jours)")
                 .setTimestamp()
             message.channel.send({ embed })
         }
