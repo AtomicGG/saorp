@@ -1819,9 +1819,12 @@
                 {"nom":"Infection","poids":75,"type":"soignez"}
             ],
             "zones":[
-                {"nom":"Laboratoire cosmétique","poids":1},
+                {"nom":5,"poids":1},
+                {"nom":6,"poids":2},
+                {"nom":7,"poids":3},
+                {"nom":"Laboratoire cosmétique","poids":3},
                 {"nom":"Pharmacie détruite","poids":7},
-                {"nom":"Vieil hôpital de campagne","poids":1}
+                {"nom":"Vieil hôpital de campagne","poids":7}
             ]
         },
         {

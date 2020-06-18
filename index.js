@@ -1938,7 +1938,7 @@ bot.on("message", async message =>{
                 .setColor(0xff0000)
                 .setAuthor(message.author.username, message.author.avatarURL())
                 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .addField("Infection légère > Infection avancée > Infection mortelle :", "Après l'état `Infection légère`, le lendemain vous aurez l'état `Infection avancée`, si vous n'êtes pas soigné le lendemain vous aurez l'état `Infection mortelle` et si vous n'êtes toujours pas soigné le lendemain, vous devrez faire : `=Infection totale` (équivaut à `+1 cran d'infection` par jour)")
+                .addField("Infection légère > Infection avancée > Infection mortelle :", "Après l'état `Infection légère`, le lendemain vous aurez l'état `Infection avancée`, si vous n'êtes pas soigné le lendemain vous aurez l'état `Infection mortelle` et si vous n'êtes toujours pas soigné le lendemain, vous devrez faire : `=Infection totale` (équivaut à `+1 cran d'infection` par jour)\n\nVous pouvez soigner l'infection avec quelques types de médicaments")
                 .setTimestamp()
             message.channel.send({ embed })
         }
