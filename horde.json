@@ -2149,7 +2149,7 @@
         },
         {
             "nom":"Produits pharmaceutiques",
-            "description":"Un petit flacon et des produits mystérieux emballés sous plastique. Aucune idée de ce à quoi ça peut bien servir... Peut être qu'en le mélangeant avec un autre produit ?\n\nPour mélanger cet objet et obtenir un médicament, vous devrez être au cabinet médical et le mélange prendra 15 minutes à sa réalisation ainsi que 1 point d'action\n\nVous pourrez choisir l'un des médicaments suivants si vous avez l'atout `Médecin` :\n\n`1 Piqûre de calmant`\n`1 Stéroïdes anabolisants`\n`Twinoïde 500MG`\n`Hydratone 100MG`\n`Médicament sans étiquette`\n`1 Micropur effervescent`\n\nSeul les survivants possédant l'atout `Médecin` peuvent faire un mélange pour créer un médicament au choix",
+            "description":"Un petit flacon et des produits mystérieux emballés sous plastique. Aucune idée de ce à quoi ça peut bien servir... Peut être qu'en le mélangeant avec un autre produit ?\n\nPour mélanger cet objet et obtenir un médicament, vous devrez être au cabinet médical et le mélange prendra 15 minutes à sa réalisation ainsi que 1 point d'action\n\nVous pourrez choisir l'un des médicaments suivants si vous avez l'atout `Médecin` :\n\n`1 Piqûre de calmant`\n`1 Stéroïdes anabolisants`\n`1 Twinoïde 500MG`\n`1 Hydratone 100MG`\n`1 Médicament sans étiquette`\n`1 Micropur effervescent`\n`1 Paracétoïde 7G`\n\nSeul les survivants possédant l'atout `Médecin` peuvent faire un mélange pour créer un médicament au choix",
             "zones":[
                 {"nom":"Abri anti-atomique","poids":4},
                 {"nom":"Ambulance","poids":5},
