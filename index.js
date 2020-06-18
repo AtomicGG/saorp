@@ -2257,10 +2257,10 @@ bot.on("message", async message =>{
             const chance = Math.floor((100) * Math.random()) + 1
             let description = ""
             if(chance < 90){
-                description = "L'infection fini par vous ronger de l'intérieur, vous mourrez lentement..."
+                description = "L'infection finit par vous ronger de l'intérieur, vous mourrez lentement..."
             }
             else{
-                description = "L'infection ralentit votre coeur mais vous restez tous de même vivant malgré les sensations étranges dans votre corps maintenant, vous avez... faim ?\n\nVous êtes désormais une `Goule`"
+                description = "L'infection ralentit votre coeur mais vous restez tous de même vivant malgré les sensations étranges dans votre corps maintenant, vous avez... faim ?\n\nVous êtes désormais une `Goule`\n\nVous perdez l'état `Infection mortelle` et vous gagnez l'état `Aucune infection`"
             }
             const embed = new Discord.MessageEmbed()
             .setTitle("Infection totale")
