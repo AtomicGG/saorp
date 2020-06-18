@@ -2964,6 +2964,19 @@
                 {"nom":"Ambulance","poids":10},
                 {"nom":"Vieil hôpital de campagne","poids":10}
             ]
+        },
+        {
+            "nom":"Sainte chaise",
+            "description":"La légende disait donc vrai... Il existe bien cette chaise magique provenant d'une civilisation supérieure éteinte il y a des millions d'années\n\nIl y a écrit dessus des symboles que vous ne comprenez pas mais quand vous approchez votre main de ceux-ci ils se mettent à briller légèrement...\n\nCet objet possède ∞ utilisations avant qu'il ne se casse, il faudra ensuite le réparer\n\nPour utiliser cet objet : `=Coup [Sainte chaise]`",
+            "coup":{
+                "chance":100,
+                "ciblesConstante":5,
+                "ciblesRandom":15,
+                "dégâts":5
+            },
+            "zones":[
+                {"nom":25,"poids":1}
+            ]
         }
     ],
     "lieux":[
