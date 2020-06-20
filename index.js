@@ -2698,7 +2698,7 @@ bot.on("message", async message =>{
         }
         if(/^Jour\s*\d+$/i.test(truc)){
             const jour = Number(truc.match(/(?<=^Jour\s*)\d+$/)[0])
-            let zombies = 0.019*jour**3+3.943*jour**2-12.516*jour+22.356
+            let zombies = 2.3*jour**2+5.2*jour
             zombies = arrondi(zombies + plusOuMoins(Math.random()*zombies/jour))
             const embed = new Discord.MessageEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL())

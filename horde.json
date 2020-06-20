@@ -199,7 +199,7 @@
         },
         {
             "nom":"Bandage rudimentaire",
-            "description":"Ça sent mauvais, il y a des traces de moisissure, mais franchement, vous n'êtes pas en position de faire votre difficile. Ce bandage permet de panser une blessure\n\nL'utilisation de cet objet permet de guérir les états `Blessure légère` et `Blessure`, vous aurez `Aucune blessure` après utilisation\n\nL'utilisation coûte 2 points d'actions, et seulement 1 si un médecin vous le met",
+            "description":"Ça sent mauvais, il y a des traces de moisissure, mais franchement, vous n'êtes pas en position de faire votre difficile. Ce bandage permet de panser une blessure\n\nL'utilisation de cet objet permet de guérir les états `Blessure légère` et `Blessure`, vous aurez `Aucune blessure` après utilisation\n\nL'utilisation coûte 1 point d'actions, et aucun si un médecin vous le met",
             "zones":[
                 {"nom":1,"poids":3},
                 {"nom":2,"poids":2},
@@ -2958,7 +2958,7 @@
         },
         {
             "nom":"Poche de sang",
-            "description":"Si vous avez perdu beaucoup de sang à cause de blessures graves, vous pourrez vous injecter cette poche de sang pour vous rétablir...\n\nL'utilisation de cet objet permet de soigner les états `Blessure avancée` et `Blessure mortelle`, vous aurez `Blessure` après utilisation\n\nL'utilisation coûte 2 points d'actions, et seulement 1 si un médecin vous le met",
+            "description":"Si vous avez perdu beaucoup de sang à cause de blessures graves, vous pourrez vous injecter cette poche de sang pour vous rétablir...\n\nL'utilisation de cet objet permet de soigner les états `Blessure avancée` et `Blessure mortelle`, vous aurez `Blessure` après utilisation\n\nL'utilisation coûte 1 point d'actions, et aucun si un médecin vous le met",
             "zones":[
                 {"nom":3,"poids":3},
                 {"nom":4,"poids":3},
