@@ -607,7 +607,8 @@
             "ouverture":[
                 {"nom":"Pile","poids":40},
                 {"nom":"Poignée de vis et écrous","poids":20},
-                {"nom":"Rustine de cuivre","poids":10},
+                {"nom":"Rustine","poids":10},
+                {"nom":"Fil de cuivre","poids":10},
                 {"nom":"Tube de cuivre","poids":10},
                 {"nom":"Explosifs bruts","poids":10},
                 {"nom":"Produits pharmaceutiques","poids":10}
