@@ -423,7 +423,7 @@
         },
         {
             "nom":"Boîte de conserve ouverte",
-            "description":"Allez, on ferme les yeux, on ouvre bien grand la bouche et on avale tout. On se sent toujours mieux après\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !\n\nCet objet s'empoisonne avec `Fiole de poison`\n\nCet objet est `cuisinable`"
+            "description":"Allez, on ferme les yeux, on ouvre bien grand la bouche et on avale tout. On se sent toujours mieux après\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !\n\nUne fois utilisé, vous recevez l'objet `Boîte de conserve vide`\n\nCet objet s'empoisonne avec `Fiole de poison`\n\nCet objet est `cuisinable`"
         },
         {
             "nom":"Boîte de schrödinger",
@@ -2981,6 +2981,10 @@
             "zones":[
                 {"nom":25,"poids":1}
             ]
+        },
+        {
+            "nom":"Boîte de conserve vide",
+            "description":"Ouverte, consommée, inutile ? Non ! Vous pouvez toujours la raffiner pour en tirer du métal\n\nPour transformer cet objet et obtenir `Ferraille` vous devrez être à l'atelier et utiliser :\n\n`1 Boîte de conserve vide`\n`1 Boîte de conserve vide`\n`1 Boîte de conserve vide`\n\nLa transformation prendra 5 minutes à sa réalisation ainsi que 1 point d'action"
         }
     ],
     "lieux":[
