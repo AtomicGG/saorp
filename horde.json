@@ -3827,7 +3827,7 @@
         },
         {
             "nom":"Tourniquet à poutres",
-            "description":"Quatre poutres en bois fixées sur un axe\n\nEt ça tourne très vite\n\n:hammer_pick: Matériaux nécessaires :\n\n`2 Poutre rafistolée`\n`1 Structures métalliques`\n\n:shield: Points de défense : 12\n\n:timer: Le temps de construction est de 6 minutes\n\n:hammer: Défense possible à construire plusieurs fois"
+            "description":"Quatre poutres en bois fixées sur un axe\n\nEt ça tourne très vite\n\n:hammer_pick: Matériaux nécessaires :\n\n`2 Poutre rafistolée`\n`1 Structures métalliques`\n\n:shield: Points de défense : 10\n\n:timer: Le temps de construction est de 6 minutes\n\n:hammer: Défense possible à construire plusieurs fois"
         },
         {
             "nom":"Ultime tas de débris",
