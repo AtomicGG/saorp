@@ -1720,9 +1720,9 @@ bot.on("message", async message =>{
             .setTimestamp()
             message.channel.send(embed)
         }
-        if(/^Se cacher : \d+$/i.test(truc)){
+        if(/^Se\s*cacher\s*:\s*\d+$/i.test(truc)){
             const chance = Math.floor(Math.random()*100) + 1
-            const zombies = Number(truc.match(/^(?<=Se cacher : )\d+$/)[0])
+            const zombies = Number(truc.match(/(?<=^Se\s*cacher\s*:\s*)\d+$/i)[0])
             let description = ""
             let lien = ""
             if(chance < 60 - zombies){
