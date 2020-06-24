@@ -116,7 +116,7 @@ bot.on("ready", _=>{
                     const embed = new Discord.MessageEmbed()
                         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(0xff0000)
-                        .addField("Tempête :", "La tempête de cette nuit est violente, des panneaux de signalisation ainsi que des grosses pierres arrivent à s'envoler en l'air\n\nTous les survivants dehors à l'extérieur prennent une `Blessure sévère`")
+                        .addField("Tempête :", "La tempête de cette nuit est violente, des panneaux de signalisation ainsi que des grosses pierres arrivent à s'envoler en l'air\n\nTous les survivants dehors à l'extérieur prennent une `Blessure avancée`")
                         .setTimestamp()
                     serveurChannelEvenements.send({ embed })
                 }
@@ -1324,7 +1324,7 @@ bot.on("message", async message =>{
             .addField(":crossed_swords: Pour effectuer un coup de poing :", ":crossed_swords: `=Coup de poing`\n:crossed_swords: `=Coup de poing [Boxeur]`")
 			.addField(":crossed_swords: Pour effectuer un coup de pied :", ":crossed_swords: `=Coup de pied`\n:crossed_swords: `=Coup de pied [Boxeur]`")
 			.addField(":crossed_swords: Pour effectuer un coup de pied circulaire :", ":crossed_swords: `=Coup de pied circulaire`\n:crossed_swords: `=Coup de pied circulaire [Boxeur]`")
-			.addField(":shield: Pour effectuer une fuite :", ":shield: `=Fuite [Aucune blessure]`\n:shield: `=Fuite [Blessure légère]`\n:shield: `=Fuite [Blessure]`\n:shield: `=Fuite [Blessure sévère]`\n:shield: `=Fuite [Blessure mortelle]`")
+			.addField(":shield: Pour effectuer une fuite :", ":shield: `=Fuite [Aucune blessure]`\n:shield: `=Fuite [Blessure légère]`\n:shield: `=Fuite [Blessure]`\n:shield: `=Fuite [Blessure avancée]`\n:shield: `=Fuite [Blessure mortelle]`")
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL())
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -2118,7 +2118,7 @@ bot.on("message", async message =>{
 					.setAuthor(message.author.username, message.author.avatarURL())
 					.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 					.setColor(0xff0000)
-					.addField("Griffure :", "Le survivant sur lequel vous effectuez votre griffure obtient une `Blessure sévère`")
+					.addField("Griffure :", "Le survivant sur lequel vous effectuez votre griffure obtient une `Blessure avancée`")
 					.setTimestamp()
 				message.channel.send({ embed })
 			}
@@ -2139,7 +2139,7 @@ bot.on("message", async message =>{
                     .setAuthor(message.author.username, message.author.avatarURL())
                     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(0xff0000)
-                    .addField("Morsure :", "Le survivant sur lequel vous effectuez votre griffure obtient une `Blessure légère`\n\n:nauseated_face: Infection potentielle : `=Infection légère`")
+                    .addField("Morsure :", "Le survivant sur lequel vous effectuez votre morsure obtient une `Blessure légère`\n\n:nauseated_face: Infection potentielle : `=Infection légère`")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -2148,7 +2148,7 @@ bot.on("message", async message =>{
                     .setAuthor(message.author.username, message.author.avatarURL())
                     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(0xff0000)
-                    .addField("Morsure :", "Le survivant sur lequel vous effectuez votre griffure obtient une `Blessure`\n\n:nauseated_face: Infection potentielle : `=Infection légère`")
+                    .addField("Morsure :", "Le survivant sur lequel vous effectuez votre morsure obtient une `Blessure`\n\n:nauseated_face: Infection potentielle : `=Infection légère`")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -2157,7 +2157,7 @@ bot.on("message", async message =>{
                     .setAuthor(message.author.username, message.author.avatarURL())
                     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(0xff0000)
-                    .addField("Morsure :", "Le survivant sur lequel vous effectuez votre griffure obtient une `Blessure sévère`\n\n:nauseated_face: Infection potentielle : `=Infection sévère`")
+                    .addField("Morsure :", "Le survivant sur lequel vous effectuez votre morsure obtient une `Blessure avancée`\n\n:nauseated_face: Infection potentielle : `=Infection avancée`")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -2382,7 +2382,7 @@ bot.on("message", async message =>{
                     .setAuthor(message.author.username, message.author.avatarURL())
                     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(0xff0000)
-                    .addField("Tempête :", "La tempête de cette nuit est violente, des panneaux de signalisation ainsi que des grosses pierres arrivent à s'envoler en l'air\n\nTous les survivants dehors à l'extérieur prennent une `Blessure sévère`")
+                    .addField("Tempête :", "La tempête de cette nuit est violente, des panneaux de signalisation ainsi que des grosses pierres arrivent à s'envoler en l'air\n\nTous les survivants dehors à l'extérieur prennent une `Blessure avancée`")
 
                     .setTimestamp()
                 message.channel.send({ embed })
