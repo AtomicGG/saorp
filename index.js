@@ -8,7 +8,6 @@ let constructions = hordeJSON.constructions
 let défenses = hordeJSON.défenses
 const prefix = "="
 const nomServeur = "Horde [RP]"
-let actif = true
 
 const comparer = (a,b) => {
     if(a.nom < b.nom) return -1
@@ -88,11 +87,11 @@ bot.on("ready", _=>{
     console.log("Horderp opérationnel !")
     bot.user.setActivity('=Horde', { type: 'PLAYING' })
     .catch(console.error)
-    setInterval(toutesLes1Minutes = () => {
+    bot.setInterval(toutesLes1Minutes = async () => {
         const date = new Date().toLocaleTimeString("fr-FR",{timeZone:"Europe/Paris",hour12:false})
         const heure = Number(date.split(":")[0])
-        if(heure === 0 && actif) {
-            actif = false
+        if(heure === 0 && serveurChannelEvenements.topic === "Ce salon regroupe tous les différents évènements qui se passent dans la ville. Il rappelle aussi des trucs que vous êtes censés savoir en faisant \"=Horde\" dans #commandes.") {
+            await serveurChannelEvenements.setTopic("Envoyé")
             serveurChannelEvenements.send("<@&564883579214233600> Ce jour est terminé et vous savez ce que ça veut dire ?\n- Votre niveau de faim et de soif monte d'un cran\n- Si vous êtes infecté, l'infection monte d'un cran\n- Si vous n'avez pas dormi 4 heures aujourd'hui, vous avez l'état fatigué\n- Vos blessures se soignent lentement...\n- Les lieux que vous avez trouvé courageusement aujourd'hui ont été enssevelis sous le sable de la tempête de minuit. Par conséquent, vous ne pouvez plus retourner dans les bâtiments que vous avez trouvés et les objets que vous avez laissés dehors sont par la même occasion perdus à jamais !\n- Vous récupérez vos 6 PA quotidiens\n\n__Ne modifiez pas vos états, ils sont modifiés automatiquement par le bot !__")
             .then(()=> {
                 const A = (Math.floor((100) * Math.random() + 1))
@@ -240,7 +239,7 @@ bot.on("ready", _=>{
             .catch(console.error)
         }
         if(heure !== 0) {
-            actif = true
+            serveurChannelEvenements.setTopic("Ce salon regroupe tous les différents évènements qui se passent dans la ville. Il rappelle aussi des trucs que vous êtes censés savoir en faisant \"=Horde\" dans #commandes.")
         }
         if(heure >= 7 && heure < 19){
             for (let i = 0 ; i < 4 ; i++){
