@@ -1153,7 +1153,7 @@ bot.on("message", async message =>{
         if(/^Horde$/i.test(truc)){
             const embed = new Discord.MessageEmbed()
             .setTitle("Horde")
-            .setDescription("Vous voulez rejoindre la ville et essayer de survivre le plus longtemps possible ? Alors les commandes pour avoir les informations et commencer la survie sont juste en dessous !\n\nRP :\n`=Contexte`\n`=Survivant`\n`=Inventaire`\n`=Discord`\n\nEXPLORATION :\n`=Points d'actions`\n`=Fouille`\n`=Déplacements`\n\nATTAQUE DE LA VILLE :\n`=Nuit`\n`=Défense de la ville`\n`=Combat`\n`=Zombies`\n`=Habitations`\n\nSURVIE :\n`=Etats`\n`=Médicaments`\n`=Eau`\n`=Nourriture`\n`=Alcool`\n`=Drogue`\n\nOBJETS/CONSTRUCTIONS :\n`=Armes`\n`=Fabrication`\n`=Encyclopédie`\n\nAUTRES :\n`=Revenant`\n`=Vol`\n`=Exil`\n`=Sommeil`\n`=Transformation`\n`=Cargaison`\n`=Plans`\n`=Informations complémentaires`")
+            .setDescription("Vous voulez rejoindre la ville et essayer de survivre le plus longtemps possible ? Alors les commandes pour avoir les informations et commencer la survie sont juste en dessous !\n\nRP :\n`=Contexte`\n`=Survivant`\n`=Inventaire`\n`=Discord`\n`=Jour zéro`\n\nEXPLORATION :\n`=Points d'actions`\n`=Fouille`\n`=Déplacements`\n\nATTAQUE DE LA VILLE :\n`=Nuit`\n`=Défense de la ville`\n`=Combat`\n`=Zombies`\n`=Habitations`\n\nSURVIE :\n`=Etats`\n`=Médicaments`\n`=Eau`\n`=Nourriture`\n`=Alcool`\n`=Drogue`\n\nOBJETS/CONSTRUCTIONS :\n`=Armes`\n`=Fabrication`\n`=Encyclopédie`\n\nAUTRES :\n`=Revenant`\n`=Vol`\n`=Exil`\n`=Sommeil`\n`=Transformation`\n`=Cargaison`\n`=Plans`\n`=Informations complémentaires`")
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL())
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -1174,7 +1174,7 @@ bot.on("message", async message =>{
         if(/^Survivant$/i.test(truc)){
             const embed = new Discord.MessageEmbed()
             .setTitle("Survivant")
-            .setDescription("Avant d'entrer dans cette ville, vous possédez forcément une identité, une histoire, une profession, des connaissances, c'est pour cela que vous devrez nous transmettre toutes ces informations en créant votre survivant à partir du modèle présent en écrivant la commande : `=Fiche de survivant`\n\nUne fois votre personnage créé, faites le valider dans le salon #│『🏧』ғɪᴄʜᴇ-ᴀ̀-ᴠᴀʟɪᴅᴇʀ par un membre du staff\n\nUne fois validé, vous devrez vous renommer de la manière suivante : [Prénom] [Nom] [Points d'action] et envoyer votre fiche dans le salon à votre nom dans le `serveur Fiches` où les assistants vous auront invité\n\nExemple pour se renommer : `Yato Oshiro 6/6`")
+            .setDescription("Avant d'entrer dans cette ville, vous possédez forcément une identité, une histoire, une profession, des connaissances, c'est pour cela que vous devrez nous transmettre toutes ces informations en créant votre survivant à partir du modèle présent en écrivant la commande : `=Fiche de survivant`\n\nUne fois votre personnage créé, faites le valider dans le salon #│『🏧』ғɪᴄʜᴇ-ᴀ̀-ᴠᴀʟɪᴅᴇʀ par un membre du staff\n\nUne fois validé, vous devrez vous renommer de la manière suivante : [Prénom] [Nom] [Points d'action] et envoyer votre fiche dans le salon à votre nom dans le `serveur Fiches` où les assistants vous auront invité\n\nExemple pour se renommer : `Yato Oshiro 6/6`\n\nVous obtiendrez alors le rôle 'Validé pour prochaine session' qui vous permettra de répondre au sondage qui arrivera afin de savoir si vous serez actif ou non lors de la prochaine session (durée du sondage : 3 jours)\n\nSi vous ne répondez pas au sondage, vous perdrez votre rôle 'Validé pour prochaine session' et devrez être revalidé (Un simple 'Je reprends la même fiche' suffit)\n\nSi le nombre de validés actifs est suffisant (généralement ~min 15), on lancera la session et vous pourrez alors RP !\n\nSi vous n'aviez pas pu répondre au sondage/avez créé votre personnage après le début de la session mais que vous voulez RP, ne vous en faites pas ! On laisse généralement une marge de 3 jours pour rejoindre la session après son lancement")
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL())
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -1232,6 +1232,17 @@ bot.on("message", async message =>{
             .setColor(0xff0000)
             .setAuthor(message.author.username, message.author.avatarURL())
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setTimestamp()
+            message.channel.send(embed)
+        }
+        if(/^Jour zéro$/i.test(truc)){
+            const embed = new Discord.MessageEmbed()
+            .setTitle("Jour zéro")
+            .setDescription("Lorsqu'une session se lancera, le jour zéro commencera\n\nC'est un jour spécial où tout se passera comme n'importe quel jour (fouiller, boire, manger...) sauf qu'il n'y aura pas d'attaque de zombies le soir !\n\nCe jour a pour but de permettre aux nouveaux de s'imprégner du RP et de ses fonctionnalités pour ne pas qu'ils soient perdus ou désavantagés\n\nSi une personne meurt au jour zéro, elle sera réssuicitée sans rien avoir perdu\n\nLorsque le jour zéro commencera, vous devrez alors faire 'entrer' votre personnage dans le monde RP\nPour cela, il n'y a pas de règle particulière à part le fait qu'il faut que ça respecte l'histoire de votre personnage\n\nPour certains, une simple arrivée à la grande porte est suffisante\n\nSi il est dit que la session est commencée, alors n'hésitez pas à commencer à jouer au RP pour ne pas gâcher votre jour zéro (même si vous êtes le premier à écrire!)")
+            .setColor(0xff0000)
+            .setAuthor(message.author.username, message.author.avatarURL())
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setImage("https://media3.giphy.com/media/3oGRFlpAW4sIHA02NW/giphy.gif")
             .setTimestamp()
             message.channel.send(embed)
         }
