@@ -85,7 +85,7 @@ bot.on("ready", _=>{
     ]
     const serveurChannelEvenements = serveur.channels.cache.find(channel => channel.name === "『📃』ᴇ́ᴠᴇ̀ɴᴇᴍᴇɴᴛs")
     console.log("Horderp opérationnel !")
-    bot.user.setActivity('=Horde', { type: 'PLAYING' })
+    bot.user.setActivity('Invoquer des zombies ! Aide : "=Horde"', { type: 'PLAYING' })
     .catch(console.error)
     bot.setInterval(toutesLes1Minutes = async () => {
         const date = new Date().toLocaleTimeString("fr-FR",{timeZone:"Europe/Paris",hour12:false})
